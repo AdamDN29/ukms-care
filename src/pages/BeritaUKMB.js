@@ -72,7 +72,7 @@ export default function BeritaUKMB () {
 				</div>
 			</div>
 		</div>
-		<span className='beritaukm'>berita ukm</span>
+		<span className='beritaukm'>BERITA UKM</span>
 		<div className='Footer'>
 			<div className='Group226'>
 				<div className='PageHeaderSecondary'>

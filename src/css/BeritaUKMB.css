@@ -4,12 +4,17 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 100%;
+	width: 1440px;
 	height: 1996px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
 	box-sizing: border-box;
 }
+
+.BeritaUKMB_BeritaUKMB .beritaukm{
+	text-align: center;
+}
+
 .BeritaUKMB_BeritaUKMB .Rectangle40 {
 	visibility: hidden;
 	position: absolute;
@@ -534,7 +539,8 @@
 }
 .BeritaUKMB_BeritaUKMB .Footer .Group226 .Group224 .Group341 .FollowUs {
 	position: absolute;
-	left: 61.7158203125px;
+	text-align: center;
+	left: 64px;
 	top: 0px;
 	width: 108.16876220703125px;
 	height: 17.28857421875px;
@@ -1070,7 +1076,7 @@
 	position: absolute;
 	left: -20px;
 	top: -20px;
-	width: 1480px;
+	width: 1440px;
 	height: 120px;
 	display: flex;
 	flex-direction: column;
@@ -1083,7 +1089,7 @@
 .BeritaUKMB_BeritaUKMB .Frame365 .Frame363 {
 	position: relative;
 	margin-bottom: 10px;
-	width: 1460px;
+	width: 1440px;
 	height: 100px;
 	display: flex;
 	flex-direction: column;

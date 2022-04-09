@@ -56,7 +56,8 @@
 }
 .BeritaSingle_BeritaSingle .Frame367 {
 	position: absolute;
-	left: 146px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 238px;
 	width: 1140px;
 	height: 92px;
@@ -69,6 +70,7 @@
 }
 .BeritaSingle_BeritaSingle .Frame367 .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022 {
 	position: relative;
+	text-align: center;
 	margin-right: 10px;
 	width: 1120px;
 	height: 72px;
@@ -80,7 +82,8 @@
 }
 .BeritaSingle_BeritaSingle .Frame369 {
 	position: absolute;
-	left: 527px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 354px;
 	width: 379px;
 	height: 44px;
@@ -93,6 +96,7 @@
 }
 .BeritaSingle_BeritaSingle .Frame369 .UnitTaekwondoUnpad {
 	position: relative;
+	text-align: center;
 	margin-right: 10px;
 	width: 359px;
 	height: 24px;
@@ -104,7 +108,8 @@
 }
 .BeritaSingle_BeritaSingle .Frame370 {
 	position: absolute;
-	left: 462px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 414px;
 	width: 508px;
 	height: 44px;
@@ -117,6 +122,7 @@
 }
 .BeritaSingle_BeritaSingle .Frame370 .Jumat25Maret20221600WIB {
 	position: relative;
+	text-align: center;
 	margin-right: 10px;
 	width: 488px;
 	height: 24px;
@@ -177,7 +183,7 @@
 	position: absolute;
 	left: -10px;
 	top: 1871px;
-	width: 1460px;
+	width: 1440px;
 	height: 160px;
 	display: flex;
 	flex-direction: column;
@@ -277,7 +283,8 @@
 }
 .BeritaSingle_BeritaSingle .Frame373 .Footer .Group226 .Group224 .Group341 .FollowUs {
 	position: absolute;
-	left: 61.7158203125px;
+	text-align: center;
+	left: 64px;
 	top: 0px;
 	width: 108.16876220703125px;
 	height: 17.28857421875px;
@@ -453,7 +460,7 @@
 	position: absolute;
 	left: -20px;
 	top: -20px;
-	width: 1480px;
+	width: 1440px;
 	height: 120px;
 	display: flex;
 	flex-direction: column;
@@ -466,7 +473,7 @@
 .BeritaSingle_BeritaSingle .Frame382 .Frame368 {
 	position: relative;
 	margin-bottom: 10px;
-	width: 1460px;
+	width: 1440px;
 	height: 100px;
 	display: flex;
 	flex-direction: column;
@@ -679,6 +686,7 @@
 }
 .BeritaSingle_BeritaSingle .Frame323 .Group384 .Group385_1 .Group322_1 .Group321_1 .Kembali_1 {
 	position: absolute;
+	text-align: center;
 	left: 0px;
 	top: 0px;
 	width: 100.29473876953125px;
@@ -691,8 +699,8 @@
 }
 .BeritaSingle_BeritaSingle .Frame323 .Group384 .Group385_1 .Group322_1 .Vector_6 {
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 20px;
+	top: 2px;
 	width: 20.246612596493723%;
 	height: 100%;
 }
