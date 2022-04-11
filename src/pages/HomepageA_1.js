@@ -41,7 +41,7 @@ export default function HomepageA_1 () {
 				</div>
 			</div>
 		</div>
-		<span className='beritaukm'>berita ukm</span>
+		<span className='beritaukm'>BERITA UKM</span>
 		<div className='Line5'/>
 		<Link to='/beritaukmb'>
 			<img className='Arrow1' src = {ImgAsset.HomepageA_1_Arrow1} />
@@ -54,14 +54,14 @@ export default function HomepageA_1 () {
 		<span className='UKMSelengkapnya_1'>UKM Selengkapnya</span>
 		<div className='Group306'>
 			<div className='Rectangle8'/>
-			<span className='UKMsCare'>UKM’s Care</span>
+			<span className='UKMsCare'>UKM's Care</span>
 		</div>
 		<div className='Group386'>
 			<div className='Group355'>
 				<img className='Rectangle14' src = {ImgAsset.HomepageA_1_Rectangle14} />
 				<div className='Rectangle28'/>
 			</div>
-			<span className='SebagaimahasiswaaktifdalamkegiatankemahasiswaanitupentingbangetQuipperianSelainkamumendapatpengetahuansoalkegiatanyangsedangdigelutimahasiswayangikutkegiatankemahasiswaanjugabisameningkatkankemampuansosialdanorganisasinyaJadikamumakinpunyabanyaktemanbarudariberbagaijurusanyangadadikampusdehSebagaimahasiswaaktifdalamkegiatankemahasiswaanitupentingbangetQuipperianSelainkamumendapatpengetahuansoalkegiatanyangsedangdigelutimahasiswayangikutkegiatankemahasiswaanjugabisameningkatkankemampuansosialdanorganisasinyaJadikamumakinpunyabanyaktemanbarudariberbagaijurusanyangadadikampusdeh'>Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu penting banget, Quipperian! Selain kamu mendapat pengetahuan soal kegiatan yang sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman baru dari berbagai jurusan yang ada di kampus deh! Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu penting banget, Quipperian! Selain kamu mendapat pengetahuan soal kegiatan yang sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman baru dari berbagai jurusan yang ada di kampus deh!</span>
+			<span className='text2'>Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu penting banget, Quipperian! Selain kamu mendapat pengetahuan soal kegiatan yang sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman baru dari berbagai jurusan yang ada di kampus deh! Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu penting banget, Quipperian! Selain kamu mendapat pengetahuan soal kegiatan yang sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman baru dari berbagai jurusan yang ada di kampus deh!</span>
 		</div>
 		<div className='Group317'>
 			<img className='Rectangle8_1' src = {ImgAsset.HomepageA_1_Rectangle8_1} />
@@ -95,7 +95,7 @@ export default function HomepageA_1 () {
 				</div>
 			</div>
 		</div>
-		<span className='UKMSCARE'>UKM’S CARE?</span>
+		<span className='UKMSCARE'>UKM'S CARE?</span>
 		<span className='BeritaUKM'> Berita UKM</span>
 		<span className='InformasiUKM'>Informasi  UKM</span>
 		<span className='PendaftaranOnline'>Pendaftaran Online</span>
@@ -116,7 +116,7 @@ export default function HomepageA_1 () {
 			</div>
 		</div>
 		<div className='Line4'/>
-		<span className='UKMsCaremerupakanwebsiteyangmenaungiukmdiUniversitasPadjajaranyangmanadidalamwebsiteiniberisibanyakinformasiseputarukmdiunpadjadimahasiswaUnpadyangselamainikesulitanmendapatinformasidanmendaftarkeUKMpilihanmerekadapatdenganmudahdilakukandiwebsiteini'>UKM’s Care merupakan website yang menaungi ukm di Universitas Padjajaran, yang mana di dalam website ini berisi banyak informasi seputar ukm di unpad jadi mahasiswa Unpad yang selama ini kesulitan mendapat informasi dan mendaftar ke UKM pilihan mereka dapat dengan mudah dilakukan di website ini </span>
+		<span className='text1'>UKM’s Care merupakan website yang menaungi ukm di Universitas Padjajaran, yang mana di dalam website ini berisi banyak informasi seputar ukm di unpad jadi mahasiswa Unpad yang selama ini kesulitan mendapat informasi dan mendaftar ke UKM pilihan mereka dapat dengan mudah dilakukan di website ini </span>
 		<img className='humasunpad2020123Baseball1' src = {ImgAsset.HomepageB_humasunpad2020123Baseball1} />
 		<div className='Footer'>
 			<div className='Group226'>
@@ -129,7 +129,7 @@ export default function HomepageA_1 () {
 					</div>
 				</div>
 				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM’s Care 2022</span>
+					<span className='UKMsCare2022'>© UKM's Care 2022</span>
 					<div className='Group341'>
 						<span className='FollowUs'>Follow Us</span>
 						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />

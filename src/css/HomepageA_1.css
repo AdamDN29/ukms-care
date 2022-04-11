@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 100%;
+	width: 1440px;
 	height: 2600px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -327,20 +327,21 @@
 	position: absolute;
 	left: 0px;
 	top: 368px;
-	width: 1456px;
+	width: 1440px;
 	height: 265px;
 }
 .HomepageA_1_HomepageA .Group306 .Rectangle8 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1456px;
+	width: 1440px;
 	height: 265px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
 .HomepageA_1_HomepageA .Group306 .UKMsCare {
 	position: absolute;
-	left: 450px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 32px;
 	width: 557.1220703125px;
 	height: 62.13427734375px;
@@ -384,10 +385,10 @@
 	border: 1px solid rgba(255,255,255,1);
 	box-sizing: border-box;
 }
-.HomepageA_1_HomepageA .Group386 .SebagaimahasiswaaktifdalamkegiatankemahasiswaanitupentingbangetQuipperianSelainkamumendapatpengetahuansoalkegiatanyangsedangdigelutimahasiswayangikutkegiatankemahasiswaanjugabisameningkatkankemampuansosialdanorganisasinyaJadikamumakinpunyabanyaktemanbarudariberbagaijurusanyangadadikampusdehSebagaimahasiswaaktifdalamkegiatankemahasiswaanitupentingbangetQuipperianSelainkamumendapatpengetahuansoalkegiatanyangsedangdigelutimahasiswayangikutkegiatankemahasiswaanjugabisameningkatkankemampuansosialdanorganisasinyaJadikamumakinpunyabanyaktemanbarudariberbagaijurusanyangadadikampusdeh {
+.HomepageA_1_HomepageA .Group386 .text2 {
 	position: absolute;
 	left: 86px;
-	top: 33px;
+	top: 50px;
 	width: 949px;
 	height: 179px;
 	color : rgba(255,255,255,1);
@@ -748,11 +749,11 @@
 	border: 3px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	text-align: center;
 }
-.HomepageA_1_HomepageA .UKMsCaremerupakanwebsiteyangmenaungiukmdiUniversitasPadjajaranyangmanadidalamwebsiteiniberisibanyakinformasiseputarukmdiunpadjadimahasiswaUnpadyangselamainikesulitanmendapatinformasidanmendaftarkeUKMpilihanmerekadapatdenganmudahdilakukandiwebsiteini {
+.HomepageA_1_HomepageA .text1 {
 	position: absolute;
 	margin: 80px;
 	left: 200px;
-	top: 400px;
+	top: 420px;
 	width: 900px;
 	height: 256px;
 	color : rgba(255,255,255,1);
@@ -871,6 +872,7 @@
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 21.09375px;
+	text-align: center;
 }
 .HomepageA_1_HomepageA .Footer .Group226 .Group224 .Group341 .instagram1 {
 	position: absolute;
@@ -1113,4 +1115,32 @@
 	margin-right: 10px;
 	width: 71.42857142857143%;
 	height: 71.42857142857143%;
+}
+
+.HomepageA_1_HomepageA .BeritaUKM{
+	margin-top: 30px;
+	margin-left: 10px;
+	text-align: center;
+}
+
+.HomepageA_1_HomepageA .InformasiUKM{
+	margin-top: 30px;
+	left: 50%;
+	transform: translate(-50%);
+	text-align: center;
+}
+
+.HomepageA_1_HomepageA .PendaftaranOnline{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.HomepageA_1_HomepageA .UKMSelengkapnya{
+	margin-top: 20px;
+	margin-left: 105px;
+}
+
+.HomepageA_1_HomepageA .BeritaSelengkapnya{
+	margin-top: 20px;
+	margin-left: 105px;
 }
