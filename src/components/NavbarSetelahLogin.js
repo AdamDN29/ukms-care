@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/NavbarSetelahLogin.css'
 import * as SVGAsset from '../SVG/index'
+import {Link} from 'react-router-dom'
 import ImgAsset from '../resources'
 
 export default function NavbarSetelahLogin () {
@@ -20,11 +21,12 @@ export default function NavbarSetelahLogin () {
 						</div>
 					</div>
 					<div className='Frame375'>
-						<img className='logo' src = {ImgAsset.ukms_care_logo} />
+						{/* <img className='logo' src = {ImgAsset.ukms_care_logo} /> */}
+						<Link to='/HomepageA_1'><img className='logo' src = {ImgAsset.ukms_care_logo} /></Link>
 					</div>
 					<div className='Frame238'>
-						<span className='UKMUnpad_1'>UKM Unpad</span>
-						<span className='BeritaUKM_1'>Berita UKM</span>
+						<Link to='/ukmunpada' className="link"><span className='UKMUnpad_1'>UKM Unpad</span></Link>
+						<Link to='/beritaukmb' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
 					</div>
 					<div className='Frame376'>
 						<img className='Avatar' src = {ImgAsset.Avatar} />

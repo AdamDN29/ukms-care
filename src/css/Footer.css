@@ -208,3 +208,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
+
+.link {
+	text-decoration: none;
+}

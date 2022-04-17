@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 import NavbarSetelahLogin from '../components/NavbarSetelahLogin.js'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
+import { Button } from 'bootstrap'
+import { ButtonGroup } from 'react-bootstrap'
 
 
 class BeritaSingle extends Component {
@@ -71,12 +73,12 @@ class BeritaSingle extends Component {
 										</div>
 									</div>
 								</div>
-								<div className='Group322_1'>
+								<ButtonGroup className='Group322_1'>
 									<div className='Group321_1'>
 										<span className='Kembali_1'>Kembali</span>
 									</div>
 									<img className='Vector_6' src = {ImgAsset.BeritaSingle_Vector_6} />
-								</div>
+								</ButtonGroup>
 							</div>
 						</div>
 					</div>

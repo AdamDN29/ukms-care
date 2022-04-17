@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/Footer.css'
 import * as SVGAsset from '../SVG/index'
+import {Link} from 'react-router-dom'
 import ImgAsset from '../resources'
 
 export default function Footer () {
@@ -26,10 +27,10 @@ export default function Footer () {
 									<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
 								</div>
 								<div className='Group364'>
-									<span className='UKMUnpad'>UKM Unpad</span>
+									<Link to='/ukmunpada' className="link"><span className='UKMUnpad'>UKM Unpad</span></Link>
+									<Link to='/beritaukmb' className="link"><span className='BeritaUKM'>Berita UKM</span></Link>
 									<span className='AboutUs'>About Us</span>
-									<span className='Help'>Help</span>
-									<span className='BeritaUKM'>Berita UKM</span>
+									<span className='Help'>Help</span>	
 								</div>
 							</div>
 						</div>

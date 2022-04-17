@@ -117,8 +117,8 @@
 }
 .NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame375 .logo {
 	position: relative;
+	top: -3px;
     left: -15px;
-	/* margin-bottom: 10px; */
 	width: 80px;
 	height: 60px;
 	object-fit: cover;
@@ -146,6 +146,7 @@
 }
 .NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame238 .BeritaUKM_1 {
 	position: relative;
+	left: 40px;
 	margin-right: 5px;
 	width: 145.59410095214844px;
 	height: 22.294921875px;
@@ -173,4 +174,8 @@
 	right: -20px;
 	width: 100%;
 	height: 100%;
+}
+
+.link {
+	text-decoration: none;
 }
