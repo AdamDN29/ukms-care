@@ -84,6 +84,7 @@ class BeritaSingle extends Component {
 					</div>
 				</Link>
 
+
 				< Footer />
 			</div>
 

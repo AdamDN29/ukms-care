@@ -82,6 +82,7 @@ class BeritaUKMB extends Component {
 						</div>
 					</div>
 				</Link> */}
+				
 				<Footer />
 			</div>
 		)
