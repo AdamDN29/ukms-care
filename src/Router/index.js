@@ -5,6 +5,8 @@ import HomepageA_1 from '../pages/HomepageA_1';
 import UKMUnpadA from '../pages/UKMUnpadA';
 import BeritaUKMB from '../pages/BeritaUKMB';
 import BeritaSingle from '../pages/BeritaSingle';
+import SigninUser from '../pages/SigninUser';
+import SignupUser from '../pages/SignupUser';
 
 const RouterDOM = () => {
 	return (
@@ -15,6 +17,8 @@ const RouterDOM = () => {
 				<Route exact path="/ukmunpada"><UKMUnpadA /></Route>
 				<Route exact path="/beritaukmb"><BeritaUKMB /></Route>
 				<Route exact path="/beritasingle"><BeritaSingle /></Route>
+				<Route exact path="/signinuser"><SigninUser /></Route>
+				<Route exact path="/signupuser"><SignupUser /></Route>
 			</Switch>
 		</Router>
 	);

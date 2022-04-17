@@ -16,11 +16,8 @@ export default {
 	UKMUnpadB_Vector_1: require('./UKMUnpadB_Vector_1.png').default,
 	BeritaUKMA_Vector: require('./BeritaUKMA_Vector.png').default,
 	BeritaUKMA_Vector_1: require('./BeritaUKMA_Vector_1.png').default,
-	BeritaUKMB_Rectangle40: require('./BeritaUKMB_Rectangle40.png').default,
-	BeritaUKMB_Vector: require('./BeritaUKMB_Vector.png').default,
-	BeritaUKMB_Vector_1: require('./BeritaUKMB_Vector_1.png').default,
-	BeritaSingle_Vector: require('./BeritaSingle_Vector.png').default,
-	BeritaSingle_Vector_1: require('./BeritaSingle_Vector_1.png').default,
+	
+	
 	ProfileUser_Vector: require('./ProfileUser_Vector.png').default,
 	EditProfileUser_Vector: require('./EditProfileUser_Vector.png').default,
 	EditProfileUser_Vector_1: require('./EditProfileUser_Vector_1.png').default,
@@ -67,10 +64,35 @@ export default {
 	UKMUnpadB_Vector_3: require('./UKMUnpadB_Vector_3.png').default,
 	BeritaUKMA_Vector_2: require('./BeritaUKMA_Vector_2.png').default,
 	BeritaUKMA_Vector_3: require('./BeritaUKMA_Vector_3.png').default,
+	
+	// Navbar Setelah Login
+	Avatar: require('./Navbar/Avatar.png').default,
+	ukms_care_logo: require('./Navbar/ukms_care_logo.png').default,
+	
+	// Search
+	SegitigaSearch: require('./Search/SegitigaSearch.png').default,
+	
+	// Berita UKM B
 	BeritaUKMB_Vector_2: require('./BeritaUKMB_Vector_2.png').default,
 	BeritaUKMB_Vector_3: require('./BeritaUKMB_Vector_3.png').default,
+	BeritaUKMB_Rectangle40: require('./BeritaUKMB_Rectangle40.png').default,
+	BeritaUKMB_Vector: require('./BeritaUKMB_Vector.png').default,
+	BeritaUKMB_Vector_1: require('./BeritaUKMB_Vector_1.png').default,
+	BeritaUKMB_Vector_5: require('./BeritaUKMB_Vector_5.png').default,
+	BeritaUKMB_Vector_4: require('./BeritaUKMB_Vector_4.png').default,
+	BeritaUKMB_Rectangle41: require('./BeritaUKMB_Rectangle41.png').default,
+	
+	
+	// Berita Single
 	BeritaSingle_Vector_2: require('./BeritaSingle_Vector_2.png').default,
 	BeritaSingle_Vector_3: require('./BeritaSingle_Vector_3.png').default,
+	BeritaSingle_Vector_4: require('./BeritaSingle_Vector_4.png').default,
+	BeritaSingle_Vector: require('./BeritaSingle_Vector.png').default,
+	BeritaSingle_Vector_1: require('./BeritaSingle_Vector_1.png').default,
+	BeritaSingle_Vector_6: require('./BeritaSingle_Vector_6.png').default,
+	BeritaSingle_Vector_5: require('./BeritaSingle_Vector_5.png').default,
+
+
 	ProfileUser_Vector_1: require('./ProfileUser_Vector_1.png').default,
 	ProfileUser_Vector_2: require('./ProfileUser_Vector_2.png').default,
 	EditProfileUser_Vector_2: require('./EditProfileUser_Vector_2.png').default,
@@ -232,7 +254,7 @@ export default {
 	HomepageA_2_Vector_6: require('./HomepageA_2_Vector_6.png').default,
 	HomepageA_2_Vector_7: require('./HomepageA_2_Vector_7.png').default,
 	UKMUnpadA_Vector_4: require('./UKMUnpadA_Vector_4.png').default,
-	BeritaSingle_Vector_4: require('./BeritaSingle_Vector_4.png').default,
+	
 	ProfileUser_Vector_8: require('./ProfileUser_Vector_8.png').default,
 	EditProfileUser_Vector_5: require('./EditProfileUser_Vector_5.png').default,
 	EditProfileUser_Vector_6: require('./EditProfileUser_Vector_6.png').default,
@@ -283,7 +305,7 @@ export default {
 	HomepageB_Rectangle8_2: require('./HomepageB_Rectangle8_2.png').default,
 	HomepageB_Rectangle9_2: require('./HomepageB_Rectangle9_2.png').default,
 	HomepageA_Rectangle14: require('./HomepageA_Rectangle14.png').default,
-	BeritaSingle_Vector_5: require('./BeritaSingle_Vector_5.png').default,
+	
 	AturPendaftaranUKM_Rectangle55_8: require('./AturPendaftaranUKM_Rectangle55_8.png').default,
 	AturPendaftaranUKM_Rectangle55_9: require('./AturPendaftaranUKM_Rectangle55_9.png').default,
 	DetailUKMA_Vector_13: require('./DetailUKMA_Vector_13.png').default,
@@ -309,7 +331,7 @@ export default {
 	HomepageA_1_Vector_10: require('./HomepageA_1_Vector_10.png').default,
 	HomepageA_2_Vector_10: require('./HomepageA_2_Vector_10.png').default,
 	UKMUnpadB_Vector_5: require('./UKMUnpadB_Vector_5.png').default,
-	BeritaUKMB_Vector_4: require('./BeritaUKMB_Vector_4.png').default,
+	
 	ProfileUser_Vector_12: require('./ProfileUser_Vector_12.png').default,
 	DashboardUKMB_Vector_14: require('./DashboardUKMB_Vector_14.png').default,
 	AturPendaftaranUKM_Rectangle56_4: require('./AturPendaftaranUKM_Rectangle56_4.png').default,
@@ -330,8 +352,8 @@ export default {
 	HomepageB_Vector_9: require('./HomepageB_Vector_9.png').default,
 	HomepageB_Vector_10: require('./HomepageB_Vector_10.png').default,
 	HomepageA_2_Vector_11: require('./HomepageA_2_Vector_11.png').default,
-	BeritaUKMB_Rectangle41: require('./BeritaUKMB_Rectangle41.png').default,
-	BeritaSingle_Vector_6: require('./BeritaSingle_Vector_6.png').default,
+	
+	
 	ProfileUser_Vector_13: require('./ProfileUser_Vector_13.png').default,
 	DashboardUKMB_Vector_15: require('./DashboardUKMB_Vector_15.png').default,
 	DaftarUKM_Vector_9: require('./DaftarUKM_Vector_9.png').default,
@@ -354,7 +376,7 @@ export default {
 	EditProfileUKM_Vector_8: require('./EditProfileUKM_Vector_8.png').default,
 	HomepageB_Arrow3: require('./HomepageB_Arrow3.png').default,
 	DaftarUKM_Vector_11: require('./DaftarUKM_Vector_11.png').default,
-	BeritaUKMB_Vector_5: require('./BeritaUKMB_Vector_5.png').default,
+	
 	HomepageA_Vector_11: require('./HomepageA_Vector_11.png').default,
 	ListBeritaUKMAdminUKM_Rectangle56_6: require('./ListBeritaUKMAdminUKM_Rectangle56_6.png').default,
 	ListBeritaUKMAdminUKM_Vector_15: require('./ListBeritaUKMAdminUKM_Vector_15.png').default,

@@ -1,5 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import axios from 'axios';
+
+
 export default function ListPages () {
     return (
 	<div>
@@ -7,6 +10,8 @@ export default function ListPages () {
 		<Link to='/UKMUnpadA'><div>UKMUnpadA</div></Link>
 		<Link to='/BeritaUKMB'><div>BeritaUKMB</div></Link>
 		<Link to='/BeritaSingle'><div>BeritaSingle</div></Link>
+		<Link to='/SigninUser'><div>SigninUser</div></Link>
+		<Link to='/SignupUser'><div>SignupUser</div></Link>
 	</div>
 	)
 }
