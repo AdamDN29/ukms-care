@@ -1,43 +1,26 @@
-
-
-.Frame373 {
+.Footer {
 	position: absolute;
-	left: -10px;
-	
     bottom: 0px;
-	width: 1440px;
-	/* height: 160px; */
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.Frame373 .Footer {
-	position: relative;
-    bottom: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	width: 1440px;
 	height: 140px;
 	background : rgba(255,255,255,1);
 }
-.Frame373 .Footer .Group226 {
+.Footer .Group226 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 1440px;
 	height: 140px;
 }
-.Frame373 .Footer .Group226 .PageHeaderSecondary {
+.Footer .Group226 .PageHeaderSecondary {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 1440px;
 	height: 140px;
 }
-.Frame373 .Footer .Group226 .PageHeaderSecondary .PageHeader {
+.Footer .Group226 .PageHeaderSecondary .PageHeader {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -45,7 +28,7 @@
 	height: 140px;
 	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
 }
-.Frame373 .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
+.Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -53,7 +36,7 @@
 	height: 140px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
-.Frame373 .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
+.Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
 	visibility: hidden;
 	position: absolute;
 	left: 24px;
@@ -66,7 +49,7 @@
 	font-weight: 700;
 	line-height: 16px;
 }
-.Frame373 .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
+.Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
 	position: absolute;
 	left: 1416px;
 	top: 62px;
@@ -78,14 +61,14 @@
 	font-weight: 300;
 	line-height: 16px;
 }
-.Frame373 .Footer .Group226 .Group224 {
+.Footer .Group226 .Group224 {
 	position: absolute;
 	left: 60px;
 	top: 34px;
 	width: 1320px;
 	height: 72.7998046875px;
 }
-.Frame373 .Footer .Group226 .Group224 .UKMsCare2022 {
+.Footer .Group226 .Group224 .UKMsCare2022 {
 	position: absolute;
 	left: 580px;
 	top: 30.7998046875px;
@@ -97,14 +80,14 @@
 	font-weight: 700;
 	line-height: 16.40625px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group341 {
+.Footer .Group226 .Group224 .Group341 {
 	position: absolute;
 	left: 1094.0831298828125px;
 	top: 1.86669921875px;
 	width: 225.9168701171875px;
 	height: 70.93310546875px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group341 .FollowUs {
+.Footer .Group226 .Group224 .Group341 .FollowUs {
 	position: absolute;
 	text-align: center;
 	left: 64px;
@@ -117,7 +100,7 @@
 	font-weight: 700;
 	line-height: 21.09375px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group341 .instagram1 {
+.Footer .Group226 .Group224 .Group341 .instagram1 {
 	position: absolute;
 	left: 0px;
 	top: 26.13330078125px;
@@ -126,7 +109,7 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-.Frame373 .Footer .Group226 .Group224 .Group341 .facebook1 {
+.Footer .Group226 .Group224 .Group341 .facebook1 {
 	position: absolute;
 	left: 60.2445068359375px;
 	top: 28.93310546875px;
@@ -135,7 +118,7 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-.Frame373 .Footer .Group226 .Group224 .Group341 .twitter1 {
+.Footer .Group226 .Group224 .Group341 .twitter1 {
 	position: absolute;
 	left: 121.5648193359375px;
 	top: 28.93310546875px;
@@ -144,7 +127,7 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-.Frame373 .Footer .Group226 .Group224 .Group341 .gmail1 {
+.Footer .Group226 .Group224 .Group341 .gmail1 {
 	position: absolute;
 	left: 188.2640380859375px;
 	top: 32.66650390625px;
@@ -153,14 +136,14 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-.Frame373 .Footer .Group226 .Group224 .Group364 {
+.Footer .Group226 .Group224 .Group364 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 283.71795654296875px;
 	height: 64.56982421875px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group364 .UKMUnpad {
+.Footer .Group226 .Group224 .Group364 .UKMUnpad {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -172,7 +155,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group364 .AboutUs {
+.Footer .Group226 .Group224 .Group364 .AboutUs {
 	position: absolute;
 	left: 176.82177734375px;
 	top: 0px;
@@ -184,7 +167,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group364 .Help {
+.Footer .Group226 .Group224 .Group364 .Help {
 	position: absolute;
 	left: 181.125px;
 	top: 45.02587890625px;
@@ -196,7 +179,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.Frame373 .Footer .Group226 .Group224 .Group364 .BeritaUKM {
+.Footer .Group226 .Group224 .Group364 .BeritaUKM {
 	position: absolute;
 	left: 0px;
 	top: 45.02587890625px;

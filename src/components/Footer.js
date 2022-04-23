@@ -6,7 +6,7 @@ import ImgAsset from '../resources'
 
 export default function Footer () {
     return (
-            <div className='Frame373'>
+            <div >
 					<div className='Footer'>
 						<div className='Group226'>
 							<div className='PageHeaderSecondary'>

@@ -1,12 +1,12 @@
 import React from 'react'
-import '../css/SeacrhBerita.css'
+import '../css/SearchBerita.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import { ButtonGroup } from 'react-bootstrap'
 
-export default function SeacrhBerita () {
+export default function SearchBerita () {
     return (
-	<div className='SeacrhBerita'>	
+	<div className='SearchBerita'>	
 		<div className='Group365'>
 				<div className='Frame359'>
 					<div className='Group358'>
