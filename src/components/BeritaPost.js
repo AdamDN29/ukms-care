@@ -7,23 +7,22 @@ import ReactTimeAgo from 'react-time-ago'
 import axios from 'axios';
 
 const BeritaPost = (props) => {
-	// const ukm_ids = props.ukm_id
 	const date = props.created_at
   	const dt = new Date(date)
-	const ukm_ids = []
+	const contents = props.content
 
 	
-	axios.get(`https://api-ukmscare.herokuapp.com/ukms/${props.ukm_id}`)
-	.then((response)=>{
-		console.log(response.data.data);
-		// ukm_ids = response.data.data;
-		// this.setState({
-		// 	post: response.data.data
-		// })
-	})
+	// axios.get(`https://api-ukmscare.herokuapp.com/ukms/${props.ukm_id}`)
+	// .then((response)=>{
+	// 	console.log(response.data.data);
+	// 	// ukm_ids = response.data.data;
+	// 	// this.setState({
+	// 	// 	post: response.data.data
+	// 	// })
+	// })
 
     return (
-		<Link to={`/BeritaSingle/${props.ukm_id}`}>
+		<Link to={`/beritasingle/${props.articles_id}`}>
 			<div className='BeritaPost'>
 				<div className='Frame338_2'>
 					<div className='Alltickets_3'>
@@ -37,9 +36,9 @@ const BeritaPost = (props) => {
 									</div>
 								</div>
 								<span className='Title'>{props.subject}</span>
-								<span className='UKM_Name'>{props.ukm_id}</span>
+								<span className='UKM_Name'>{props.ukm_name}</span>
 								<span className='Date'><ReactTimeAgo date={dt} locale="en-US"/></span>
-								<span className='Content'>{props.content} </span>
+								<span className='Content'>{contents.slice(0,500)} ... Berita Selengkapnya</span>
 							</div>
 						</div>
 					</div>

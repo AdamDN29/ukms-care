@@ -20,7 +20,7 @@ const RouterDOM = () => {
 				<Route exact path="/homepagea_1"><HomepageA_1 /></Route>
 				<Route exact path="/ukmunpada"><UKMUnpadA /></Route>
 				<Route exact path="/beritaukmb"><BeritaUKMB /></Route>
-				<Route exact path="/beritasingle"><BeritaSingle /></Route>
+				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
 				<Route exact path="/signinuser"><SigninUser /></Route>
 				<Route exact path="/signupuser"><SignupUser /></Route>
 				<Route exact path="/profileuser"><ProfileUser /></Route>

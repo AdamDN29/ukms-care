@@ -90,7 +90,7 @@ class BeritaUKMB extends Component {
 
 					{
 						this.state.post.map(post => {
-							return <BeritaPost key={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.slug} created_at={post.created_at} />
+							return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} ukm_name={post.ukm.name} />
 						})
 					}
 
