@@ -1,0 +1,751 @@
+
+.ProfileUser_ProfileUser {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 1896px;
+	background : rgba(255,255,255,1);
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.ProfileUser_ProfileUser .charmphonecall {
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	width: 16px;
+	height: 16px;
+}
+.ProfileUser_ProfileUser .charmphonecall .Vector {
+	position: absolute;
+	left: 1.75px;
+	top: 1.75px;
+	width: 78.125%;
+	height: 78.125%;
+}
+.ProfileUser_ProfileUser .Vectors {
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	width: 100px;
+	height: 1676px;
+	mix-blend-mode: normal;
+}
+.ProfileUser_ProfileUser .Vectors .Vector_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1676px;
+}
+.ProfileUser_ProfileUser .Vectors .Vector_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1676px;
+}
+.ProfileUser_ProfileUser .Vectors_1 {
+	position: absolute;
+	left: 1340px;
+	top: 80px;
+	width: 100px;
+	height: 1676px;
+	mix-blend-mode: normal;
+}
+.ProfileUser_ProfileUser .Vectors_1 .Vector_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1676px;
+}
+.ProfileUser_ProfileUser .Vectors_1 .Vector_4 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1676px;
+}
+.ProfileUser_ProfileUser .Footer {
+	position: absolute;
+	left: 0px;
+	top: 1756px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(255,255,255,1);
+}
+.ProfileUser_ProfileUser .Footer .Group226 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .PageHeaderSecondary {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .PageHeaderSecondary .PageHeader {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
+}
+.ProfileUser_ProfileUser .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.ProfileUser_ProfileUser .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
+	visibility: hidden;
+	position: absolute;
+	left: 24px;
+	top: 62px;
+	width: 304px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
+	position: absolute;
+	left: 1416px;
+	top: 62px;
+	width: 0px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Roboto Mono;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 {
+	position: absolute;
+	left: 60px;
+	top: 34px;
+	width: 1320px;
+	height: 72.7998046875px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .UKMsCare2022 {
+	position: absolute;
+	left: 580px;
+	top: 30.7998046875px;
+	width: 159.0716552734375px;
+	height: 13.5302734375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.40625px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group341 {
+	position: absolute;
+	left: 1094.0831298828125px;
+	top: 1.86669921875px;
+	width: 225.9168701171875px;
+	height: 70.93310546875px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group341 .FollowUs {
+	position: absolute;
+	left: 61.7158203125px;
+	top: 0px;
+	width: 108.16876220703125px;
+	height: 17.28857421875px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21.09375px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group341 .instagram1 {
+	position: absolute;
+	left: 0px;
+	top: 26.13330078125px;
+	width: 41.9559326171875px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group341 .facebook1 {
+	position: absolute;
+	left: 60.2445068359375px;
+	top: 28.93310546875px;
+	width: 43.03179931640625px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group341 .twitter1 {
+	position: absolute;
+	left: 121.5648193359375px;
+	top: 28.93310546875px;
+	width: 48.4107666015625px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group341 .gmail1 {
+	position: absolute;
+	left: 188.2640380859375px;
+	top: 32.66650390625px;
+	width: 37.65283203125px;
+	height: 29.86669921875px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group364 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 283.718017578125px;
+	height: 64.56982421875px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group364 .UKMUnpad {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 138.71044921875px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group364 .AboutUs {
+	position: absolute;
+	left: 176.82177734375px;
+	top: 0px;
+	width: 106.896240234375px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group364 .Help {
+	position: absolute;
+	left: 181.125px;
+	top: 45.02587890625px;
+	width: 54.720703125px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ProfileUser_ProfileUser .Footer .Group226 .Group224 .Group364 .BeritaUKM {
+	position: absolute;
+	left: 0px;
+	top: 45.02587890625px;
+	width: 131.0751953125px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(255,255,255,1);
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Group222 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
+	visibility: hidden;
+	position: absolute;
+	left: 24px;
+	top: 32px;
+	width: 304px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
+	position: absolute;
+	left: 1416px;
+	top: 32px;
+	width: 0px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Roboto Mono;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame375 {
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	width: 100px;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame375 .Screenshot_20220306_161229removebgpreview4 {
+	position: relative;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 55px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame238 {
+	position: absolute;
+	left: 140px;
+	top: 29px;
+	width: 304.6900634765625px;
+	height: 22.295166015625px;
+	display: flex;
+	box-sizing: border-box;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame238 .UKMUnpad_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 154.095947265625px;
+	height: 22.295166015625px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame238 .BeritaUKM_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 145.5941162109375px;
+	height: 22.295166015625px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame376 {
+	position: absolute;
+	left: 1304.974609375px;
+	top: 5px;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.ProfileUser_ProfileUser .NavbarSetelahLogin .Frame376 .Vector_5 {
+	position: relative;
+	margin-right: 10px;
+	width: 71.42857142857143%;
+	height: 71.42857142857143%;
+}
+.ProfileUser_ProfileUser .unsplashjmURdhtm7Ng {
+	position: absolute;
+	left: 294px;
+	top: 266px;
+	width: 389px;
+	height: 395px;
+	background : rgba(196.00000351667404,196.00000351667404,196.00000351667404,1);
+	border: 5px solid rgba(255,255,255,1);
+	box-sizing: border-box;
+}
+.ProfileUser_ProfileUser .Line8 {
+	position: absolute;
+	left: 236px;
+	top: 731px;
+	width: 967.0068359375px;
+	height: 0px;
+}
+.ProfileUser_ProfileUser .ChandraWijaya {
+	position: absolute;
+	left: 683px;
+	top: 396px;
+	width: 513px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.ProfileUser_ProfileUser ._081320938490 {
+	position: absolute;
+	left: 562px;
+	top: 841px;
+	width: 376px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.ProfileUser_ProfileUser .Chandraw314gmailcom {
+	position: absolute;
+	left: 683px;
+	top: 464px;
+	width: 513px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.ProfileUser_ProfileUser .carbonphonevoice {
+	position: absolute;
+	left: 372px;
+	top: 784px;
+	width: 129px;
+	height: 137px;
+}
+.ProfileUser_ProfileUser .carbonphonevoice .Vector_6 {
+	position: absolute;
+	left: 76.59375px;
+	top: 34.25px;
+	width: 15.625%;
+	height: 15.625%;
+}
+.ProfileUser_ProfileUser .carbonphonevoice .Vector_7 {
+	position: absolute;
+	left: 12.0582275390625px;
+	top: 12.84375px;
+	width: 81.27772604772287%;
+	height: 81.25%;
+}
+.ProfileUser_ProfileUser .NomorTelepon {
+	position: absolute;
+	left: 560px;
+	top: 786px;
+	width: 252px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.ProfileUser_ProfileUser ._140810190033 {
+	position: absolute;
+	left: 578px;
+	top: 1230px;
+	width: 365px;
+	height: 114px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.ProfileUser_ProfileUser .NPM {
+	position: absolute;
+	left: 568px;
+	top: 1187px;
+	width: 75px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.ProfileUser_ProfileUser .FMIPA {
+	position: absolute;
+	left: 564px;
+	top: 1032px;
+	width: 170px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.ProfileUser_ProfileUser .Fakultas {
+	position: absolute;
+	left: 568px;
+	top: 964px;
+	width: 132px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.ProfileUser_ProfileUser .faregularaddressbook {
+	position: absolute;
+	left: 384px;
+	top: 1183px;
+	width: 129px;
+	height: 137px;
+}
+.ProfileUser_ProfileUser .faregularaddressbook .Vector_8 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+.ProfileUser_ProfileUser ._2019 {
+	position: absolute;
+	left: 574px;
+	top: 1439px;
+	width: 126px;
+	height: 114px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 40px;
+}
+.ProfileUser_ProfileUser .Angkatan {
+	position: absolute;
+	left: 555px;
+	top: 1388px;
+	width: 155px;
+	height: 68px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 24px;
+}
+.ProfileUser_ProfileUser .makicollege {
+	position: absolute;
+	left: 372px;
+	top: 974px;
+	width: 156px;
+	height: 137px;
+}
+.ProfileUser_ProfileUser .makicollege .Vector_9 {
+	position: absolute;
+	left: 0px;
+	top: 9.13330078125px;
+	width: 100%;
+	height: 86.6667141879562%;
+}
+.ProfileUser_ProfileUser .Group239 {
+	position: absolute;
+	left: 856px;
+	top: 1648px;
+	width: 377.3792724609375px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 377.3792724609375px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group293 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 377.3792724609375px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group293 .Rectangle13 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 377.3792724609375px;
+	height: 50px;
+	background : rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group291 {
+	position: absolute;
+	left: 103.983642578125px;
+	top: 14.1669921875px;
+	width: 190.077880859375px;
+	height: 21.66650390625px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group291 .EditProfile {
+	position: absolute;
+	left: 43.0469970703125px;
+	top: 4.8330078125px;
+	width: 147.0308837890625px;
+	height: 14px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group291 .akariconsedit {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 30.3773193359375px;
+	height: 21.66650390625px;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group291 .akariconsedit .Group {
+	position: absolute;
+	left: 5.0628662109375px;
+	top: 2.70849609375px;
+	width: 70.83234545973293%;
+	height: 70.83361503617066%;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group291 .akariconsedit .Group .Vector_10 {
+	position: absolute;
+	left: 8.8599853515625px;
+	top: 0px;
+	width: 58.823262437098265%;
+	height: 58.824090865705834%;
+}
+.ProfileUser_ProfileUser .Group239 .Group294 .Group291 .akariconsedit .Group .Vector_11 {
+	position: absolute;
+	left: 0px;
+	top: 1.80517578125px;
+	width: 88.23659561914596%;
+	height: 88.23454551239223%;
+}
+.ProfileUser_ProfileUser .Group323 {
+	position: absolute;
+	left: 1114px;
+	top: 137px;
+	width: 200px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group239_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group239_1 .Group294_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group239_1 .Group294_1 .Group293_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group239_1 .Group294_1 .Group293_1 .Rectangle13_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 200px;
+	height: 50px;
+	background : rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group322 {
+	position: absolute;
+	left: 31px;
+	top: 18.00048828125px;
+	width: 138.29473876953125px;
+	height: 19.71435546875px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group322 .Group321 {
+	position: absolute;
+	left: 38px;
+	top: 0px;
+	width: 100.29473876953125px;
+	height: 13.333251953125px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group322 .Group321 .Kembali {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100.29473876953125px;
+	height: 13.333251953125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ProfileUser_ProfileUser .Group323 .Group384 .Group385 .Group322 .Vector_12 {
+	position: absolute;
+	left: 0px;
+	top: 1.87158203125px;
+	width: 20.246612596493723%;
+	height: 90.50650154798761%;
+}
+.ProfileUser_ProfileUser .Vector_13 {
+	position: absolute;
+	left: 384px;
+	top: 1388px;
+	width: 8.958333333333334%;
+	height: 8.92274751944884%;
+}

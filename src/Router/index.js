@@ -7,6 +7,10 @@ import BeritaUKMB from '../pages/BeritaUKMB';
 import BeritaSingle from '../pages/BeritaSingle';
 import SigninUser from '../pages/SigninUser';
 import SignupUser from '../pages/SignupUser';
+import DetailUKMA from '../pages/DetailUKMA';
+import ProfileUser from '../pages/ProfileUser';
+import DaftarUKM from '../pages/DaftarUKM';
+import EditProfileUser from '../pages/EditProfileUser';
 
 const RouterDOM = () => {
 	return (
@@ -19,6 +23,10 @@ const RouterDOM = () => {
 				<Route exact path="/beritasingle"><BeritaSingle /></Route>
 				<Route exact path="/signinuser"><SigninUser /></Route>
 				<Route exact path="/signupuser"><SignupUser /></Route>
+				<Route exact path="/profileuser"><ProfileUser /></Route>
+				<Route exact path="/editprofileuser"><EditProfileUser /></Route>
+				<Route exact path="/detailukma"><DetailUKMA /></Route>
+				<Route exact path="/daftarukm"><DaftarUKM /></Route>
 			</Switch>
 		</Router>
 	);

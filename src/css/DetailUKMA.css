@@ -1,0 +1,785 @@
+
+.DetailUKMA_DetailUKMA {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 2300px;
+	background : rgba(255,255,255,1);
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.DetailUKMA_DetailUKMA .Vectors {
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	width: 100px;
+	height: 2100px;
+	mix-blend-mode: normal;
+}
+.DetailUKMA_DetailUKMA .Vectors .Vector {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 2100px;
+}
+.DetailUKMA_DetailUKMA .Vectors .Vector_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 2100px;
+}
+.DetailUKMA_DetailUKMA .Vectors_1 {
+	position: absolute;
+	left: 1340px;
+	top: 80px;
+	width: 100px;
+	height: 2100px;
+	mix-blend-mode: normal;
+}
+.DetailUKMA_DetailUKMA .Vectors_1 .Vector_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 2100px;
+}
+.DetailUKMA_DetailUKMA .Vectors_1 .Vector_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 2100px;
+}
+.DetailUKMA_DetailUKMA .Loginbtn {
+	position: absolute;
+	left: 770px;
+	top: 695px;
+	width: 301px;
+	height: 54.13525390625px;
+}
+.DetailUKMA_DetailUKMA .Loginbtn .Rectangle {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 301px;
+	height: 54.13525390625px;
+	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+	border-radius: 10px;
+}
+.DetailUKMA_DetailUKMA .Loginbtn .akariconsedit {
+	position: absolute;
+	left: 62px;
+	top: 11px;
+	width: 32px;
+	height: 32px;
+}
+.DetailUKMA_DetailUKMA .Loginbtn .akariconsedit .Group {
+	position: absolute;
+	left: 5.33349609375px;
+	top: 4px;
+	width: 70.83282470703125%;
+	height: 70.83282470703125%;
+}
+.DetailUKMA_DetailUKMA .Loginbtn .akariconsedit .Group .Vector_4 {
+	position: absolute;
+	left: 9.33349609375px;
+	top: 0px;
+	width: 58.822515671786476%;
+	height: 58.822515671786476%;
+}
+.DetailUKMA_DetailUKMA .Loginbtn .akariconsedit .Group .Vector_5 {
+	position: absolute;
+	left: 0px;
+	top: 2.66650390625px;
+	width: 88.23592770513345%;
+	height: 88.23592770513345%;
+}
+.DetailUKMA_DetailUKMA .Loginbtn .DAFTAR {
+	position: absolute;
+	left: 78px;
+	top: 16px;
+	width: 158px;
+	height: 24px;
+	color : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	font-family: Lexend Deca;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.DetailUKMA_DetailUKMA .taekwondoremovebgpreview4 {
+	position: absolute;
+	left: 246px;
+	top: 302px;
+	width: 426px;
+	height: 393px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.DetailUKMA_DetailUKMA .Group338 {
+	position: absolute;
+	left: 115px;
+	top: 1655px;
+	width: 1270.2060546875px;
+	height: 450.58203125px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1270.2060546875px;
+	height: 450.58203125px;
+	border-radius: 10px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault {
+	position: absolute;
+	left: -1px;
+	top: -2px;
+	width: 1270.2060546875px;
+	height: 450.58203125px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .sheet {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1270.2060546875px;
+	height: 450.58203125px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 8px;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	box-sizing: border-box;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 {
+	position: absolute;
+	left: 761px;
+	top: 49.7939453125px;
+	width: 450.32080078125px;
+	height: 350.41259765625px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .Rectangle26 {
+	position: absolute;
+	left: 0.16064453125px;
+	top: 0.2060546875px;
+	width: 450px;
+	height: 350px;
+	background : rgba(255,255,255,1);
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .JuaraTaekwondo1 {
+	position: absolute;
+	left: 30.16064453125px;
+	top: 33.412109375px;
+	width: 390px;
+	height: 284px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022 {
+	position: absolute;
+	left: 54px;
+	top: 113px;
+	width: 666px;
+	height: 80px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpad {
+	position: absolute;
+	left: 54px;
+	top: 48px;
+	width: 456px;
+	height: 14px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .Jumat25Maret2022 {
+	position: absolute;
+	left: 54px;
+	top: 383px;
+	width: 456px;
+	height: 14px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022Perunggutersebutdimenangkanoleh {
+	position: absolute;
+	left: 54px;
+	top: 227px;
+	width: 640px;
+	height: 121px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 20px;
+}
+.DetailUKMA_DetailUKMA .Group306 {
+	position: absolute;
+	left: 114px;
+	top: 1515px;
+	width: 1270px;
+	height: 95px;
+}
+.DetailUKMA_DetailUKMA .Group306 .Rectangle8 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1270px;
+	height: 95px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.DetailUKMA_DetailUKMA .Beritaterbaru {
+	position: absolute;
+	left: 804px;
+	top: 1541px;
+	width: 517px;
+	height: 48px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 48px;
+}
+.DetailUKMA_DetailUKMA .Group339 {
+	position: absolute;
+	left: 727px;
+	top: 347px;
+	width: 469px;
+	height: 303.99951171875px;
+}
+.DetailUKMA_DetailUKMA .Group339 .bxscontact {
+	position: absolute;
+	left: 0px;
+	top: 245.5380859375px;
+	width: 57.4755859375px;
+	height: 58.46142578125px;
+}
+.DetailUKMA_DetailUKMA .Group339 .bxscontact .Vector_6 {
+	position: absolute;
+	left: 4.78955078125px;
+	top: 4.87158203125px;
+	width: 83.33276696967123%;
+	height: 83.33319413007709%;
+}
+.DetailUKMA_DetailUKMA .Group339 .carbonmap {
+	position: absolute;
+	left: 0px;
+	top: 163.6923828125px;
+	width: 57.4755859375px;
+	height: 58.46142578125px;
+}
+.DetailUKMA_DetailUKMA .Group339 .carbonmap .Vector_7 {
+	position: absolute;
+	left: 14.33544921875px;
+	top: 3.65380859375px;
+	width: 50.05861863902812%;
+	height: 68.75026100610545%;
+}
+.DetailUKMA_DetailUKMA .Group339 .carbonmap .Vector_8 {
+	position: absolute;
+	left: 25.1455078125px;
+	top: 12.78857421875px;
+	width: 12.500212386373292%;
+	height: 12.499895597557819%;
+}
+.DetailUKMA_DetailUKMA .Group339 .carbonmap .Vector_9 {
+	position: absolute;
+	left: 3.59228515625px;
+	top: 21.9228515625px;
+	width: 87.49978761362671%;
+	height: 56.25036540854763%;
+}
+.DetailUKMA_DetailUKMA .Group339 .fluentpeopleaudience24filled {
+	position: absolute;
+	left: 0px;
+	top: 81.845703125px;
+	width: 57.4755859375px;
+	height: 58.46142578125px;
+}
+.DetailUKMA_DetailUKMA .Group339 .fluentpeopleaudience24filled .Vector_10 {
+	position: absolute;
+	left: 4.78955078125px;
+	top: 7.3076171875px;
+	width: 83.33276696967123%;
+	height: 79.16711907724945%;
+}
+.DetailUKMA_DetailUKMA .Group339 .antdesigncalendartwotone {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 57.4755859375px;
+	height: 58.46142578125px;
+}
+.DetailUKMA_DetailUKMA .Group339 .antdesigncalendartwotone .Vector_11 {
+	position: absolute;
+	left: 10.32763671875px;
+	top: 14.615234375px;
+	width: 64.06252654829666%;
+	height: 13.281661084616092%;
+}
+.DetailUKMA_DetailUKMA .Group339 .antdesigncalendartwotone .Vector_12 {
+	position: absolute;
+	left: 6.28662109375px;
+	top: 6.39404296875px;
+	width: 78.12505309659332%;
+	height: 78.1247650945051%;
+}
+.DetailUKMA_DetailUKMA .Group339 .SetiapHari1600WIB {
+	position: absolute;
+	left: 72.4189453125px;
+	top: 22.2158203125px;
+	width: 302.3212890625px;
+	height: 18.70751953125px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.DetailUKMA_DetailUKMA .Group339 ._56Anggota {
+	position: absolute;
+	left: 72.4189453125px;
+	top: 108.73828125px;
+	width: 302.3212890625px;
+	height: 18.70751953125px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.DetailUKMA_DetailUKMA .Group339 .BaleSantika {
+	position: absolute;
+	left: 72.4189453125px;
+	top: 191.75390625px;
+	width: 302.3212890625px;
+	height: 18.70751953125px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.DetailUKMA_DetailUKMA .Group339 .TaekwondoUnpadgmailcom {
+	position: absolute;
+	left: 71.26953125px;
+	top: 265.4150390625px;
+	width: 397.73046875px;
+	height: 18.70751953125px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 24px;
+}
+.DetailUKMA_DetailUKMA .Footer {
+	position: absolute;
+	left: 0px;
+	top: 2180px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(255,255,255,1);
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
+	visibility: hidden;
+	position: absolute;
+	left: 24px;
+	top: 62px;
+	width: 304px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
+	position: absolute;
+	left: 1416px;
+	top: 62px;
+	width: 0px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Roboto Mono;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 {
+	position: absolute;
+	left: 60px;
+	top: 34px;
+	width: 1320px;
+	height: 72.7998046875px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .UKMsCare2022 {
+	position: absolute;
+	left: 580px;
+	top: 30.7998046875px;
+	width: 159.07177734375px;
+	height: 13.5302734375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.40625px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 {
+	position: absolute;
+	left: 1094.0830078125px;
+	top: 1.86669921875px;
+	width: 225.9169921875px;
+	height: 70.93310546875px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .FollowUs {
+	position: absolute;
+	left: 61.7158203125px;
+	top: 0px;
+	width: 108.1689453125px;
+	height: 17.28857421875px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21.09375px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .instagram1 {
+	position: absolute;
+	left: 0px;
+	top: 26.13330078125px;
+	width: 41.9560546875px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .facebook1 {
+	position: absolute;
+	left: 60.24462890625px;
+	top: 28.93310546875px;
+	width: 43.03173828125px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .twitter1 {
+	position: absolute;
+	left: 121.56494140625px;
+	top: 28.93310546875px;
+	width: 48.41064453125px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .gmail1 {
+	position: absolute;
+	left: 188.26416015625px;
+	top: 32.66650390625px;
+	width: 37.65283203125px;
+	height: 29.86669921875px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 283.7177734375px;
+	height: 64.56982421875px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .UKMUnpad {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 138.71044921875px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .AboutUs {
+	position: absolute;
+	left: 176.82177734375px;
+	top: 0px;
+	width: 106.89599609375px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .Help {
+	position: absolute;
+	left: 181.125px;
+	top: 45.02587890625px;
+	width: 54.720703125px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .BeritaUKM {
+	position: absolute;
+	left: 0px;
+	top: 45.02587890625px;
+	width: 131.0751953125px;
+	height: 19.54345703125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(255,255,255,1);
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
+	visibility: hidden;
+	position: absolute;
+	left: 24px;
+	top: 32px;
+	width: 304px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
+	position: absolute;
+	left: 1416px;
+	top: 32px;
+	width: 0px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Roboto Mono;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame375 {
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	width: 100px;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame375 .Screenshot_20220306_161229removebgpreview4 {
+	position: relative;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 55px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame238 {
+	position: absolute;
+	left: 140px;
+	top: 29px;
+	width: 304.68994140625px;
+	height: 22.294921875px;
+	display: flex;
+	box-sizing: border-box;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame238 .UKMUnpad_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 154.095703125px;
+	height: 22.294921875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame238 .BeritaUKM_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 145.59423828125px;
+	height: 22.294921875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame376 {
+	position: absolute;
+	left: 1304.974609375px;
+	top: 5px;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame376 .Vector_13 {
+	position: relative;
+	margin-right: 10px;
+	width: 71.42857142857143%;
+	height: 71.42857142857143%;
+}
+.DetailUKMA_DetailUKMA .Group386 {
+	position: absolute;
+	left: 145px;
+	top: 799px;
+	width: 1150px;
+	height: 666px;
+}
+.DetailUKMA_DetailUKMA .Group386 .Group355 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1150px;
+	height: 666px;
+}
+.DetailUKMA_DetailUKMA .Group386 .Group355 .Rectangle14 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1150px;
+	height: 666px;
+	border-radius: 15px;
+}
+.DetailUKMA_DetailUKMA .Group386 .Group355 .Rectangle28 {
+	position: absolute;
+	left: 13.228515625px;
+	top: 18.283203125px;
+	width: 1122.6611328125px;
+	height: 629.435546875px;
+	background : rgba(196.00000351667404,196.00000351667404,196.00000351667404,0.009999999776482582);
+	border-radius: 15px;
+	border: 1px solid rgba(255,255,255,1);
+	box-sizing: border-box;
+}
+.DetailUKMA_DetailUKMA .Group386 .UnitTaekwondoUnpadUTKDdidirikanpadatanggal16September1982UTKDmengadakanlatihanrutinsetiaphariSeninKamisdiPelataranTamanFakultasHukumUnpadDipatiUkurBandungdanSelasaJumatdiBaleSantikaataudiStadionJatiPadjadjaranJatinangormulaipukul1600WIBSejumlahprestasiyangpernahdiraihantaralainGaneshaCup20131PerungguWalikotaCup20131Emas5perak2perungguKejuaraanNasionalITTelkomCup20131Perak3PerungguKejuaraanNasionalFEUICup20132Perak2PerungguMetroOpen20135Perak5PerungguKTBCupBogorSeJawaBarat1Perak7PerungguWalikotaCupBandung20123Perak4PerungguPolbanKyorugiChampionship20122emas8Perak6perungguWalikotaBandungCup20112emas2Perak4perungguUPIChallenge20111perak6perungguWalikotaBandungCup20102emas1perak4PerungguKejurnasITTelkom20101PerungguMediaSosialLinecgk2038xInstagramtaekwondo_unpadTwitterTaekwondoUnpad {
+	position: absolute;
+	left: 101px;
+	top: 109.6337890625px;
+	width: 948px;
+	height: 446.732421875px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 18px;
+}
+.DetailUKMA_DetailUKMA .Group387 {
+	position: absolute;
+	left: 158px;
+	top: 138px;
+	width: 1150px;
+	height: 106px;
+}
+.DetailUKMA_DetailUKMA .Group387 .Rectangle43 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1150px;
+	height: 106px;
+	border-radius: 10px;
+}
+.DetailUKMA_DetailUKMA .Group387 .UNITTaekwondounpad {
+	position: absolute;
+	left: 99.66650390625px;
+	top: 20px;
+	width: 950.66650390625px;
+	height: 67px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 36px;
+}

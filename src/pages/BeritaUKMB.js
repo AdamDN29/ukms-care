@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 import '../css/BeritaUKMB.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
@@ -17,77 +18,116 @@ import axios from 'axios';
 class BeritaUKMB extends Component {
 	state = {
 		post: []
+		
 	}
+
 
 
 	
 	componentDidMount(){
-		axios.get('https://jsonplaceholder.typicode.com/posts')
-		.then((result)=>{
-			console.log(result.data);
+		axios.get('https://api-ukmscare.herokuapp.com/articles')
+		.then((response)=>{
+			console.log(response.data.data);
 			this.setState({
-				post: result.data
+				post: response.data.data
 			})
 		})
 
+		// axios.get(`https://api-ukmscare.herokuapp.com/${props.id}`)	
+		// .then((response)=>{
+		// 	console.log(response.data.data);
+		// 	this.setState2({
+		// 		post2: response.data.data
+		// 	})
+		// })
+
 	}
 
-    render () {
+	// const [Berita, setBerita] = useState([])
+
+	
+	
+	// useEffect(() => {
+	// 	// BaseURL = "https://api-ukmscare.herokuapp.com/";
+	// 	axios.get('https://api-ukmscare.herokuapp.com/articles')
+	// 	.then((response) => {
+	// 		setBerita(response.data);
+	// 		console.log(response);
+	// 	})
+	// 	.catch((err) => {
+	// 		console.log(err);
+	// 	});
+	// }, [])
+
+    render() {
 		return (
-			
-			<div className='BeritaUKMB_BeritaUKMB'>
-				<NavbarSetelahLogin />
-				<img className='Rectangle40' src = {ImgAsset.BeritaUKMB_Rectangle40} />
-				<div className='Vectors'>
-					<img className='Vector' src = {ImgAsset.BeritaUKMB_Vector} />
-					<img className='Vector_1' src = {ImgAsset.BeritaUKMB_Vector_1} />
-				</div>
-				<div className='Vectors_1'>
-					<img className='Vector_2' src = {ImgAsset.BeritaUKMB_Vector_2} />
-					<img className='Vector_3' src = {ImgAsset.BeritaUKMB_Vector_3} />
-				</div>
+			<div>
+				<div className='BeritaUKMB_BeritaUKMB'>
+					<NavbarSetelahLogin />
+					<img className='Rectangle40' src = {ImgAsset.BeritaUKMB_Rectangle40} />
+					<div className='Vectors'>
+						<img className='Vector' src = {ImgAsset.BeritaUKMB_Vector} />
+						<img className='Vector_1' src = {ImgAsset.BeritaUKMB_Vector_1} />
+					</div>
+					<div className='Vectors_1'>
+						<img className='Vector_2' src = {ImgAsset.BeritaUKMB_Vector_2} />
+						<img className='Vector_3' src = {ImgAsset.BeritaUKMB_Vector_3} />
+					</div>
 
-				<SeacrhBerita/>
+					<span className='beritaukm'>BERITA UKM</span>
+					
+					<SeacrhBerita/>
 
-				<span className='beritaukm'>BERITA UKM</span>
+					{/* {Berita.map((list) => (
+							<BeritaPost key={list.id} id={list.id} subject={list.subject} content={list.content} created_at={list.created_at} />
+					))} */}
 
-				{
-					this.state.post.slice(0, 4).map(post => {
-						return <BeritaPost key={post.id} ukm_id={post.id} subject={post.title} content={post.body} created_at="created_at" />
-					})
-				}
+					
 
 
-			
+
+					
+
+					{
+						this.state.post.map(post => {
+							return <BeritaPost key={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.slug} created_at={post.created_at} />
+						})
+					}
+
 
 				
-				{/* <Link to='/beritasingle'>
-					<div className='Frame338_2'>
-						<div className='Alltickets_3'>
-							<div className='cardsdefault_3'>
-								<div className='sheet_3'/>
-								<div className='Group362_3'>
-									<div className='Group337_3'>
-										<div className='Group361_3'>
-											<div className='Rectangle26_3'/>
-											<img className='JuaraTaekwondo1_3' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+
+					
+					{/* <Link to='/beritasingle'>
+						<div className='Frame338_2'>
+							<div className='Alltickets_3'>
+								<div className='cardsdefault_3'>
+									<div className='sheet_3'/>
+									<div className='Group362_3'>
+										<div className='Group337_3'>
+											<div className='Group361_3'>
+												<div className='Rectangle26_3'/>
+												<img className='JuaraTaekwondo1_3' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+											</div>
 										</div>
+										<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_3'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
+										<span className='UnitTaekwondoUnpad_3'>Unit Taekwondo Unpad</span>
+										<span className='Jumat25Maret2022_3'>Jumat, 25 Maret 2022</span>
+										<span className='UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022PerunggutersebutdimenangkanolehBacaSelengkapnya_3'>Unit Taekwondo Unpad pada tanggal 24 Maret 2022 berhasil meraih perunggu pada kejuaraan taekwondo tingkat nasional pada Ganesha Cup 2022. Perunggu tersebut dimenangkan oleh ...... Baca Selengkapnya </span>
 									</div>
-									<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_3'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
-									<span className='UnitTaekwondoUnpad_3'>Unit Taekwondo Unpad</span>
-									<span className='Jumat25Maret2022_3'>Jumat, 25 Maret 2022</span>
-									<span className='UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022PerunggutersebutdimenangkanolehBacaSelengkapnya_3'>Unit Taekwondo Unpad pada tanggal 24 Maret 2022 berhasil meraih perunggu pada kejuaraan taekwondo tingkat nasional pada Ganesha Cup 2022. Perunggu tersebut dimenangkan oleh ...... Baca Selengkapnya </span>
 								</div>
 							</div>
 						</div>
-					</div>
-				</Link> */}
-				
-				<Footer />
-			</div>
+					</Link> */}
+					
+					<Footer />
+				</div>
+			</div>	
 		)
 
 	}
+
+	
 }
 
 
