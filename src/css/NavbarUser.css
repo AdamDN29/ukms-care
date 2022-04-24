@@ -1,4 +1,4 @@
-.NavbarSetelahLogin_NavbarSetelahLogin {
+.Navbar {
 	position: relative;
 	left: 1px;
 	top: 0px;
@@ -7,10 +7,10 @@
 	/* height: 2021px; */
 	background : rgba(255,255,255,1);
 	/* border: 1px solid rgba(0,0,0,1); */
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 {
+.Navbar .Frame382 {
 	position: absolute;
 	left: -21px;
 	top: -22px;
@@ -24,7 +24,7 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 {
+.Navbar .Frame382 .Frame368 {
     scroll-behavior: smooth;
     z-index: 1;
     position: fixed;
@@ -39,28 +39,28 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin {
+.Navbar .Frame382 .Frame368 .Navbar1 {
 	position: relative;
 	margin-bottom: 10px;
 	width: 1440px;
 	height: 80px;
 	background : rgba(255,255,255,1);
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Group222 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Group222 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 1440px;
 	height: 80px;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 1440px;
 	height: 80px;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -68,7 +68,7 @@
 	height: 80px;
 	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -76,7 +76,7 @@
 	height: 82px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
 	visibility: hidden;
 	position: absolute;
 	left: 24px;
@@ -89,7 +89,7 @@
 	font-weight: 700;
 	line-height: 16px;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
 	position: absolute;
 	left: 1416px;
 	top: 32px;
@@ -101,7 +101,7 @@
 	font-weight: 300;
 	line-height: 16px;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame375 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame375 {
 	position: absolute;
 	left: 20px;
 	top: 3px;
@@ -115,7 +115,7 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame375 .logo {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame375 .logo {
 	position: relative;
 	top: -3px;
     left: -15px;
@@ -124,7 +124,7 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame238 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 {
 	position: absolute;
 	left: 140px;
 	top: 29px;
@@ -133,7 +133,7 @@
 	display: flex;
 	box-sizing: border-box;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame238 .UKMUnpad_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .UKMUnpad_1 {
 	position: relative;
 	margin-right: 5px;
 	width: 154.095947265625px;
@@ -144,7 +144,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame238 .BeritaUKM_1 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .BeritaUKM_1 {
 	position: relative;
 	left: 40px;
 	margin-right: 5px;
@@ -156,7 +156,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame376 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 {
 	position: absolute;
 	left: 1304.974609375px;
 	top: 5px;
@@ -169,12 +169,77 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarSetelahLogin_NavbarSetelahLogin .Frame382 .Frame368 .NavbarSetelahLogin .Frame376 .Avatar {
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Avatar {
 	position: relative;
 	right: -20px;
 	width: 100%;
 	height: 100%;
 }
+
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 {
+	position: absolute;
+	left: 1066px;
+	top: 33px;
+	width: 267px;
+	height: 54px;
+}
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 44.9438202247191%;
+	height: 100%;
+}
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn .Rectangle {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+	border-radius: 10px;
+}
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn .login {
+	position: absolute;
+	left: 37.5654296875px;
+	top: 15px;
+	width: 38.26090494791667%;
+	height: 44.44444444444444%;
+	color : rgba(255,255,255,1);
+	font-family: Lexend Deca;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+}
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 {
+	position: absolute;
+	left: 137px;
+	top: 0px;
+	width: 48.68913857677903%;
+	height: 100%;
+}
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 .Rectangle_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background : rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
+}
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 .Register {
+	position: absolute;
+	left: 26.1806640625px;
+	top: 15px;
+	width: 59.02794471153846%;
+	height: 44.44444444444444%;
+	color : rgba(255,255,255,1);
+	font-family: Lexend Deca;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
 
 .link {
 	text-decoration: none;

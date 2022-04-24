@@ -3,7 +3,7 @@ import '../css/BeritaUKMB.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import { Component } from 'react/cjs/react.production.min'
-import NavbarSetelahLogin from '../components/NavbarSetelahLogin'
+import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import BeritaPost from '../components/BeritaPost'
 import SearchBerita from '../components/SearchBerita'
@@ -33,7 +33,7 @@ class BeritaUKMB extends Component {
     render() {
 		return (
 			<div className='BeritaUKMB_BeritaUKMB'>
-				<NavbarSetelahLogin />
+				<NavbarUser />
 				<img className='Rectangle40' src = {ImgAsset.BeritaUKMB_Rectangle40} />
 				<div className='Vectors'>
 					<img className='Vector' src = {ImgAsset.BeritaUKMB_Vector} />

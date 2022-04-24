@@ -1,13 +1,28 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 import '../css/ProfileUser.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarSetelahLogin from '../components/NavbarSetelahLogin'
+import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
+import axios from 'axios';
+import swal from 'sweetalert'
 
 export default function ProfileUser () {
+	const [userProfile, setUserProfile] = useState([]);
+
+	useEffect(()=>{
+		axios.get('https://reqres.in/api/users/2')
+		.then((response)=> {
+			setUserProfile(response.data.data);
+			console.log(response.data.data);
+		})
+	})
+
+
+
     return (
 	<div className='ProfileUser_ProfileUser'>
 		<div className='charmphonecall'>
@@ -22,39 +37,39 @@ export default function ProfileUser () {
 			<img className='Vector_4' src = {ImgAsset.ProfileUser_Vector_4} />
 		</div>
 
-		<NavbarSetelahLogin/>
+		<NavbarUser/>
 
 
 		<img className='Image' src = {ImgAsset.ProfileUser_unsplashjmURdhtm7Ng} />
-		<span className='Name'>Chandra Wijaya</span>
-		<span className='Email'>Chandraw314@gmail.com</span>
+		<span className='Name'>{userProfile.first_name}</span>
+		<span className='Email'>{userProfile.email}</span>
 		<img className='Line8' src = {ImgAsset.ProfileUser_Line8} />
 		<div className='carbonphonevoice'>
 			<img className='Vector_6' src = {ImgAsset.ProfileUser_Vector_6} />
 			<img className='Vector_7' src = {ImgAsset.ProfileUser_Vector_7} />
 		</div>
 		<span className='Kontak'>Kontak</span>
-		<span className='kontak_user'>081320938490</span>
+		<span className='kontak_user'>{userProfile.id}</span>
 		
 		<div className='makicollege'>
 			<img className='Vector_9' src = {ImgAsset.ProfileUser_Vector_9} />
 		</div>
 		<span className='Fakultas'>Fakultas</span>
-		<span className='Fakultas_User'>FMIPA</span>
+		<span className='Fakultas_User'>{userProfile.last_name}</span>
 		
 		<div className='faregularaddressbook'>
 			<img className='Vector_8' src = {ImgAsset.ProfileUser_Vector_8} />
 		</div>
 		<span className='NPM'>NPM</span>
-		<span className='NPM_User'>140810190033</span>
+		<span className='NPM_User'>{userProfile.id}</span>
 
 		<img className='Vector_13' src = {ImgAsset.ProfileUser_Vector_13} />
 		<span className='Angkatan'>Angkatan</span>
-		<span className='_2019'>2019</span>
+		<span className='_2019'>{userProfile.id}</span>
 		
 		
 
-		<Link to='/editprofileuser'>
+		<Link to={`/editprofileuser/${userProfile.id}`}>
 			<div className='Group239'>
 				<div className='Group294'>
 					<div className='Group293'>
@@ -74,25 +89,6 @@ export default function ProfileUser () {
 		</Link>
 
 		<Link to='/homepagea_1'>
-			{/* <div className='Group323'>
-				<div className='Group384'>
-					<div className='Group385'>
-						<div className='Group239_1'>
-							<div className='Group294_1'>
-								<div className='Group293_1'>
-									<div className='Rectangle13_1'/>
-								</div>
-							</div>
-						</div>
-						<div className='Group322'>
-							<div className='Group321'>
-								<span className='Kembali'>Kembali</span>
-							</div>
-							<img className='Vector_12' src = {ImgAsset.ProfileUser_Vector_12} />
-						</div>
-					</div>
-				</div>
-			</div> */}
 			<BackButton/>
 		</Link>
 		

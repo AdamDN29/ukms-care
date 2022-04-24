@@ -3,7 +3,7 @@ import '../css/UKMUnpadA.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarSetelahLogin from '../components/NavbarSetelahLogin.js'
+import NavbarUser from '../components/NavbarUser.js'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import BeritaPost from '../components/BeritaPost'
@@ -14,7 +14,7 @@ class UKMUnpadA extends Component{
 render() {
     return (
 	<div className='UKMUnpadA_UKMUnpadA'>
-		<NavbarSetelahLogin />
+		<NavbarUser />
 		{/*Sisi Kiri*/}
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.UKMUnpadA_Vector} />

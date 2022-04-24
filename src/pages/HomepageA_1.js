@@ -3,7 +3,7 @@ import '../css/HomepageA_1.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarSetelahLogin from '../components/NavbarSetelahLogin.js'
+import NavbarUser from '../components/NavbarUser.js'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 
@@ -11,7 +11,7 @@ class HomepageA_1 extends Component{
 render() {
     return (
 	<div className='HomepageA_1_HomepageA'>
-		<NavbarSetelahLogin />
+		<NavbarUser />
 		{/*Sisi Kiri*/}
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.HomepageA_1_Vector} />

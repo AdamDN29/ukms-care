@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export default function ListPages () {
     return (
-	<div>
+	<div >
 		<Link to='/HomepageA_1'><div>HomepageA_1</div></Link>
 		<Link to='/UKMUnpadA'><div>UKMUnpadA</div></Link>
 		<Link to='/DetailUKMA'><div>DetailUKMA</div></Link>

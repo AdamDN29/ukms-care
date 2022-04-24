@@ -3,7 +3,7 @@ import '../css/BeritaSingle.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarSetelahLogin from '../components/NavbarSetelahLogin.js'
+import NavbarUser from '../components/NavbarUser.js'
 import Footer from '../components/Footer'
 import BackButton from "../components/BackButton";
 import axios from "axios";
@@ -31,7 +31,7 @@ function BeritaSingle (props) {
 
 	return (
 		<div className='BeritaSingle_BeritaSingle'>
-			<NavbarSetelahLogin />
+			<NavbarUser />
 			<div className='Vectors'>
 				<img className='Vector' src = {ImgAsset.BeritaSingle_Vector} />
 				<img className='Vector_1' src = {ImgAsset.BeritaSingle_Vector_1} />
