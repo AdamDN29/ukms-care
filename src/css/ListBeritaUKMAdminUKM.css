@@ -1,0 +1,1209 @@
+
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	margin: auto;
+	width: 100%;
+	height: 1996px;
+	background : rgba(255,255,255,1);
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Listberitaukm {
+	position: absolute;
+	left: 391px;
+	top: 145px;
+	width: 657px;
+	height: 60px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer {
+	position: absolute;
+	left: 0px;
+	top: 1856px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .PageHeaderSecondary {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 140px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
+	visibility: hidden;
+	position: absolute;
+	left: 24px;
+	top: 62px;
+	width: 304px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
+	position: absolute;
+	left: 1416px;
+	top: 62px;
+	width: 0px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Roboto Mono;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 {
+	position: absolute;
+	left: 60px;
+	top: 34px;
+	width: 1320px;
+	height: 72.800048828125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .UKMsCare2022 {
+	position: absolute;
+	left: 580px;
+	top: 30.7998046875px;
+	width: 159.0712890625px;
+	height: 13.5302734375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16.40625px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group341 {
+	position: absolute;
+	left: 1094.0830078125px;
+	top: 1.86669921875px;
+	width: 225.9169921875px;
+	height: 70.933349609375px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group341 .FollowUs {
+	position: absolute;
+	left: 61.7158203125px;
+	top: 0px;
+	width: 108.1689453125px;
+	height: 17.28857421875px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 21.09375px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group341 .instagram1 {
+	position: absolute;
+	left: 0px;
+	top: 26.13330078125px;
+	width: 41.9560546875px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group341 .facebook1 {
+	position: absolute;
+	left: 60.244140625px;
+	top: 28.933349609375px;
+	width: 43.0322265625px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group341 .twitter1 {
+	position: absolute;
+	left: 121.564453125px;
+	top: 28.933349609375px;
+	width: 48.4111328125px;
+	height: 42px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group341 .gmail1 {
+	position: absolute;
+	left: 188.263671875px;
+	top: 32.666748046875px;
+	width: 37.65234375px;
+	height: 29.86669921875px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group364 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 283.7177734375px;
+	height: 64.569580078125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group364 .UKMUnpad {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 138.7109375px;
+	height: 19.543701171875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group364 .AboutUs {
+	position: absolute;
+	left: 176.822265625px;
+	top: 0px;
+	width: 106.896484375px;
+	height: 19.543701171875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group364 .Help {
+	position: absolute;
+	left: 181.125px;
+	top: 45.026123046875px;
+	width: 54.720703125px;
+	height: 19.543701171875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Footer .Group226 .Group224 .Group364 .BeritaUKM {
+	position: absolute;
+	left: 0px;
+	top: 45.026123046875px;
+	width: 131.0751953125px;
+	height: 19.543701171875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background : rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 {
+	position: relative;
+	margin-bottom: 10px;
+	width: 1440px;
+	height: 80px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(120.06249949336052,23.011975586414337,23.011975586414337,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1440px;
+	height: 80px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
+	visibility: hidden;
+	position: absolute;
+	left: 24px;
+	top: 32px;
+	width: 304px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
+	position: absolute;
+	left: 1416px;
+	top: 32px;
+	width: 0px;
+	height: 16px;
+	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
+	font-family: Roboto Mono;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame378 {
+	position: absolute;
+	left: 1304.974609375px;
+	top: 5px;
+	width: 70px;
+	height: 70px;
+	display: flex;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame378 .Vector {
+	position: relative;
+	margin-right: 10px;
+	width: 71.42857142857143%;
+	height: 71.42857142857143%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame377 {
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	width: 100px;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame377 .Screenshot_20220306_161229removebgpreview4 {
+	position: relative;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 55px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 {
+	position: absolute;
+	left: 140px;
+	top: 29px;
+	width: 449.970703125px;
+	height: 22.2950439453125px;
+	display: flex;
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 .Dashboard {
+	position: relative;
+	margin-right: 5px;
+	width: 140.2802734375px;
+	height: 22.2950439453125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 .UKMUnpad_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 154.095703125px;
+	height: 22.2950439453125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 .BeritaUKM_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 145.59375px;
+	height: 22.2950439453125px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors {
+	position: absolute;
+	left: 0px;
+	top: 80px;
+	width: 100px;
+	height: 1776px;
+	mix-blend-mode: normal;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors .Vector_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1776px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors .Vector_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1776px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 {
+	position: absolute;
+	left: 1340px;
+	top: 80px;
+	width: 100px;
+	height: 1776px;
+	mix-blend-mode: normal;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 .Vector_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1776px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 .Vector_4 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100px;
+	height: 1776px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group561 {
+	position: absolute;
+	left: 1195px;
+	top: 561px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group561 .Rectangle56 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group561 .Vector_5 {
+	position: absolute;
+	left: 25.521484375px;
+	top: 24.9990234375px;
+	width: 33.33463541666667%;
+	height: 33.331705729166664%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group565 {
+	position: absolute;
+	left: 1195px;
+	top: 455px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group565 .Rectangle56_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group565 .akariconsedit {
+	position: absolute;
+	left: 24.51953125px;
+	top: 25px;
+	width: 25px;
+	height: 25px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group565 .akariconsedit .Group {
+	position: absolute;
+	left: 4.1669921875px;
+	top: 3.125244140625px;
+	width: 70.83203125%;
+	height: 70.8330078125%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group565 .akariconsedit .Group .Vector_6 {
+	position: absolute;
+	left: 7.2919921875px;
+	top: 0px;
+	width: 58.82093420834942%;
+	height: 58.82288061985579%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group565 .akariconsedit .Group .Vector_7 {
+	position: absolute;
+	left: 0px;
+	top: 2.083251953125px;
+	width: 88.23691611978161%;
+	height: 88.23569961259014%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 {
+	position: absolute;
+	left: 193px;
+	top: 305px;
+	width: 182px;
+	height: 36px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group301 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 182px;
+	height: 36px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group301 .Rectangle19 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 182px;
+	height: 36px;
+	background : rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group581 {
+	position: absolute;
+	left: 21px;
+	top: 5px;
+	width: 139.2236328125px;
+	height: 26px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group581 .Group300 {
+	position: absolute;
+	left: 34px;
+	top: 0px;
+	width: 105.2236328125px;
+	height: 26px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group581 .Group300 .BuatBerita {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 105.2236328125px;
+	height: 26px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 14px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group581 .Vector_8 {
+	position: absolute;
+	left: 0px;
+	top: 4.125px;
+	width: 15.712131308525937%;
+	height: 67.236328125%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 {
+	position: absolute;
+	left: 167px;
+	top: 406px;
+	width: 1010px;
+	height: 283.998779296875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1010px;
+	height: 283.998779296875px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault {
+	position: absolute;
+	left: -0.9990234375px;
+	top: -2.286865234375px;
+	width: 1010.6875px;
+	height: 284.285888671875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .sheet {
+	position: absolute;
+	left: 0.9990234375px;
+	top: 0.008056640625px;
+	width: 1009.88671875px;
+	height: 286.631103515625px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 10px;
+	border: 3px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 {
+	position: absolute;
+	left: 46.0029296875px;
+	top: 18.0322265625px;
+	width: 893.0166015625px;
+	height: 221.611328125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .Group337 {
+	position: absolute;
+	left: 589.861328125px;
+	top: 0.1923828125px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .Group337 .Group361 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .Group337 .Group361 .Rectangle26 {
+	position: absolute;
+	left: 0.107421875px;
+	top: 0.128662109375px;
+	width: 302.9111328125px;
+	height: 221.161865234375px;
+	background : rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .Group337 .Group361 .JuaraTaekwondo1 {
+	position: absolute;
+	left: 20.9755859375px;
+	top: 21.10986328125px;
+	width: 262.521484375px;
+	height: 179.45703125px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022 {
+	position: absolute;
+	left: 0.1650390625px;
+	top: 28.14111328125px;
+	width: 543.69921875px;
+	height: 67.493408203125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .UnitTaekwondoUnpad {
+	position: absolute;
+	left: 0.1455078125px;
+	top: 0.194091796875px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .Jumat25Maret2022 {
+	position: absolute;
+	left: 0.1337890625px;
+	top: 209.50244140625px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group338 .Alltickets .cardsdefault .Group362 .UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022PerunggutersebutdimenangkanolehBacaSelengkapnya {
+	position: absolute;
+	left: 0.134765625px;
+	top: 95.509521484375px;
+	width: 543.701171875px;
+	height: 102.077880859375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group574 {
+	position: absolute;
+	left: 1195px;
+	top: 1629px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group574 .Rectangle56_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group574 .Vector_9 {
+	position: absolute;
+	left: 25.521484375px;
+	top: 24.9990234375px;
+	width: 33.33463541666667%;
+	height: 33.331705729166664%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group575 {
+	position: absolute;
+	left: 1195px;
+	top: 1523px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group575 .Rectangle56_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group575 .akariconsedit_1 {
+	position: absolute;
+	left: 24.51953125px;
+	top: 25px;
+	width: 25px;
+	height: 25px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group575 .akariconsedit_1 .Group_1 {
+	position: absolute;
+	left: 4.1669921875px;
+	top: 3.125244140625px;
+	width: 70.83203125%;
+	height: 70.8330078125%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group575 .akariconsedit_1 .Group_1 .Vector_10 {
+	position: absolute;
+	left: 7.2919921875px;
+	top: 0px;
+	width: 58.82093420834942%;
+	height: 58.82288061985579%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group575 .akariconsedit_1 .Group_1 .Vector_11 {
+	position: absolute;
+	left: 0px;
+	top: 2.083251953125px;
+	width: 88.23691611978161%;
+	height: 88.23569961259014%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 {
+	position: absolute;
+	left: 167px;
+	top: 1474px;
+	width: 1010px;
+	height: 283.998779296875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1010px;
+	height: 283.998779296875px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 {
+	position: absolute;
+	left: -0.9990234375px;
+	top: -2.286865234375px;
+	width: 1010.6875px;
+	height: 284.285888671875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .sheet_1 {
+	position: absolute;
+	left: 0.9990234375px;
+	top: 0.008056640625px;
+	width: 1009.88671875px;
+	height: 286.631103515625px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 10px;
+	border: 3px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 {
+	position: absolute;
+	left: 46.0029296875px;
+	top: 18.0322265625px;
+	width: 893.0166015625px;
+	height: 221.611328125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .Group337_1 {
+	position: absolute;
+	left: 589.861328125px;
+	top: 0.1923828125px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .Group337_1 .Group361_1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .Group337_1 .Group361_1 .Rectangle26_1 {
+	position: absolute;
+	left: 0.107421875px;
+	top: 0.128662109375px;
+	width: 302.9111328125px;
+	height: 221.161865234375px;
+	background : rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .Group337_1 .Group361_1 .JuaraTaekwondo1_1 {
+	position: absolute;
+	left: 20.9755859375px;
+	top: 21.10986328125px;
+	width: 262.521484375px;
+	height: 179.45703125px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_1 {
+	position: absolute;
+	left: 0.1650390625px;
+	top: 28.14111328125px;
+	width: 543.69921875px;
+	height: 67.493408203125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .UnitTaekwondoUnpad_1 {
+	position: absolute;
+	left: 0.1455078125px;
+	top: 0.194091796875px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .Jumat25Maret2022_1 {
+	position: absolute;
+	left: 0.1337890625px;
+	top: 209.50244140625px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group576 .Alltickets_1 .cardsdefault_1 .Group362_1 .UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022PerunggutersebutdimenangkanolehBacaSelengkapnya_1 {
+	position: absolute;
+	left: 0.134765625px;
+	top: 95.509521484375px;
+	width: 543.701171875px;
+	height: 102.077880859375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group571 {
+	position: absolute;
+	left: 1193px;
+	top: 1280px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group571 .Rectangle56_4 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group571 .Vector_12 {
+	position: absolute;
+	left: 25.521484375px;
+	top: 24.9990234375px;
+	width: 33.33463541666667%;
+	height: 33.331705729166664%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group572 {
+	position: absolute;
+	left: 1193px;
+	top: 1174px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group572 .Rectangle56_5 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group572 .akariconsedit_2 {
+	position: absolute;
+	left: 24.51953125px;
+	top: 25px;
+	width: 25px;
+	height: 25px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group572 .akariconsedit_2 .Group_2 {
+	position: absolute;
+	left: 4.1669921875px;
+	top: 3.125244140625px;
+	width: 70.83203125%;
+	height: 70.8330078125%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group572 .akariconsedit_2 .Group_2 .Vector_13 {
+	position: absolute;
+	left: 7.2919921875px;
+	top: 0px;
+	width: 58.82093420834942%;
+	height: 58.82288061985579%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group572 .akariconsedit_2 .Group_2 .Vector_14 {
+	position: absolute;
+	left: 0px;
+	top: 2.083251953125px;
+	width: 88.23691611978161%;
+	height: 88.23569961259014%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 {
+	position: absolute;
+	left: 165px;
+	top: 1125px;
+	width: 1010px;
+	height: 283.998779296875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1010px;
+	height: 283.998779296875px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 {
+	position: absolute;
+	left: -0.9990234375px;
+	top: -2.286865234375px;
+	width: 1010.6875px;
+	height: 284.285888671875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .sheet_2 {
+	position: absolute;
+	left: 0.9990234375px;
+	top: 0.008056640625px;
+	width: 1009.88671875px;
+	height: 286.631103515625px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 10px;
+	border: 3px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 {
+	position: absolute;
+	left: 46.0029296875px;
+	top: 18.0322265625px;
+	width: 893.0166015625px;
+	height: 221.611328125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .Group337_2 {
+	position: absolute;
+	left: 589.861328125px;
+	top: 0.1923828125px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .Group337_2 .Group361_2 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .Group337_2 .Group361_2 .Rectangle26_2 {
+	position: absolute;
+	left: 0.107421875px;
+	top: 0.128662109375px;
+	width: 302.9111328125px;
+	height: 221.161865234375px;
+	background : rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .Group337_2 .Group361_2 .JuaraTaekwondo1_2 {
+	position: absolute;
+	left: 20.9755859375px;
+	top: 21.10986328125px;
+	width: 262.521484375px;
+	height: 179.45703125px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_2 {
+	position: absolute;
+	left: 0.1650390625px;
+	top: 28.14111328125px;
+	width: 543.69921875px;
+	height: 67.493408203125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .UnitTaekwondoUnpad_2 {
+	position: absolute;
+	left: 0.1455078125px;
+	top: 0.194091796875px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .Jumat25Maret2022_2 {
+	position: absolute;
+	left: 0.1337890625px;
+	top: 209.50244140625px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group573 .Alltickets_2 .cardsdefault_2 .Group362_2 .UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022PerunggutersebutdimenangkanolehBacaSelengkapnya_2 {
+	position: absolute;
+	left: 0.134765625px;
+	top: 95.509521484375px;
+	width: 543.701171875px;
+	height: 102.077880859375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group568 {
+	position: absolute;
+	left: 1194px;
+	top: 931px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group568 .Rectangle56_6 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group568 .Vector_15 {
+	position: absolute;
+	left: 25.521484375px;
+	top: 24.9990234375px;
+	width: 33.33463541666667%;
+	height: 33.331705729166664%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group569 {
+	position: absolute;
+	left: 1194px;
+	top: 825px;
+	width: 75px;
+	height: 75px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group569 .Rectangle56_7 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 75px;
+	height: 75px;
+	border-radius: 10px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group569 .akariconsedit_3 {
+	position: absolute;
+	left: 24.51953125px;
+	top: 25px;
+	width: 25px;
+	height: 25px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group569 .akariconsedit_3 .Group_3 {
+	position: absolute;
+	left: 4.1669921875px;
+	top: 3.125244140625px;
+	width: 70.83203125%;
+	height: 70.8330078125%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group569 .akariconsedit_3 .Group_3 .Vector_16 {
+	position: absolute;
+	left: 7.2919921875px;
+	top: 0px;
+	width: 58.82093420834942%;
+	height: 58.82288061985579%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group569 .akariconsedit_3 .Group_3 .Vector_17 {
+	position: absolute;
+	left: 0px;
+	top: 2.083251953125px;
+	width: 88.23691611978161%;
+	height: 88.23569961259014%;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 {
+	position: absolute;
+	left: 166px;
+	top: 776px;
+	width: 1010px;
+	height: 283.998779296875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1010px;
+	height: 283.998779296875px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 {
+	position: absolute;
+	left: -0.9990234375px;
+	top: -2.286865234375px;
+	width: 1010.6875px;
+	height: 284.285888671875px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .sheet_3 {
+	position: absolute;
+	left: 0.9990234375px;
+	top: 0.008056640625px;
+	width: 1009.88671875px;
+	height: 286.631103515625px;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 10px;
+	border: 3px solid rgba(0,0,0,1);
+	box-sizing: border-box;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 {
+	position: absolute;
+	left: 46.0029296875px;
+	top: 18.0322265625px;
+	width: 893.0166015625px;
+	height: 221.611328125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 {
+	position: absolute;
+	left: 589.861328125px;
+	top: 0.1923828125px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 303.126953125px;
+	height: 221.4189453125px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 .Rectangle26_3 {
+	position: absolute;
+	left: 0.107421875px;
+	top: 0.128662109375px;
+	width: 302.9111328125px;
+	height: 221.161865234375px;
+	background : rgba(255,255,255,1);
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 .JuaraTaekwondo1_3 {
+	position: absolute;
+	left: 20.9755859375px;
+	top: 21.10986328125px;
+	width: 262.521484375px;
+	height: 179.45703125px;
+	object-fit: cover;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_3 {
+	position: absolute;
+	left: 0.1650390625px;
+	top: 28.14111328125px;
+	width: 543.69921875px;
+	height: 67.493408203125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .UnitTaekwondoUnpad_3 {
+	position: absolute;
+	left: 0.1455078125px;
+	top: 0.194091796875px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .Jumat25Maret2022_3 {
+	position: absolute;
+	left: 0.1337890625px;
+	top: 209.50244140625px;
+	width: 396.046875px;
+	height: 11.8173828125px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group570 .Alltickets_3 .cardsdefault_3 .Group362_3 .UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022PerunggutersebutdimenangkanolehBacaSelengkapnya_3 {
+	position: absolute;
+	left: 0.134765625px;
+	top: 95.509521484375px;
+	width: 543.701171875px;
+	height: 102.077880859375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 16px;
+}

@@ -16,6 +16,14 @@ export default function ListPages () {
 		<Link to='/SignupUser'><div>SignupUser</div></Link>
 		<Link to='/ProfileUser'><div>ProfileUser</div></Link>
 		<Link to='/EditProfileUser'><div>EditProfileUser</div></Link>
+
+		<Link to='/SigninAdmin'><div>SigninAdmin</div></Link>
+		<Link to='/DashboardUKMB'><div>DashboardUKMB</div></Link>
+		<Link to='/EditProfileUKM'><div>EditProfileUKM</div></Link>
+		<Link to='/AturPendaftaranUKM'><div>AturPendaftaranUKM</div></Link>
+		<Link to='/BuatBeritaUKM'><div>BuatBeritaUKM</div></Link>
+		<Link to='/ListPendaftarUKMAdminUKM'><div>ListPendaftarUKMAdminUKM</div></Link>
+		<Link to='/ListBeritaUKMAdminUKM'><div>ListBeritaUKMAdminUKM</div></Link>
 	</div>
 	)
 }

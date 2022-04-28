@@ -14,6 +14,13 @@ import DetailUKMA from '../pages/DetailUKMA';
 import ProfileUser from '../pages/ProfileUser';
 import DaftarUKM from '../pages/DaftarUKM';
 import EditProfileUser from '../pages/EditProfileUser';
+import SigninAdmin from '../pages/SigninAdmin';
+import DashboardUKMB from '../pages/DashboardUKMB';
+import EditProfileUKM from '../pages/EditProfileUKM';
+import AturPendaftaranUKM from '../pages/AturPendaftaranUKM';
+import BuatBeritaUKM from '../pages/BuatBeritaUKM';
+import ListPendaftarUKMAdminUKM from '../pages/ListPendaftarUKMAdminUKM';
+import ListBeritaUKMAdminUKM from '../pages/ListBeritaUKMAdminUKM';
 
 const RouterDOM = () => {
 	// const [idUser, setIdUser] = useState(false);
@@ -57,6 +64,14 @@ const RouterDOM = () => {
 				<Route exact path="/editprofileuser/:id" component={EditProfileUser}></Route>
 				<Route exact path="/detailukma"><DetailUKMA /></Route>
 				<Route exact path="/daftarukm"><DaftarUKM /></Route>
+
+				<Route exact path="/signinadmin"><SigninAdmin /></Route>
+				<Route exact path="/dashboardukmb"><DashboardUKMB /></Route>
+				<Route exact path="/editprofileukm"><EditProfileUKM /></Route>
+				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>
+				<Route exact path="/buatberitaukm"><BuatBeritaUKM /></Route>
+				<Route exact path="/listpendaftarukmadminukm"><ListPendaftarUKMAdminUKM /></Route>
+				<Route exact path="/listberitaukmadminukm"><ListBeritaUKMAdminUKM /></Route>
 			</Switch>
 			{/* <Footer /> */}
 		</Router>
