@@ -133,8 +133,22 @@
 	display: flex;
 	box-sizing: border-box;
 }
+
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .Dashboard {
+	position: relative;
+	margin-right: 5px;
+	width: 154.095947265625px;
+	height: 22.294921875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .UKMUnpad_1 {
 	position: relative;
+    left: 40px;
 	margin-right: 5px;
 	width: 154.095947265625px;
 	height: 22.294921875px;
@@ -146,7 +160,7 @@
 }
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .BeritaUKM_1 {
 	position: relative;
-	left: 40px;
+	left: 60px;
 	margin-right: 5px;
 	width: 145.59410095214844px;
 	height: 22.294921875px;
@@ -176,69 +190,6 @@
 	height: 100%;
 }
 
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 {
-	position: absolute;
-	left: 1066px;
-	top: 33px;
-	width: 267px;
-	height: 54px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 44.9438202247191%;
-	height: 100%;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn .Rectangle {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
-	border-radius: 10px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn .login {
-	position: absolute;
-	left: 37.5654296875px;
-	top: 15px;
-	width: 38.26090494791667%;
-	height: 44.44444444444444%;
-	color : rgba(255,255,255,1);
-	font-family: Lexend Deca;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 20px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 {
-	position: absolute;
-	left: 137px;
-	top: 0px;
-	width: 48.68913857677903%;
-	height: 100%;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 .Rectangle_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background : rgba(0,180.00000447034836,215.0000023841858,1);
-	border-radius: 10px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 .Register {
-	position: absolute;
-	left: 26.1806640625px;
-	top: 15px;
-	width: 59.02794471153846%;
-	height: 44.44444444444444%;
-	color : rgba(255,255,255,1);
-	font-family: Lexend Deca;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 20px;
-}
 
 
 .link {

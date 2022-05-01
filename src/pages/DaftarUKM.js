@@ -3,10 +3,14 @@ import '../css/DaftarUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
+import NavbarUser from '../components/NavbarUser'
+import Footer from '../components/Footer'
+import { Component } from 'react/cjs/react.production.min'
 
-export default function DaftarUKM () {
+class DaftarUKM extends Component {
+render() {
     return (
-	<div className='DaftarUKM_DaftarUKM'>
+		<div className='DaftarUKM_DaftarUKM'>
 		<img className='Rectangle21' src = {ImgAsset.DaftarUKM_Rectangle21} />
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.DaftarUKM_Vector} />
@@ -16,87 +20,36 @@ export default function DaftarUKM () {
 			<img className='Vector_2' src = {ImgAsset.DaftarUKM_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.DaftarUKM_Vector_3} />
 		</div>
-		<span className='daftarukm'>daftar ukm</span>
-		<div className='Footer'>
-			<div className='Group226'>
-				<div className='PageHeaderSecondary'>
-					<div className='PageHeader'>
-						<div className='ColorsSecondary'>
-						</div>
-						<span className='ProjectBrandGuidelines'>Project DESIGN Guidelines</span>
-						<span className='_2020'></span>
-					</div>
-				</div>
-				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM’s Care 2022</span>
-					<div className='Group341'>
-						<span className='FollowUs'>Follow Us</span>
-						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-						<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-						<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-						<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
-					</div>
-					<div className='Group364'>
-						<span className='UKMUnpad'>UKM Unpad</span>
-						<span className='AboutUs'>About Us</span>
-						<span className='Help'>Help</span>
-						<span className='BeritaUKM'>Berita UKM</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div className='NavbarAdminUKM'>
-			<div className='Group227'>
-				<div className='PageHeaderSecondary_1'>
-					<div className='PageHeader_1'>
-						<div className='ColorsSecondary_1'>
-						</div>
-						<span className='ProjectBrandGuidelines_1'>Project DESIGN Guidelines</span>
-						<span className='_2020_1'></span>
-					</div>
-				</div>
-				<div className='Frame378'>
-					<img className='Vector_4' src = {ImgAsset.DaftarUKM_Vector_4} />
-				</div>
-				<div className='Frame377'>
-					<img className='Screenshot_20220306_161229removebgpreview4' src = {ImgAsset.NavbarSebelumLogin_Screenshot_20220306_161229removebgpreview2} />
-				</div>
-				<div className='Frame238'>
-					<span className='Dashboard'>Dashboard</span>
-					<span className='UKMUnpad_1'>UKM Unpad</span>
-					<span className='BeritaUKM_1'>Berita UKM</span>
-				</div>
-			</div>
-		</div>
+
+		<NavbarUser/>
+		<span className='daftarukm'>Daftar UKM</span>
+
 		<div className='Group317'>
-			<div className='Rectangle1'/>
-			<span className='AdamDinNaufan'>Adam Din Naufan</span>
-			<span className='NamaLengkap'>Nama Lengkap</span>
+		<span className='NamaLengkap'>Nama Lengkap</span>
+		<input className='InputForm1'/>
 		</div>
+
 		<div className='Group318'>
 			<div className='Rectangle1_1'/>
 			<img className='Polygon2' src = {ImgAsset.DaftarUKM_Polygon2} />
 			<span className='FakultasMatematikadanIlmuPengetahuanAlam'>Fakultas Matematika dan Ilmu Pengetahuan Alam</span>
 			<span className='Fakultas'>Fakultas</span>
 		</div>
+
 		<div className='Group315'>
-			<div className='Rectangle1_2'/>
-			<span className='_140810190045'>140810190045</span>
+			<input className='InputForm1'/>
 			<span className='NPM'>NPM</span>
 		</div>
 		<div className='Group572'>
-			<div className='Rectangle1_3'/>
-			<span className='_0878821929269'>0878821929269</span>
+		<input className='InputForm1'/>
 			<span className='Kontak'>Kontak</span>
 		</div>
 		<div className='Group573'>
-			<div className='Rectangle1_4'/>
-			<span className='MembacadanTidur'>Membaca dan Tidur</span>
+		<input className='InputForm1'/>
 			<span className='Hobi'>Hobi</span>
 		</div>
 		<div className='Group574'>
-			<div className='Rectangle1_5'/>
-			<span className='LoremipsumdolorsitametconsecteturadipiscingelitGravidaviverraposuerenuncaliquamdoloraAmetleoconsecteturultriciessednullasenectusaliquetaliquamVolutpatelementumarcuametnecfaucibusidNecduisedpellentesquediamtellusaliquetegetTurpisidhabitantnullamaurisrisusvitaeDiametiamconsecteturmaurispulvinar'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida viverra posuere nunc, aliquam dolor a. Amet, leo consectetur ultricies sed nulla senectus aliquet aliquam. Volutpat elementum arcu amet nec faucibus id. Nec, dui sed pellentesque diam tellus aliquet eget. Turpis id habitant nulla mauris risus vitae. Diam etiam consectetur mauris pulvinar.</span>
+		<input className='InputForm2'/>
 			<span className='AlasanMasuk'>Alasan Masuk</span>
 		</div>
 		<div className='Group576'>
@@ -180,6 +133,10 @@ export default function DaftarUKM () {
 				</div>
 			</div>
 		</Link>
+		<Footer/>
 	</div>
 	)
 }
+}
+
+export default DaftarUKM ;

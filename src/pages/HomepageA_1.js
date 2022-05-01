@@ -3,7 +3,7 @@ import '../css/HomepageA_1.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarUser from '../components/NavbarUser.js'
+import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 
@@ -96,7 +96,7 @@ render() {
 				</div>
 			</div>
 		</div>
-		<span className='BeritaUKM'> Berita UKM</span>
+		<span className='BeritaUKM_Home'> Berita UKM</span>
 		<span className='InformasiUKM'>Informasi  UKM</span>
 		<span className='PendaftaranOnline'>Pendaftaran Online</span>
 		<div className='Group'>
@@ -151,34 +151,7 @@ render() {
 		</Link>
 		
 		{/*Footer */}
-		<div className='Footer'>
-			<div className='Group226'>
-				<div className='PageHeaderSecondary'>
-					<div className='PageHeader'>
-						<div className='ColorsSecondary'>
-						</div>
-						<span className='ProjectBrandGuidelines'>Project DESIGN Guidelines</span>
-						<span className='_2020'></span>
-					</div>
-				</div>
-				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM's Care 2022</span>
-					<div className='Group341'>
-						<span className='FollowUs'>Follow Us</span>
-						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-						<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-						<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-						<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
-					</div>
-					<div className='Group364'>
-						<span className='UKMUnpad'>UKM Unpad</span>
-						<span className='AboutUs'>About Us</span>
-						<span className='Help'>Help</span>
-						<span className='BeritaUKM_1'>Berita UKM</span>
-					</div>
-				</div>
-			</div>
-		</div>		
+	<Footer/>		
 	</div>
 	)
 }

@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 100%;
+	width: 1440px;
 	height: 2300px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -100,7 +100,7 @@
 }
 .DetailUKMA_DetailUKMA .Loginbtn .DAFTAR {
 	position: absolute;
-	left: 78px;
+	left: 120px;
 	top: 16px;
 	width: 158px;
 	height: 24px;
@@ -191,7 +191,7 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpad {
 	position: absolute;
-	left: 54px;
+	left: 90px;
 	top: 48px;
 	width: 456px;
 	height: 14px;
@@ -384,333 +384,7 @@
 	font-weight: 400;
 	line-height: 24px;
 }
-.DetailUKMA_DetailUKMA .Footer {
-	position: absolute;
-	left: 0px;
-	top: 2180px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(255,255,255,1);
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 62px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
-	position: absolute;
-	left: 1416px;
-	top: 62px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 {
-	position: absolute;
-	left: 60px;
-	top: 34px;
-	width: 1320px;
-	height: 72.7998046875px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .UKMsCare2022 {
-	position: absolute;
-	left: 580px;
-	top: 30.7998046875px;
-	width: 159.07177734375px;
-	height: 13.5302734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 16.40625px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 {
-	position: absolute;
-	left: 1094.0830078125px;
-	top: 1.86669921875px;
-	width: 225.9169921875px;
-	height: 70.93310546875px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .FollowUs {
-	position: absolute;
-	left: 61.7158203125px;
-	top: 0px;
-	width: 108.1689453125px;
-	height: 17.28857421875px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21.09375px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .instagram1 {
-	position: absolute;
-	left: 0px;
-	top: 26.13330078125px;
-	width: 41.9560546875px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .facebook1 {
-	position: absolute;
-	left: 60.24462890625px;
-	top: 28.93310546875px;
-	width: 43.03173828125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .twitter1 {
-	position: absolute;
-	left: 121.56494140625px;
-	top: 28.93310546875px;
-	width: 48.41064453125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group341 .gmail1 {
-	position: absolute;
-	left: 188.26416015625px;
-	top: 32.66650390625px;
-	width: 37.65283203125px;
-	height: 29.86669921875px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 283.7177734375px;
-	height: 64.56982421875px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .UKMUnpad {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 138.71044921875px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .AboutUs {
-	position: absolute;
-	left: 176.82177734375px;
-	top: 0px;
-	width: 106.89599609375px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .Help {
-	position: absolute;
-	left: 181.125px;
-	top: 45.02587890625px;
-	width: 54.720703125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DetailUKMA_DetailUKMA .Footer .Group226 .Group224 .Group364 .BeritaUKM {
-	position: absolute;
-	left: 0px;
-	top: 45.02587890625px;
-	width: 131.0751953125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(255,255,255,1);
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 32px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
-	position: absolute;
-	left: 1416px;
-	top: 32px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame375 {
-	position: absolute;
-	left: 20px;
-	top: 3px;
-	width: 100px;
-	height: 75px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame375 .Screenshot_20220306_161229removebgpreview4 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 80px;
-	height: 55px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame238 {
-	position: absolute;
-	left: 140px;
-	top: 29px;
-	width: 304.68994140625px;
-	height: 22.294921875px;
-	display: flex;
-	box-sizing: border-box;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame238 .UKMUnpad_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 154.095703125px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame238 .BeritaUKM_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 145.59423828125px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame376 {
-	position: absolute;
-	left: 1304.974609375px;
-	top: 5px;
-	width: 70px;
-	height: 70px;
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.DetailUKMA_DetailUKMA .NavbarSetelahLogin .Frame376 .Vector_13 {
-	position: relative;
-	margin-right: 10px;
-	width: 71.42857142857143%;
-	height: 71.42857142857143%;
-}
+
 .DetailUKMA_DetailUKMA .Group386 {
 	position: absolute;
 	left: 145px;
@@ -773,8 +447,8 @@
 }
 .DetailUKMA_DetailUKMA .Group387 .UNITTaekwondounpad {
 	position: absolute;
-	left: 99.66650390625px;
-	top: 20px;
+	left: 350px;
+	top: 35px;
 	width: 950.66650390625px;
 	height: 67px;
 	color : rgba(255,255,255,1);

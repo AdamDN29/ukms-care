@@ -12,7 +12,7 @@
 }
 .DashboardUKMB_DashboardUKMB .Vectors {
 	position: absolute;
-	left: 1340px;
+	left: 1150px;
 	top: 80px;
 	width: 100px;
 	height: 1393px;
@@ -58,15 +58,15 @@
 	position: absolute;
 	left: 144px;
 	top: 150px;
-	width: 375px;
-	height: 350px;
+	width: 280px;
+	height: 250px;
 	object-fit: cover;
 	overflow: hidden;
 }
 .DashboardUKMB_DashboardUKMB .Group396 {
 	position: absolute;
-	left: 140px;
-	top: 520px;
+	left: 180px;
+	top: 420px;
 	width: 326px;
 	height: 229px;
 }
@@ -225,30 +225,30 @@
 }
 .DashboardUKMB_DashboardUKMB .Group239 {
 	position: absolute;
-	left: 140px;
-	top: 775px;
-	width: 375px;
+	left: 190px;
+	top: 670px;
+	width: 200px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group239 .Group294 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 375px;
+	width: 200px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group239 .Group294 .Group293 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 375px;
+	width: 200px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group239 .Group294 .Group293 .Rectangle13 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 375px;
+	width: 200px;
 	height: 55px;
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;
@@ -262,7 +262,7 @@
 }
 .DashboardUKMB_DashboardUKMB .Group239 .Group294 .Group291 .EditProfile {
 	position: absolute;
-	left: 42.95703125px;
+	left: -30px;
 	top: 5.5px;
 	width: 133.513671875px;
 	height: 14.666748046875px;
@@ -274,7 +274,7 @@
 }
 .DashboardUKMB_DashboardUKMB .Group239 .Group294 .Group291 .akariconsedit {
 	position: absolute;
-	left: 0px;
+	left: -60px;
 	top: 0px;
 	width: 30.185546875px;
 	height: 23.833251953125px;
@@ -300,201 +300,10 @@
 	width: 88.23475679378853%;
 	height: 88.23537918667206%;
 }
-.DashboardUKMB_DashboardUKMB .Footer {
-	position: absolute;
-	left: 0px;
-	top: 1473px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(255,255,255,1);
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .PageHeaderSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .PageHeaderSecondary .PageHeader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 62px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
-	position: absolute;
-	left: 1416px;
-	top: 62px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 {
-	position: absolute;
-	left: 60px;
-	top: 34px;
-	width: 1320px;
-	height: 72.800048828125px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .UKMsCare2022 {
-	position: absolute;
-	left: 580px;
-	top: 30.7998046875px;
-	width: 159.0712890625px;
-	height: 13.5302734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 16.40625px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group341 {
-	position: absolute;
-	left: 1094.0830078125px;
-	top: 1.86669921875px;
-	width: 225.9169921875px;
-	height: 70.933349609375px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group341 .FollowUs {
-	position: absolute;
-	left: 61.7158203125px;
-	top: 0px;
-	width: 108.1689453125px;
-	height: 17.28857421875px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21.09375px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group341 .instagram1 {
-	position: absolute;
-	left: 0px;
-	top: 26.13330078125px;
-	width: 41.9560546875px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group341 .facebook1 {
-	position: absolute;
-	left: 60.244140625px;
-	top: 28.933349609375px;
-	width: 43.0322265625px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group341 .twitter1 {
-	position: absolute;
-	left: 121.564453125px;
-	top: 28.933349609375px;
-	width: 48.4111328125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group341 .gmail1 {
-	position: absolute;
-	left: 188.263671875px;
-	top: 32.666748046875px;
-	width: 37.65234375px;
-	height: 29.86669921875px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group364 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 283.7177734375px;
-	height: 64.569580078125px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group364 .UKMUnpad {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 138.7109375px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group364 .AboutUs {
-	position: absolute;
-	left: 176.822265625px;
-	top: 0px;
-	width: 106.896484375px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group364 .Help {
-	position: absolute;
-	left: 181.125px;
-	top: 45.026123046875px;
-	width: 54.720703125px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DashboardUKMB_DashboardUKMB .Footer .Group226 .Group224 .Group364 .BeritaUKM {
-	position: absolute;
-	left: 0px;
-	top: 45.026123046875px;
-	width: 131.0751953125px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
+
 .DashboardUKMB_DashboardUKMB .Group307 {
 	position: absolute;
-	left: 541px;
+	left: 530px;
 	top: 150px;
 	width: 754px;
 	height: 680px;
@@ -503,8 +312,8 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 754px;
-	height: 680px;
+	width: 550px;
+	height: 600px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border-radius: 10px;
 }
@@ -517,7 +326,7 @@
 }
 .DashboardUKMB_DashboardUKMB .Group307 .Group397 .UNITTaekwondounpad {
 	position: absolute;
-	left: 0px;
+	left: 60px;
 	top: 0px;
 	width: 723.02734375px;
 	height: 61.567626953125px;
@@ -527,22 +336,24 @@
 	font-weight: 700;
 	line-height: 36px;
 }
-.DashboardUKMB_DashboardUKMB .Group307 .Group397 .UnitTaekwondoUnpadUTKDdidirikanpadatanggal16September1982UTKDmengadakanlatihanrutinsetiaphariSeninKamisdiPelataranTamanFakultasHukumUnpadDipatiUkurBandungdanSelasaJumatdiBaleSantikaataudiStadionJatiPadjadjaranJatinangormulaipukul1600WIBSejumlahprestasiyangpernahdiraihantaralainGaneshaCup20131PerungguWalikotaCup20131Emas5perak2perungguKejuaraanNasionalITTelkomCup20131Perak3PerungguKejuaraanNasionalFEUICup20132Perak2PerungguMetroOpen20135Perak5PerungguKTBCupBogorSeJawaBarat1Perak7PerungguWalikotaCupBandung20123Perak4PerungguPolbanKyorugiChampionship20122emas8Perak6perungguWalikotaBandungCup20112emas2Perak4perungguUPIChallenge20111perak6perungguWalikotaBandungCup20102emas1perak4PerungguKejurnasITTelkom20101PerungguMediaSosialLinecgk2038xInstagramtaekwondo_unpadTwitterTaekwondoUnpad {
+.DashboardUKMB_DashboardUKMB .Group307 .Group397 .Deskripsi {
 	position: absolute;
 	left: 28.0693359375px;
 	top: 73.94580078125px;
-	width: 666.888671875px;
+	width: 450px;
 	height: 544px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 16px;
+	
 }
-.DashboardUKMB_DashboardUKMB .BeritaUKM_1 {
+.DashboardUKMB_DashboardUKMB .BeritaUKM_Dash
+{
 	position: absolute;
-	left: 715px;
-	top: 875px;
+	left: 750px;
+	top: 860px;
 	width: 257px;
 	height: 36px;
 	color : rgba(0,0,0,1);
@@ -553,16 +364,16 @@
 }
 .DashboardUKMB_DashboardUKMB .Group302 {
 	position: absolute;
-	left: 715px;
+	left: 600px;
 	top: 951px;
-	width: 580px;
+	width: 500px;
 	height: 194.4443359375px;
 }
 .DashboardUKMB_DashboardUKMB .Group302 .Rectangle20 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 580px;
+	width: 525px;
 	height: 194.4443359375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -622,16 +433,16 @@
 }
 .DashboardUKMB_DashboardUKMB .Group390_1 {
 	position: absolute;
-	left: 715px;
+	left: 600px;
 	top: 1141.5556640625px;
-	width: 580px;
+	width: 500px;
 	height: 194.4443359375px;
 }
 .DashboardUKMB_DashboardUKMB .Group390_1 .Rectangle20_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 580px;
+	width: 525px;
 	height: 194.4443359375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -719,30 +530,30 @@
 }
 .DashboardUKMB_DashboardUKMB .Group354 {
 	position: absolute;
-	left: 715px;
+	left: 600px;
 	top: 1357px;
-	width: 580px;
+	width: 435px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group354 .Group309 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 580px;
+	width: 435px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group354 .Group309 .Group293_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 580px;
+	width: 435px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group354 .Group309 .Group293_1 .Rectangle13_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 580px;
+	width: 525px;
 	height: 55px;
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;
@@ -763,7 +574,7 @@
 }
 .DashboardUKMB_DashboardUKMB .Group354 .Group353 .Group291_1 .ListBerita {
 	position: absolute;
-	left: 0px;
+	left: 7px;
 	top: 0px;
 	width: 115px;
 	height: 15px;
@@ -789,8 +600,8 @@
 }
 .DashboardUKMB_DashboardUKMB .PendaftarUKM {
 	position: absolute;
-	left: 145px;
-	top: 856px;
+	left: 220px;
+	top: 860px;
 	width: 358px;
 	height: 73px;
 	color : rgba(0,0,0,1);
@@ -803,7 +614,7 @@
 	position: absolute;
 	left: 141px;
 	top: 951px;
-	width: 56px;
+	width: 40px;
 	height: 65px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -811,9 +622,9 @@
 }
 .DashboardUKMB_DashboardUKMB .No {
 	position: absolute;
-	left: 154px;
-	top: 967px;
-	width: 30px;
+	left: 150px;
+	top: 972px;
+	width: 10px;
 	height: 34px;
 	color : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -826,14 +637,14 @@
 	position: absolute;
 	left: 140.8876953125px;
 	top: 1015.533203125px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group240 .Rectangle16 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -856,14 +667,14 @@
 	position: absolute;
 	left: 140.8876953125px;
 	top: 1207.93359375px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group278 .Rectangle16_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -886,14 +697,14 @@
 	position: absolute;
 	left: 140.8876953125px;
 	top: 1079.66650390625px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group279 .Rectangle16_2 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -916,14 +727,14 @@
 	position: absolute;
 	left: 140.8876953125px;
 	top: 1272.06640625px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group282 .Rectangle16_3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -946,14 +757,14 @@
 	position: absolute;
 	left: 140.8876953125px;
 	top: 1143.7998046875px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group280 .Rectangle16_4 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 55.9423828125px;
+	width: 40px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -974,9 +785,9 @@
 }
 .DashboardUKMB_DashboardUKMB .Rectangle18 {
 	position: absolute;
-	left: 518px;
+	left: 450px;
 	top: 951px;
-	width: 144px;
+	width: 120px;
 	height: 65px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -986,14 +797,14 @@
 	position: absolute;
 	left: 197px;
 	top: 951px;
-	width: 321px;
+	width: 270px;
 	height: 65px;
 }
 .DashboardUKMB_DashboardUKMB .Group391 .Rectangle17 {
 	position: absolute;
-	left: 0px;
+	left: -17px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 65px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -1001,8 +812,8 @@
 }
 .DashboardUKMB_DashboardUKMB .Group391 .Nama {
 	position: absolute;
-	left: 110px;
-	top: 24px;
+	left: 85px;
+	top: 22px;
 	width: 101px;
 	height: 17px;
 	color : rgba(255,255,255,1);
@@ -1014,9 +825,9 @@
 }
 .DashboardUKMB_DashboardUKMB .Tanggal {
 	position: absolute;
-	left: 544px;
-	top: 967px;
-	width: 91px;
+	left: 480px;
+	top: 972px;
+	width: 80px;
 	height: 34px;
 	color : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1027,46 +838,34 @@
 }
 .DashboardUKMB_DashboardUKMB .Group285 {
 	position: absolute;
-	left: 517.828125px;
+	left: 450px;
 	top: 1015.533203125px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group285 .Rectangle18_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	box-sizing: border-box;
 }
-.DashboardUKMB_DashboardUKMB .Group285 ._25032022 {
-	position: absolute;
-	left: 32.8349609375px;
-	top: 25.13330078125px;
-	width: 78.84765625px;
-	height: 27.7333984375px;
-	color : rgba(0,0,0,1);
-	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-	font-family: Oxygen;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 16px;
-}
+
 .DashboardUKMB_DashboardUKMB .Group288 {
 	position: absolute;
-	left: 517.9853515625px;
+	left: 450px;
 	top: 1016px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group288 .Rectangle18_2 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1087,16 +886,16 @@
 }
 .DashboardUKMB_DashboardUKMB .Group299 {
 	position: absolute;
-	left: 517.828125px;
+	left: 450px;
 	top: 1272.06640625px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group299 .Rectangle18_3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1117,16 +916,16 @@
 }
 .DashboardUKMB_DashboardUKMB .Group298 {
 	position: absolute;
-	left: 517.828125px;
+	left: 450px;
 	top: 1207.93359375px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group298 .Rectangle18_4 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1147,16 +946,16 @@
 }
 .DashboardUKMB_DashboardUKMB .Group297 {
 	position: absolute;
-	left: 517.828125px;
+	left: 450px;
 	top: 1143.7998046875px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group297 .Rectangle18_5 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1177,16 +976,16 @@
 }
 .DashboardUKMB_DashboardUKMB .Group296 {
 	position: absolute;
-	left: 517.828125px;
+	left: 450px;
 	top: 1079.66650390625px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group296 .Rectangle18_6 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 144.0146484375px;
+	width: 120px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1207,23 +1006,23 @@
 }
 .DashboardUKMB_DashboardUKMB .Group357 {
 	position: absolute;
-	left: 196.830078125px;
+	left: 180px;
 	top: 1015.533203125px;
-	width: 321px;
+	width: 270px;
 	height: 320.6669921875px;
 }
 .DashboardUKMB_DashboardUKMB .Group357 .Group283 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group357 .Group283 .Rectangle18_7 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1246,14 +1045,14 @@
 	position: absolute;
 	left: 0px;
 	top: 64.13330078125px;
-	width: 321px;
+	width: 270px;
 	height: 256.53369140625px;
 }
 .DashboardUKMB_DashboardUKMB .Group357 .Group284 .Rectangle18_8 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1276,14 +1075,14 @@
 	position: absolute;
 	left: 0px;
 	top: 64.13330078125px;
-	width: 321px;
+	width: 270px;
 	height: 192.400390625px;
 }
 .DashboardUKMB_DashboardUKMB .Group357 .Group284 .Group283_1 .Rectangle18_9 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1306,14 +1105,14 @@
 	position: absolute;
 	left: 0px;
 	top: 64.1337890625px;
-	width: 321px;
+	width: 270px;
 	height: 128.2666015625px;
 }
 .DashboardUKMB_DashboardUKMB .Group357 .Group284 .Group283_1 .Group283_2 .Rectangle18_10 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1336,14 +1135,14 @@
 	position: absolute;
 	left: 0px;
 	top: 64.13330078125px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 }
 .DashboardUKMB_DashboardUKMB .Group357 .Group284 .Group283_1 .Group283_2 .Group283_3 .Rectangle18_11 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 321px;
+	width: 270px;
 	height: 64.13330078125px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1366,28 +1165,28 @@
 	position: absolute;
 	left: 140px;
 	top: 1357px;
-	width: 522px;
+	width: 350px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group352 .Group309_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 522px;
+	width: 350px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group352 .Group309_1 .Group293_2 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 522px;
+	width: 350px;
 	height: 55px;
 }
 .DashboardUKMB_DashboardUKMB .Group352 .Group309_1 .Group293_2 .Rectangle13_2 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 522px;
+	width: 435px;
 	height: 55px;
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;
@@ -1416,7 +1215,7 @@
 .DashboardUKMB_DashboardUKMB .Group352 .Group351 .ListPendaftar {
 	position: absolute;
 	left: 41.6904296875px;
-	top: 0px;
+	top: 6px;
 	width: 182.5458984375px;
 	height: 29.333251953125px;
 	color : rgba(255,255,255,1);
@@ -1438,153 +1237,4 @@
 	top: 4.010498046875px;
 	width: 87.49892528587397%;
 	height: 62.50011889927804%;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-	background : rgba(255,255,255,1);
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 1440px;
-	height: 80px;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(120.06249949336052,23.011975586414337,23.011975586414337,1);
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 32px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
-	position: absolute;
-	left: 1416px;
-	top: 32px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame378 {
-	position: absolute;
-	left: 1304.974609375px;
-	top: 5px;
-	width: 70px;
-	height: 70px;
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame378 .Vector_17 {
-	position: relative;
-	margin-right: 10px;
-	width: 71.42857142857143%;
-	height: 71.42857142857143%;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame377 {
-	position: absolute;
-	left: 20px;
-	top: 3px;
-	width: 100px;
-	height: 75px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame377 .Screenshot_20220306_161229removebgpreview4 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 80px;
-	height: 55px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame238 {
-	position: absolute;
-	left: 140px;
-	top: 29px;
-	width: 449.970703125px;
-	height: 22.2950439453125px;
-	display: flex;
-	box-sizing: border-box;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame238 .Dashboard {
-	position: relative;
-	margin-right: 5px;
-	width: 140.2802734375px;
-	height: 22.2950439453125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame238 .UKMUnpad_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 154.095703125px;
-	height: 22.2950439453125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.DashboardUKMB_DashboardUKMB .NavbarAdminUKM .Group227 .Frame238 .BeritaUKM_2 {
-	position: relative;
-	margin-right: 5px;
-	width: 145.59375px;
-	height: 22.2950439453125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
 }
