@@ -28,7 +28,7 @@ render() {
 			<div className='Rectangle8'/>
 			<span className='UKMsCare'>UKM's Care</span>
 		</div>
-		<span className='text1'>UKM’s Care merupakan website yang menaungi ukm di Universitas 
+		<span className='text1'>UKM’s Care merupakan website yang menaungi UKM di Universitas 
 		Padjajaran, yang mana di dalam website ini berisi banyak informasi seputar ukm di unpad 
 		jadi mahasiswa Unpad yang selama ini kesulitan mendapat informasi dan mendaftar ke UKM 
 		pilihan mereka dapat dengan mudah dilakukan di website ini </span>
@@ -67,7 +67,7 @@ render() {
 		<img className='taekwondoremovebgpreview13' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
 		<img className='bridgeremovebgpreview9' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
 		<div className='akariconscircletriangleupfill'>
-			<img className='Vector_10' src = {ImgAsset.HomepageA_1_Vector_10} />
+
 		</div>
 		<Link to='/ukmunpada'>
 		<span className='UKMSelengkapnya'>UKM Selengkapnya  ➝</span>
@@ -92,7 +92,8 @@ render() {
 			<div className='Group327_1'>
 				<div className='Rectangle25_1'/>
 				<div className='Group325_3'>
-					<span className='BeritaterkinitentangUKMfavoritkamudariaktivitaskegiatanhinggakehuaraan'>Berita terkini tentang UKM favorit kamu, dari aktivitas, kegiatan hingga kehuaraan</span>
+					<span className='BeritaterkinitentangUKMfavoritkamudariaktivitaskegiatanhinggakehuaraan'>Berita 
+					terkini tentang UKM favorit kamu, dari aktivitas, kegiatan hingga kejuaraan</span>
 				</div>
 			</div>
 		</div>

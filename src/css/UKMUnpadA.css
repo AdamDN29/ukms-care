@@ -5,7 +5,7 @@
 	top: 0px;
 	margin: auto;
 	width: 1440px;
-	height: 2300px;
+	height: 1920px;
 	background : rgba(255,255,255,1);
 	/*border: 1px solid rgba(0,0,0,1);*/
 	box-sizing: border-box;
@@ -15,7 +15,7 @@
 	left: 0px;
 	top: 80px;
 	width: 100px;
-	height: 2100px;
+	height: 1700px;
 	mix-blend-mode: normal;
 }
 .UKMUnpadA_UKMUnpadA .Vectors .Vector {
@@ -23,21 +23,21 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 2100px;
+	height: 1700px;
 }
 .UKMUnpadA_UKMUnpadA .Vectors .Vector_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 2100px;
+	height: 1700px;
 }
 .UKMUnpadA_UKMUnpadA .Vectors_1 {
 	position: absolute;
-	left: 1340px;
+	left: 1130px;
 	top: 80px;
 	width: 100px;
-	height: 2100px;
+	height: 1700px;
 	mix-blend-mode: normal;
 }
 .UKMUnpadA_UKMUnpadA .Vectors_1 .Vector_2 {
@@ -45,14 +45,14 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 2100px;
+	height: 1700px;
 }
 .UKMUnpadA_UKMUnpadA .Vectors_1 .Vector_3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 2100px;
+	height: 1700px;
 }
 .UKMUnpadA_UKMUnpadA .Group309 {
 	position: absolute;
@@ -65,7 +65,7 @@
 	position: absolute;
 	left: 46.017578125px;
 	top: 0px;
-	width: 368.1416015625px;
+	width: 345px;
 	height: 364.8173828125px;
 }
 .UKMUnpadA_UKMUnpadA .Group309 .taekwondoremovebgpreview3 {
@@ -80,10 +80,10 @@
 }
 .UKMUnpadA_UKMUnpadA .Group309 .UNITTaekwondoUnpad {
 	position: absolute;
-	left: 0px;
+	left: 20px;
 	text-align: center;
 	top: 289.93408203125px;
-	width: 465.92919921875px;
+	width: 400px;
 	height: 40.09130859375px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -101,14 +101,14 @@
 }
 .UKMUnpadA_UKMUnpadA .Group310 .Rectangle9 {
 	position: absolute;
-	left: 465.92919921875px;
+	left: 400px;
 	top: 0px;
-	width: 368.1416015625px;
+	width: 345px;
 	height: 364.8173828125px;
 }
 .UKMUnpadA_UKMUnpadA .Group310 .UKMBridgeUnpad {
 	position: absolute;
-	left: 465px;
+	left: 400px;
 	top: 289.93408203125px;
 	width: 361.4306640625px;
 	height: 40.32177734375px;
@@ -120,16 +120,9 @@
 	text-align: center;
 }
 
-.UKMUnpadA_UKMUnpadA .Rectangle8_1 {
-	position: absolute;
-	left: 950px;
-	top: 460px;
-	width: 368px;
-	height: 365px;
-}
 .UKMUnpadA_UKMUnpadA .PALAWAUNPAD {
 	position: absolute;
-	left: 904px;
+	left: 770px;
 	top: 750px;
 	width: 466px;
 	height: 40px;
@@ -142,7 +135,7 @@
 }
 .UKMUnpadA_UKMUnpadA .bridgeremovebgpreview3 {
 	position: absolute;
-	left: 613px;
+	left: 540px;
 	top: 479px;
 	width: 214px;
 	height: 221px;
@@ -162,23 +155,23 @@
 	position: absolute;
 	left: 46.017578125px;
 	top: 0px;
-	width: 368.1416015625px;
+	width: 345px;
 	height: 364.8173828125px;
 	text-align: center;
 }
 .UKMUnpadA_UKMUnpadA .Group311 .Rectangle9_1 {
 	position: absolute;
-	left: 465.92919921875px;
+	left: 400px;
 	top: 0px;
-	width: 368.1416015625px;
+	width: 345px;
 	height: 364.8173828125px;
 	text-align: center;
 }
 .UKMUnpadA_UKMUnpadA .Group311 .UNITTaekwondoUnpad_1 {
 	position: absolute;
-	left: 0px;
+	left: 20px;
 	top: 289.93408203125px;
-	width: 465.92919921875px;
+	width: 400px;
 	height: 40.09130859375px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -189,7 +182,7 @@
 }
 .UKMUnpadA_UKMUnpadA .Group312 {
 	position: absolute;
-	left: 539.76416015625px;
+	left: 470px;
 	top: 1178.1142578125px;
 	width: 361.4306640625px;
 	height: 40.32177734375px;
@@ -220,7 +213,7 @@
 }
 .UKMUnpadA_UKMUnpadA .bridgeremovebgpreview4 {
 	position: absolute;
-	left: 613px;
+	left: 540px;
 	top: 910px;
 	width: 214px;
 	height: 221px;
@@ -238,21 +231,21 @@
 	position: absolute;
 	left: 46.017578125px;
 	top: 0px;
-	width: 368.1416015625px;
+	width: 345px;
 	height: 364.8173828125px;
 }
 .UKMUnpadA_UKMUnpadA .Group313 .Rectangle9_2 {
 	position: absolute;
-	left: 465.92919921875px;
+	left: 400px;
 	top: 0px;
-	width: 368.1416015625px;
+	width: 345px;
 	height: 364.8173828125px;
 }
 .UKMUnpadA_UKMUnpadA .Group313 .UNITTaekwondoUnpad_2 {
 	position: absolute;
-	left: 0px;
+	left: 20px;
 	top: 289.93408203125px;
-	width: 465.92919921875px;
+	width: 400px;
 	height: 40.09130859375px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -263,7 +256,7 @@
 }
 .UKMUnpadA_UKMUnpadA .Group314 {
 	position: absolute;
-	left: 539.76416015625px;
+	left: 470px;
 	top: 1609.17578125px;
 	width: 361.4306640625px;
 	height: 40.32177734375px;
@@ -292,88 +285,20 @@
 }
 .UKMUnpadA_UKMUnpadA .bridgeremovebgpreview5 {
 	position: absolute;
-	left: 613px;
+	left: 540px;
 	top: 1341px;
 	width: 214px;
 	height: 221px;
 	object-fit: cover;
 	overflow: hidden;
 }
-.UKMUnpadA_UKMUnpadA .Group315 {
-	position: absolute;
-	left: 70px;
-	top: 1753.1826171875px;
-	width: 834.07080078125px;
-	height: 364.8173828125px;
-}
-.UKMUnpadA_UKMUnpadA .Group315 .Rectangle8_4 {
-	position: absolute;
-	left: 46.017578125px;
-	top: 0px;
-	width: 368.1416015625px;
-	height: 364.8173828125px;
-}
-.UKMUnpadA_UKMUnpadA .Group315 .Rectangle9_3 {
-	position: absolute;
-	left: 465.92919921875px;
-	top: 0px;
-	width: 368.1416015625px;
-	height: 364.8173828125px;
-}
-.UKMUnpadA_UKMUnpadA .Group315 .UNITTaekwondoUnpad_3 {
-	position: absolute;
-	left: 0px;
-	top: 289.93408203125px;
-	width: 465.92919921875px;
-	height: 40.09130859375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.UKMUnpadA_UKMUnpadA .Group316 {
-	position: absolute;
-	left: 539.76416015625px;
-	top: 2040.236328125px;
-	width: 361.4306640625px;
-	height: 40.32177734375px;
-}
-.UKMUnpadA_UKMUnpadA .Group316 .UKMBridgeUnpad_3 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 361.4306640625px;
-	height: 40.32177734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.UKMUnpadA_UKMUnpadA .taekwondoremovebgpreview10 {
-	position: absolute;
-	left: 185px;
-	top: 1772px;
-	width: 235px;
-	height: 221px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .bridgeremovebgpreview6 {
-	position: absolute;
-	left: 613px;
-	top: 1772px;
-	width: 214px;
-	height: 221px;
-	object-fit: cover;
-	overflow: hidden;
-}
+
+
+
+
 .UKMUnpadA_UKMUnpadA .UNITKEGIATANMAHASISWA {
 	position: absolute;
-	left: 152px;
+	left: 60px;
 	top: 198px;
 	width: 1159px;
 	height: 64px;
@@ -386,23 +311,31 @@
 }
 .UKMUnpadA_UKMUnpadA .palawa1 {
 	position: absolute;
-	left: 1037px;
+	left: 900px;
 	top: 479px;
 	width: 200px;
 	height: 221px;
 	object-fit: cover;
 	overflow: hidden;
 }
-.UKMUnpadA_UKMUnpadA .Rectangle12 {
+.UKMUnpadA_UKMUnpadA .Rectangle8_1 {
 	position: absolute;
-	left: 950px;
-	top: 891px;
-	width: 368px;
+	left: 825px;
+	top: 460px;
+	width: 330px;
 	height: 365px;
 }
+.UKMUnpadA_UKMUnpadA .Rectangle12 {
+	position: absolute;
+	left: 825px;
+	top: 891px;
+	width: 330px;
+	height: 365px;
+}
+
 .UKMUnpadA_UKMUnpadA .PALAWAUNPAD_1 {
 	position: absolute;
-	left: 904px;
+	left: 770px;
 	top: 1181px;
 	width: 466px;
 	height: 40px;
@@ -415,264 +348,16 @@
 }
 .UKMUnpadA_UKMUnpadA .palawa2 {
 	position: absolute;
-	left: 1037px;
+	left: 900px;
 	top: 910px;
 	width: 200px;
 	height: 221px;
 	object-fit: cover;
 	overflow: hidden;
 }
-.UKMUnpadA_UKMUnpadA .Rectangle13 {
-	position: absolute;
-	left: 950px;
-	top: 1322px;
-	width: 368px;
-	height: 365px;
-}
-.UKMUnpadA_UKMUnpadA .PALAWAUNPAD_2 {
-	position: absolute;
-	left: 904px;
-	top: 1612px;
-	width: 466px;
-	height: 40px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.UKMUnpadA_UKMUnpadA .palawa3 {
-	position: absolute;
-	left: 1037px;
-	top: 1341px;
-	width: 200px;
-	height: 221px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .Rectangle14 {
-	position: absolute;
-	left: 950px;
-	top: 1753px;
-	width: 368px;
-	height: 365px;
-}
-.UKMUnpadA_UKMUnpadA .PALAWAUNPAD_3 {
-	position: absolute;
-	left: 904px;
-	top: 2043px;
-	width: 466px;
-	height: 40px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 30px;
-	text-align: center;
-}
-.UKMUnpadA_UKMUnpadA .palawa4 {
-	position: absolute;
-	left: 1037px;
-	top: 1772px;
-	width: 200px;
-	height: 221px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .Footer {
-	position: absolute;
-	left: 0px;
-	top: 2180px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(255,255,255,1);
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .PageHeaderSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .PageHeaderSecondary .PageHeader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 62px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
-	position: absolute;
-	left: 1416px;
-	top: 62px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 {
-	position: absolute;
-	left: 60px;
-	top: 34px;
-	width: 1320px;
-	height: 72.7998046875px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .UKMsCare2022 {
-	position: absolute;
-	left: 580px;
-	top: 30.7998046875px;
-	width: 159.07177734375px;
-	height: 13.5302734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 16.40625px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group341 {
-	position: absolute;
-	left: 1094.0830078125px;
-	top: 1.86669921875px;
-	width: 225.9169921875px;
-	height: 70.93310546875px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group341 .FollowUs {
-	position: absolute;
-	left: 61.7158203125px;
-	top: 0px;
-	width: 108.1689453125px;
-	height: 17.28857421875px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21.09375px;
-	text-align: center;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group341 .instagram1 {
-	position: absolute;
-	left: 0px;
-	top: 26.13330078125px;
-	width: 41.9560546875px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group341 .facebook1 {
-	position: absolute;
-	left: 60.24462890625px;
-	top: 28.93310546875px;
-	width: 43.03173828125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group341 .twitter1 {
-	position: absolute;
-	left: 121.56494140625px;
-	top: 28.93310546875px;
-	width: 48.41064453125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group341 .gmail1 {
-	position: absolute;
-	left: 188.26416015625px;
-	top: 32.66650390625px;
-	width: 37.65283203125px;
-	height: 29.86669921875px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group364 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 283.7177734375px;
-	height: 64.56982421875px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group364 .UKMUnpad {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 138.71044921875px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group364 .AboutUs {
-	position: absolute;
-	left: 176.82177734375px;
-	top: 0px;
-	width: 106.89599609375px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group364 .Help {
-	position: absolute;
-	left: 181.125px;
-	top: 45.02587890625px;
-	width: 54.720703125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.UKMUnpadA_UKMUnpadA .Footer .Group226 .Group224 .Group364 .BeritaUKM {
-	position: absolute;
-	left: 0px;
-	top: 45.02587890625px;
-	width: 131.0751953125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
+
+
+
 .UKMUnpadA_UKMUnpadA .Group365 {
 	position: absolute;
 	left: 116px;
@@ -799,9 +484,9 @@
 }
 .UKMUnpadA_UKMUnpadA .Group365 .Group2 {
 	position: absolute;
-	left: 644px;
+	left: 510px;
 	top: 0px;
-	width: 38.41012356171548%;
+	width: 37.41012356171548%;
 	height: 88.88888888888889%;
 }
 .UKMUnpadA_UKMUnpadA .Group365 .Group2 .Rectangle3 {
@@ -842,7 +527,7 @@
 }
 .UKMUnpadA_UKMUnpadA .Group365 .Group360 {
 	position: absolute;
-	left: 1103.0009765625px;
+	left: 870px;
 	top: 0.0517578125px;
 	width: 91.9990234375px;
 	height: 40px;

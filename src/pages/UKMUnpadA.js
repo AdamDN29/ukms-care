@@ -68,7 +68,6 @@ render() {
 
 		{/*UKM 2*/}
 		<div className='Group310'>
-			<img className='bridgeremovebgpreview3' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
 			<img className='Rectangle9' src = {ImgAsset.UKMUnpadA_Rectangle9} />
 			<span className='UKMBridgeUnpad'>Bridge Unpad</span>
 		</div>
@@ -106,61 +105,16 @@ render() {
 		<img className='taekwondoremovebgpreview8' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
 		<img className='bridgeremovebgpreview5' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
 		
-		{/*UKM 8*/}
-		<div className='Group315'>
-			<img className='Rectangle8_4' src = {ImgAsset.UKMUnpadA_Rectangle8_4} />
-			<img className='Rectangle9_3' src = {ImgAsset.UKMUnpadA_Rectangle9_3} />
-			<span className='UNITTaekwondoUnpad_3'>Unit Taekwondo Unpad </span>
-		</div>
-		
 		{/*UKM 9*/}
-		<div className='Group316'>
-			<span className='UKMBridgeUnpad_3'>Bridge Unpad</span>
-		</div>
-
-		<img className='taekwondoremovebgpreview10' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-		<img className='bridgeremovebgpreview6' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
 		<span className='UNITKEGIATANMAHASISWA'>UNIT KEGIATAN MAHASISWA</span>
 		<img className='palawa1' src = {ImgAsset.UKMUnpadB_palawa2} />
 		<img className='Rectangle12' src = {ImgAsset.UKMUnpadA_Rectangle12} />
 		<span className='PALAWAUNPAD_1'>Palawa Unpad</span>
 		<img className='palawa2' src = {ImgAsset.UKMUnpadB_palawa2} />
-		<img className='Rectangle13' src = {ImgAsset.UKMUnpadA_Rectangle13} />
-		<span className='PALAWAUNPAD_2'>Palawa Unpad</span>
-		<img className='palawa3' src = {ImgAsset.UKMUnpadB_palawa2} />
-		<img className='Rectangle14' src = {ImgAsset.UKMUnpadA_Rectangle14} />
-		<span className='PALAWAUNPAD_3'>Palawa Unpad</span>
-		<img className='palawa4' src = {ImgAsset.UKMUnpadB_palawa2} />
+
 		
 		{/*Footer*/}
-		<div className='Footer'>
-			<div className='Group226'>
-				<div className='PageHeaderSecondary'>
-					<div className='PageHeader'>
-						<div className='ColorsSecondary'>
-						</div>
-						<span className='ProjectBrandGuidelines'>Project DESIGN Guidelines</span>
-						<span className='_2020'></span>
-					</div>
-				</div>
-				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM’s Care 2022</span>
-					<div className='Group341'>
-						<span className='FollowUs'>Follow Us</span>
-						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-						<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-						<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-						<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
-					</div>
-					<div className='Group364'>
-						<span className='UKMUnpad'>UKM Unpad</span>
-						<span className='AboutUs'>About Us</span>
-						<span className='Help'>Help</span>
-						<span className='BeritaUKM'>Berita UKM</span>
-					</div>
-				</div>
-			</div>
-		</div>
+		<Footer/>
 
 	</div>
 	)

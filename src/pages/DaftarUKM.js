@@ -22,7 +22,7 @@ render() {
 		</div>
 
 		<NavbarUser/>
-		<span className='daftarukm'>Daftar UKM</span>
+		<span className='daftarukm'>DAFTRAR UKM</span>
 
 		<div className='Group317'>
 		<span className='NamaLengkap'>Nama Lengkap</span>

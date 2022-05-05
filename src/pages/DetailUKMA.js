@@ -43,7 +43,8 @@ class DetailUKMA extends Component{
 						<img className='JuaraTaekwondo1' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
 					</div>
 				</div>
-				<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
+				<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022'>Unit Taekwondo 
+				Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
 				<span className='UnitTaekwondoUnpad'>Unit Taekwondo Unpad</span>
 				<span className='Jumat25Maret2022'>Jumat, 25 Maret 2022</span>
 				<span className='UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022Perunggutersebutdimenangkanoleh'>Unit Taekwondo Unpad pada tanggal 24 Maret 2022 berhasil meraih perunggu pada kejuaraan taekwondo tingkat nasional pada Ganesha Cup 2022. Perunggu tersebut dimenangkan oleh ......  </span>
