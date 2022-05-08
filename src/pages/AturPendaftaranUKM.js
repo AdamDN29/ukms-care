@@ -3,7 +3,12 @@ import '../css/AturPendaftaranUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-export default function AturPendaftaranUKM () {
+import NavbarAdmin from '../components/NavbarAdmin'
+import Footer from '../components/Footer'
+import { Component } from 'react/cjs/react.production.min'
+
+class AturPendaftaranUKM extends Component{
+	render() {
     return (
 	<div className='AturPendaftaranUKM_AturPendaftaranUKM'>
 		<div className='Vectors'>
@@ -14,58 +19,9 @@ export default function AturPendaftaranUKM () {
 			<img className='Vector_2' src = {ImgAsset.AturPendaftaranUKM_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.AturPendaftaranUKM_Vector_3} />
 		</div>
+		<NavbarAdmin/>
+		
 		<span className='AturPendaftaranUKM_1'>Atur Pendaftaran UKM</span>
-		<div className='NavbarAdminUKM'>
-			<div className='Group227'>
-				<div className='PageHeaderSecondary'>
-					<div className='PageHeader'>
-						<div className='ColorsSecondary'>
-						</div>
-						<span className='ProjectBrandGuidelines'>Project DESIGN Guidelines</span>
-						<span className='_2020'></span>
-					</div>
-				</div>
-				<div className='Frame378'>
-					<img className='Vector_4' src = {ImgAsset.AturPendaftaranUKM_Vector_4} />
-				</div>
-				<div className='Frame377'>
-					<img className='Screenshot_20220306_161229removebgpreview4' src = {ImgAsset.NavbarSebelumLogin_Screenshot_20220306_161229removebgpreview2} />
-				</div>
-				<div className='Frame238'>
-					<span className='Dashboard'>Dashboard</span>
-					<span className='UKMUnpad'>UKM Unpad</span>
-					<span className='BeritaUKM'>Berita UKM</span>
-				</div>
-			</div>
-		</div>
-		<div className='Footer'>
-			<div className='Group226'>
-				<div className='PageHeaderSecondary_1'>
-					<div className='PageHeader_1'>
-						<div className='ColorsSecondary_1'>
-						</div>
-						<span className='ProjectBrandGuidelines_1'>Project DESIGN Guidelines</span>
-						<span className='_2020_1'></span>
-					</div>
-				</div>
-				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM’s Care 2022</span>
-					<div className='Group341'>
-						<span className='FollowUs'>Follow Us</span>
-						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-						<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-						<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-						<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
-					</div>
-					<div className='Group364'>
-						<span className='UKMUnpad_1'>UKM Unpad</span>
-						<span className='AboutUs'>About Us</span>
-						<span className='Help'>Help</span>
-						<span className='BeritaUKM_1'>Berita UKM</span>
-					</div>
-				</div>
-			</div>
-		</div>
 		<span className='Teks'>Teks</span>
 		<span className='PendaftaranUKM'>Pendaftaran UKM</span>
 		<img className='Rectangle54' src = {ImgAsset.AturPendaftaranUKM_Rectangle54} />
@@ -114,6 +70,8 @@ export default function AturPendaftaranUKM () {
 			</div>
 			<img className='Vector_8' src = {ImgAsset.AturPendaftaranUKM_Vector_8} />
 		</div>
+
+		
 		<span className='File'>File</span>
 		<img className='Rectangle55_8' src = {ImgAsset.AturPendaftaranUKM_Rectangle55_8} />
 		<div className='Group570'>
@@ -156,6 +114,9 @@ export default function AturPendaftaranUKM () {
 		<div className='Rectangle57'/>
 		<div className='Ellipse4'/>
 		<span className='Aktif'>Aktif</span>
+		<Footer/>
 	</div>
 	)
 }
+}
+export default AturPendaftaranUKM;

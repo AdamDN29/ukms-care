@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 100%;
+	width: 1230px;
 	height: 1703px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -12,7 +12,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Vectors {
 	position: absolute;
-	left: 1340px;
+	left: 1130px;
 	top: 80px;
 	width: 100px;
 	height: 1483px;
@@ -56,7 +56,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .AturPendaftaranUKM_1 {
 	position: absolute;
-	left: 230px;
+	left: 320px;
 	top: 147px;
 	width: 979px;
 	height: 60px;
@@ -66,347 +66,7 @@
 	font-weight: 700;
 	line-height: 60px;
 }
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-	background : rgba(255,255,255,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 1440px;
-	height: 80px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(120.06249949336052,23.011975586414337,23.011975586414337,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary .PageHeader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary .PageHeader .ColorsSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 32px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary .PageHeader ._2020 {
-	position: absolute;
-	left: 1416px;
-	top: 32px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame378 {
-	position: absolute;
-	left: 1304.974609375px;
-	top: 5px;
-	width: 70px;
-	height: 70px;
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame378 .Vector_4 {
-	position: relative;
-	margin-right: 10px;
-	width: 71.42857142857143%;
-	height: 71.42857142857143%;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame377 {
-	position: absolute;
-	left: 20px;
-	top: 3px;
-	width: 100px;
-	height: 75px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame377 .Screenshot_20220306_161229removebgpreview4 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 80px;
-	height: 55px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame238 {
-	position: absolute;
-	left: 140px;
-	top: 29px;
-	width: 449.970703125px;
-	height: 22.294921875px;
-	display: flex;
-	box-sizing: border-box;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame238 .Dashboard {
-	position: relative;
-	margin-right: 5px;
-	width: 140.2802734375px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame238 .UKMUnpad {
-	position: relative;
-	margin-right: 5px;
-	width: 154.095703125px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .NavbarAdminUKM .Group227 .Frame238 .BeritaUKM {
-	position: relative;
-	margin-right: 5px;
-	width: 145.59375px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer {
-	position: absolute;
-	left: 0px;
-	top: 1563px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(255,255,255,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .PageHeaderSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .PageHeaderSecondary_1 .PageHeader_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 62px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
-	position: absolute;
-	left: 1416px;
-	top: 62px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 {
-	position: absolute;
-	left: 60px;
-	top: 34px;
-	width: 1320px;
-	height: 72.7998046875px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .UKMsCare2022 {
-	position: absolute;
-	left: 580px;
-	top: 30.7998046875px;
-	width: 159.0712890625px;
-	height: 13.5302734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 16.40625px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group341 {
-	position: absolute;
-	left: 1094.0830078125px;
-	top: 1.86669921875px;
-	width: 225.9169921875px;
-	height: 70.93310546875px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group341 .FollowUs {
-	position: absolute;
-	left: 61.7158203125px;
-	top: 0px;
-	width: 108.1689453125px;
-	height: 17.28857421875px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21.09375px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group341 .instagram1 {
-	position: absolute;
-	left: 0px;
-	top: 26.13330078125px;
-	width: 41.9560546875px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group341 .facebook1 {
-	position: absolute;
-	left: 60.244140625px;
-	top: 28.93310546875px;
-	width: 43.0322265625px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group341 .twitter1 {
-	position: absolute;
-	left: 121.564453125px;
-	top: 28.93310546875px;
-	width: 48.4111328125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group341 .gmail1 {
-	position: absolute;
-	left: 188.263671875px;
-	top: 32.66650390625px;
-	width: 37.65234375px;
-	height: 29.86669921875px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group364 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 283.7177734375px;
-	height: 64.56982421875px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group364 .UKMUnpad_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 138.7109375px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group364 .AboutUs {
-	position: absolute;
-	left: 176.822265625px;
-	top: 0px;
-	width: 106.896484375px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group364 .Help {
-	position: absolute;
-	left: 181.125px;
-	top: 45.02587890625px;
-	width: 54.720703125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.AturPendaftaranUKM_AturPendaftaranUKM .Footer .Group226 .Group224 .Group364 .BeritaUKM_1 {
-	position: absolute;
-	left: 0px;
-	top: 45.02587890625px;
-	width: 131.0751953125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
+
 .AturPendaftaranUKM_AturPendaftaranUKM .Teks {
 	position: absolute;
 	left: 160px;
@@ -435,7 +95,7 @@
 	position: absolute;
 	left: 158px;
 	top: 582px;
-	width: 1006px;
+	width: 920px;
 	height: 453px;
 	border-radius: 10px;
 }
@@ -461,7 +121,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group558 {
 	position: absolute;
-	left: 697px;
+	left: 640px;
 	top: 625px;
 	width: 323px;
 	height: 60px;
@@ -488,7 +148,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group559 {
 	position: absolute;
-	left: 697px;
+	left: 640px;
 	top: 699px;
 	width: 323px;
 	height: 60px;
@@ -515,7 +175,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group560 {
 	position: absolute;
-	left: 697px;
+	left: 640px;
 	top: 777px;
 	width: 323px;
 	height: 60px;
@@ -622,7 +282,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group561 {
 	position: absolute;
-	left: 1044.583984375px;
+	left: 990px;
 	top: 699px;
 	width: 59.9970703125px;
 	height: 60.0029296875px;
@@ -644,7 +304,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group565 {
 	position: absolute;
-	left: 1044.583984375px;
+	left: 990px;
 	top: 777px;
 	width: 59.9970703125px;
 	height: 60.0029296875px;
@@ -673,7 +333,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group564 {
 	position: absolute;
-	left: 1045px;
+	left: 990px;
 	top: 625px;
 	width: 60px;
 	height: 60.00390625px;
@@ -725,8 +385,8 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group567 .Group301 .Group300 .Tambah {
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 13px;
+	top: 6px;
 	width: 105.2236328125px;
 	height: 26px;
 	color : rgba(255,255,255,1);
@@ -758,13 +418,13 @@
 	position: absolute;
 	left: 158px;
 	top: 1192px;
-	width: 1006px;
+	width: 920px;
 	height: 232px;
 	border-radius: 10px;
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Group570 {
 	position: absolute;
-	left: 229px;
+	left: 190px;
 	top: 1241px;
 	width: 875.9970703125px;
 	height: 134.0029296875px;

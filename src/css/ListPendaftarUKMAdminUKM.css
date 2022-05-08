@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 100%;
+	width: 1230px;
 	height: 2143px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -12,7 +12,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .ListPendaftarukm {
 	position: absolute;
-	left: 303px;
+	left: 350px;
 	top: 145px;
 	width: 833px;
 	height: 60px;
@@ -22,201 +22,10 @@
 	font-weight: 700;
 	line-height: 60px;
 }
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer {
-	position: absolute;
-	left: 0px;
-	top: 2003px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(255,255,255,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .PageHeaderSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 62px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
-	position: absolute;
-	left: 1416px;
-	top: 62px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 {
-	position: absolute;
-	left: 60px;
-	top: 34px;
-	width: 1320px;
-	height: 72.7998046875px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .UKMsCare2022 {
-	position: absolute;
-	left: 580px;
-	top: 30.7998046875px;
-	width: 159.0712890625px;
-	height: 13.5302734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 16.40625px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group341 {
-	position: absolute;
-	left: 1094.0830078125px;
-	top: 1.86669921875px;
-	width: 225.9169921875px;
-	height: 70.93310546875px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group341 .FollowUs {
-	position: absolute;
-	left: 61.7158203125px;
-	top: 0px;
-	width: 108.1689453125px;
-	height: 17.28857421875px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21.09375px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group341 .instagram1 {
-	position: absolute;
-	left: 0px;
-	top: 26.13330078125px;
-	width: 41.9560546875px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group341 .facebook1 {
-	position: absolute;
-	left: 60.244140625px;
-	top: 28.93310546875px;
-	width: 43.0322265625px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group341 .twitter1 {
-	position: absolute;
-	left: 121.564453125px;
-	top: 28.93310546875px;
-	width: 48.4111328125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group341 .gmail1 {
-	position: absolute;
-	left: 188.263671875px;
-	top: 32.66650390625px;
-	width: 37.65234375px;
-	height: 29.86669921875px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group364 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 283.7177734375px;
-	height: 64.56982421875px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group364 .UKMUnpad {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 138.7109375px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group364 .AboutUs {
-	position: absolute;
-	left: 176.822265625px;
-	top: 0px;
-	width: 106.896484375px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group364 .Help {
-	position: absolute;
-	left: 181.125px;
-	top: 45.02587890625px;
-	width: 54.720703125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Footer .Group226 .Group224 .Group364 .BeritaUKM {
-	position: absolute;
-	left: 0px;
-	top: 45.02587890625px;
-	width: 131.0751953125px;
-	height: 19.54345703125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
+
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group301 {
 	position: absolute;
-	left: 1114px;
+	left: 980px;
 	top: 280px;
 	width: 166px;
 	height: 36.39990234375px;
@@ -234,13 +43,13 @@
 	position: absolute;
 	left: 16.3232421875px;
 	top: 5px;
-	width: 135.26171875px;
+	width: 100.006171875px;
 	height: 26px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group301 .Group300 .EksporData {
 	position: absolute;
-	left: 30.037109375px;
-	top: 0px;
+	left: 34px;
+	top: 6px;
 	width: 105.2236328125px;
 	height: 26px;
 	color : rgba(255,255,255,1);
@@ -433,7 +242,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Rectangle18 {
 	position: absolute;
-	left: 1113.220703125px;
+	left: 985.220703125px;
 	top: 356px;
 	width: 166.58203125px;
 	height: 39px;
@@ -445,14 +254,14 @@
 	position: absolute;
 	left: 209.744140625px;
 	top: 356px;
-	width: 301.9423828125px;
+	width: 240px;
 	height: 38.53857421875px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group391 .Rectangle17 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.9423828125px;
+	width: 240px;
 	height: 38.53857421875px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -473,9 +282,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Tanggal {
 	position: absolute;
-	left: 1143.296875px;
+	left: 1050px;
 	top: 366px;
-	width: 105.2705078125px;
+	width: 100px;
 	height: 20px;
 	color : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -486,7 +295,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group285 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 393.39453125px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -516,7 +325,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group288 {
 	position: absolute;
-	left: 1113.4013671875px;
+	left: 985.4013671875px;
 	top: 393.67333984375px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -545,7 +354,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group299 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 546.6494140625px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -574,7 +383,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group298 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 508.3359375px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -603,7 +412,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group297 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 470.02197265625px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -632,7 +441,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group296 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 431.70849609375px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -661,9 +470,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Rectangle46 {
 	position: absolute;
-	left: 953.5791015625px;
+	left: 823.5791015625px;
 	top: 356px;
-	width: 163.111328125px;
+	width: 163.98528125px;
 	height: 39px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -671,7 +480,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Kontak {
 	position: absolute;
-	left: 982.5px;
+	left: 880px;
 	top: 366px;
 	width: 104.1142578125px;
 	height: 20px;
@@ -684,7 +493,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group417 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 393.39453125px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -714,7 +523,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group418 {
 	position: absolute;
-	left: 953.755859375px;
+	left: 823.755859375px;
 	top: 393.67333984375px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -743,7 +552,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group419 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 546.6494140625px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -772,7 +581,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group420 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 508.3359375px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -789,7 +598,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group420 ._087821929269_2 {
 	position: absolute;
-	left: 20.2626953125px;
+	left: 20.2626823125px;
 	top: 10.8857421875px;
 	width: 121.57421875px;
 	height: 16.62451171875px;
@@ -801,7 +610,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group421 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 470.02197265625px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -830,7 +639,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group422 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 431.70849609375px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -859,9 +668,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Rectangle45 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577px;
 	top: 356px;
-	width: 135.34765625px;
+	width: 100px;
 	height: 39px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -869,9 +678,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Angkatan {
 	position: absolute;
-	left: 682.8828125px;
+	left: 600px;
 	top: 366px;
-	width: 104.1142578125px;
+	width: 70px;
 	height: 20px;
 	color : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -882,16 +691,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group411 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 393.39453125px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group411 .Rectangle18_13 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -912,16 +721,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group412 {
 	position: absolute;
-	left: 667.990234375px;
+	left: 577px;
 	top: 393.67333984375px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group412 .Rectangle18_14 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -941,16 +750,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group413 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 546.6494140625px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group413 .Rectangle18_15 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -970,16 +779,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group414 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 508.3359375px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group414 .Rectangle18_16 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -999,16 +808,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group415 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 470.02197265625px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group415 .Rectangle18_17 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1028,16 +837,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group416 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 431.70849609375px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group416 .Rectangle18_18 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1057,9 +866,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Rectangle47 {
 	position: absolute;
-	left: 510.5166015625px;
+	left: 447px;
 	top: 356px;
-	width: 158.484375px;
+	width: 130px;
 	height: 39px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -1067,9 +876,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NPM {
 	position: absolute;
-	left: 537.123046875px;
+	left: 490px;
 	top: 366px;
-	width: 104.1142578125px;
+	width: 60px;
 	height: 20px;
 	color : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1080,16 +889,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group423 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 393.39453125px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group423 .Rectangle18_19 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1110,16 +919,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group424 {
 	position: absolute;
-	left: 510.689453125px;
+	left: 447px;
 	top: 393.67333984375px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group424 .Rectangle18_20 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1139,16 +948,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group425 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 546.6494140625px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group425 .Rectangle18_21 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1168,16 +977,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group426 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 508.3359375px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group426 .Rectangle18_22 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1197,16 +1006,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group427 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 470.02197265625px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group427 .Rectangle18_23 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1226,16 +1035,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group428 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 431.70849609375px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group428 .Rectangle18_24 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1255,16 +1064,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group410 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 356px;
-	width: 152.7001953125px;
+	width: 152.7001823125px;
 	height: 38.53857421875px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group410 .Rectangle45_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 152.7001953125px;
+	width: 152.7001823125px;
 	height: 38.53857421875px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -1285,7 +1094,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group404 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 393.39453125px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -1304,7 +1113,7 @@
 	position: absolute;
 	left: 34.77734375px;
 	top: 15.015625px;
-	width: 83.5126953125px;
+	width: 83.5126823125px;
 	height: 16.568359375px;
 	color : rgba(0,0,0,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1315,7 +1124,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group405 {
 	position: absolute;
-	left: 802.201171875px;
+	left: 677.0000201171875px;
 	top: 393.67333984375px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -1344,7 +1153,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group406 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 546.6494140625px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -1373,7 +1182,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group407 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 508.3359375px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -1402,7 +1211,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group408 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 470.02197265625px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -1431,7 +1240,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group409 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 431.70849609375px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -1462,21 +1271,21 @@
 	position: absolute;
 	left: 209.67578125px;
 	top: 393.783203125px;
-	width: 301.8916015625px;
+	width: 240px;
 	height: 191.216796875px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group357 .Group283 {
 	position: absolute;
 	left: 0.0546875px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group357 .Group283 .Rectangle18_31 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1498,14 +1307,14 @@
 	position: absolute;
 	left: 0px;
 	top: 37.96142578125px;
-	width: 301.837890625px;
+	width: 240px;
 	height: 153.25537109375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group357 .Group284 .Rectangle18_32 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1527,14 +1336,14 @@
 	position: absolute;
 	left: 0px;
 	top: 38.3134765625px;
-	width: 301.837890625px;
+	width: 240px;
 	height: 114.94189453125px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group357 .Group284 .Group283_1 .Rectangle18_33 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1556,14 +1365,14 @@
 	position: absolute;
 	left: 0px;
 	top: 38.314453125px;
-	width: 301.837890625px;
+	width: 240px;
 	height: 76.62744140625px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group357 .Group284 .Group283_1 .Group283_2 .Rectangle18_34 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1585,14 +1394,14 @@
 	position: absolute;
 	left: 0px;
 	top: 38.3134765625px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group357 .Group284 .Group283_1 .Group283_2 .Group283_3 .Rectangle18_35 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -1757,7 +1566,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group472 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 585px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -1787,7 +1596,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group473 {
 	position: absolute;
-	left: 1113.4013671875px;
+	left: 985.4013671875px;
 	top: 585.27880859375px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -1816,7 +1625,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group474 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 738.2548828125px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -1845,7 +1654,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group475 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 699.94140625px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -1874,7 +1683,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group476 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 661.62744140625px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -1903,7 +1712,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group477 {
 	position: absolute;
-	left: 1113.21875px;
+	left: 985.21875px;
 	top: 623.31396484375px;
 	width: 166.5986328125px;
 	height: 38.31396484375px;
@@ -1932,7 +1741,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group478 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 585px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -1962,7 +1771,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group479 {
 	position: absolute;
-	left: 953.755859375px;
+	left: 823.755859375px;
 	top: 585.27880859375px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -1991,7 +1800,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group480 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 738.2548828125px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -2020,7 +1829,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group481 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 699.94140625px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -2037,7 +1846,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group481 ._087821929269_7 {
 	position: absolute;
-	left: 20.2626953125px;
+	left: 20.2626823125px;
 	top: 10.8857421875px;
 	width: 121.57421875px;
 	height: 16.62451171875px;
@@ -2049,7 +1858,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group482 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 661.62744140625px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -2078,7 +1887,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group483 {
 	position: absolute;
-	left: 953.578125px;
+	left: 823.578125px;
 	top: 623.31396484375px;
 	width: 162.9345703125px;
 	height: 38.31396484375px;
@@ -2107,16 +1916,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group484 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 585px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group484 .Rectangle18_48 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2137,16 +1946,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group485 {
 	position: absolute;
-	left: 667.990234375px;
+	left: 577px;
 	top: 585.27880859375px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group485 .Rectangle18_49 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2166,16 +1975,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group486 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 738.2548828125px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group486 .Rectangle18_50 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2195,16 +2004,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group487 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 699.94140625px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group487 .Rectangle18_51 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2224,16 +2033,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group488 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 661.62744140625px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group488 .Rectangle18_52 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2253,16 +2062,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group489 {
 	position: absolute;
-	left: 667.84375px;
+	left: 577.0004375px;
 	top: 623.31396484375px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group489 .Rectangle18_53 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 135.201171875px;
+	width: 100.0001171875px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2282,16 +2091,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group490 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 585px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group490 .Rectangle18_54 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2312,16 +2121,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group491 {
 	position: absolute;
-	left: 510.689453125px;
+	left: 447px;
 	top: 585.27880859375px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group491 .Rectangle18_55 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2341,16 +2150,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group492 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 738.2548828125px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group492 .Rectangle18_56 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2370,16 +2179,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group493 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 699.94140625px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group493 .Rectangle18_57 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2399,16 +2208,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group494 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 661.62744140625px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group494 .Rectangle18_58 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2428,16 +2237,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group495 {
 	position: absolute;
-	left: 510.515625px;
+	left: 447px;
 	top: 623.31396484375px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group495 .Rectangle18_59 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 158.3125px;
+	width: 130px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2457,7 +2266,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group496 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 585px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -2476,7 +2285,7 @@
 	position: absolute;
 	left: 34.77734375px;
 	top: 15.015625px;
-	width: 83.5126953125px;
+	width: 83.5126823125px;
 	height: 16.568359375px;
 	color : rgba(0,0,0,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2487,7 +2296,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group497 {
 	position: absolute;
-	left: 802.201171875px;
+	left: 677.000201171875px;
 	top: 585.27880859375px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -2516,7 +2325,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group498 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 738.2548828125px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -2545,7 +2354,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group499 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 699.94140625px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -2574,7 +2383,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group500 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 661.62744140625px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -2603,7 +2412,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group501 {
 	position: absolute;
-	left: 802.03515625px;
+	left: 677.00003515625px;
 	top: 623.31396484375px;
 	width: 152.5341796875px;
 	height: 38.31396484375px;
@@ -2634,21 +2443,21 @@
 	position: absolute;
 	left: 209.67578125px;
 	top: 585.388671875px;
-	width: 301.8916015625px;
+	width: 240px;
 	height: 191.216796875px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group502 .Group283_4 {
 	position: absolute;
 	left: 0.0546875px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group502 .Group283_4 .Rectangle18_66 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2670,14 +2479,14 @@
 	position: absolute;
 	left: 0px;
 	top: 37.96142578125px;
-	width: 301.837890625px;
+	width: 240px;
 	height: 153.25537109375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group502 .Group284_1 .Rectangle18_67 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2699,14 +2508,14 @@
 	position: absolute;
 	left: 0px;
 	top: 38.3134765625px;
-	width: 301.837890625px;
+	width: 240px;
 	height: 114.94189453125px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group502 .Group284_1 .Group283_5 .Rectangle18_68 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2728,14 +2537,14 @@
 	position: absolute;
 	left: 0px;
 	top: 38.314453125px;
-	width: 301.837890625px;
+	width: 240px;
 	height: 76.62744140625px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group502 .Group284_1 .Group283_5 .Group283_6 .Rectangle18_69 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -2757,14 +2566,14 @@
 	position: absolute;
 	left: 0px;
 	top: 38.3134765625px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group502 .Group284_1 .Group283_5 .Group283_6 .Group283_7 .Rectangle18_70 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 301.8369140625px;
+	width: 240px;
 	height: 38.31396484375px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -4175,155 +3984,7 @@
 	font-weight: 400;
 	line-height: 12px;
 }
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-	background : rgba(255,255,255,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 1440px;
-	height: 80px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(120.06249949336052,23.011975586414337,23.011975586414337,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 32px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
-	position: absolute;
-	left: 1416px;
-	top: 32px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame378 {
-	position: absolute;
-	left: 1304.974609375px;
-	top: 5px;
-	width: 70px;
-	height: 70px;
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame378 .Vector_1 {
-	position: relative;
-	margin-right: 10px;
-	width: 71.42857142857143%;
-	height: 71.42857142857143%;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame377 {
-	position: absolute;
-	left: 20px;
-	top: 3px;
-	width: 100px;
-	height: 75px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame377 .Screenshot_20220306_161229removebgpreview4 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 80px;
-	height: 55px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 {
-	position: absolute;
-	left: 140px;
-	top: 29px;
-	width: 449.970703125px;
-	height: 22.294921875px;
-	display: flex;
-	box-sizing: border-box;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 .Dashboard {
-	position: relative;
-	margin-right: 5px;
-	width: 140.2802734375px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 .UKMUnpad_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 154.095703125px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .NavbarAdminUKM .Group227 .Frame238 .BeritaUKM_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 145.59375px;
-	height: 22.294921875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
+
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .IdentitasWajib {
 	position: absolute;
 	left: 160px;
@@ -5777,7 +5438,7 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Vectors_1 {
 	position: absolute;
-	left: 1340px;
+	left: 1130px;
 	top: 80px;
 	width: 100px;
 	height: 1923px;
@@ -5799,9 +5460,9 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group352 {
 	position: absolute;
-	left: 459px;
+	left: 400px;
 	top: 1908px;
-	width: 522px;
+	width: 400px;
 	height: 55px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group352 .Group309 {
@@ -5820,16 +5481,16 @@
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group352 .Group309 .Group293 .Rectangle13 {
 	position: absolute;
-	left: 0px;
+	left: 40px;
 	top: 0px;
-	width: 522px;
+	width: 400px;
 	height: 55px;
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group352 .Group309 .Group291 {
 	position: absolute;
-	left: 181.751953125px;
+	left: 181.751823125px;
 	top: 15.583984375px;
 	width: 23.4423828125px;
 	height: 23.83349609375px;
@@ -5851,7 +5512,7 @@
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group352 .Group351 .AturPendaftaran {
 	position: absolute;
 	left: 41.6904296875px;
-	top: 0px;
+	top: 5px;
 	width: 182.5458984375px;
 	height: 29.33349609375px;
 	color : rgba(255,255,255,1);
@@ -5864,7 +5525,7 @@
 	position: absolute;
 	left: 0px;
 	top: 2.8203125px;
-	width: 34.0751953125px;
+	width: 34.0751823125px;
 	height: 25.66650390625px;
 }
 .ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .Group352 .Group351 .bilistul .Vector_6 {

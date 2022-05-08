@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 100%;
+	width: 1230px;
 	height: 1684px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -12,7 +12,7 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .Vectors {
 	position: absolute;
-	left: 1340px;
+	left: 1130px;
 	top: 80px;
 	width: 100px;
 	height: 1464px;
@@ -56,7 +56,7 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .Buatberitaukm {
 	position: absolute;
-	left: 374px;
+	left: 380px;
 	top: 145px;
 	width: 691px;
 	height: 60px;
@@ -66,358 +66,18 @@
 	font-weight: 700;
 	line-height: 60px;
 }
-.BuatBeritaUKM_BuatBeritaUKM .Footer {
-	position: absolute;
-	left: 0px;
-	top: 1544px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(255,255,255,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .PageHeaderSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .PageHeaderSecondary .PageHeader {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .PageHeaderSecondary .PageHeader .ColorsSecondary {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 140px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .PageHeaderSecondary .PageHeader .ProjectBrandGuidelines {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 62px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .PageHeaderSecondary .PageHeader ._2020 {
-	position: absolute;
-	left: 1416px;
-	top: 62px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 {
-	position: absolute;
-	left: 60px;
-	top: 34px;
-	width: 1320px;
-	height: 72.800048828125px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .UKMsCare2022 {
-	position: absolute;
-	left: 580px;
-	top: 30.7998046875px;
-	width: 159.0712890625px;
-	height: 13.5302734375px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 16.40625px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group341 {
-	position: absolute;
-	left: 1094.0830078125px;
-	top: 1.86669921875px;
-	width: 225.9169921875px;
-	height: 70.933349609375px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group341 .FollowUs {
-	position: absolute;
-	left: 61.7158203125px;
-	top: 0px;
-	width: 108.1689453125px;
-	height: 17.28857421875px;
-	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 21.09375px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group341 .instagram1 {
-	position: absolute;
-	left: 0px;
-	top: 26.13330078125px;
-	width: 41.9560546875px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group341 .facebook1 {
-	position: absolute;
-	left: 60.244140625px;
-	top: 28.933349609375px;
-	width: 43.0322265625px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group341 .twitter1 {
-	position: absolute;
-	left: 121.564453125px;
-	top: 28.933349609375px;
-	width: 48.4111328125px;
-	height: 42px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group341 .gmail1 {
-	position: absolute;
-	left: 188.263671875px;
-	top: 32.666748046875px;
-	width: 37.65234375px;
-	height: 29.86669921875px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group364 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 283.7177734375px;
-	height: 64.569580078125px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group364 .UKMUnpad {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 138.7109375px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group364 .AboutUs {
-	position: absolute;
-	left: 176.822265625px;
-	top: 0px;
-	width: 106.896484375px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group364 .Help {
-	position: absolute;
-	left: 181.125px;
-	top: 45.026123046875px;
-	width: 54.720703125px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .Footer .Group226 .Group224 .Group364 .BeritaUKM {
-	position: absolute;
-	left: 0px;
-	top: 45.026123046875px;
-	width: 131.0751953125px;
-	height: 19.543701171875px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	display: flex;
-	flex-direction: column;
-	box-sizing: border-box;
-	background : rgba(255,255,255,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 1440px;
-	height: 80px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(120.06249949336052,23.011975586414337,23.011975586414337,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1440px;
-	height: 80px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
-	visibility: hidden;
-	position: absolute;
-	left: 24px;
-	top: 32px;
-	width: 304px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Lato;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
-	position: absolute;
-	left: 1416px;
-	top: 32px;
-	width: 0px;
-	height: 16px;
-	color : rgba(249.07833695411682,248.66042017936707,250.75000405311584,1);
-	font-family: Roboto Mono;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 16px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame378 {
-	position: absolute;
-	left: 1304.974609375px;
-	top: 5px;
-	width: 70px;
-	height: 70px;
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame378 .Vector_4 {
-	position: relative;
-	margin-right: 10px;
-	width: 71.42857142857143%;
-	height: 71.42857142857143%;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame377 {
-	position: absolute;
-	left: 20px;
-	top: 3px;
-	width: 100px;
-	height: 75px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame377 .Screenshot_20220306_161229removebgpreview4 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 80px;
-	height: 55px;
-	object-fit: cover;
-	overflow: hidden;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame238 {
-	position: absolute;
-	left: 140px;
-	top: 29px;
-	width: 449.970703125px;
-	height: 22.2950439453125px;
-	display: flex;
-	box-sizing: border-box;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame238 .Dashboard {
-	position: relative;
-	margin-right: 5px;
-	width: 140.2802734375px;
-	height: 22.2950439453125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame238 .UKMUnpad_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 154.095703125px;
-	height: 22.2950439453125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
-.BuatBeritaUKM_BuatBeritaUKM .NavbarAdminUKM .Group227 .Frame238 .BeritaUKM_1 {
-	position: relative;
-	margin-right: 5px;
-	width: 145.59375px;
-	height: 22.2950439453125px;
-	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
-	font-family: Montserrat;
-	font-size: 18px;
-	font-weight: 700;
-	line-height: 25.739999771118164px;
-}
+
 .BuatBeritaUKM_BuatBeritaUKM .Rectangle21 {
 	position: absolute;
-	left: 198px;
+	left: 150px;
 	top: 296px;
-	width: 1044px;
+	width: 940px;
 	height: 1123px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
 .BuatBeritaUKM_BuatBeritaUKM .Group301 {
 	position: absolute;
-	left: 249px;
+	left: 200px;
 	top: 544px;
 	width: 255px;
 	height: 55px;
@@ -447,8 +107,8 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .Group301 .Group313 .Group300 .UploadGambar {
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 25px;
+	top: 2px;
 	width: 208.33984375px;
 	height: 19.800048828125px;
 	color : rgba(255,255,255,1);
@@ -480,16 +140,16 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .Group314 {
 	position: absolute;
-	left: 249px;
+	left: 200px;
 	top: 349px;
-	width: 941px;
+	width: 850px;
 	height: 110px;
 }
 .BuatBeritaUKM_BuatBeritaUKM .Group314 .Rectangle1 {
 	position: absolute;
 	left: 0px;
 	top: 55px;
-	width: 941px;
+	width: 850px;
 	height: 55px;
 	background : rgba(255,255,255,1);
 	border-radius: 5px;
@@ -510,7 +170,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 169px;
+	width: 200px;
 	height: 40px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -520,7 +180,7 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .CoverBerita {
 	position: absolute;
-	left: 249px;
+	left: 200px;
 	top: 489px;
 	width: 179px;
 	height: 40px;
@@ -532,29 +192,29 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .Rectangle58 {
 	position: absolute;
-	left: 249px;
+	left: 200px;
 	top: 639px;
-	width: 941px;
-	height: 71px;
+	width: 850px;
+	height: 60px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	box-sizing: border-box;
 }
 .BuatBeritaUKM_BuatBeritaUKM .Rectangle59 {
 	position: absolute;
-	left: 249px;
-	top: 710px;
-	width: 941px;
+	left: 200px;
+	top: 700px;
+	width: 850px;
 	height: 649px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	box-sizing: border-box;
 }
-.BuatBeritaUKM_BuatBeritaUKM .LoremipsumdolorsitametconsecteturadipiscingelitSuspendisseamettristiquemontesnislmolestiemattisametnisiultriciesUrnapurusdiammassavitaeAcvitaenuncleosenectusegetegetfacilisieuismodAdipiscingportalobortisutfelisaliquamconsequatnatoqueNetusatametsedtortornibhpurustortorVariusvulputatejustopurusmiconsectetursedSuspendisseenimsempertortorvolutpatnecSempererosdolormorbirisusvitaeSollicitudinutnamlectusenimDictumporttitormorbirhoncusadipiscingtristiquesapienscelerisqueBibendumaateuametveliterosnislTemporetutultricieseueteratnecelitinEstmetuscongueadipiscingaliquamDonecconsequatseddictumgravidaornareCrasestultricesegestasegetleoultriciessempersitsedTristiqueorcivariusvolutpatmiacrasullamcorpervestibulumnonSedrhoncussitsagittisturpiseleifendAeneansitnuncvolutpatnisiDonecconsequatseddictumgravidaornareCrasestultricesegestasegetleoultriciessempersitsedTristiqueorcivariusvolutpatmiacrasullamcorpervestibulumnonSedrhoncussitsagittisturpiseleifendAeneansitnuncvolutpatnisiEtiamsitnisipellentesqueultricesaliquetcrasorcisemperTinciduntinvitaefringillaurnapulvinarSedseddolornequeornarefaucibusattemporegetcurabiturSiteleifendleoeuincursusloremdiamelementumametHabitantfelisametcrasnonvitaeAtmagnaetfacilisistellusturpisTellussapiennislconsecteturutSuspendisselacusmaecenasacatnislimperdietsitUltricesegetdictumsedametidpulvinarsedMassamassatellusnequemagnaCongueegetelementumtelluspellentesqueAliquettellusfermentumnonenimpellentesqueestfacilisisMalesuadaintegerinornarefaucibusloremLorematlacusvestibulumproinmaurisNibhametornareerospurussenectusvitaearcuNoneuutdignissimatacquisvariusvitaedonecUllamcorperenimleoadipiscingmorbimalesuadaaliquetsitEtmassaenimelitdignissimnuncquisurnasitEstsapienultricesconvallistellusportatemporAugueestvariusdiamnecproinvariusNisiportaetiamarcumagnaenimaliquetauguedutDuisnullanislquisegestasfelisipsumaccumsannullamCumnetusseddolorfaucibussagittisfacilisitinciduntEgetpurusmorbiegestasnontristiqueimperdietvelUltricesmorbinunctinciduntmaurisdapibusPulvinarquamgravidasedsedidintegerornareTurpisturpisatsedvenenatisTellussedfacilisilobortistellusvariusscelerisqueegetUrnaelitfeugiatlectusvolutpathendreritadipiscingnequeLeoquisquevelitpellentesqueelitTristiquenibhidetturpismassatemporviverrasitOdioscelerisqueintegerliberourna {
+.BuatBeritaUKM_BuatBeritaUKM .deskripsi {
 	position: absolute;
-	left: 292px;
-	top: 701px;
-	width: 854px;
+	left: 250px;
+	top: 710px;
+	width: 730px;
 	height: 542px;
 	color : rgba(0,0,0,1);
 	font-family: Oxygen;
@@ -641,7 +301,7 @@
 }
 .BuatBeritaUKM_BuatBeritaUKM .Group239 {
 	position: absolute;
-	left: 867px;
+	left: 700px;
 	top: 1443px;
 	width: 375px;
 	height: 55px;
@@ -664,7 +324,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 375px;
+	width: 350px;
 	height: 55px;
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;

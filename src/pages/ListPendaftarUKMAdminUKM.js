@@ -3,38 +3,17 @@ import '../css/ListPendaftarUKMAdminUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-export default function ListPendaftarUKMAdminUKM () {
+import NavbarAdmin from '../components/NavbarAdmin'
+import Footer from '../components/Footer'
+import { Component } from 'react/cjs/react.production.min'
+
+class ListPendaftarUKMAdminUKM extends Component{
+	render() {
     return (
 	<div className='ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM'>
-		<span className='ListPendaftarukm'>List Pendaftar ukm</span>
-		<div className='Footer'>
-			<div className='Group226'>
-				<div className='PageHeaderSecondary'>
-					<div className='PageHeader'>
-						<div className='ColorsSecondary'>
-						</div>
-						<span className='ProjectBrandGuidelines'>Project DESIGN Guidelines</span>
-						<span className='_2020'></span>
-					</div>
-				</div>
-				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM’s Care 2022</span>
-					<div className='Group341'>
-						<span className='FollowUs'>Follow Us</span>
-						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-						<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-						<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-						<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
-					</div>
-					<div className='Group364'>
-						<span className='UKMUnpad'>UKM Unpad</span>
-						<span className='AboutUs'>About Us</span>
-						<span className='Help'>Help</span>
-						<span className='BeritaUKM'>Berita UKM</span>
-					</div>
-				</div>
-			</div>
-		</div>
+		<NavbarAdmin/>
+		<span className='ListPendaftarukm'>List Pendaftar UKM</span>
+	
 		<div className='Group301'>
 			<div className='Rectangle19'/>
 			<div className='Group300'>
@@ -576,29 +555,7 @@ export default function ListPendaftarUKMAdminUKM () {
 				</div>
 			</div>
 		</div>
-		<div className='NavbarAdminUKM'>
-			<div className='Group227'>
-				<div className='PageHeaderSecondary_1'>
-					<div className='PageHeader_1'>
-						<div className='ColorsSecondary_1'>
-						</div>
-						<span className='ProjectBrandGuidelines_1'>Project DESIGN Guidelines</span>
-						<span className='_2020_1'></span>
-					</div>
-				</div>
-				<div className='Frame378'>
-					<img className='Vector_1' src = {ImgAsset.ListPendaftarUKMAdminUKM_Vector_1} />
-				</div>
-				<div className='Frame377'>
-					<img className='Screenshot_20220306_161229removebgpreview4' src = {ImgAsset.NavbarSebelumLogin_Screenshot_20220306_161229removebgpreview2} />
-				</div>
-				<div className='Frame238'>
-					<span className='Dashboard'>Dashboard</span>
-					<span className='UKMUnpad_1'>UKM Unpad</span>
-					<span className='BeritaUKM_1'>Berita UKM</span>
-				</div>
-			</div>
-		</div>
+	
 		<span className='IdentitasWajib'>Identitas Wajib</span>
 		<span className='Tambahan'>Tambahan</span>
 		<div className='Rectangle51'/>
@@ -819,6 +776,9 @@ export default function ListPendaftarUKMAdminUKM () {
 				</div>
 			</div>
 		</Link>
+		<Footer/>
 	</div>
 	)
 }
+}
+export default ListPendaftarUKMAdminUKM;

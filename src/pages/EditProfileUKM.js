@@ -3,9 +3,15 @@ import '../css/EditProfileUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-export default function EditProfileUKM () {
+import NavbarAdmin from '../components/NavbarAdmin'
+import Footer from '../components/Footer'
+import { Component } from 'react/cjs/react.production.min'
+
+class EditProfileUKM extends Component{
+	render () {
     return (
 	<div className='EditProfileUKM_EditProfileUKM'>
+		<NavbarAdmin/>
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.EditProfileUKM_Vector} />
 			<img className='Vector_1' src = {ImgAsset.EditProfileUKM_Vector_1} />
@@ -14,6 +20,7 @@ export default function EditProfileUKM () {
 			<img className='Vector_2' src = {ImgAsset.EditProfileUKM_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.EditProfileUKM_Vector_3} />
 		</div>
+
 		<div className='Rectangle21'/>
 		<span className='EditProfileUKM_1'>Edit Profile UKM</span>
 		<div className='Group382'>
@@ -66,7 +73,7 @@ export default function EditProfileUKM () {
 		<div className='Group316'>
 			<div className='Group314_5'>
 				<div className='Rectangle1_5'/>
-				<span className='UnitTaekwondoUnpadUTKDdidirikanpadatanggal16September1982UTKDmengadakanlatihanrutinsetiaphariSeninKamisdiPelataranTamanFakultasHukumUnpadDipatiUkurBandungdanSelasaJumatdiBaleSantikaataudiStadionJatiPadjadjaranJatinangormulaipukul1600WIBSejumlahprestasiyangpernahdiraihantaralainGaneshaCup20131PerungguWalikotaCup20131Emas5perak2perungguKejuaraanNasionalITTelkomCup20131Perak3PerungguKejuaraanNasionalFEUICup20132Perak2PerungguMetroOpen20135Perak5PerungguKTBCupBogorSeJawaBarat1Perak7PerungguWalikotaCupBandung20123Perak4PerungguPolbanKyorugiChampionship20122emas8Perak6perungguWalikotaBandungCup20112emas2Perak4perungguUPIChallenge20111perak6perungguWalikotaBandungCup20102emas1perak4PerungguKejurnasITTelkom20101PerungguMediaSosialLinecgk2038xInstagramtaekwondo_unpadTwitterTaekwondoUnpad'>Unit Taekwondo Unpad (UTKD) didirikan pada tanggal 16 September 1982. UTKD mengadakan latihan rutin setiap hari Senin & Kamis di Pelataran Taman Fakultas Hukum Unpad (Dipati Ukur Bandung) dan Selasa & Jumat di Bale Santika atau di Stadion Jati Padjadjaran (Jatinangor) mulai pukul 16.00 WIB.
+				<span className='deskripsi'>Unit Taekwondo Unpad (UTKD) didirikan pada tanggal 16 September 1982. UTKD mengadakan latihan rutin setiap hari Senin & Kamis di Pelataran Taman Fakultas Hukum Unpad (Dipati Ukur Bandung) dan Selasa & Jumat di Bale Santika atau di Stadion Jati Padjadjaran (Jatinangor) mulai pukul 16.00 WIB.
 				
 				Sejumlah prestasi yang pernah diraih antara lain: 
 				
@@ -134,57 +141,11 @@ export default function EditProfileUKM () {
 				</div>
 			</div>
 		</div>
-		<div className='Footer'>
-			<div className='Group226'>
-				<div className='PageHeaderSecondary'>
-					<div className='PageHeader'>
-						<div className='ColorsSecondary'>
-						</div>
-						<span className='ProjectBrandGuidelines'>Project DESIGN Guidelines</span>
-						<span className='_2020'></span>
-					</div>
-				</div>
-				<div className='Group224'>
-					<span className='UKMsCare2022'>© UKM’s Care 2022</span>
-					<div className='Group341'>
-						<span className='FollowUs'>Follow Us</span>
-						<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-						<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-						<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-						<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
-					</div>
-					<div className='Group364'>
-						<span className='UKMUnpad'>UKM Unpad</span>
-						<span className='AboutUs'>About Us</span>
-						<span className='Help'>Help</span>
-						<span className='BeritaUKM'>Berita UKM</span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div className='NavbarAdminUKM'>
-			<div className='Group227'>
-				<div className='PageHeaderSecondary_1'>
-					<div className='PageHeader_1'>
-						<div className='ColorsSecondary_1'>
-						</div>
-						<span className='ProjectBrandGuidelines_1'>Project DESIGN Guidelines</span>
-						<span className='_2020_1'></span>
-					</div>
-				</div>
-				<div className='Frame378'>
-					<img className='Vector_8' src = {ImgAsset.EditProfileUKM_Vector_8} />
-				</div>
-				<div className='Frame377'>
-					<img className='Screenshot_20220306_161229removebgpreview4' src = {ImgAsset.NavbarSebelumLogin_Screenshot_20220306_161229removebgpreview2} />
-				</div>
-				<div className='Frame238'>
-					<span className='Dashboard'>Dashboard</span>
-					<span className='UKMUnpad_1'>UKM Unpad</span>
-					<span className='BeritaUKM_1'>Berita UKM</span>
-				</div>
-			</div>
-		</div>
+
+		<Footer/>
 	</div>
 	)
 }
+}
+
+export default EditProfileUKM;
