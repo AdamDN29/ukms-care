@@ -6,8 +6,10 @@ import {Link} from 'react-router-dom'
 import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
+import BeritaPost2 from '../components/BeritaPost2'
 
 class HomepageA_1 extends Component{
+	
 render() {
     return (
 	<div className='HomepageA_1_HomepageA'>
@@ -120,7 +122,9 @@ render() {
 		{/*Berita UKM*/}
 		<span className='beritaukm'>BERITA UKM</span>
 		<div className='Line5'/>
-		<div className='Group334'>
+		<BeritaPost2 />
+
+		{/* <div className='Group334'>
 			<div className='Group326'>
 				<div className='Rectangle23'/>
 				<div className='Rectangle24'/>
@@ -129,7 +133,7 @@ render() {
 					<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
 					<span className='UnitTaekwondoUnpad'>Unit Taekwondo Unpad</span>
 					<span className='Jumat25Maret2022'>Jumat, 25 Maret 2022</span>
-				</div>
+			</div>
 				<div className='Group325'>
 					<img className='JuaraTaekwondo1_1' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
 					<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_1'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
@@ -146,7 +150,7 @@ render() {
 					<span className='Jumat25Maret2022_2'>Jumat, 25 Maret 2022</span>
 				</div>
 			</div>
-		</div>
+		</div> */}
 		<Link to='/beritaukmb'>
 			<span className='BeritaSelengkapnya'>Berita Selengkapnya  ➝</span>
 		</Link>

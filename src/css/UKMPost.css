@@ -1,0 +1,73 @@
+.Group309 {
+	position: relative;
+	left: 200px;
+	top: 350px;
+	width: 1120px;
+	/* height: 350px; */
+    
+	display: flex;
+    flex: 1;
+    border-radius: 5px;
+    margin-bottom : 5px;
+	/* flex-direction: column; */
+	box-sizing: border-box;
+}
+.Group309 .container {
+	position: relative;
+	margin-bottom: 10px;
+	width: 1120px;
+	height: 350px;
+	border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1);
+}
+
+/* .Group309 .container {
+	position: relative;
+	left: 70px;
+	top: 460px;
+	width: 834.07080078125px;
+	height: 364.8173828125px;
+    border-radius: 5px;
+    margin-bottom : 5px;
+    display: flex;
+    flex: 1;
+}
+
+.Group309 .container .container {
+	position: relative;
+
+    border-radius: 5px;
+    margin-bottom : 5px;
+} */
+
+
+.Group309 .container .Rectangle8 {
+	position: absolute;
+	left: 46.017578125px;
+	top: 0px;
+	width: 345px;
+	height: 364.8173828125px;
+}
+.Group309 .container .taekwondoremovebgpreview3 {
+	position: absolute;
+	left: 120px;
+	top: 30px;
+	width: 235px;
+	height: 221px;
+	object-fit: cover;
+	overflow: hidden;
+	
+}
+.Group309 .container .UNITTaekwondoUnpad {
+	position: absolute;
+	left: 20px;
+	text-align: center;
+	top: 289.93408203125px;
+	width: 400px;
+	height: 40.09130859375px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+}
