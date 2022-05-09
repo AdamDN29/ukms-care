@@ -38,7 +38,7 @@ function DetailUKMA (props){
 		  });
 
 
-	  }); 
+	  }, []); 
 	const date = berita.created_at
 	const dt = new Date(date)
 	const contents = berita.content
@@ -91,55 +91,6 @@ function DetailUKMA (props){
 			</div>
 			<span className='ukmDesc'>
 				{ukm.desc}
-			{/* Unit Taekwondo Unpad (UTKD) didirikan pada tanggal 16 September 1982. UTKD 
-			mengadakan latihan rutin setiap hari Senin & Kamis di Pelataran Taman Fakultas Hukum 
-			Unpad (Dipati Ukur Bandung) dan Selasa & Jumat di Bale Santika atau di Stadion Jati 
-			Padjadjaran (Jatinangor) mulai pukul 16.00 WIB.
-			
-			Sejumlah prestasi yang pernah diraih antara lain: 
-			
-			Ganesha Cup 2013 (1 Perunggu ) 
-			Walikota Cup 2013 (1 Emas , 5 perak 2 perunggu) 
-			Kejuaraan Nasional IT Telkom Cup 2013 (1 Perak, 3 Perunggu) 
-			Kejuaraan Nasional FEUI Cup 2013 (2 Perak , 2 Perunggu) 
-			Metro Open 2013 (5 Perak , 5 Perunggu ) 
-			KTB Cup Bogor Se Jawa Barat (1 Perak, 7 Perunggu) 
-			Walikota Cup Bandung 2012 (3 Perak , 4 Perunggu ) 
-			Polban Kyorugi Championship 2012 (2 emas, 8 Perak, 6 perunggu) 
-			Walikota Bandung Cup 2011 (2 emas, 2 Perak, 4 perunggu) 
-			UPI Challenge 2011 (1 perak, 6 perunggu) Walikota 
-			Bandung Cup 2010 (2 emas, 1 perak, 4 Perunggu) 
-			Kejurnas ITTelkom 2010 (1 Perunggu)
-			
-
-
-			Unit Taekwondo Unpad (UTKD) didirikan pada tanggal 16 September 
-			1982. UTKD mengadakan latihan rutin setiap hari Senin & Kamis di 
-			Pelataran Taman Fakultas Hukum Unpad (Dipati Ukur Bandung) dan Selasa & 
-			Jumat di Bale Santika atau di Stadion Jati Padjadjaran (Jatinangor) mulai pukul 16.00 WIB.
-			
-			Sejumlah prestasi yang pernah diraih antara lain: 
-			
-			Ganesha Cup 2013 (1 Perunggu ) 
-			Walikota Cup 2013 (1 Emas , 5 perak 2 perunggu) 
-			Kejuaraan Nasional IT Telkom Cup 2013 (1 Perak, 3 Perunggu) 
-			Kejuaraan Nasional FEUI Cup 2013 (2 Perak , 2 Perunggu) 
-			Metro Open 2013 (5 Perak , 5 Perunggu ) 
-			KTB Cup Bogor Se Jawa Barat (1 Perak, 7 Perunggu) 
-			Walikota Cup Bandung 2012 (3 Perak , 4 Perunggu ) 
-			Polban Kyorugi Championship 2012 (2 emas, 8 Perak, 6 perunggu) 
-			Walikota Bandung Cup 2011 (2 emas, 2 Perak, 4 perunggu) 
-			UPI Challenge 2011 (1 perak, 6 perunggu) Walikota 
-			Bandung Cup 2010 (2 emas, 1 perak, 4 Perunggu) 
-			Kejurnas ITTelkom 2010 (1 Perunggu)
-			
-			Media Sosial 
-			
-			Line         : @cgk2038x
-			
-			Instagram : taekwondo_unpad
-			
-			Twitter     : @TaekwondoUnpad */}
 			</span>
 		</div>
 
@@ -164,7 +115,7 @@ function DetailUKMA (props){
 		<div className='Group306'>
 			<div className='Rectangle8'/>
 		</div>
-		<span className='Beritaterbaru'>Berita terbaru</span>
+		<span className='Beritaterbaru'>Berita Terbaru</span>
 
 		{
 			berita.slice(0,1).map((post) => {
@@ -190,11 +141,6 @@ function DetailUKMA (props){
 		}
 		
 		
-
-		
-
-		
-	
 		<Footer/>
 	</div>
 	)

@@ -8,6 +8,8 @@ import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import UKMPost from '../components/UKMPost'
 import SearchBerita from '../components/SearchBerita'
+import { Button, ButtonGroup } from 'react-bootstrap'
+import { Dropdown } from 'react-bootstrap'
 import axios from 'axios';
 
 class UKMUnpadA extends Component{
@@ -45,24 +47,32 @@ render() {
 
 		{/*pilih kategori*/}
 		<div className='Group365'>
-			<div className='Group359'>
-				<div className='Rectangle29'/>
-				<span className='Kategori'>Kategori</span>
-				<div className='Group358'>
-					<div className='Rectangle30'/>
-					<div className='Rectangle31'/>
-					<div className='Rectangle32'/>
-					<div className='Rectangle33'/>
-					<div className='Rectangle34'/>
-					<div className='Rectangle35'/>
-					<div className='Rectangle36'/>
-					<div className='Rectangle37'/>
-					<div className='Rectangle38'/>
-				</div>
-				<div className='Polygon1'/>
-			</div>
+			<Dropdown>
+					<Dropdown.Toggle variant="success" id="dropdown-basic" className='Group359'>
+							<div className='Group358'>
+								<div className='Rectangle30'/>
+								<div className='Rectangle31'/>
+								<div className='Rectangle32'/>
+								<div className='Rectangle33'/>
+								<div className='Rectangle34'/>
+								<div className='Rectangle35'/>
+								<div className='Rectangle36'/>
+								<div className='Rectangle37'/>
+								<div className='Rectangle38'/>
+							</div>
+							<span className='Kategori'>Kategori</span>
+							<img className='Icon1' src={ImgAsset.SegitigaSearch}/>
+					</Dropdown.Toggle>
+
+					<Dropdown.Menu>
+						<Dropdown.Item href="#/action-1">Olahraga</Dropdown.Item>
+						<Dropdown.Item href="#/action-2">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+					</Dropdown.Menu>
+				</Dropdown>
+			
 			{/* search */}
-		<div className='Group2'>
+		{/* <div className='Group2'>
 			<div className='Rectangle3'/>
 				<span className='Search'>Search</span>
 				<div className='evasearchoutline'>
@@ -72,8 +82,15 @@ render() {
 			<div className='Group360'>
 				<div className='Rectangle39'/>
 				<span className='Search_1'>Search</span>
-			</div>
+			</div> */}
+			<input className='Frame2' placeholder='Search'></input>
+				
+			<Button className='Frame360' placeholder='Search'>
+				<p className='searchText'>Search</p>
+			</Button>	
 		</div>
+
+		
 		{/* <SearchBerita/> */}
 
 		<span className='UNITKEGIATANMAHASISWA'>UNIT KEGIATAN MAHASISWA</span>

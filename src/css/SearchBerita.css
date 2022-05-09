@@ -296,4 +296,9 @@
 	box-sizing: border-box;
 	font-weight: bold;
 	font-family: Oxygen;
+	text-decoration-color: black;
+}
+
+.searchText {
+	color: black;
 }
