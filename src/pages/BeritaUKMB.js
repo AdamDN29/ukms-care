@@ -3,6 +3,7 @@ import '../css/BeritaUKMB.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import { Component } from 'react/cjs/react.production.min'
+import { useState, useEffect } from "react";
 import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import BeritaPost from '../components/BeritaPost'
@@ -13,24 +14,41 @@ import axios from 'axios';
 // X-CSRF-Token: RRhCuLSfxCWxubAbBVk5U0sGCrxwrWPAb4rs6fsl
 //axios.defaults.headers.common['X-CSRF-TOKEN'] = axios.get('https://api-ukmscare.herokuapp.com/csrf-token')
 
-class BeritaUKMB extends Component {
-	state = {
-		post: []
+export default function BeritaUKMB (props) {
+	const { query } = props.match.params;
+	console.log(query);
+	
+	const [berita, setBerita] = useState([]);
+	// state = {
+	// 	post: []
 		
-	}
+	// }
 
-	componentDidMount(){
-		axios.get('https://api-ukmscare.herokuapp.com/articles')
-		.then((response)=>{
+	// componentDidMount(){
+	// 	axios.get('https://api-ukmscare.herokuapp.com/articles')
+	// 	.then((response)=>{
+	// 		console.log(response.data.data);
+	// 		this.setState({
+	// 			post: response.data.data
+	// 		})
+	// 	})
+
+	// }
+	useEffect(() => {
+		axios
+		.get(`https://api-ukmscare.herokuapp.com/${query}`)
+		  .then((response) => {
 			console.log(response.data.data);
-			this.setState({
-				post: response.data.data
-			})
-		})
+			setBerita(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
+	
 
-	}
+	},[]); 
 
-    render() {
+
 		return (
 			<div className='BeritaUKMB_BeritaUKMB'>
 				<NavbarUser />
@@ -48,7 +66,7 @@ class BeritaUKMB extends Component {
 				<SearchBerita/>
 				
 				{
-					this.state.post.map(post => {
+					berita.map(post => {
 						return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} ukm_name={post.ukm.name} />
 					})
 				}
@@ -56,7 +74,5 @@ class BeritaUKMB extends Component {
 				<Footer />
 			</div>
 		)
-	}
+	
 }
-
-export default BeritaUKMB;

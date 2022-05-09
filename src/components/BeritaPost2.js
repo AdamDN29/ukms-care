@@ -36,17 +36,19 @@ class BeritaPost2 extends Component {
 			<Row xs={1} md={3} className='Row'>
 			{	
 				this.state.post.map(post => {
-		
+					const date = post.created_at
+					const dt = new Date(date)
 					return(
 					
 						<Col >
 						<Link to={`/beritasingle/${post.id}`}>
 						<Card className='Card' >
-							<Card.Img variant="top" src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-							<Card.Body >
-								<Card.Title variant="center" >{post.ukm_name}</Card.Title>
+							<Card.Img variant="top" className='Image' src={ImgAsset.HomepageA_JuaraTaekwondo1} />
+							<Card.Body className='Body'>
+								<Card.Title variant="center" className='Subject'>{post.subject}</Card.Title>
 								<Card.Text>
-									This is a wider card 
+									<p className='Name'> {post.ukm.name}</p>
+									<p className='Date'> <ReactTimeAgo date={dt} locale="en-US"/> </p>
 								</Card.Text>
 							</Card.Body>
 							</Card>

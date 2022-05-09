@@ -6,6 +6,8 @@ import {Link} from 'react-router-dom'
 import NavbarUser from '../components/NavbarUser.js'
 import Footer from '../components/Footer'
 import BackButton from "../components/BackButton";
+import moment from 'moment'
+import 'moment/locale/id'
 import axios from "axios";
 
 function BeritaSingle (props) {
@@ -27,7 +29,9 @@ function BeritaSingle (props) {
 		  .catch((err) => {
 			console.log(err);
 		  });
-	  }); 
+	}); 
+	const date = new Date(single.created_at)
+	console.log(date);
 
 	return (
 		<div className='BeritaSingle_BeritaSingle'>
@@ -47,7 +51,7 @@ function BeritaSingle (props) {
 				<span className='UKM_Name'>{ukm.name}</span>
 			</div>
 			<div className='Frame370'>
-				<span className='Time'>{single.created_at} </span>
+				<span className='Time'>{moment(date).format('LLLL')} </span>
 			</div>
 			<div className='Frame371'>
 				<img className='Image' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />

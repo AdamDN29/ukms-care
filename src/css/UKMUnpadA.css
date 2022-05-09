@@ -298,7 +298,8 @@
 
 .UKMUnpadA_UKMUnpadA .UNITKEGIATANMAHASISWA {
 	position: absolute;
-	left: 60px;
+	align-self: center;
+	/* left: 50px; */
 	top: 198px;
 	width: 1159px;
 	height: 64px;

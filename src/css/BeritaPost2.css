@@ -3,7 +3,7 @@
 	/* align-self: center;
 	align-items: center; */
 	left: 125px;
-	top: 1900px;
+	top: 1880px;
 	width: 1000px;
 	height: 444.16650390625px;
 	
@@ -33,16 +33,63 @@
 	width: 308.318603515625px;
 	height: 393.06396484375px;
 }
-.Group334 .Group327 .Group325_1 .JuaraTaekwondo1_2 {
+
+
+
+.Row .Card .Image {
 	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 308.318603515625px;
-	height: 209.251953125px;
-	object-fit: cover;
+	left: 28px;
+	top: 25px;
+	width: 270px;
+	height: 225px;
+	/* object-fit: cover; */
 	overflow: hidden;
 	border-radius: 5px;
 }
+
+.Row .Card .Body {
+	position: relative;
+	top: 250px;
+	left: 10px;
+	width: 270px;
+	
+}
+
+.Row .Card .Body .Subject{
+	position: relative;
+	width: 270px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	text-decoration: underline;
+	text-decoration-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	font-size: 20px;
+	
+}
+
+.Row .Card .Body .Name{
+	position: relative;
+	top: 10px;
+	width: 270px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	text-decoration: underline;
+	text-decoration-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	font-size: 16px;
+	
+}
+
+.Row .Card .Body .Date{
+	position: absolute;
+	top: 150px;
+	width: 270px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	text-decoration: underline;
+	text-decoration-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	font-size: 16px;
+	
+}
+
 .Group334 .Group327 .Group325_1 .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_2 {
 	position: absolute;
 	left: 0px;

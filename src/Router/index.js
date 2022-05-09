@@ -52,7 +52,7 @@ const RouterDOM = () => {
 					path="/editprofileuser"
 					component={() => <EditProfileUser idUser={idUser} />}
 				></Route> */}
-				<Route path="/beritaukmb" component={BeritaUKMB}></Route>
+				<Route path="/beritaukmb/:query" component={BeritaUKMB}></Route>
 				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
 
 

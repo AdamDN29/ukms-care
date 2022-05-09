@@ -12,6 +12,7 @@
     "csurf": "^1.11.0",
     "javascript-time-ago": "^2.3.13",
     "js-cookie": "^3.0.1",
+    "moment": "^2.29.3",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-bootstrap": "^2.3.0",

@@ -85,7 +85,7 @@
 	left: 50%;
 	transform: translate(-50%);
 	top: 354px;
-	width: 379px;
+	width: 600px;
 	height: 44px;
 	display: flex;
 	padding-top: 10px;
@@ -97,8 +97,8 @@
 .BeritaSingle_BeritaSingle .Frame369 .UKM_Name {
 	position: relative;
 	text-align: center;
-	margin-right: 10px;
-	width: 359px;
+	/* margin-right: 10px; */
+	width: 600px;
 	height: 24px;
 	color : rgba(0,0,0,1);
 	font-family: Oxygen;

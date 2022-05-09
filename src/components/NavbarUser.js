@@ -12,12 +12,13 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import swal from "sweetalert";
 import Cookies from "js-cookie";
 import ImgAsset from '../resources'
-import {
-	Dropdown,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem,
-  } from "reactstrap";
+import { Dropdown } from 'react-bootstrap'
+// import {
+// 	Dropdown,
+// 	DropdownToggle,
+// 	DropdownMenu,
+// 	DropdownItem,
+//   } from "reactstrap";
 
 export default function NavbarUser (props) {
 	// const [appState, toggles, modal] = UseNavbar();
@@ -137,12 +138,11 @@ export default function NavbarUser (props) {
 							</div>
 						</div>
 						<div className='Frame375'>
-							{/* <img className='logo' src = {ImgAsset.ukms_care_logo} /> */}
 							<Link to='/HomepageA_1'><img className='logo' src = {ImgAsset.ukms_care_logo} /></Link>
 						</div>
 						<div className='Frame238'>
 							<Link to='/ukmunpada' className="link"><span className='UKMUnpad_1'>UKM Unpad</span></Link>
-							<Link to='/beritaukmb' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
+							<Link to='/beritaukmb/articles' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
 						</div>
 						<div>
 							{/* {userId === null ? (
@@ -228,8 +228,21 @@ export default function NavbarUser (props) {
 						</div>
 						
 
-						<div className='Frame376'>
-							<img className='Avatar' src = {ImgAsset.Avatar} />
+						<div className='Dropdown'>
+							<Dropdown >
+								<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>
+									{/* <div className='cover'></div> */}
+									<img className='Avatar' src = {ImgAsset.Avatar} />	
+								</Dropdown.Toggle>
+
+								
+								<Dropdown.Menu align='start' className='Menu'>
+									<Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
+									<Dropdown.Item href="#/action-2">Logout</Dropdown.Item>
+								</Dropdown.Menu>
+							
+							</Dropdown>
+							
 						</div>
 					</div>
 				</div>

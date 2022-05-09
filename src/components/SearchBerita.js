@@ -10,6 +10,7 @@ import axios from "axios";
 export default function SearchBerita () {
 
 	const [ukm, setUKM] = useState([]);
+	const cat1 = 'category/Olahraga';
 
 	useEffect(() => {
 		axios
@@ -47,8 +48,8 @@ export default function SearchBerita () {
 					</Dropdown.Toggle>
 
 					<Dropdown.Menu>
-						<Dropdown.Item href="#/action-1">Olahraga</Dropdown.Item>
-						<Dropdown.Item href="#/action-2">Beladiri</Dropdown.Item>
+						<Dropdown.Item href={ "/beritaukmb/" + cat1}>Olahraga</Dropdown.Item>
+						<Dropdown.Item href="/action-2">Beladiri</Dropdown.Item>
 						<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>

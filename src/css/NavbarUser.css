@@ -156,24 +156,56 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 {
+.Navbar .Frame382 .Frame368 .Navbar1 .Dropdown {
 	position: absolute;
-	left: 1304.974609375px;
-	top: 5px;
-	width: 70px;
-	height: 70px;
-	display: flex;
-	padding-top: 10px;
-	padding-right: 10px;
+	
+	right: -45px;
+	top: 8px;
+	width: 150px;
+	height: 150px;
+	/* display: flex;  */
+	/* padding-top: 10px;
+	padding-right: 100px;
 	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
+	padding-left: 10px;  */
+	/* box-sizing: border-box; */
 }
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Avatar {
+.btn-check:focus+.btn, .btn:focus {
+	box-shadow: none;
+}
+
+.dropdown-toggle::after {
+	display: none !important; 
+  }
+
+.Navbar .Frame382 .Frame368 .Navbar1 .Dropdown .Toggle {
+	
+}
+
+
+.Avatar {
 	position: relative;
-	right: 190px;
-	width: 100%;
-	height: 100%;
+	left: 0px;
+	/* bottom: 10px; */
+	width: 50px;
+	height: 50px;
+}
+
+.cover {
+	position: absolute;
+	color : rgb(21, 144, 189);
+	left: 0px;
+	/* bottom: 10px; */
+	width: 50px;
+	height: 50px;
+}
+
+.Menu {
+	position: relative;
+	/* right: 20px; */
+	margin-top: 1px;
+	margin-left: -54px;
+
 }
 
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 {
