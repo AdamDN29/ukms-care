@@ -62,7 +62,8 @@ const RouterDOM = () => {
 				<Route exact path="/signupuser"><SignupUser /></Route>
 				<Route exact path="/profileuser"><ProfileUser /></Route>
 				<Route exact path="/editprofileuser/:id" component={EditProfileUser}></Route>
-				<Route exact path="/detailukma"><DetailUKMA /></Route>
+				{/* <Route exact path="/detailukma"><DetailUKMA /></Route> */}
+				<Route path="/detailukma/:ukm_id" component={DetailUKMA}></Route>
 				<Route exact path="/daftarukm"><DaftarUKM /></Route>
 
 				<Route exact path="/signinadmin"><SigninAdmin /></Route>

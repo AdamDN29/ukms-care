@@ -86,14 +86,14 @@
 }
 .DetailUKMA_DetailUKMA .Loginbtn .akariconsedit .Group .Vector_4 {
 	position: absolute;
-	left: 9.33349609375px;
+	left: 20px;
 	top: 0px;
 	width: 58.822515671786476%;
 	height: 58.822515671786476%;
 }
 .DetailUKMA_DetailUKMA .Loginbtn .akariconsedit .Group .Vector_5 {
 	position: absolute;
-	left: 0px;
+	left: 10px;
 	top: 2.66650390625px;
 	width: 88.23592770513345%;
 	height: 88.23592770513345%;
@@ -104,13 +104,13 @@
 	top: 16px;
 	width: 158px;
 	height: 24px;
-	color : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	color : rgb(255, 255, 255);
 	font-family: Lexend Deca;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
 }
-.DetailUKMA_DetailUKMA .taekwondoremovebgpreview4 {
+.DetailUKMA_DetailUKMA .ukmAvatar {
 	position: absolute;
 	left: 220px;
 	top: 320px;
@@ -167,7 +167,7 @@
 	height: 350px;
 	background : rgba(255,255,255,1);
 }
-.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .JuaraTaekwondo1 {
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .imgBerita {
 	position: absolute;
 	left: 30.16064453125px;
 	top: 33.412109375px;
@@ -177,7 +177,7 @@
 	overflow: hidden;
 	border-radius: 5px;
 }
-.DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022 {
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .beritaSubject {
 	position: absolute;
 	left: 54px;
 	top: 113px;
@@ -189,7 +189,7 @@
 	font-weight: 700;
 	line-height: 36px;
 }
-.DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpad {
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .ukmName2 {
 	position: absolute;
 	left: 90px;
 	top: 48px;
@@ -201,7 +201,7 @@
 	font-weight: 700;
 	line-height: 20px;
 }
-.DetailUKMA_DetailUKMA .Group338 .Alltickets .Jumat25Maret2022 {
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .beritaDate {
 	position: absolute;
 	left: 54px;
 	top: 383px;
@@ -213,7 +213,7 @@
 	font-weight: 700;
 	line-height: 20px;
 }
-.DetailUKMA_DetailUKMA .Group338 .Alltickets .UnitTaekwondoUnpadpadatanggal24Maret2022berhasilmeraihperunggupadakejuaraantaekwondotingkatnasionalpadaGaneshaCup2022Perunggutersebutdimenangkanoleh {
+.DetailUKMA_DetailUKMA .Group338 .Alltickets .beritaContent {
 	position: absolute;
 	left: 54px;
 	top: 227px;
@@ -336,7 +336,7 @@
 	width: 78.12505309659332%;
 	height: 78.1247650945051%;
 }
-.DetailUKMA_DetailUKMA .Group339 .SetiapHari1600WIB {
+.DetailUKMA_DetailUKMA .Group339 .ukmDate {
 	position: absolute;
 	left: 72.4189453125px;
 	top: 22.2158203125px;
@@ -348,7 +348,7 @@
 	font-weight: 400;
 	line-height: 24px;
 }
-.DetailUKMA_DetailUKMA .Group339 ._56Anggota {
+.DetailUKMA_DetailUKMA .Group339 .ukmMember {
 	position: absolute;
 	left: 72.4189453125px;
 	top: 108.73828125px;
@@ -360,7 +360,7 @@
 	font-weight: 400;
 	line-height: 24px;
 }
-.DetailUKMA_DetailUKMA .Group339 .BaleSantika {
+.DetailUKMA_DetailUKMA .Group339 .ukmLocation {
 	position: absolute;
 	left: 72.4189453125px;
 	top: 191.75390625px;
@@ -372,7 +372,7 @@
 	font-weight: 400;
 	line-height: 24px;
 }
-.DetailUKMA_DetailUKMA .Group339 .TaekwondoUnpadgmailcom {
+.DetailUKMA_DetailUKMA .Group339 .ukmContact {
 	position: absolute;
 	left: 71.26953125px;
 	top: 265.4150390625px;
@@ -418,13 +418,13 @@
 	border: 1px solid rgba(255,255,255,1);
 	box-sizing: border-box;
 }
-.DetailUKMA_DetailUKMA .Group386 .UnitTaekwondoUnpadUTKDdidirikanpadatanggal16September1982UTKDmengadakanlatihanrutinsetiaphariSeninKamisdiPelataranTamanFakultasHukumUnpadDipatiUkurBandungdanSelasaJumatdiBaleSantikaataudiStadionJatiPadjadjaranJatinangormulaipukul1600WIBSejumlahprestasiyangpernahdiraihantaralainGaneshaCup20131PerungguWalikotaCup20131Emas5perak2perungguKejuaraanNasionalITTelkomCup20131Perak3PerungguKejuaraanNasionalFEUICup20132Perak2PerungguMetroOpen20135Perak5PerungguKTBCupBogorSeJawaBarat1Perak7PerungguWalikotaCupBandung20123Perak4PerungguPolbanKyorugiChampionship20122emas8Perak6perungguWalikotaBandungCup20112emas2Perak4perungguUPIChallenge20111perak6perungguWalikotaBandungCup20102emas1perak4PerungguKejurnasITTelkom20101PerungguMediaSosialLinecgk2038xInstagramtaekwondo_unpadTwitterTaekwondoUnpad {
+.DetailUKMA_DetailUKMA .Group386 .ukmDesc {
 	position: absolute;
 	left: 80px;
 	top: 109.6337890625px;
 	width: 800px;
 	height: 446.732421875px;
-	color : rgba(255,255,255,1);
+	color : rgb(255, 255, 255);
 	font-family: Oxygen;
 	font-size: 18px;
 	font-weight: 700;
@@ -445,9 +445,9 @@
 	height: 106px;
 	border-radius: 10px;
 }
-.DetailUKMA_DetailUKMA .Group387 .UNITTaekwondounpad {
+.DetailUKMA_DetailUKMA .Group387 .ukmName {
 	position: absolute;
-	left: 280px;
+	left: 0px;
 	top: 35px;
 	width: 950.66650390625px;
 	height: 67px;
@@ -456,4 +456,5 @@
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 36px;
+	text-align: center;
 }

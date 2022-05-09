@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { Component } from 'react/cjs/react.production.min'
 import ImgAsset from '../resources'
-import '../css/BeritaPost.css';
+import '../css/UKMPost.css';
 import {Link} from 'react-router-dom'
 import ReactTimeAgo from 'react-time-ago'
 import axios from 'axios';
@@ -17,17 +17,18 @@ const UKMPost = (props) => {
 	// 	// 	post: response.data.data
 	// 	// })
 	// })
+    console.log(props.ukm_id);
 
     return (
-		<Link to={`/ukms/${props.ukm_id}`}>
-			<div className='UKMPost'>
-                <div className='Group309'>
+		<Link to={`/detailukma/${props.ukm_id}`}>
+			
+               
                     <div className='container'>
-                        <img className='Rectangle8' src = {ImgAsset.UKMUnpadA_Rectangle8} />
+                        {/* <img className='Rectangle8' src = {ImgAsset.UKMUnpadA_Rectangle8} /> */}
                         <img className='taekwondoremovebgpreview3' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
                         <span className='UNITTaekwondoUnpad'>{props.ukm_name} </span>
                     </div>
-                </div>
+             
 				{/* <div className='Frame338_2'>
 					<div className='Alltickets_3'>
 						<div className='cardsdefault_3'>
@@ -47,7 +48,7 @@ const UKMPost = (props) => {
 						</div>
 					</div>
 				</div> */}
-			</div>
+			
 		</Link>
     )
 }
