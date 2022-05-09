@@ -1,8 +1,10 @@
-.Group334 {
+.Row {
 	position: absolute;
-	left: 100px;
-	top: 200px;
-	width: 1182.974365234375px;
+	/* align-self: center;
+	align-items: center; */
+	left: 125px;
+	top: 1900px;
+	width: 1000px;
 	height: 444.16650390625px;
 	
 }
@@ -16,11 +18,10 @@
     /* border-radius: 5px;
     margin-bottom : 5px; */
 }
-.Group334 .Group327 .Rectangle25 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 350px;
+.Row .Card {
+	position: relative;
+	
+	width: 325px;
 	height: 444.16650390625px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border-radius: 5px;

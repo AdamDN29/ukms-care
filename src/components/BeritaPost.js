@@ -11,19 +11,9 @@ const BeritaPost = (props) => {
   	const dt = new Date(date)
 	const contents = props.content
 
-	
-	// axios.get(`https://api-ukmscare.herokuapp.com/ukms/${props.ukm_id}`)
-	// .then((response)=>{
-	// 	console.log(response.data.data);
-	// 	// ukm_ids = response.data.data;
-	// 	// this.setState({
-	// 	// 	post: response.data.data
-	// 	// })
-	// })
-
     return (
 		<Link to={`/beritasingle/${props.articles_id}`}>
-			<div className='BeritaPost'>
+		
 				<div className='Frame338_2'>
 					<div className='Alltickets_3'>
 						<div className='cardsdefault_3'>
@@ -43,7 +33,7 @@ const BeritaPost = (props) => {
 						</div>
 					</div>
 				</div>
-			</div>
+		
 		</Link>
     )
 }

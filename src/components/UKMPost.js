@@ -5,6 +5,8 @@ import '../css/UKMPost.css';
 import {Link} from 'react-router-dom'
 import ReactTimeAgo from 'react-time-ago'
 import axios from 'axios';
+import Card from 'react-bootstrap/Card'
+import { Col } from 'react-bootstrap';
 
 const UKMPost = (props) => {
 
@@ -20,36 +22,36 @@ const UKMPost = (props) => {
     console.log(props.ukm_id);
 
     return (
-		<Link to={`/detailukma/${props.ukm_id}`}>
+
+ 
+        
+        <Col >
+            <Link to={`/detailukma/${props.ukm_id}`}>
+            <Card className='UKMCard'>
+                <Card.Img variant="top" className='UKMImg' src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+                <Card.Body >
+                <Card.Title variant="center" className='UKMName'>{props.ukm_name}</Card.Title>
+                </Card.Body>
+            </Card>
+            </Link>
+        </Col>
+       
+
+       
+        
+ 
+  
+		// <Link to={`/detailukma/${props.ukm_id}`}>
 			
                
-                    <div className='container'>
-                        {/* <img className='Rectangle8' src = {ImgAsset.UKMUnpadA_Rectangle8} /> */}
-                        <img className='taekwondoremovebgpreview3' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-                        <span className='UNITTaekwondoUnpad'>{props.ukm_name} </span>
-                    </div>
+        //             <div className='container'>
+        //                 {/* <img className='Rectangle8' src = {ImgAsset.UKMUnpadA_Rectangle8} /> */}
+        //                 <img className='taekwondoremovebgpreview3' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+        //                 <span className='UNITTaekwondoUnpad'>{props.ukm_name} </span>
+        //             </div>
              
-				{/* <div className='Frame338_2'>
-					<div className='Alltickets_3'>
-						<div className='cardsdefault_3'>
-							<div className='sheet_3'/>
-							<div className='Group362_3'>
-								<div className='Group337_3'>
-									<div className='Group361_3'>
-										<div className='Rectangle26_3'/>
-										<img className='Image' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-									</div>
-								</div>
-								<span className='Title'>{props.subject}</span>
-								<span className='UKM_Name'>{props.ukm_name}</span>
-								<span className='Date'><ReactTimeAgo date={dt} locale="en-US"/></span>
-								<span className='Content'>{contents.slice(0,500)} ... Berita Selengkapnya</span>
-							</div>
-						</div>
-					</div>
-				</div> */}
-			
-		</Link>
+				
+		// </Link>
     )
 }
 

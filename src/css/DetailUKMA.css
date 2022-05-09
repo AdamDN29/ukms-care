@@ -107,7 +107,7 @@
 	color : rgb(255, 255, 255);
 	font-family: Lexend Deca;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: bolder;
 	line-height: 20px;
 }
 .DetailUKMA_DetailUKMA .ukmAvatar {
@@ -161,7 +161,7 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .Rectangle26 {
 	position: absolute;
-	left: 0.16064453125px;
+	left: -10px;
 	top: 0.2060546875px;
 	width: 380px;
 	height: 350px;
@@ -169,8 +169,8 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .imgBerita {
 	position: absolute;
-	left: 30.16064453125px;
-	top: 33.412109375px;
+	left: 15px;
+	top: 40px;
 	width: 330px;
 	height: 270px;
 	object-fit: cover;
@@ -179,20 +179,20 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .beritaSubject {
 	position: absolute;
-	left: 54px;
-	top: 113px;
-	width: 580px;
+	left: 40px;
+	top: 90px;
+	width: 550px;
 	height: 80px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 700;
 	line-height: 36px;
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .ukmName2 {
 	position: absolute;
-	left: 90px;
-	top: 48px;
+	left: 40px;
+	top: 40px;
 	width: 456px;
 	height: 14px;
 	color : rgba(255,255,255,1);
@@ -203,7 +203,7 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .beritaDate {
 	position: absolute;
-	left: 54px;
+	left: 40px;
 	top: 383px;
 	width: 456px;
 	height: 14px;
@@ -215,13 +215,13 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .beritaContent {
 	position: absolute;
-	left: 54px;
-	top: 227px;
-	width: 580px;
+	left: 40px;
+	top: 190px;
+	width: 550px;
 	height: 121px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 20px;
 }

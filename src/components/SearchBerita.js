@@ -76,7 +76,7 @@ export default function SearchBerita () {
 						<Dropdown.Item href="#/action-3">del</Dropdown.Item> */}
 						{
 							ukm.map(post => {
-								<Dropdown.Item href="#/action-1">{post.short_name}</Dropdown.Item>
+								return <Dropdown.Item href="#/action-1">{post.short_name}</Dropdown.Item>
 			
 							})
 						}

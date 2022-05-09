@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
+import ReactTimeAgo from 'react-time-ago'
 import axios from "axios";
 
 function DetailUKMA (props){
@@ -15,6 +16,12 @@ function DetailUKMA (props){
 
 	const [ukm, setUKM] = useState([]);
 	const [berita, setBerita] = useState([]);
+
+	const date = berita.created_at
+	const dt = new Date(date)
+	const contents = berita.content
+	console.log(date);
+	console.log(contents);
 
 	useEffect(() => {
 		axios
@@ -36,12 +43,9 @@ function DetailUKMA (props){
 		  .catch((err) => {
 			console.log(err);
 		  });
-
-
 	  }, []); 
-	const date = berita.created_at
-	const dt = new Date(date)
-	const contents = berita.content
+	  console.log(berita.created_at);
+	
 
     return (
 	<div className='DetailUKMA_DetailUKMA'>
@@ -116,10 +120,14 @@ function DetailUKMA (props){
 			<div className='Rectangle8'/>
 		</div>
 		<span className='Beritaterbaru'>Berita Terbaru</span>
-
+		<div>
 		{
 			berita.slice(0,1).map((post) => {
+				const date = post.created_at
+				const dt = new Date(date)
+				const contents = post.content
 				
+				return (
 				<Link to={`/beritasingle/${post.id}`}>
 					<div className='Group338'>
 						<div className='Alltickets'>
@@ -132,14 +140,14 @@ function DetailUKMA (props){
 							</div>
 							<span className='beritaSubject'>{post.subject}</span>
 							<span className='ukmName2'>{post.ukm.name}</span>
-							<span className='beritaDate'>{post.created_at}</span>
-							<span className='beritaContent'>{contents} ... Berita Selengkapnya </span>
+							<span className='beritaDate'><ReactTimeAgo date={dt} locale="en-US"/></span>
+							<span className='beritaContent'>{contents.slice(0,500)} ... Berita Selengkapnya </span>
 						</div>
 					</div>
-				</Link>
+				</Link>)
 			})
 		}
-		
+		</div>
 		
 		<Footer/>
 	</div>

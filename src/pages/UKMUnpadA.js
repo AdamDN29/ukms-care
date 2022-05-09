@@ -10,6 +10,7 @@ import UKMPost from '../components/UKMPost'
 import SearchBerita from '../components/SearchBerita'
 import { Button, ButtonGroup } from 'react-bootstrap'
 import { Dropdown } from 'react-bootstrap'
+import { Row } from 'react-bootstrap';
 import axios from 'axios';
 
 class UKMUnpadA extends Component{
@@ -94,12 +95,50 @@ render() {
 		{/* <SearchBerita/> */}
 
 		<span className='UNITKEGIATANMAHASISWA'>UNIT KEGIATAN MAHASISWA</span>
+		{/* <div classname="row">
+			<div classname="col-sm-12">
+				<div classname="card-deck">
+				<div classname="card">
+					<img src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} classname="card-img-top" alt="gambar" />
+					<div classname="card-body">
+					<h5 classname="card-title">Card title</h5>
+					<p classname="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					</div>
+					<div classname="card-footer">
+					<small classname="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div classname="card">
+					<img src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} classname="card-img-top" alt="gambar" />
+					<div classname="card-body">
+					<h5 classname="card-title">Card title</h5>
+					<p classname="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+					</div>
+					<div classname="card-footer">
+					<small classname="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div classname="card">
+					<img src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} classname="card-img-top" alt="gambar" />
+					<div classname="card-body">
+					<h5 classname="card-title">Card title</h5>
+					<p classname="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					</div>
+					<div classname="card-footer">
+					<small classname="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div> */}
 
+		<Row xs={1} md={3} className="UKMRow">
 		{
 			this.state.post.map(post => {
 				return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} />
 			})
 		}
+		</Row>
 
 		{/*UKM 1*/}
 		{/* <div className='Group309'>

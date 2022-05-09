@@ -605,3 +605,11 @@
 	font-family: Oxygen;
 	text-decoration-color: black;
 }
+
+.UKMUnpadA_UKMUnpadA .UKMRow {
+	position: relative;
+	left: 150px;
+	top: 450px;
+	width: 995px;
+	margin-bottom: 10px;	
+}
