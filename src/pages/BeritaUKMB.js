@@ -15,25 +15,27 @@ import axios from 'axios';
 //axios.defaults.headers.common['X-CSRF-TOKEN'] = axios.get('https://api-ukmscare.herokuapp.com/csrf-token')
 
 export default function BeritaUKMB (props) {
-	const { query } = props.match.params;
+	let query = 'articles';
+
+	const param1 = props.match.params.pathParam1;
+	console.log(param1);
+	const param2 = props.match.params.pathParam2;
+	console.log(param2);
+	const param3 = props.match.params.pathParam3;
+	console.log(param3);
+
+
+	if (param2 == null){
+		query = param1;
+	}
+	if (param2 != null){
+		query = param1 + '/' + param2 + '/' + param3;
+	}
+
 	console.log(query);
-	
+
 	const [berita, setBerita] = useState([]);
-	// state = {
-	// 	post: []
-		
-	// }
 
-	// componentDidMount(){
-	// 	axios.get('https://api-ukmscare.herokuapp.com/articles')
-	// 	.then((response)=>{
-	// 		console.log(response.data.data);
-	// 		this.setState({
-	// 			post: response.data.data
-	// 		})
-	// 	})
-
-	// }
 	useEffect(() => {
 		axios
 		.get(`https://api-ukmscare.herokuapp.com/${query}`)
@@ -44,9 +46,9 @@ export default function BeritaUKMB (props) {
 		.catch((err) => {
 			console.log(err);
 		});
-	
 
 	},[]); 
+
 
 
 		return (
@@ -65,10 +67,14 @@ export default function BeritaUKMB (props) {
 				
 				<SearchBerita/>
 				
-				{
-					berita.map(post => {
-						return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} ukm_name={post.ukm.name} />
-					})
+				{ berita.length !== 0 
+					? (
+						berita.map(post => {
+							return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} />
+						})
+					)	
+					: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
+	
 				}
 					
 				<Footer />

@@ -141,8 +141,10 @@ export default function NavbarUser (props) {
 							<Link to='/HomepageA_1'><img className='logo' src = {ImgAsset.ukms_care_logo} /></Link>
 						</div>
 						<div className='Frame238'>
-							<Link to='/ukmunpada' className="link"><span className='UKMUnpad_1'>UKM Unpad</span></Link>
+							<Link to='/ukmunpada/ukms' className="link"><span className='UKMUnpad_1'>UKM Unpad</span></Link>
+							{/* <Link to='/beritaukmb/articles' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link> */}
 							<Link to='/beritaukmb/articles' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
+							
 						</div>
 						<div>
 							{/* {userId === null ? (

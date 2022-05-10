@@ -6,11 +6,18 @@ import { useState, useEffect } from "react";
 import { Button, ButtonGroup } from 'react-bootstrap'
 import { Dropdown } from 'react-bootstrap'
 import axios from "axios";
+import BeritaUKMB from '../pages/BeritaUKMB';
+import { Link } from 'react-router-dom';
 
 export default function SearchBerita () {
 
 	const [ukm, setUKM] = useState([]);
-	const cat1 = 'category/Olahraga';
+	const [query, setQuery] = useState(null);
+	
+	const onSearchHandler = (e) => {
+		e.preventDefault();
+		window.location.href = "/beritaukmb/articles/search/" + query;
+	};
 
 	useEffect(() => {
 		axios
@@ -48,9 +55,10 @@ export default function SearchBerita () {
 					</Dropdown.Toggle>
 
 					<Dropdown.Menu>
-						<Dropdown.Item href={ "/beritaukmb/" + cat1}>Olahraga</Dropdown.Item>
-						<Dropdown.Item href="/action-2">Beladiri</Dropdown.Item>
-						<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+						<Dropdown.Item href="/beritaukmb/articles">All</Dropdown.Item>
+						<Dropdown.Item href="/beritaukmb/articles/category/Olahraga">Olahraga</Dropdown.Item>
+						<Dropdown.Item href="/beritaukmb/articles/category/Beladiri">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="/beritaukmb/articles/category/Kesenian">Kesenian</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>
 
@@ -77,20 +85,23 @@ export default function SearchBerita () {
 						<Dropdown.Item href="#/action-3">del</Dropdown.Item> */}
 						{
 							ukm.map(post => {
-								return <Dropdown.Item href="#/action-1">{post.short_name}</Dropdown.Item>
+								return <Dropdown.Item href={"/beritaukmb/articles/ukm/" + post.id} key={post.id}>{post.short_name}</Dropdown.Item>
 			
 							})
 						}
 					</Dropdown.Menu>
 				</Dropdown>
-				
-				
-				<input className='Frame2' placeholder='Search'>
-				</input>
-				
-				<Button className='Frame360' placeholder='Search'>
-					<p className='searchText'>Search</p>
-				</Button>		
+					
+				<form onSubmit={onSearchHandler} >
+					<input className='Frame2' placeholder='Search' value={query}
+                      onChange={(e) => setQuery(e.target.value)}>
+					</input>
+					
+					<Button className='Frame360' placeholder='Search' type='submit'>
+						<p className='searchText'>Search</p>
+					</Button>	
+				</form>
+					
 		</div>
 	</div>
 	)

@@ -7,31 +7,54 @@ import NavbarUser from '../components/NavbarUser.js'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import UKMPost from '../components/UKMPost'
-import SearchBerita from '../components/SearchBerita'
+import { useState, useEffect } from "react";
 import { Button, ButtonGroup } from 'react-bootstrap'
 import { Dropdown } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
 import axios from 'axios';
 
-class UKMUnpadA extends Component{
-	state = {
-		post: []
-		
+export default function UKMUnpadA (props) {
+	let query = 'ukms';
+
+	const param1 = props.match.params.pathParam1;
+	console.log(param1);
+	const param2 = props.match.params.pathParam2;
+	console.log(param2);
+	const param3 = props.match.params.pathParam3;
+	console.log(param3);
+
+
+	if (param2 == null){
+		query = param1;
+	}
+	if (param2 != null){
+		query = param1 + '/' + param2 + '/' + param3;
 	}
 
-	componentDidMount(){
-		axios.get('https://api-ukmscare.herokuapp.com/ukms')
-		.then((response)=>{
+	console.log(query);
+
+	const [ukm, setUKM] = useState([]);
+	const [query1, setQuery1] = useState(null);
+
+	useEffect(() => {
+		axios
+		.get(`https://api-ukmscare.herokuapp.com/${query}`)
+		  .then((response) => {
 			console.log(response.data.data);
-			this.setState({
-				post: response.data.data
-			})
-		})
+			setUKM(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
 
-	}
+	},[]); 
+
+	const onSearchHandler = (e) => {
+		e.preventDefault();
+		window.location.href = "/ukmunpada/ukms/search/" + query1;
+	};
 
 
-render() {
     return (
 	<div className='UKMUnpadA_UKMUnpadA'>
 		<NavbarUser />
@@ -66,77 +89,37 @@ render() {
 					</Dropdown.Toggle>
 
 					<Dropdown.Menu>
-						<Dropdown.Item href="#/action-1">Olahraga</Dropdown.Item>
-						<Dropdown.Item href="#/action-2">Beladiri</Dropdown.Item>
-						<Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+					<Dropdown.Item href="/ukmunpada/ukms">All</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpada/ukms/category/Olahraga">Olahraga</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpada/ukms/category/Beladiri">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpada/ukms/category/Kesenian">Kesenian</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>
 			
 			{/* search */}
-		{/* <div className='Group2'>
-			<div className='Rectangle3'/>
-				<span className='Search'>Search</span>
-				<div className='evasearchoutline'>
-					<img className='Vector_4' src = {ImgAsset.UKMUnpadA_Vector_4} />
-				</div>
-			</div>
-			<div className='Group360'>
-				<div className='Rectangle39'/>
-				<span className='Search_1'>Search</span>
-			</div> */}
-			<input className='Frame2' placeholder='Search'></input>
+			<form onSubmit={onSearchHandler} >
+				<input className='Frame2' placeholder='Search'value={query1}
+                      onChange={(e) => setQuery1(e.target.value)}></input>
 				
-			<Button className='Frame360' placeholder='Search'>
-				<p className='searchText'>Search</p>
-			</Button>	
+				<Button className='Frame360' placeholder='Search' type='submit'>
+					<p className='searchText'>Search</p>
+				</Button>	
+			</form>
+			
 		</div>
 
 		
 		{/* <SearchBerita/> */}
 
-		<span className='UNITKEGIATANMAHASISWA'>UNIT KEGIATAN MAHASISWA</span>
-		{/* <div classname="row">
-			<div classname="col-sm-12">
-				<div classname="card-deck">
-				<div classname="card">
-					<img src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} classname="card-img-top" alt="gambar" />
-					<div classname="card-body">
-					<h5 classname="card-title">Card title</h5>
-					<p classname="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					</div>
-					<div classname="card-footer">
-					<small classname="text-muted">Last updated 3 mins ago</small>
-					</div>
-				</div>
-				<div classname="card">
-					<img src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} classname="card-img-top" alt="gambar" />
-					<div classname="card-body">
-					<h5 classname="card-title">Card title</h5>
-					<p classname="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-					</div>
-					<div classname="card-footer">
-					<small classname="text-muted">Last updated 3 mins ago</small>
-					</div>
-				</div>
-				<div classname="card">
-					<img src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} classname="card-img-top" alt="gambar" />
-					<div classname="card-body">
-					<h5 classname="card-title">Card title</h5>
-					<p classname="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-					</div>
-					<div classname="card-footer">
-					<small classname="text-muted">Last updated 3 mins ago</small>
-					</div>
-				</div>
-				</div>
-			</div>
-		</div> */}
+		<span className='Title'>UNIT KEGIATAN MAHASISWA</span>
+
 
 		<Row xs={1} md={3} className="UKMRow">
-		{
-			this.state.post.map(post => {
+		{ukm.length !== 0
+			? (ukm.map(post => {
 				return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} />
-			})
+			}))
+			: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
 		}
 		</Row>
 
@@ -200,7 +183,5 @@ render() {
 
 	</div>
 	)
-}
-}
 
-export default UKMUnpadA;
+}

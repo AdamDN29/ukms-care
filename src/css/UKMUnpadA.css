@@ -296,10 +296,11 @@
 
 
 
-.UKMUnpadA_UKMUnpadA .UNITKEGIATANMAHASISWA {
+.UKMUnpadA_UKMUnpadA .Title {
 	position: absolute;
-	align-self: center;
-	/* left: 50px; */
+	left: 50px;
+	/* left: 50%;
+	transform: translate(-50%); */
 	top: 198px;
 	width: 1159px;
 	height: 64px;
@@ -613,4 +614,17 @@
 	top: 450px;
 	width: 995px;
 	margin-bottom: 10px;	
+}
+
+.UKMUnpadA_UKMUnpadA .notFound {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 20px;
+	width: 500px;
+	height: 46px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Oxygen;
+	color: black;
 }

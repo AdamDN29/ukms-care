@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Component } from 'react/cjs/react.production.min'
 import ImgAsset from '../resources'
 import '../css/BeritaPost.css';
@@ -10,6 +10,22 @@ const BeritaPost = (props) => {
 	const date = props.created_at
   	const dt = new Date(date)
 	const contents = props.content
+
+	const [ukm, setUKM] = useState([]);
+
+	useEffect(() => {
+		axios
+		.get(`https://api-ukmscare.herokuapp.com/ukms/${props.ukm_id}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setUKM(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
+	
+
+	},[]); 
 
     return (
 		<Link to={`/beritasingle/${props.articles_id}`}>
@@ -26,7 +42,7 @@ const BeritaPost = (props) => {
 									</div>
 								</div>
 								<span className='Title'>{props.subject}</span>
-								<span className='UKM_Name'>{props.ukm_name}</span>
+								<span className='UKM_Name'>{ukm.name}</span>
 								<span className='Date'><ReactTimeAgo date={dt} locale="en-US"/></span>
 								<span className='Content'>{contents.slice(0,500)} ... Berita Selengkapnya</span>
 							</div>
