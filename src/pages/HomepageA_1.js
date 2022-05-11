@@ -9,8 +9,9 @@ import { Component } from 'react/cjs/react.production.min'
 import UKMPost2 from '../components/UKMPost2'
 import BeritaPost2 from '../components/BeritaPost2'
 
+
 class HomepageA_1 extends Component{
-	
+
 render() {
     return (
 	<div className='HomepageA_1_HomepageA'>
