@@ -5,9 +5,9 @@
 	top: 0px;
 	margin: auto;
 	width: 1230px;
-	height: 2600px;
+	height: 2900px;
 	background : rgba(255,255,255,1);
-	border: 1px solid rgba(0,0,0,1);
+	
 	box-sizing: border-box;
 }
 .HomepageA_1_HomepageA .Vectors {
@@ -15,7 +15,7 @@
 	left: 0px;
 	top: 633px;
 	width: 100px;
-	height: 1827px;
+	height: 2127px;
 	mix-blend-mode: normal;
 }
 .HomepageA_1_HomepageA .Vectors .Vector {
@@ -23,21 +23,21 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1827px;
+	height: 2127px;
 }
 .HomepageA_1_HomepageA .Vectors .Vector_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1827px;
+	height: 2127px;
 }
 .HomepageA_1_HomepageA .Vectors_1 {
 	position: absolute;
 	left: 1130px;
 	top: 633px;
 	width: 100px;
-	height: 1827px;
+	height: 2127px;
 	mix-blend-mode: normal;
 }
 .HomepageA_1_HomepageA .Vectors_1 .Vector_2 {
@@ -45,14 +45,14 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1827px;
+	height: 2127px;
 }
 .HomepageA_1_HomepageA .Vectors_1 .Vector_3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1827px;
+	height: 2127px;
 }
 .HomepageA_1_HomepageA .Group334 {
 	position: absolute;
@@ -262,10 +262,36 @@
 	font-weight: 700;
 	line-height: 14px;
 }
+.HomepageA_1_HomepageA .ukmunpad {
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%);
+	top: 1531px;
+	width: 371px;
+	height: 48px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 48px;
+	text-align: center;
+}
+.HomepageA_1_HomepageA .Line6 {
+	position: absolute;
+	left: 50%;
+	transform:translate(-50%);
+	top: 1599px;
+	width: 693.08740234375px;
+	height: 0px;
+	background : rgba(196.00000351667404,196.00000351667404,196.00000351667404,1);
+	border: 3px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+
 .HomepageA_1_HomepageA .beritaukm {
 	position: absolute;
-	left: 410px;
-	top: 1781px;
+	left: 50%;
+	transform:translate(-50%);
+	top: 2081px;
 	width: 371px;
 	height: 48px;
 	color : rgba(0,0,0,1);
@@ -277,12 +303,23 @@
 }
 .HomepageA_1_HomepageA .Line5 {
 	position: absolute;
-	left: 265px;
-	top: 1849px;
+	left: 50%;
+	transform:translate(-50%);
+	top: 2149px;
 	width: 693.08740234375px;
 	height: 0px;
 	background : rgba(196.00000351667404,196.00000351667404,196.00000351667404,1);
 	border: 3px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+
+.HomepageA_1_HomepageA .BeritaPost2 {
+	position: absolute;
+	top: 300px;
+}
+
+.HomepageA_1_HomepageA .UKMPost2 {
+	position: absolute;
+	top: -250px;
 }
 
 .HomepageA_1_HomepageA .Line4 {
@@ -297,8 +334,8 @@
 
 .HomepageA_1_HomepageA .BeritaSelengkapnya {
 	position: absolute;
-	left: 970px;
-	top: 2335px;
+	left: 930px;
+	top: 2650px;
 	width: 412px;
 	height: 95px;
 	color : rgba(0,0,0,1);
@@ -316,8 +353,8 @@
 }
 .HomepageA_1_HomepageA .UKMSelengkapnya {
 	position: absolute;
-	left: 960px;
-	top: 1700px;
+	left: 930px;
+	top: 2000px;
 	width: 385px;
 	height: 95px;
 	color : rgba(0,0,0,1);
@@ -358,21 +395,24 @@
 }
 .HomepageA_1_HomepageA .Group386 {
 	position: absolute;
-	left: 110px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 680px;
-	width: 1000px;
+	/* width: 1000px; */
 	height: 246px;
 }
 .HomepageA_1_HomepageA .Group386 .Group355 {
 	position: absolute;
-	left: 0px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 0px;
-	width: 1000px;
+	
 	height: 246px;
 }
 .HomepageA_1_HomepageA .Group386 .Group355 .Rectangle14 {
 	position: absolute;
-	left: 0px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 0px;
 	width: 1000px;
 	height: 246px;
@@ -380,7 +420,8 @@
 }
 .HomepageA_1_HomepageA .Group386 .Group355 .Rectangle28 {
 	position: absolute;
-	left: 13.228515625px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 6.753173828125px;
 	width: 975px;
 	height: 232.493896484375px;
@@ -767,9 +808,9 @@
 	line-height: 20px;
 	text-align: center;
 }
-.HomepageA_1_HomepageA .humasunpad2020123Baseball1 {
+.HomepageA_1_HomepageA .Image {
 	position: absolute;
-	left: -1px;
+	left: 0px;
 	top: 80px;
 	width: 1230px;
 	height: 288px;

@@ -24,33 +24,30 @@ class BeritaPost2 extends Component {
 				post: response.data.data
 			})
 		})
-		// const date = post.created_at
-		// const dt = new Date(date)
 
 	}
-
-	
 
     render() {
 		return (
 			<Row xs={1} md={3} className='Row'>
 			{	
 				this.state.post.map(post => {
+					
 					const date = post.created_at
 					const dt = new Date(date)
 					return(
 					
-						<Col >
+						<Col key={post.id}>
 						<Link to={`/beritasingle/${post.id}`}>
-						<Card className='Card' >
-							<Card.Img variant="top" className='Image' src={ImgAsset.HomepageA_JuaraTaekwondo1} />
-							<Card.Body className='Body'>
-								<Card.Title variant="center" className='Subject'>{post.subject}</Card.Title>
-								<Card.Text>
-									<p className='Name'> {post.ukm.name}</p>
-									<p className='Date'> <ReactTimeAgo date={dt} locale="en-US"/> </p>
-								</Card.Text>
-							</Card.Body>
+							<Card className='Card' >
+								<Card.Img variant="top" className='Image' src={ImgAsset.HomepageA_JuaraTaekwondo1} />
+								<Card.Body className='Body'>
+									<Card.Title variant="center" className='Subject'>{post.subject}</Card.Title>
+									<Card.Text>
+										<p className='Name'> {post.ukm.name}</p>
+										<p className='Date'> <ReactTimeAgo date={dt} locale="en-US"/> </p>
+									</Card.Text>
+								</Card.Body>
 							</Card>
 							</Link>
 						</Col>

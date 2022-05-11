@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
+import UKMPost2 from '../components/UKMPost2'
 import BeritaPost2 from '../components/BeritaPost2'
 
 class HomepageA_1 extends Component{
@@ -26,6 +27,7 @@ render() {
 		</div>
 
 		{/*Penjelasan UKM*/}
+		<img className='Image' src = {ImgAsset.HomepageB_humasunpad2020123Baseball1} />
 		<div className='Group306'>
 			<div className='Rectangle8'/>
 			<span className='UKMsCare'>UKM's Care</span>
@@ -34,7 +36,7 @@ render() {
 		Padjajaran, yang mana di dalam website ini berisi banyak informasi seputar ukm di unpad 
 		jadi mahasiswa Unpad yang selama ini kesulitan mendapat informasi dan mendaftar ke UKM 
 		pilihan mereka dapat dengan mudah dilakukan di website ini </span>
-		<img className='humasunpad2020123Baseball1' src = {ImgAsset.HomepageB_humasunpad2020123Baseball1} />
+		
 
 		{/*Kata Pembuka*/}
 		<div className='Group386'>
@@ -53,27 +55,7 @@ render() {
 			baru dari berbagai jurusan yang ada di kampus deh!</span>
 		</div>
 
-		{/*List UKM*/}
-		<div className='Group317'>
-			<img className='Rectangle8_1' src = {ImgAsset.HomepageA_1_Rectangle8_1} />
-			<img className='Rectangle9' src = {ImgAsset.HomepageA_1_Rectangle9} />
-		</div>
-		<img className='taekwondoremovebgpreview11' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-		<img className='Rectangle15' src = {ImgAsset.HomepageA_1_Rectangle15} />
-		<img className='bridgeremovebgpreview7' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
-		<img className='palawa5' src = {ImgAsset.UKMUnpadB_palawa2} />
-		<div className='Group388'>
-			<img className='Rectangle8_2' src = {ImgAsset.HomepageA_1_Rectangle8_2} />
-			<img className='Rectangle9_1' src = {ImgAsset.HomepageA_1_Rectangle9_1} />
-		</div>
-		<img className='taekwondoremovebgpreview13' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-		<img className='bridgeremovebgpreview9' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
-		<div className='akariconscircletriangleupfill'>
-
-		</div>
-		<Link to='/ukmunpada'>
-		<span className='UKMSelengkapnya'>UKM Selengkapnya  ➝</span>
-		</Link>
+		
 
 		{/*Fitur UKM's Care (daftar,info,berita*/}
 		<span className='UKMSCARE'>UKM'S CARE?</span>
@@ -119,39 +101,45 @@ render() {
 			</div>
 		</div>
 
+		{/*List UKM*/}
+		<span className='ukmunpad'>UKM UNPAD</span>
+		<div className='Line6'/>
+
+		<div className='UKMPost2'>
+			<UKMPost2 />
+		</div>
+
+		{/* <div className='Group317'>
+			<img className='Rectangle8_1' src = {ImgAsset.HomepageA_1_Rectangle8_1} />
+			<img className='Rectangle9' src = {ImgAsset.HomepageA_1_Rectangle9} />
+			</div>
+			<img className='taekwondoremovebgpreview11' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+			<img className='Rectangle15' src = {ImgAsset.HomepageA_1_Rectangle15} />
+			<img className='bridgeremovebgpreview7' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
+			<img className='palawa5' src = {ImgAsset.UKMUnpadB_palawa2} />
+			<div className='Group388'>
+				<img className='Rectangle8_2' src = {ImgAsset.HomepageA_1_Rectangle8_2} />
+				<img className='Rectangle9_1' src = {ImgAsset.HomepageA_1_Rectangle9_1} />
+			</div>
+			<img className='taekwondoremovebgpreview13' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+			<img className='bridgeremovebgpreview9' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
+			<div className='akariconscircletriangleupfill'>
+		</div> */}
+
+		
+
+		<Link to='/ukmunpada/ukms'>
+			<span className='UKMSelengkapnya'>UKM Selengkapnya  ➝</span>
+		</Link>
+
 		{/*Berita UKM*/}
 		<span className='beritaukm'>BERITA UKM</span>
 		<div className='Line5'/>
-		<BeritaPost2 />
+		<div className='BeritaPost2'>
+			<BeritaPost2 />
+		</div>
 
-		{/* <div className='Group334'>
-			<div className='Group326'>
-				<div className='Rectangle23'/>
-				<div className='Rectangle24'/>
-				<div className='Group326_1'>
-					<img className='JuaraTaekwondo1' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-					<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
-					<span className='UnitTaekwondoUnpad'>Unit Taekwondo Unpad</span>
-					<span className='Jumat25Maret2022'>Jumat, 25 Maret 2022</span>
-			</div>
-				<div className='Group325'>
-					<img className='JuaraTaekwondo1_1' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-					<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_1'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
-					<span className='UnitTaekwondoUnpad_1'>Unit Taekwondo Unpad</span>
-					<span className='Jumat25Maret2022_1'>Jumat, 25 Maret 2022</span>
-				</div>
-			</div>
-			<div className='Group327'>
-				<div className='Rectangle25'/>
-				<div className='Group325_1'>
-					<img className='JuaraTaekwondo1_2' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-					<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_2'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2022</span>
-					<span className='UnitTaekwondoUnpad_2'>Unit Taekwondo Unpad</span>
-					<span className='Jumat25Maret2022_2'>Jumat, 25 Maret 2022</span>
-				</div>
-			</div>
-		</div> */}
-		<Link to='/beritaukmb'>
+		<Link to='/beritaukmb/articles'>
 			<span className='BeritaSelengkapnya'>Berita Selengkapnya  ➝</span>
 		</Link>
 		

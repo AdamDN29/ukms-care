@@ -34,20 +34,20 @@ export default function BeritaUKMB (props) {
 
 	console.log(query);
 
-	const [berita, setBerita] = useState([]);
+	// const [berita, setBerita] = useState([]);
 
-	useEffect(() => {
-		axios
-		.get(`https://api-ukmscare.herokuapp.com/${query}`)
-		  .then((response) => {
-			console.log(response.data.data);
-			setBerita(response.data.data);
-		  })
-		.catch((err) => {
-			console.log(err);
-		});
+	// useEffect(() => {
+	// 	axios
+	// 	.get(`https://api-ukmscare.herokuapp.com/${query}`)
+	// 	  .then((response) => {
+	// 		console.log(response.data.data);
+	// 		setBerita(response.data.data);
+	// 	  })
+	// 	.catch((err) => {
+	// 		console.log(err);
+	// 	});
 
-	},[]); 
+	// },[]); 
 
 
 
@@ -66,8 +66,10 @@ export default function BeritaUKMB (props) {
 				<span className='beritaukm'>BERITA UKM</span>
 				
 				<SearchBerita/>
+
+				<BeritaPost query={query}  />
 				
-				{ berita.length !== 0 
+				{/* { berita.length !== 0 
 					? (
 						berita.map(post => {
 							return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} />
@@ -75,7 +77,7 @@ export default function BeritaUKMB (props) {
 					)	
 					: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
 	
-				}
+				} */}
 					
 				<Footer />
 			</div>

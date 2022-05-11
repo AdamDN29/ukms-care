@@ -121,32 +121,38 @@ function DetailUKMA (props){
 		</div>
 		<span className='Beritaterbaru'>Berita Terbaru</span>
 		<div>
-		{
-			berita.slice(0,1).map((post) => {
-				const date = post.created_at
-				const dt = new Date(date)
-				const contents = post.content
-				
-				return (
-				<Link to={`/beritasingle/${post.id}`}>
-					<div className='Group338'>
-						<div className='Alltickets'>
-							<div className='cardsdefault'>
-								<div className='sheet'/>
-								<div className='Group337'>
-									<div className='Rectangle26'/>
-									<img className='imgBerita' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+		{	
+			berita.length !== 0
+			? (
+				berita.slice(0,1).map((post) => {
+					const date = post.created_at
+					const dt = new Date(date)
+					const contents = post.content
+					
+					return (
+					<Link to={`/beritasingle/${post.id}`}>
+						<div className='Group338'>
+							<div className='Alltickets'>
+								<div className='cardsdefault'>
+									<div className='sheet'/>
+									<div className='Group337'>
+										<div className='Rectangle26'/>
+										<img className='imgBerita' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+									</div>
 								</div>
+								<span className='beritaSubject'>{post.subject}</span>
+								<span className='ukmName2'>{post.ukm.name}</span>
+								<span className='beritaDate'><ReactTimeAgo date={dt} locale="en-US"/></span>
+								<span className='beritaContent'>{contents.slice(0,500)} ... Berita Selengkapnya </span>
 							</div>
-							<span className='beritaSubject'>{post.subject}</span>
-							<span className='ukmName2'>{post.ukm.name}</span>
-							<span className='beritaDate'><ReactTimeAgo date={dt} locale="en-US"/></span>
-							<span className='beritaContent'>{contents.slice(0,500)} ... Berita Selengkapnya </span>
 						</div>
-					</div>
-				</Link>)
-			})
+					</Link>)
+				})
+			)
+			: (<div><span className='notFound'>Belum Ada Berita</span></div>)
+					
 		}
+			
 		</div>
 		
 		<Footer/>

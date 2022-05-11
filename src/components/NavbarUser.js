@@ -239,7 +239,7 @@ export default function NavbarUser (props) {
 
 								
 								<Dropdown.Menu align='start' className='Menu'>
-									<Dropdown.Item href="#/action-1">Profile</Dropdown.Item>
+									<Dropdown.Item href="/profileuser">Profile</Dropdown.Item>
 									<Dropdown.Item href="#/action-2">Logout</Dropdown.Item>
 								</Dropdown.Menu>
 							

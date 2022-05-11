@@ -16,7 +16,10 @@ export default function SearchBerita () {
 	
 	const onSearchHandler = (e) => {
 		e.preventDefault();
-		window.location.href = "/beritaukmb/articles/search/" + query;
+		if(query === null){
+			window.location.href = "/beritaukmb/articles";
+		}
+		else {window.location.href = "/beritaukmb/articles/search/" + query;}
 	};
 
 	useEffect(() => {

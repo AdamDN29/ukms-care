@@ -49,9 +49,12 @@ export default function UKMUnpadA (props) {
 
 	},[]); 
 
-	const onSearchHandler = (e) => {
+	const onSearchHandler = (e) => {	
 		e.preventDefault();
-		window.location.href = "/ukmunpada/ukms/search/" + query1;
+		if(query1 === null){
+			window.location.href = "/ukmunpada/ukms/";
+		}
+		else{window.location.href = "/ukmunpada/ukms/search/" + query1;}
 	};
 
 
@@ -122,60 +125,6 @@ export default function UKMUnpadA (props) {
 			: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
 		}
 		</Row>
-
-		{/*UKM 1*/}
-		{/* <div className='Group309'>
-			<img className='Rectangle8' src = {ImgAsset.UKMUnpadA_Rectangle8} />
-			<img className='taekwondoremovebgpreview3' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-			<span className='UNITTaekwondoUnpad'>Unit Taekwondo Unpad </span>
-		</div> */}
-
-
-		{/*UKM 2*/}
-		{/* <div className='Group310'>
-			<img className='Rectangle9' src = {ImgAsset.UKMUnpadA_Rectangle9} />
-			<span className='UKMBridgeUnpad'>Bridge Unpad</span>
-		</div> */}
-
-		{/*UKM 3*/}
-		{/* <img className='Rectangle8_1' src = {ImgAsset.UKMUnpadA_Rectangle8_1} />
-		<span className='PALAWAUNPAD'>Palawa Unpad</span>
-		<img className='bridgeremovebgpreview3' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} /> */}
-		
-		{/*UKM 4*/}
-		{/* <div className='Group311'>
-			<img className='Rectangle8_2' src = {ImgAsset.UKMUnpadA_Rectangle8_2} />
-			<img className='Rectangle9_1' src = {ImgAsset.UKMUnpadA_Rectangle9_1} />
-			<span className='UNITTaekwondoUnpad_1'>Unit Taekwondo Unpad </span>
-		</div> */}
-
-		{/*UKM 5*/}
-		{/* <div className='Group312'>
-			<span className='UKMBridgeUnpad_1'>Bridge Unpad</span>
-		</div>
-		<img className='taekwondoremovebgpreview6' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-		<img className='bridgeremovebgpreview4' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} /> */}
-		
-		{/*UKM 6*/}
-		{/* <div className='Group313'>
-		<img className='Rectangle8_3' src = {ImgAsset.UKMUnpadA_Rectangle8_3} />
-		<img className='Rectangle9_2' src = {ImgAsset.UKMUnpadA_Rectangle9_2} />
-		<span className='UNITTaekwondoUnpad_2'>Unit Taekwondo Unpad </span>
-		</div> */}
-
-		{/*UKM 7*/}
-		{/* <div className='Group314'>
-			<span className='UKMBridgeUnpad_2'>Bridge Unpad</span>
-		</div>
-		<img className='taekwondoremovebgpreview8' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-		<img className='bridgeremovebgpreview5' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} /> */}
-		
-		{/*UKM 9*/}
-		{/* 
-		<img className='palawa1' src = {ImgAsset.UKMUnpadB_palawa2} />
-		<img className='Rectangle12' src = {ImgAsset.UKMUnpadA_Rectangle12} />
-		<span className='PALAWAUNPAD_1'>Palawa Unpad</span>
-		<img className='palawa2' src = {ImgAsset.UKMUnpadB_palawa2} /> */}
 
 		
 		{/*Footer*/}
