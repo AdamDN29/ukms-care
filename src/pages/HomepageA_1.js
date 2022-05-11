@@ -8,8 +8,9 @@ import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import BeritaPost2 from '../components/BeritaPost2'
 
+
 class HomepageA_1 extends Component{
-	
+
 render() {
     return (
 	<div className='HomepageA_1_HomepageA'>
