@@ -16,27 +16,6 @@
     border-width: 3px;
 }
 
-/* .container {
-	position: relative;
-	left: 70px;
-	top: 460px;
-	width: 834.07080078125px;
-	height: 364.8173828125px;
-    border-radius: 5px;
-    margin-bottom : 5px;
-    display: flex;
-    flex: 1;
-}
-
-.container .container {
-	position: relative;
-
-    border-radius: 5px;
-    margin-bottom : 5px;
-} */
-
-
-
 .UKMCard .UKMImg {
 	position: relative;
     align-items: center;

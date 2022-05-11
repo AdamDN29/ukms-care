@@ -32,12 +32,12 @@ class UKMPost2 extends Component {
 			<Row xs={1} md={3} className='Row2'>
 			{	
 				this.state.post.slice(0,3).map(post => {
-					const date = post.created_at
-					const dt = new Date(date)
+					const date = post.created_at;
+					const dt = new Date(date);
 					return(
 					
-						<Col >
-						<Link to={`/ukms/${post.id}`}>
+						<Col key={post.id}>
+						<Link to={`/ukms/${post.id}`} >
 						    
                                 {/* <Card.Img variant="top" className='Image' src={ImgAsset.HomepageA_JuaraTaekwondo1} />
                                 <Card.Body className='Body'>

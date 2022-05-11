@@ -75,7 +75,7 @@ const RouterDOM = () => {
 				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>
 				<Route exact path="/buatberitaukm"><BuatBeritaUKM /></Route>
 				<Route exact path="/listpendaftarukmadminukm"><ListPendaftarUKMAdminUKM /></Route>
-				<Route exact path="/listberitaukmadminukm"><ListBeritaUKMAdminUKM /></Route>
+				<Route path="/listberitaukm" component={ListBeritaUKMAdminUKM}></Route>
 			</Switch>
 			{/* <Footer /> */}
 		</Router>

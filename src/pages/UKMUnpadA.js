@@ -11,6 +11,7 @@ import { useState, useEffect } from "react";
 import { Button, ButtonGroup } from 'react-bootstrap'
 import { Dropdown } from 'react-bootstrap'
 import { Row } from 'react-bootstrap';
+import ReactPaginate from "react-paginate";
 import axios from 'axios';
 
 export default function UKMUnpadA (props) {
@@ -35,6 +36,16 @@ export default function UKMUnpadA (props) {
 
 	const [ukm, setUKM] = useState([]);
 	const [query1, setQuery1] = useState(null);
+	const [pageNumber, setPageNumber] = useState(0);
+
+  	const usersPerPage = 9;
+  	const pagesVisited = pageNumber * usersPerPage;
+
+  	const pageCount = Math.ceil(ukm.length / usersPerPage);
+	  
+	const changePage = ({ selected }) => {
+		setPageNumber(selected);
+	};
 
 	useEffect(() => {
 		axios
@@ -71,6 +82,9 @@ export default function UKMUnpadA (props) {
 			<img className='Vector_2' src = {ImgAsset.UKMUnpadA_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.UKMUnpadA_Vector_3} />
 		</div>
+
+
+		<span className='Title'>UNIT KEGIATAN MAHASISWA</span>
 
 		{/*pilih kategori*/}
 		<div className='Group365'>
@@ -114,17 +128,32 @@ export default function UKMUnpadA (props) {
 		
 		{/* <SearchBerita/> */}
 
-		<span className='Title'>UNIT KEGIATAN MAHASISWA</span>
+		
 
 
 		<Row xs={1} md={3} className="UKMRow">
 		{ukm.length !== 0
-			? (ukm.map(post => {
+			? (ukm
+				.slice(pagesVisited, pagesVisited + usersPerPage)
+				.map(post => {
 				return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} />
 			}))
 			: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
 		}
 		</Row>
+		<div className='Pagination'>
+				<ReactPaginate
+					previousLabel={"Prev"}
+					nextLabel={"Next"}
+					pageCount={pageCount}
+					onPageChange={changePage}
+					containerClassName={"paginationBttns"}
+					previousLinkClassName={"previousBttn"}
+					nextLinkClassName={"nextBttn"}
+					disabledClassName={"paginationDisabled"}
+					activeClassName={"paginationActive"}
+				/>
+		</div>
 
 		
 		{/*Footer*/}

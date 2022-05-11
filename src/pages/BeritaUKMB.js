@@ -8,11 +8,8 @@ import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import BeritaPost from '../components/BeritaPost'
 import SearchBerita from '../components/SearchBerita'
+import ReactPaginate from "react-paginate";
 import axios from 'axios';
-
-
-// X-CSRF-Token: RRhCuLSfxCWxubAbBVk5U0sGCrxwrWPAb4rs6fsl
-//axios.defaults.headers.common['X-CSRF-TOKEN'] = axios.get('https://api-ukmscare.herokuapp.com/csrf-token')
 
 export default function BeritaUKMB (props) {
 	let query = 'articles';
@@ -24,7 +21,6 @@ export default function BeritaUKMB (props) {
 	const param3 = props.match.params.pathParam3;
 	console.log(param3);
 
-
 	if (param2 == null){
 		query = param1;
 	}
@@ -32,25 +28,31 @@ export default function BeritaUKMB (props) {
 		query = param1 + '/' + param2 + '/' + param3;
 	}
 
-	console.log(query);
+	const [berita, setBerita] = useState([]);
+	const [pageNumber, setPageNumber] = useState(0);
 
-	// const [berita, setBerita] = useState([]);
+  	const usersPerPage = 4;
+  	const pagesVisited = pageNumber * usersPerPage;
 
-	// useEffect(() => {
-	// 	axios
-	// 	.get(`https://api-ukmscare.herokuapp.com/${query}`)
-	// 	  .then((response) => {
-	// 		console.log(response.data.data);
-	// 		setBerita(response.data.data);
-	// 	  })
-	// 	.catch((err) => {
-	// 		console.log(err);
-	// 	});
+  	const pageCount = Math.ceil(berita.length / usersPerPage);
+	  
+	const changePage = ({ selected }) => {
+		setPageNumber(selected);
+	};
 
-	// },[]); 
+	useEffect(() => {
+		axios
+		.get(`https://api-ukmscare.herokuapp.com/${query}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setBerita(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
 
-
-
+	},[]); 
+	
 		return (
 			<div className='BeritaUKMB_BeritaUKMB'>
 				<NavbarUser />
@@ -67,17 +69,33 @@ export default function BeritaUKMB (props) {
 				
 				<SearchBerita/>
 
-				<BeritaPost query={query}  />
+				{/* <BeritaPost query={query}  /> */}
 				
-				{/* { berita.length !== 0 
+				{ berita.length !== 0 
 					? (
-						berita.map(post => {
+						berita
+						.slice(pagesVisited, pagesVisited + usersPerPage)
+						.map(post => {
 							return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} />
 						})
 					)	
 					: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
 	
-				} */}
+				}
+				<div className='Pagination'>
+					<ReactPaginate
+					previousLabel={"Prev"}
+					nextLabel={"Next"}
+					pageCount={pageCount}
+					onPageChange={changePage}
+					containerClassName={"paginationBttns"}
+					previousLinkClassName={"previousBttn"}
+					nextLinkClassName={"nextBttn"}
+					disabledClassName={"paginationDisabled"}
+					activeClassName={"paginationActive"}
+					/>
+				</div>
+				
 					
 				<Footer />
 			</div>

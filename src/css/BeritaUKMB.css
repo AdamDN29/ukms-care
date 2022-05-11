@@ -100,4 +100,79 @@
 	color: black;
 }
 
+.BeritaUKMB_BeritaUKMB .Pagination {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 165px;
+	/* bottom: 200px;
+	right: 650px; */
+	align-items: center;
+	align-content: center;
+	align-self: center;
+  
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+  }
+
+
+.paginationBttns {
+	width: 100%;
+	/* bottom: 200px;
+	right: 650px; */
+	align-items: center;
+	align-content: center;
+	align-self: center;
+  
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .paginationBttns a {
+	padding: 15px;
+	height: 40px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	text-decoration: none;
+	font-family: Oxygen;
+	color: black;
+	margin: 8px;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  a:not([href]):not([class]) {
+	color: black;
+	text-decoration: none;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+  }
+  a:not([href]):not([class]):hover {
+	color: white;
+	text-decoration: none;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+  }
+  
+  .paginationBttns a:hover {
+	color: white;
+	background-color: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+  }
+  
+  .paginationActive a:not([href]):not([class]) {
+	background-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	text-decoration: none;
+	color: white;
+	/* border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
+  }
+  
+  .paginationDisabled a {
+	text-decoration: none;
+	color: black;
+	/* background-color: rgba(0,180.00000447034836,215.0000023841858,1); */
+	/* border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
+  }
 

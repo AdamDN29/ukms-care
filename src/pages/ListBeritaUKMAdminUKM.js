@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from "react";
 import '../css/ListBeritaUKMAdminUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
@@ -6,9 +7,28 @@ import {Link} from 'react-router-dom'
 import NavbarAdmin from '../components/NavbarAdmin'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
+import ReactTimeAgo from 'react-time-ago'
+import axios from 'axios';
 
-class DashboardUKMB extends Component{
-	render() {
+export default function ListBeritaUKMAdminUKM (props) {
+	const ukm_id = props.location.state.idUKM;
+	console.log(ukm_id);
+
+	const [berita, setBerita] = useState([]);
+
+	useEffect(() => {
+		axios
+		.get(`https://api-ukmscare.herokuapp.com/articles/ukm/${ukm_id}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setBerita(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
+
+	},[]); 
+
     return (
 	<div className='ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM'>
 		<span className='Listberitaukm'>List Berita UKM</span>
@@ -26,11 +46,11 @@ class DashboardUKMB extends Component{
 		
 		<div className='Group561'>
 			<img className='Rectangle56' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56} />
-			<img className='Vector_5' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_5} />
+			{/* <img className='Vector_5' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_5} /> */}
 		</div>
 		<Link to='/buatberitaukm'>
 			<div className='Group565'>
-				<img className='Rectangle56_1' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56_1} />
+				{/* <img className='Rectangle56_1' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56_1} /> */}
 				<div className='akariconsedit'>
 					<div className='Group'>
 						<img className='Vector_6' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_6} />
@@ -39,6 +59,7 @@ class DashboardUKMB extends Component{
 				</div>
 			</div>
 		</Link>
+		{/* Buat Berita */}
 		<div className='Group567'>
 			<div className='Group301'>
 				<div className='Rectangle19'/>
@@ -50,7 +71,51 @@ class DashboardUKMB extends Component{
 				<img className='Vector_8' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_8} />
 			</div>
 		</div>
-		<div className='Group338'>
+
+		<div className='BeritaPost'>
+			{ berita.length !== 0 
+					? (
+						berita
+						.map(post => {
+							const date = post.created_at;
+							const dt = new Date(date);
+							const contents = post.content;
+							return (
+								<Link to={`/beritasingle/${post.id}`} key={post.idUKM}>
+			
+										<div className='Frame338_2'>
+											<div className='Alltickets_3'>
+												<div className='cardsdefault_3'>
+													<div className='sheet_3'/>
+													<div className='Group362_3'>
+														<div className='Group337_3'>
+															<div className='Group361_3'>
+																<div className='Rectangle26_3'/>
+																<img className='Image' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+															</div>
+														</div>
+														<span className='Title'>{post.subject}</span>
+														<span className='UKM_Name'>{post.ukm.name}</span>
+														<span className='Date'><ReactTimeAgo date={dt} locale="en-US"/></span>
+														<span className='Content'> {contents.slice(0,500)} ... Berita Selengkapnya</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+								</Link>
+							)
+						})
+					)	
+					: (<div> <span className='notFound'>Belum Ada Berita</span></div>)
+
+			}
+		</div>
+		
+			
+		
+
+		{/* <div className='Group338'>
 			<div className='Alltickets'>
 				<div className='cardsdefault'>
 					<div className='sheet'/>
@@ -164,10 +229,10 @@ class DashboardUKMB extends Component{
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> */}
+
 		<Footer/>
 	</div>
 	)
+
 }
-}
-export default DashboardUKMB;
