@@ -34,7 +34,7 @@
 }
 .HomepageA_1_HomepageA .Vectors_1 {
 	position: absolute;
-	left: 1170px;
+	left: 1130px;
 	top: 633px;
 	width: 100px;
 	height: 2127px;
@@ -368,20 +368,20 @@
 	position: absolute;
 	left: 0px;
 	top: 368px;
-	width: 1270px;
+	width: 1230px;
 	height: 265px;
 }
 .HomepageA_1_HomepageA .Group306 .Rectangle8 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1270px;
+	width: 1230px;
 	height: 265px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
 .HomepageA_1_HomepageA .Group306 .UKMsCare {
 	position: absolute;
-	left: 650px;
+	left: 610px;
 	transform: translate(-50%);
 	top: 32px;
 	width: 557.1220703125px;
@@ -432,7 +432,8 @@
 }
 .HomepageA_1_HomepageA .Group386 .text2 {
 	position: absolute;
-	left: 55px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 50px;
 	width: 900px;
 	height: 200px;
@@ -657,7 +658,7 @@
 }
 .HomepageA_1_HomepageA .UKMSCARE {
 	position: absolute;
-	left: 450px;
+	left: 410px;
 	top: 972px;
 	width: 398px;
 	height: 48px;
@@ -786,7 +787,7 @@
 }
 .HomepageA_1_HomepageA .Line4 {
 	position: absolute;
-	left: 300px;
+	left: 270px;
 	top: 1040px;
 	width: 693.08740234375px;
 	height: 0px;
@@ -797,7 +798,7 @@
 .HomepageA_1_HomepageA .text1 {
 	position: absolute;
 	margin: 80px;
-	left: 125px;
+	left: 85px;
 	top: 420px;
 	width: 900px;
 	height: 256px;
@@ -812,7 +813,7 @@
 	position: absolute;
 	left: 0px;
 	top: 80px;
-	width: 1270px;
+	width: 1230px;
 	height: 288px;
 	object-fit: cover;
 	overflow: hidden;

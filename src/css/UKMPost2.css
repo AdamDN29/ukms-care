@@ -52,20 +52,3 @@
 	
 }
 
-
-
-.UKMCard .UKMImg {
-	position: relative;
-    align-items: center;
-    left: 38px;
-	top: 30px;
-	width: 225px;
-	height: 225px;
-	object-fit: cover;
-	overflow: hidden;
-	
-}
-.UKMCard .UKMName {
-	
-    
-}

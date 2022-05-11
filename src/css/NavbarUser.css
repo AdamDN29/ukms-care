@@ -1,9 +1,9 @@
 .Navbar {
 	position: absolute;
-	left: 0px;
+	left: 1px;
 	top: 0px;
 	margin: auto;
-	width: 1270px;
+	width: 1230px;
 	/* height: 2021px; */
 	background : rgba(255,255,255,1);
 	/* border: 1px solid rgba(0,0,0,1); */
@@ -14,7 +14,7 @@
 	position: absolute;
 	left: -21px;
 	top: -22px;
-	width: 1270px;
+	width: 1230px;
 	height: 120px;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +29,7 @@
     z-index: 1;
     position: fixed;
 	margin-bottom: 10px;
-	width: 1270px;
+	width: 1230px;
 	height: 100px;
 	display: flex;
 	flex-direction: column;
@@ -42,7 +42,7 @@
 .Navbar .Frame382 .Frame368 .Navbar1 {
 	position: relative;
 	margin-bottom: 10px;
-	width: 1270px;
+	width: 1230px;
 	height: 80px;
 	background : rgba(255,255,255,1);
 }
@@ -50,21 +50,21 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1270px;
+	width: 1230px;
 	height: 80px;
 }
 .Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1270px;
+	width: 1230px;
 	height: 80px;
 }
 .Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1270px;
+	width: 1230px;
 	height: 80px;
 	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
 }
@@ -72,7 +72,7 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1270px;
+	width: 1230px;
 	height: 82px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
@@ -177,10 +177,6 @@
 .dropdown-toggle::after {
 	display: none !important; 
   }
-
-.Navbar .Frame382 .Frame368 .Navbar1 .Dropdown .Toggle {
-	
-}
 
 
 .Avatar {
