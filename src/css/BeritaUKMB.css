@@ -11,6 +11,7 @@
 
 .BeritaUKMB_BeritaUKMB .beritaukm{
 	text-align: center;
+	color: black;
 }
 
 .BeritaUKMB_BeritaUKMB .Rectangle40 {
@@ -156,7 +157,24 @@
 	/* border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
   }
 
-  .BeritaPost2 {
-	  top: 200px;
+  .BeritaUKMB_BeritaUKMB .BeritaPost2 {
+	  position: absolute;
+	  top: 400px;
+	  align-items: center;
+	  align-self: center;
+	  left: 50%;
+	  transform: translateX(-50%);
   }
 
+  .BeritaUKMB_BeritaUKMB .notFound {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 400px;
+	width: 500px;
+	height: 46px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Oxygen;
+	color: black;
+}

@@ -48,7 +48,7 @@ export default function BeritaPost (props) {
 									<div className='Group337_3'>
 										<div className='Group361_3'>
 											<div className='Rectangle26_3'/>
-											<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${props.image}`} />
+											<img className='ImageArticle' src = {`${process.env.REACT_APP_BACKEND_URL}${props.image}`} />
 										</div>
 									</div>
 									<span className='Title'>{props.subject}</span>
