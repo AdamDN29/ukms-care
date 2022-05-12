@@ -57,17 +57,20 @@ export default function ListBeritaUKMAdminUKM (props) {
 
 
 		{/* Buat Berita */}
-		<div className='Group567'>
-			<div className='Group301'>
-				<div className='Rectangle19'/>
-			</div>
-			<div className='Group581'>
-				<div className='Group300'>
-					<span className='BuatBerita'>Buat Berita</span>
+		<Link to={{pathname:'/buatberitaukm', state:{ukm_id}}}>
+			<div className='Group567'>
+				<div className='Group301'>
+					<div className='Rectangle19'/>
 				</div>
-				<img className='Vector_8' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_8} />
+				<div className='Group581'>
+					<div className='Group300'>
+						<span className='BuatBerita'>Buat Berita</span>
+					</div>
+					<img className='Vector_8' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_8} />
+				</div>
 			</div>
-		</div>
+		</Link>
+		
 
 		<div className='BeritaPost2'>
 			{ berita.length !== 0 

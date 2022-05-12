@@ -9,7 +9,7 @@ export default function GetToken (){
 
     useEffect(() => {
 		axios
-		.get(`${process.env.REACT_APP_BACKEND_URL}/csrf-token`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}csrf-token`)
 		  .then((response) => {
 			// console.log(response.data.data);
 			setToken(response.data.data);
@@ -20,7 +20,7 @@ export default function GetToken (){
 
 	},[]); 
 
-	return test;
+	return csrftoken;
 }
  
  
