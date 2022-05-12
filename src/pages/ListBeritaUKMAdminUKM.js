@@ -43,22 +43,8 @@ export default function ListBeritaUKMAdminUKM (props) {
 		</div>
 
 		<NavbarAdmin/>
-		
-		<div className='Group561'>
-			<img className='Rectangle56' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56} />
-			{/* <img className='Vector_5' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_5} /> */}
-		</div>
-		<Link to='/buatberitaukm'>
-			<div className='Group565'>
-				{/* <img className='Rectangle56_1' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56_1} /> */}
-				<div className='akariconsedit'>
-					<div className='Group'>
-						<img className='Vector_6' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_6} />
-						<img className='Vector_7' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_7} />
-					</div>
-				</div>
-			</div>
-		</Link>
+
+
 		{/* Buat Berita */}
 		<div className='Group567'>
 			<div className='Group301'>
@@ -72,7 +58,7 @@ export default function ListBeritaUKMAdminUKM (props) {
 			</div>
 		</div>
 
-		<div className='BeritaPost'>
+		<div className='BeritaPost2'>
 			{ berita.length !== 0 
 					? (
 						berita
@@ -81,33 +67,54 @@ export default function ListBeritaUKMAdminUKM (props) {
 							const dt = new Date(date);
 							const contents = post.content;
 							return (
-								<Link to={`/beritasingle/${post.id}`} key={post.idUKM}>
+								<div className='PostCard'>
+									<Link to={`/beritasingle/${post.id}`} key={post.idUKM}>
 			
-										<div className='Frame338_2'>
-											<div className='Alltickets_3'>
-												<div className='cardsdefault_3'>
-													<div className='sheet_3'/>
-													<div className='Group362_3'>
-														<div className='Group337_3'>
-															<div className='Group361_3'>
-																<div className='Rectangle26_3'/>
-																<img className='Image' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+											<div className='Frame338_3'>
+												<div className='Alltickets_4'>
+													<div className='cardsdefault_4'>
+														<div className='sheet_4'/>
+														<div className='Group362_4'>
+															<div className='Group337_4'>
+																<div className='Group361_4'>
+																	<div className='Rectangle26_4'/>
+																	<img className='Images' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+																</div>
 															</div>
+															<span className='Title2'>{post.subject}</span>
+															<span className='UKM_Name2'>{post.ukm.name}</span>
+															<span className='Date2'><ReactTimeAgo date={dt} locale="en-US"/></span>
+															<span className='Content2'> {contents.slice(0,500)} ... Berita Selengkapnya</span>
 														</div>
-														<span className='Title'>{post.subject}</span>
-														<span className='UKM_Name'>{post.ukm.name}</span>
-														<span className='Date'><ReactTimeAgo date={dt} locale="en-US"/></span>
-														<span className='Content'> {contents.slice(0,500)} ... Berita Selengkapnya</span>
 													</div>
 												</div>
 											</div>
+									</Link>
+									<div className='BeritaButton'> 
+										<Link to='/buatberitaukm'>
+											<div className='Group565'>
+												<img className='Rectangle56_1' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56_1} />
+												<div className='akariconsedit'>
+													<div className='Group'>
+														<img className='Vector_6' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_6} />
+														<img className='Vector_7' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_7} />
+													</div>
+												</div>
+											</div>
+										</Link>
+										{/* Delete Button */}
+										<div className='Group561'>
+											<img className='Rectangle56' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56} />
+											<img className='Vector_5' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_5} />
 										</div>
-
-								</Link>
+									</div>
+									{/* Edit Button */}
+									
+								</div>	
 							)
 						})
 					)	
-					: (<div> <span className='notFound'>Belum Ada Berita</span></div>)
+					: (<div> <span className='notFound2'>Belum Ada Berita</span></div>)
 
 			}
 		</div>

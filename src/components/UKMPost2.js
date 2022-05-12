@@ -17,7 +17,7 @@ class UKMPost2 extends Component {
 	}
 
 	componentDidMount(){
-		axios.get('https://api-ukmscare.herokuapp.com/ukms')
+		axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms`)
 		.then((response)=>{
 			console.log(response.data.data);
 			this.setState({
@@ -38,17 +38,8 @@ class UKMPost2 extends Component {
 					
 						<Col key={post.id}>
 						<Link to={`/ukms/${post.id}`} >
-						    
-                                {/* <Card.Img variant="top" className='Image' src={ImgAsset.HomepageA_JuaraTaekwondo1} />
-                                <Card.Body className='Body'>
-                                    <Card.Title variant="center" className='Subject'>{post.subject}</Card.Title>
-                                    <Card.Text>
-                                        <p className='Name'> {post.ukm.name}</p>
-                                        <p className='Date'> <ReactTimeAgo date={dt} locale="en-US"/> </p>
-                                    </Card.Text>
-                                </Card.Body> */}
                             <Card className='Card2'>
-                                <Card.Img variant="top" className='Image2' src={ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+                                <Card.Img variant="top" className='Image2' src={`${process.env.REACT_APP_BACKEND_URL}${post.avatar}`} />
                                 <Card.Body className='Body2'>
                                     <Card.Title variant="center" className='Subject2'>{post.name}</Card.Title>
                                 </Card.Body>

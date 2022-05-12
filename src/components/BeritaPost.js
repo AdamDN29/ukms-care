@@ -22,7 +22,7 @@ export default function BeritaPost (props) {
 	
 	useEffect(() => {
 		axios
-		.get(`https://api-ukmscare.herokuapp.com/ukms/${props.articles_id}`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}${props.ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
@@ -48,7 +48,7 @@ export default function BeritaPost (props) {
 									<div className='Group337_3'>
 										<div className='Group361_3'>
 											<div className='Rectangle26_3'/>
-											<img className='Image' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+											<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${props.image}`} />
 										</div>
 									</div>
 									<span className='Title'>{props.subject}</span>
