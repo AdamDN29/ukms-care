@@ -61,6 +61,8 @@ render() {
 		{/*Fitur UKM's Care (daftar,info,berita*/}
 		<span className='UKMSCARE'>UKM'S CARE?</span>
 		<div className='Line4'/>
+
+		<div className='grup1'>
 		<div className='Group335'>
 			<div className='Group326_2'>
 				<div className='Rectangle23_1'/>
@@ -82,9 +84,11 @@ render() {
 				</div>
 			</div>
 		</div>
+
 		<span className='BeritaUKM_Home'> Berita UKM</span>
 		<span className='InformasiUKM'>Informasi  UKM</span>
 		<span className='PendaftaranOnline'>Pendaftaran Online</span>
+
 		<div className='Group'>
 			<img className='Vector_4' src = {ImgAsset.HomepageA_1_Vector_4} />
 			<img className='Vector_5' src = {ImgAsset.HomepageA_1_Vector_5} />
@@ -102,10 +106,14 @@ render() {
 			</div>
 		</div>
 
+
+		</div>
+
 		{/*List UKM*/}
 		<span className='ukmunpad'>UKM UNPAD</span>
 		<div className='Line6'/>
 
+		<div className='grup2'>
 		<div className='UKMPost2'>
 			<UKMPost2 />
 		</div>
@@ -140,10 +148,10 @@ render() {
 			<BeritaPost2 />
 		</div>
 
-		<Link to='/beritaukmb/articles'>
-			<span className='BeritaSelengkapnya'>Berita Selengkapnya  ➝</span>
-		</Link>
-		
+			<Link to='/beritaukmb/articles'>
+				<span className='BeritaSelengkapnya'>Berita Selengkapnya  ➝</span>
+			</Link>
+		</div>
 		{/*Footer */}
 	<Footer/>		
 	</div>

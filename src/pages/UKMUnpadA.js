@@ -87,6 +87,7 @@ export default function UKMUnpadA (props) {
 		<span className='Title'>UNIT KEGIATAN MAHASISWA</span>
 
 		{/*pilih kategori*/}
+		<div className='grup1'>
 		<div className='Group365'>
 			<Dropdown>
 					<Dropdown.Toggle variant="success" id="dropdown-basic" className='Group359'>
@@ -124,13 +125,7 @@ export default function UKMUnpadA (props) {
 			</form>
 			
 		</div>
-
 		
-		{/* <SearchBerita/> */}
-
-		
-
-
 		<Row xs={1} md={3} className="UKMRow">
 		{ukm.length !== 0
 			? (ukm
@@ -141,6 +136,14 @@ export default function UKMUnpadA (props) {
 			: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
 		}
 		</Row>
+
+
+
+		</div>
+
+		
+		{/* <SearchBerita/> */}
+
 		<div className='Pagination'>
 				<ReactPaginate
 					previousLabel={"Prev"}
@@ -154,6 +157,8 @@ export default function UKMUnpadA (props) {
 					activeClassName={"paginationActive"}
 				/>
 		</div>
+
+
 
 		
 		{/*Footer*/}

@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1260px;
+	width: 100%;
 	height: 2900px;
 	background : rgba(255,255,255,1);
 	
@@ -34,7 +34,7 @@
 }
 .HomepageA_1_HomepageA .Vectors_1 {
 	position: absolute;
-	left: 1160px;
+	right: 0px;
 	top: 633px;
 	width: 100px;
 	height: 2127px;
@@ -316,17 +316,26 @@
 
 .HomepageA_1_HomepageA .BeritaPost2 {
 	position: absolute;
+	left: -620px;
 	top: 300px;
+}
+
+.HomepageA_1_HomepageA .grup2{
+	position: absolute;
+	left: 50%;
+
 }
 
 .HomepageA_1_HomepageA .UKMPost2 {
 	position: absolute;
+	left: -620px;
 	top: -250px;
 }
 
 .HomepageA_1_HomepageA .Line4 {
 	position: absolute;
-	left: 346px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 1009px;
 	width: 693.08740234375px;
 	height: 0px;
@@ -337,7 +346,7 @@
 /*ss*/
 .HomepageA_1_HomepageA .BeritaSelengkapnya {
 	position: absolute;
-	left: 930px;
+	left: 300px;
 	top: 2650px;
 	width: 250px;
 	height: 95px;
@@ -356,7 +365,7 @@
 }
 .HomepageA_1_HomepageA .UKMSelengkapnya {
 	position: absolute;
-	left: 930px;
+	left: 300px;
 	top: 2000px;
 	width: 250px;
 	height: 95px;
@@ -372,20 +381,20 @@
 	position: absolute;
 	left: 0px;
 	top: 368px;
-	width: 1260px;
+	width: 100%;
 	height: 265px;
 }
 .HomepageA_1_HomepageA .Group306 .Rectangle8 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1260px;
+	width: 100%;
 	height: 265px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
-.HomepageA_1_HomepageA .Group306 .UKMsCare {
+.HomepageA_1_HomepageA .UKMsCare {
 	position: absolute;
-	left: 610px;
+	left: 50%;
 	transform: translate(-50%);
 	top: 32px;
 	width: 557.1220703125px;
@@ -554,14 +563,14 @@
 }
 .HomepageA_1_HomepageA .Group335 {
 	position: absolute;
-	left: 131px;
+	left: 0px;
 	top: 1078.5556640625px;
 	width: 1000px;
 	height: 421.4443359375px;
 }
 .HomepageA_1_HomepageA .Group335 .Group326_2 {
 	position: absolute;
-	left: 0px;
+	left: -500px;
 	top: 0px;
 	width: 771.224365234375px;
 	height: 421.4443359375px;
@@ -626,7 +635,7 @@
 }
 .HomepageA_1_HomepageA .Group335 .Group327_1 {
 	position: absolute;
-	left: 700px;
+	left: 200px;
 	top: 0px;
 	width: 300px;
 	height: 421.4443359375px;
@@ -662,7 +671,8 @@
 }
 .HomepageA_1_HomepageA .UKMSCARE {
 	position: absolute;
-	left: 410px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 972px;
 	width: 398px;
 	height: 48px;
@@ -673,10 +683,17 @@
 	line-height: 48px;
 	text-align: center;
 }
-.HomepageA_1_HomepageA .BeritaUKM_Home {
+
+/*Sini*/
+.HomepageA_1_HomepageA .grup1{
 	position: absolute;
-	left: 830px;
-	top: 1076px;
+	left: 50%;
+}
+
+.HomepageA_1_HomepageA .grup1 .BeritaUKM_Home {
+	position: absolute;
+	left: -500px;
+	top: 1080px;
 	width: 315px;
 	height: 114px;
 	color : rgba(255,255,255,1);
@@ -686,9 +703,9 @@
 	line-height: 40px;
 	text-align: center;
 }
-.HomepageA_1_HomepageA .InformasiUKM {
+.HomepageA_1_HomepageA .grup1 .InformasiUKM {
 	position: absolute;
-	left: 475px;
+	left: -150px;
 	top: 1080px;
 	width: 315px;
 	height: 115px;
@@ -699,9 +716,9 @@
 	line-height: 40px;
 	text-align: center;
 }
-.HomepageA_1_HomepageA .PendaftaranOnline {
+.HomepageA_1_HomepageA .grup1 .PendaftaranOnline {
 	position: absolute;
-	left: 130px;
+	left: 200px;
 	top: 1080px;
 	width: 315px;
 	height: 114px;
@@ -712,16 +729,20 @@
 	line-height: 40px;
 	text-align: center;
 }
+
+/*Sini*/
+
+
 .HomepageA_1_HomepageA .Group {
 	position: absolute;
-	left: 235px;
-	top: 1211px;
+	left: -400px;
+	top: 1200px;
 	width: 9.86111111111111%;
 	height: 5.3968975360576925%;
 }
 .HomepageA_1_HomepageA .Group .Vector_4 {
 	position: absolute;
-	left: 58.47119140625px;
+	left: 58px;
 	top: 0px;
 	width: 80px;
 	height: 80px;
@@ -735,8 +756,8 @@
 }
 .HomepageA_1_HomepageA .etnewspaper {
 	position: absolute;
-	left: 915px;
-	top: 1202px;
+	left: 280px;
+	top: 1210px;
 	width: 160px;
 	height: 147px;
 }
@@ -763,7 +784,7 @@
 }
 .HomepageA_1_HomepageA .tablerspeakerphone {
 	position: absolute;
-	left: 530px;
+	left: -100px;
 	top: 1163px;
 	width: 219px;
 	height: 226px;
@@ -791,7 +812,8 @@
 }
 .HomepageA_1_HomepageA .Line4 {
 	position: absolute;
-	left: 270px;
+	left: 50%;
+	transform: translate(-50%);
 	top: 1040px;
 	width: 693.08740234375px;
 	height: 0px;
@@ -801,9 +823,9 @@
 }
 .HomepageA_1_HomepageA .text1 {
 	position: absolute;
-	margin: 80px;
-	left: 85px;
-	top: 420px;
+	left: 50%;
+	transform: translate(-50%);
+	top: 500px;
 	width: 900px;
 	height: 256px;
 	color : rgba(255,255,255,1);
@@ -817,7 +839,7 @@
 	position: absolute;
 	left: 0px;
 	top: 80px;
-	width: 1260px;
+	width: 100%;
 	height: 288px;
 	object-fit: cover;
 	overflow: hidden;

@@ -1,82 +1,25 @@
 .Navbar {
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1260px;
+	width: 100%;
 	/* height: 2021px; */
 	background : rgba(255,255,255,1);
+	z-index: 100;
 	/* border: 1px solid rgba(0,0,0,1); */
 	/* box-sizing: border-box; */
 }
 
-.Navbar .Frame382 {
-	position: absolute;
-	left: -21px;
-	top: -22px;
-	width: 1260px;
-	height: 120px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.Navbar .Frame382 .Frame368 {
-    scroll-behavior: smooth;
-    z-index: 1;
-    position: fixed;
-	margin-bottom: 10px;
-	width: 1260px;
-	height: 100px;
-	display: flex;
-	flex-direction: column;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	box-sizing: border-box;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 {
-	position: relative;
-	margin-bottom: 10px;
-	width: 1260px;
-	height: 80px;
-	background : rgba(255,255,255,1);
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Group222 {
+.Navbar .ColorsSecondary_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1260px;
-	height: 80px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1260px;
-	height: 80px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1260px;
-	height: 80px;
-	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 1260px;
+	width: 100%;
 	height: 82px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
-.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
+.Navbar .ProjectBrandGuidelines_1 {
 	visibility: hidden;
 	position: absolute;
 	left: 24px;
@@ -89,7 +32,7 @@
 	font-weight: 700;
 	line-height: 16px;
 }
-.Navbar .Frame382 .Frame368 .Navbar1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
+.Navbar ._2020_1 {
 	position: absolute;
 	left: 1416px;
 	top: 32px;
@@ -204,71 +147,3 @@
 
 }
 
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 {
-	position: absolute;
-	left: 1066px;
-	top: 33px;
-	width: 267px;
-	height: 54px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 44.9438202247191%;
-	height: 100%;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn .Rectangle {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
-	border-radius: 10px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn .login {
-	position: absolute;
-	left: 37.5654296875px;
-	top: 15px;
-	width: 38.26090494791667%;
-	height: 44.44444444444444%;
-	color : rgba(255,255,255,1);
-	font-family: Lexend Deca;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 20px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 {
-	position: absolute;
-	left: 137px;
-	top: 0px;
-	width: 48.68913857677903%;
-	height: 100%;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 .Rectangle_1 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background : rgba(0,180.00000447034836,215.0000023841858,1);
-	border-radius: 10px;
-}
-.Navbar .Frame382 .Frame368 .Navbar1 .Frame376 .Group235 .Loginbtn_1 .Register {
-	position: absolute;
-	left: 26.1806640625px;
-	top: 15px;
-	width: 59.02794471153846%;
-	height: 44.44444444444444%;
-	color : rgba(255,255,255,1);
-	font-family: Lexend Deca;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 20px;
-}
-
-
-.link {
-	text-decoration: none;
-}

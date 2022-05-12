@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1260px;
+	width: 100%;
 	height: 1684px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
@@ -12,14 +12,15 @@
 }
 .DaftarUKM_DaftarUKM .Rectangle21 {
 	position: absolute;
-	left: 160px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 265px;
 	width: 950px;
 	height: 1145px;
 }
 .DaftarUKM_DaftarUKM .Vectors {
 	position: absolute;
-	left: 1160px;
+	right: 0px;
 	top: 80px;
 	width: 100px;
 	height: 1464px;
@@ -63,7 +64,8 @@
 }
 .DaftarUKM_DaftarUKM .daftarukm {
 	position: absolute;
-	left: 400px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 145px;
 	width: 487px;
 	height: 60px;
@@ -523,7 +525,8 @@
 }
 .DaftarUKM_DaftarUKM .PendaftaranUnitTaekwondoUnpad {
 	position: absolute;
-	left: 375px;
+	left: 50%;
+	transform:translate(-36%);
 	top: 303px;
 	width: 750px;
 	height: 32px;
@@ -535,7 +538,8 @@
 }
 .DaftarUKM_DaftarUKM .Line7 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 356px;
 	width: 840px;
 	height: 0px;
@@ -543,7 +547,8 @@
 }
 .DaftarUKM_DaftarUKM .Group319 {
 	position: absolute;
-	left: 890px;
+	right: 12%;
+	transform:translate(-10%);
 	top: 1431px;
 	width: 200px;
 	height: 50px;
@@ -634,7 +639,8 @@
 }
 .DaftarUKM_DaftarUKM .Group323 {
 	position: absolute;
-	left: 670px;
+	right: 12%;
+	transform:translate(-120%);
 	top: 1431px;
 	width: 200px;
 	height: 50px;

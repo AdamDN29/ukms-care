@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1231px;
+	width: 100%;
 	height: 1920px;
 	background : rgb(255, 255, 255);
 	/*border: 1px solid rgba(0,0,0,1);*/
@@ -361,10 +361,13 @@
 }
 
 
-
-.UKMUnpadA_UKMUnpadA .Group365 {
+.UKMUnpadA_UKMUnpadA .grup1{
 	position: absolute;
-	left: 150px;
+	left: 50%;
+}
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 {
+	position: absolute;
+	left: -480px;
 	top: 368px;
 	width: 968px;
 	height: 45px;
@@ -376,31 +379,8 @@
 	width: 166.19189453125px;
 	height: 40px;
 } */
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Rectangle29 {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 166.19189453125px;
-	height: 40px;
-	background : rgba(255,255,255,1);
-	border-radius: 3px;
-	border: 1px solid rgba(186.88379108905792,186.88379108905792,186.88379108905792,1);
-	box-sizing: border-box;
-}
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Kategori {
-	position: absolute;
-	left: 36.60205078125px;
-	top: 11px;
-	width: 87.05322265625px;
-	height: 18.28564453125px;
-	color : rgba(0,0,0,1);
-	font-family: Oxygen;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 16px;
-}
 
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -418,13 +398,39 @@
 	box-sizing: border-box;
 }
 
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Rectangle29 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 166.19189453125px;
+	height: 40px;
+	background : rgba(255,255,255,1);
+	border-radius: 3px;
+	border: 1px solid rgba(186.88379108905792,186.88379108905792,186.88379108905792,1);
+	box-sizing: border-box;
+}
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Kategori {
+	position: absolute;
+	left: 36.60205078125px;
+	top: 11px;
+	width: 87.05322265625px;
+	height: 18.28564453125px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+}
+
+
+
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 {
 	position: relative;
 	margin-right: 25px;
 	width: 20px;
 	height: 14.857421875px;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle30 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle30 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -432,7 +438,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle31 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle31 {
 	position: relative;
 	left: 5px;
 	top: 0px;
@@ -440,7 +446,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle32 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle32 {
 	position: absolute;
 	left: 10px;
 	top: 0px;
@@ -448,7 +454,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle33 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle33 {
 	position: absolute;
 	left: 0px;
 	top: 5px;
@@ -456,7 +462,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle34 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle34 {
 	position: absolute;
 	left: 5px;
 	top: 5px;
@@ -464,7 +470,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle35 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle35 {
 	position: absolute;
 	left: 10px;
 	top: 5px;
@@ -472,7 +478,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle36 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle36 {
 	position: absolute;
 	left: 0px;
 	top: 10px;
@@ -480,7 +486,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle37 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle37 {
 	position: absolute;
 	left: 5px;
 	top: 10px;
@@ -488,7 +494,7 @@
 	height: 4px;
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Group358 .Rectangle38 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Group358 .Rectangle38 {
 	position: absolute;
 	left: 10px;
 	top: 10px;
@@ -497,7 +503,7 @@
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 }
 
-.UKMUnpadA_UKMUnpadA .Group365 .Group359 .Icon1 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group359 .Icon1 {
 	position: relative;
 	margin-right: 20px;
 	margin-left: 95px;
@@ -505,14 +511,14 @@
 	width: 10px;
 	height: 10px;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group2 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group2 {
 	position: absolute;
 	left: 510px;
 	top: 0px;
 	width: 37.41012356171548%;
 	height: 88.88888888888889%;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group2 .Rectangle3 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group2 .Rectangle3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -522,7 +528,7 @@
 	border: 1px solid rgba(186.88379108905792,186.88379108905792,186.88379108905792,1);
 	box-sizing: border-box;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group2 .Search {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group2 .Search {
 	position: absolute;
 	left: 67.93212890625px;
 	top: 11px;
@@ -534,28 +540,28 @@
 	font-weight: 400;
 	line-height: 16.40625px;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group2 .evasearchoutline {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group2 .evasearchoutline {
 	position: absolute;
 	left: 26.1708984375px;
 	top: 11.4287109375px;
 	width: 5.043860115697943%;
 	height: 42.8570556640625%;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group2 .evasearchoutline .Vector_4 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group2 .evasearchoutline .Vector_4 {
 	position: absolute;
 	left: 2.89404296875px;
 	top: 2.142822265625px;
 	width: 75.02425443961698%;
 	height: 75.02456670037171%;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group360 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group360 {
 	position: absolute;
 	left: 870px;
 	top: 0.0517578125px;
 	width: 91.9990234375px;
 	height: 40px;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group360 .Rectangle39 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group360 .Rectangle39 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -565,7 +571,7 @@
 	border: 1px solid rgba(186.88379108905792,186.88379108905792,186.88379108905792,1);
 	box-sizing: border-box;
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Group360 .Search_1 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Group360 .Search_1 {
 	position: absolute;
 	left: 13.84912109375px;
 	top: 10px;
@@ -577,7 +583,7 @@
 	font-weight: 700;
 	line-height: 18.75px;
 }
-.UKMUnpadA_UKMUnpadA  .Group365 .Frame2 {
+.UKMUnpadA_UKMUnpadA  .grup1 .Group365 .Frame2 {
 	position: absolute;
 	left: 613px;
 	top: 0px;
@@ -593,7 +599,7 @@
 	background-size: 15px;
 	border: 1px solid rgba(186.88379108905792,186.88379108905792,186.88379108905792,1);
 }
-.UKMUnpadA_UKMUnpadA .Group365 .Frame360 {
+.UKMUnpadA_UKMUnpadA .grup1 .Group365 .Frame360 {
 	position: absolute;
 	left: 873px;
 	top: 0px;
@@ -610,18 +616,17 @@
 	text-decoration-color: black;
 }
 
-.UKMUnpadA_UKMUnpadA .UKMRow {
+.UKMUnpadA_UKMUnpadA .grup1 .UKMRow {
 	position: relative;
-	left: 150px;
+	left: -480px;
 	top: 450px;
 	width: 995px;
 	margin-bottom: 10px;	
 }
 
-.UKMUnpadA_UKMUnpadA .notFound {
+.UKMUnpadA_UKMUnpadA .grup1 .notFound {
 	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
+	left: 250px;
 	top: 20px;
 	width: 500px;
 	height: 46px;

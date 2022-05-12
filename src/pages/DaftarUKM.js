@@ -12,6 +12,8 @@ render() {
     return (
 		<div className='DaftarUKM_DaftarUKM'>
 		<img className='Rectangle21' src = {ImgAsset.DaftarUKM_Rectangle21} />
+		<span className='PendaftaranUnitTaekwondoUnpad'>Pendaftaran Unit Taekwondo Unpad</span>
+		<div className='Line7'/>
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.DaftarUKM_Vector} />
 			<img className='Vector_1' src = {ImgAsset.DaftarUKM_Vector_1} />
@@ -23,6 +25,8 @@ render() {
 
 		<NavbarUser/>
 		<span className='daftarukm'>DAFTRAR UKM</span>
+
+		<div className='grup1'>
 
 		<div className='Group317'>
 		<span className='NamaLengkap'>Nama Lengkap</span>
@@ -88,8 +92,9 @@ render() {
 			<span className='Angkatan'>Angkatan</span>
 			<img className='Polygon2_1' src = {ImgAsset.DaftarUKM_Polygon2_1} />
 		</div>
-		<span className='PendaftaranUnitTaekwondoUnpad'>Pendaftaran Unit Taekwondo Unpad</span>
-		<div className='Line7'/>
+
+		</div>
+
 		<Link to='/detailukma'>
 			<div className='Group319'>
 				<div className='Group580'>
@@ -113,6 +118,8 @@ render() {
 			</div>
 		</Link>
 		<Link to='/detailukma'>
+
+			
 			<div className='Group323'>
 				<div className='Group384'>
 					<div className='Group385'>
