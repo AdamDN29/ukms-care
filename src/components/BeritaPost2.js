@@ -17,7 +17,7 @@ class BeritaPost2 extends Component {
 	}
 
 	componentDidMount(){
-		axios.get('https://api-ukmscare.herokuapp.com/articles')
+		axios.get(`${process.env.REACT_APP_BACKEND_URL}articles`)
 		.then((response)=>{
 			console.log(response.data.data);
 			this.setState({
@@ -40,7 +40,7 @@ class BeritaPost2 extends Component {
 						<Col key={post.id}>
 						<Link to={`/beritasingle/${post.id}`}>
 							<Card className='Card' >
-								<Card.Img variant="top" className='Image' src={ImgAsset.HomepageA_JuaraTaekwondo1} />
+								<Card.Img variant="top" className='Image' src={`${process.env.REACT_APP_BACKEND_URL}${post.image}`} />
 								<Card.Body className='Body'>
 									<Card.Title variant="center" className='Subject'>{post.subject}</Card.Title>
 									<Card.Text>

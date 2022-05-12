@@ -49,7 +49,7 @@ export default function UKMUnpadA (props) {
 
 	useEffect(() => {
 		axios
-		.get(`https://api-ukmscare.herokuapp.com/${query}`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}${query}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
@@ -109,7 +109,7 @@ export default function UKMUnpadA (props) {
 					<Dropdown.Menu>
 					<Dropdown.Item href="/ukmunpada/ukms">All</Dropdown.Item>
 						<Dropdown.Item href="/ukmunpada/ukms/category/Olahraga">Olahraga</Dropdown.Item>
-						<Dropdown.Item href="/ukmunpada/ukms/category/Beladiri">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpada/ukms/category/Bela diri">Beladiri</Dropdown.Item>
 						<Dropdown.Item href="/ukmunpada/ukms/category/Kesenian">Kesenian</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>
@@ -131,7 +131,7 @@ export default function UKMUnpadA (props) {
 			? (ukm
 				.slice(pagesVisited, pagesVisited + usersPerPage)
 				.map(post => {
-				return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} />
+				return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} avatar={post.avatar}/>
 			}))
 			: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
 		}

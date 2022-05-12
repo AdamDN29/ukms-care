@@ -9,6 +9,7 @@ import Footer from '../components/Footer'
 import BeritaPost from '../components/BeritaPost'
 import SearchBerita from '../components/SearchBerita'
 import ReactPaginate from "react-paginate";
+import GetToken from '../API/GetToken'
 import axios from 'axios';
 
 export default function BeritaUKMB (props) {
@@ -42,7 +43,7 @@ export default function BeritaUKMB (props) {
 
 	useEffect(() => {
 		axios
-		.get(`https://api-ukmscare.herokuapp.com/${query}`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}${query}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);
@@ -70,18 +71,21 @@ export default function BeritaUKMB (props) {
 				<SearchBerita/>
 
 				{/* <BeritaPost query={query}  /> */}
+				<div className='BeritaPost2'>
+					{ berita.length !== 0 
+						? (
+							berita
+							.slice(pagesVisited, pagesVisited + usersPerPage)
+							.map(post => {
+								return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} image={post.image}/>
+							})
+						)	
+						: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
+		
+					}
+				</div>
 				
-				{ berita.length !== 0 
-					? (
-						berita
-						.slice(pagesVisited, pagesVisited + usersPerPage)
-						.map(post => {
-							return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} />
-						})
-					)	
-					: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
-	
-				}
+				
 				<div className='Pagination'>
 					<ReactPaginate
 					previousLabel={"Prev"}
