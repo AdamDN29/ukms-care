@@ -76,15 +76,20 @@
 	line-height: 60px;
 }
 
-.DaftarUKM_DaftarUKM .Group317 {
+.DaftarUKM_DaftarUKM .grup1{
 	position: absolute;
 	left: 50%;
-	transform: translate(-54%);
+	transform:translate(-50%);
+}
+
+.DaftarUKM_DaftarUKM .grup1 .Group317 {
+	position: absolute;
+	left: -400px;
 	top: 399px;
 	width: 800px;
 	height: 83px;
 }
-.DaftarUKM_DaftarUKM .Group317 .Rectangle1 {
+.DaftarUKM_DaftarUKM .grup1 .Group317 .Rectangle1 {
 	position: absolute;
 	left: 0px;
 	top: 33px;
@@ -94,7 +99,7 @@
 	border-radius: 5px;
 }
 
-.DaftarUKM_DaftarUKM .Group317 .NamaLengkap {
+.DaftarUKM_DaftarUKM .grup1 .Group317 .NamaLengkap {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -108,8 +113,7 @@
 }
 .DaftarUKM_DaftarUKM .Group318 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-85%);
+	left: -400px;
 	top: 693px;
 	width: 506px;
 	height: 88px;
@@ -156,8 +160,7 @@
 }
 .DaftarUKM_DaftarUKM .Group315 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-225%);
+	left: -400px;
 	top: 497px;
 	width: 192px;
 	height: 83px;
@@ -177,8 +180,7 @@
 }
 .DaftarUKM_DaftarUKM .Group572 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-224%);
+	left: -400px;
 	top: 796px;
 	width: 192px;
 	height: 83px;
@@ -218,8 +220,7 @@
 }
 .DaftarUKM_DaftarUKM .Group573 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-161%);
+	left: -400px;
 	top: 894px;
 	width: 268px;
 	height: 83px;
@@ -259,8 +260,7 @@
 }
 .DaftarUKM_DaftarUKM .Group574 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-67%);
+	left: -400px;
 	top: 992px;
 	width: 644px;
 	height: 143px;
@@ -300,8 +300,7 @@
 }
 .DaftarUKM_DaftarUKM .Group576 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-265%);
+	left: -400px;
 	top: 1150px;
 	width: 163px;
 	height: 85px;
@@ -383,8 +382,7 @@
 }
 .DaftarUKM_DaftarUKM .Group577 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-215%);
+	left: -400px;
 	top: 1250px;
 	width: 201px;
 	height: 85px;
@@ -466,8 +464,7 @@
 }
 .DaftarUKM_DaftarUKM .Group571 {
 	position: absolute;
-	left: 50%;
-	transform: translate(-225%);
+	left: -400px;
 	top: 595px;
 	width: 192px;
 	height: 83px;

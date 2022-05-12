@@ -28,38 +28,49 @@ render() {
 
 		<div className='grup1'>
 
-		<div className='Group317'>
-		<span className='NamaLengkap'>Nama Lengkap</span>
-		<input className='InputForm1'/>
-		</div>
+			<div className='Group317'>
+				<span className='NamaLengkap'>Nama Lengkap</span>
+				<input className='InputForm1'/>
+			</div>
 
-		<div className='Group318'>
-			<div className='Rectangle1_1'/>
-			<img className='Polygon2' src = {ImgAsset.DaftarUKM_Polygon2} />
-			<span className='FakultasMatematikadanIlmuPengetahuanAlam'>Fakultas Matematika dan Ilmu Pengetahuan Alam</span>
-			<span className='Fakultas'>Fakultas</span>
-		</div>
+			<div className='Group315'>
+				<input className='InputForm1'/>
+				<span className='NPM'>NPM</span>
+			</div>
 
-		<div className='Group315'>
-			<input className='InputForm1'/>
-			<span className='NPM'>NPM</span>
-		</div>
-		<div className='Group572'>
-		<input className='InputForm1'/>
-			<span className='Kontak'>Kontak</span>
-		</div>
-		<div className='Group573'>
-		<input className='InputForm1'/>
-			<span className='Hobi'>Hobi</span>
-		</div>
-		<div className='Group574'>
-		<input className='InputForm2'/>
-			<span className='AlasanMasuk'>Alasan Masuk</span>
-		</div>
-		<div className='Group576'>
-			<div className='Group301'>
-				<div className='Rectangle19'/>
-				<div className='Group313'>
+			<div className='Group571'>
+				<div className='Rectangle1_6'/>
+				<span className='_2019'>2019</span>
+				<span className='Angkatan'>Angkatan</span>
+				<img className='Polygon2_1' src = {ImgAsset.DaftarUKM_Polygon2_1} />
+			</div>
+
+			<div className='Group318'>
+				<div className='Rectangle1_1'/>
+				<img className='Polygon2' src = {ImgAsset.DaftarUKM_Polygon2} />
+				<span className='FakultasMatematikadanIlmuPengetahuanAlam'>Fakultas Matematika dan Ilmu Pengetahuan Alam</span>
+				<span className='Fakultas'>Fakultas</span>
+			</div>
+
+			<div className='Group572'>
+				<input className='InputForm1'/>
+				<span className='Kontak'>Kontak</span>
+			</div>
+
+			<div className='Group573'>
+				<input className='InputForm1'/>
+				<span className='Hobi'>Hobi</span>
+			</div>
+
+			<div className='Group574'>
+				<input className='InputForm2'/>
+				<span className='AlasanMasuk'>Alasan Masuk</span>
+			</div>
+
+			<div className='Group576'>
+				<div className='Group301'>
+					<div className='Rectangle19'/>
+					<div className='Group313'>
 					<div className='Group300'>
 						<span className='PilihFile'>Pilih File</span>
 					</div>
@@ -67,31 +78,27 @@ render() {
 						<img className='Vector_5' src = {ImgAsset.DaftarUKM_Vector_5} />
 						<img className='Vector_6' src = {ImgAsset.DaftarUKM_Vector_6} />
 					</div>
-				</div>
-			</div>
-			<span className='ScanKTM'>Scan KTM</span>
-		</div>
-		<div className='Group577'>
-			<div className='Group575'>
-				<div className='Rectangle19_1'/>
-				<div className='Group313_1'>
-					<div className='Group300_1'>
-						<span className='PilihFile_1'>Pilih File</span>
-					</div>
-					<div className='bxupload_1'>
-						<img className='Vector_7' src = {ImgAsset.DaftarUKM_Vector_7} />
-						<img className='Vector_8' src = {ImgAsset.DaftarUKM_Vector_8} />
 					</div>
 				</div>
+				<span className='ScanKTM'>Scan KTM</span>
 			</div>
-			<span className='BuktiPembayaran'>Bukti Pembayaran</span>
+
+			<div className='Group577'>
+				<div className='Group575'>
+					<div className='Rectangle19_1'/>
+					<div className='Group313_1'>
+						<div className='Group300_1'>
+							<span className='PilihFile_1'>Pilih File</span>
+						</div>
+						<div className='bxupload_1'>
+							<img className='Vector_7' src = {ImgAsset.DaftarUKM_Vector_7} />
+							<img className='Vector_8' src = {ImgAsset.DaftarUKM_Vector_8} />
+						</div>
+					</div>
+				</div>
+				<span className='BuktiPembayaran'>Bukti Pembayaran</span>
 		</div>
-		<div className='Group571'>
-			<div className='Rectangle1_6'/>
-			<span className='_2019'>2019</span>
-			<span className='Angkatan'>Angkatan</span>
-			<img className='Polygon2_1' src = {ImgAsset.DaftarUKM_Polygon2_1} />
-		</div>
+
 
 		</div>
 
