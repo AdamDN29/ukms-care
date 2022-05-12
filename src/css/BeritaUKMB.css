@@ -3,7 +3,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1440px;
+	width: 100%;
 	height: 1996px;
 	background : rgba(255,255,255,1);
 	box-sizing: border-box;
@@ -23,7 +23,7 @@
 }
 .BeritaUKMB_BeritaUKMB .Vectors {
 	position: absolute;
-	left: 1340px;
+	right: 0px;
 	top: 80px;
 	width: 100px;
 	height: 1776px;
@@ -66,26 +66,6 @@
 	height: 1776px;
 }
 
-.BeritaUKMB_BeritaUKMB .beritaukm {
-	position: absolute;
-	left: 488px;
-	top: 145px;
-	width: 463px;
-	height: 60px;
-	color : rgba(0,0,0,1);
-	font-family: Oxygen;
-	font-size: 60px;
-	font-weight: 700;
-	line-height: 60px;
-}
-.BeritaUKMB_BeritaUKMB .Rectangle41 {
-	visibility: hidden;
-	position: absolute;
-	left: 1280px;
-	top: 260px;
-	width: 160px;
-	height: 46px;
-}
 
 .BeritaUKMB_BeritaUKMB .notFound {
 	position: absolute;
