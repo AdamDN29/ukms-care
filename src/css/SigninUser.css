@@ -3,7 +3,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1440px;
+	width: 100%;
 	height: 140px;
 	background : rgba(255,255,255,1);
 }
@@ -79,7 +79,7 @@
 	position: absolute;
 	left: 1177.5185546875px;
 	top: 420px;
-	width: 343.66259765625px;
+	width: 100px;
 	height: 20.451171875px;
 }
 .SigninUser_SigninUser .SectionForgot .Forgotpassword {

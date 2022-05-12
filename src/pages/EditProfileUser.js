@@ -99,8 +99,11 @@ export default function EditProfileUser (props) {
 		<img className='Rectangle21' src = {ImgAsset.EditProfileUser_Rectangle21} />
 		
 		<center><span className='EditProfile'>Edit Profile</span></center>
-		<img className='Line7' src = {ImgAsset.EditProfileUser_Line7} />
-		<img className='Image' src = {ImgAsset.EditProfileUser_unsplashjmURdhtm7Ng} />
+		<div className='grup1'>
+			<img className='Line7' src = {ImgAsset.EditProfileUser_Line7} />
+			<img className='Image' src = {ImgAsset.EditProfileUser_unsplashjmURdhtm7Ng} />
+
+		</div>
 		<div className='Group577'>
 			<div className='Group575'>
 				<div className='Rectangle19_1'/>

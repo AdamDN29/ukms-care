@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1440px;
+	width: 100%;
 	height: 1538px;
 	background : rgba(255,255,255,1);
 	box-sizing: border-box;
@@ -33,7 +33,7 @@
 }
 .EditProfileUser_EditProfileUser .Vectors_1 {
 	position: absolute;
-	left: 1340px;
+	right: 0px;
 	top: 80px;
 	width: 100px;
 	height: 1319px;
@@ -55,15 +55,17 @@
 }
 .EditProfileUser_EditProfileUser .Rectangle21 {
 	position: absolute;
-	left: 164px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 299px;
-	width: 1136px;
+	width: 970px;
 	height: 1027px;
 	border-radius: 30px;
 }
 .EditProfileUser_EditProfileUser .Group319 {
 	position: absolute;
-	left: 832px;
+	left: 50%;
+	transform:translate(50%);
 	top: 1241px;
 	width: 200px;
 	height: 50px;
@@ -155,8 +157,9 @@
 .EditProfileUser_EditProfileUser .EditProfile {
 	position: absolute;
 	align-items: center;
-	left: 450px;
-	top: 160px;
+	left: 50%;
+	transform:translate(-50%);
+	top: 180px;
 	width: 518px;
 	height: 60px;
 	color : rgba(0,0,0,1);
@@ -166,16 +169,22 @@
 	line-height: 60px;
 	text-align: center;
 }
-.EditProfileUser_EditProfileUser .Line7 {
+
+.EditProfileUser_EditProfileUser .grup1{
 	position: absolute;
-	left: 555px;
+	left: 50%;
+	transform:translate(-100%);
+}
+.EditProfileUser_EditProfileUser .grup1 .Line7 {
+	position: absolute;
+	left: -100px;
 	top: 299px;
 	width: 3px;
 	height: 1030px;
 }
-.EditProfileUser_EditProfileUser .Image {
+.EditProfileUser_EditProfileUser .grup1 .Image {
 	position: absolute;
-	left: 209px;
+	left: -425px;
 	top: 404px;
 	width: 301px;
 	height: 295px;
@@ -183,7 +192,8 @@
 }
 .EditProfileUser_EditProfileUser .Group577 {
 	position: absolute;
-	left: 245px;
+	left: 50%;
+	transform:translate(-170%);
 	top: 728px;
 	width: 230px;
 	height: 50px;
@@ -253,7 +263,8 @@
 }
 .EditProfileUser_EditProfileUser .Group317 {
 	position: absolute;
-	left: 597px;
+	left: 50%;
+	transform:translate(-8%);
 	top: 404px;
 	width: 469px;
 	height: 94px;
@@ -303,7 +314,8 @@
 
 .EditProfileUser_EditProfileUser .Group580_1 {
 	position: absolute;
-	left: 597px;
+	left: 50%;
+	transform:translate(-7%);
 	top: 850px;
 	width: 469px;
 	height: 94px;
@@ -324,7 +336,8 @@
 
 .EditProfileUser_EditProfileUser .Group582 {
 	position: absolute;
-	left: 597px;
+	left: 50%;
+	transform:translate(-7%);
 	top: 736px;
 	width: 469px;
 	height: 94px;
@@ -343,7 +356,8 @@
 }
 .EditProfileUser_EditProfileUser .Group583 {
 	position: absolute;
-	left: 597px;
+	left: 50%;
+	transform:translate(-7%);
 	top: 518px;
 	width: 469px;
 	height: 94px;
@@ -362,7 +376,8 @@
 }
 .EditProfileUser_EditProfileUser .Group571 {
 	position: absolute;
-	left: 597px;
+	left: 50%;
+	transform:translate(-17%);
 	top: 632px;
 	width: 192px;
 	height: 83px;
@@ -409,7 +424,8 @@
 }
 .EditProfileUser_EditProfileUser .Group581 {
 	position: absolute;
-	left: 597px;
+	left: 50%;
+	transform:translate(-7%);
 	top: 965px;
 	width: 469px;
 	height: 214px;

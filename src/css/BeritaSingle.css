@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1440px;
+	width: 100%;
 	height: 2021px;
 	background : rgba(255,255,255,1);
 	/* border: 1px solid rgba(0,0,0,1); */
@@ -34,7 +34,7 @@
 }
 .BeritaSingle_BeritaSingle .Vectors_1 {
 	position: absolute;
-	left: 1340px;
+	right: 0px;
 	top: 80px;
 	width: 100px;
 	height: 1801px;

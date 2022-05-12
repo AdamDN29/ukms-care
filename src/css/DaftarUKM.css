@@ -78,7 +78,8 @@
 
 .DaftarUKM_DaftarUKM .Group317 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-54%);
 	top: 399px;
 	width: 800px;
 	height: 83px;
@@ -107,7 +108,8 @@
 }
 .DaftarUKM_DaftarUKM .Group318 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-85%);
 	top: 693px;
 	width: 506px;
 	height: 88px;
@@ -154,32 +156,13 @@
 }
 .DaftarUKM_DaftarUKM .Group315 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-225%);
 	top: 497px;
 	width: 192px;
 	height: 83px;
 }
-.DaftarUKM_DaftarUKM .Group315 .Rectangle1_2 {
-	position: absolute;
-	left: 0px;
-	top: 33px;
-	width: 192px;
-	height: 50px;
-	background : rgba(255,255,255,1);
-	border-radius: 5px;
-}
-.DaftarUKM_DaftarUKM .Group315 ._140810190045 {
-	position: absolute;
-	left: 17px;
-	top: 46px;
-	width: 146px;
-	height: 25px;
-	color : rgba(0,0,0,1);
-	font-family: Oxygen;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 23.4375px;
-}
+
 .DaftarUKM_DaftarUKM .Group315 .NPM {
 	position: absolute;
 	left: 0px;
@@ -194,7 +177,8 @@
 }
 .DaftarUKM_DaftarUKM .Group572 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-224%);
 	top: 796px;
 	width: 192px;
 	height: 83px;
@@ -234,7 +218,8 @@
 }
 .DaftarUKM_DaftarUKM .Group573 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-161%);
 	top: 894px;
 	width: 268px;
 	height: 83px;
@@ -250,7 +235,7 @@
 }
 .DaftarUKM_DaftarUKM .Group573 .MembacadanTidur {
 	position: absolute;
-	left: 17px;
+	left: 0px;
 	top: 46px;
 	width: 222px;
 	height: 25px;
@@ -274,7 +259,8 @@
 }
 .DaftarUKM_DaftarUKM .Group574 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-67%);
 	top: 992px;
 	width: 644px;
 	height: 143px;
@@ -314,7 +300,8 @@
 }
 .DaftarUKM_DaftarUKM .Group576 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-265%);
 	top: 1150px;
 	width: 163px;
 	height: 85px;
@@ -396,7 +383,8 @@
 }
 .DaftarUKM_DaftarUKM .Group577 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-215%);
 	top: 1250px;
 	width: 201px;
 	height: 85px;
@@ -478,7 +466,8 @@
 }
 .DaftarUKM_DaftarUKM .Group571 {
 	position: absolute;
-	left: 200px;
+	left: 50%;
+	transform: translate(-225%);
 	top: 595px;
 	width: 192px;
 	height: 83px;
@@ -547,8 +536,8 @@
 }
 .DaftarUKM_DaftarUKM .Group319 {
 	position: absolute;
-	right: 12%;
-	transform:translate(-10%);
+	left: 50%;
+	transform:translate(130%);
 	top: 1431px;
 	width: 200px;
 	height: 50px;
@@ -639,8 +628,8 @@
 }
 .DaftarUKM_DaftarUKM .Group323 {
 	position: absolute;
-	right: 12%;
-	transform:translate(-120%);
+	left: 50%;
+	transform:translate(20%);
 	top: 1431px;
 	width: 200px;
 	height: 50px;

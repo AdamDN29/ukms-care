@@ -64,6 +64,8 @@ function DetailUKMA (props){
 			<img className='Rectangle43' src = {ImgAsset.DetailUKMA_Rectangle43} />
 			<span className='ukmName'>{ukm.name}</span>
 		</div>
+
+		<div className='grup1'>
 		<img className='ukmAvatar' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
 
 		<div className='Group339'>
@@ -87,19 +89,7 @@ function DetailUKMA (props){
 			<span className='ukmLocation'>{ukm.location}</span>
 			<span className='ukmContact'>{ukm.contact}</span>
 		</div>
-		
-		<div className='Group386'>
-			<div className='Group355'>
-				<img className='Rectangle14' src = {ImgAsset.DetailUKMA_Rectangle14} />
-				<div className='Rectangle28'/>
-			</div>
-			<span className='ukmDesc'>
-				{ukm.desc}
-			</span>
-		</div>
 
-
-		{/* Daftar */}
 		<Link to='/daftarukm'>
 			<div className='Loginbtn'>
 				<div className='Rectangle'/>
@@ -112,14 +102,28 @@ function DetailUKMA (props){
 				<span className='DAFTAR'>DAFTAR</span>
 			</div>
 		</Link>
+		
+		<div className='Group386'>
+			<div className='Group355'>
+				<img className='Rectangle14' src = {ImgAsset.DetailUKMA_Rectangle14} />
+				<div className='Rectangle28'/>
+			</div>
+			<span className='ukmDesc'>
+				{ukm.desc}
+			</span>
+		</div>
 
+		</div>
 
+		{/* Daftar */}
 
 		{/* Berita */}
 		<div className='Group306'>
 			<div className='Rectangle8'/>
-		</div>
+		
 		<span className='Beritaterbaru'>Berita Terbaru</span>
+		</div>
+		
 		<div>
 		{	
 			berita.length !== 0

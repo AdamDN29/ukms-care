@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1440px;
+	width: 100%;
 	height: 1650px;
 	background : rgba(255,255,255,1);
 	box-sizing: border-box;
@@ -47,7 +47,7 @@
 }
 .ProfileUser_ProfileUser .Vectors_1 {
 	position: absolute;
-	left: 1340px;
+	right: 0px;
 	top: 80px;
 	width: 100px;
 	height: 1500px;
@@ -71,7 +71,8 @@
 
 .ProfileUser_ProfileUser .Image {
 	position: absolute;
-	left: 294px;
+	left: 50%;
+	transform:translate(-100%);
 	top: 150px;
 	width: 389px;
 	height: 395px;
@@ -79,7 +80,8 @@
 
 .ProfileUser_ProfileUser .Name {
 	position: absolute;
-	left: 725px;
+	left: 50%;
+	transform:translate(30%);
 	top: 300px;
 	width: 513px;
 	height: 68px;
@@ -92,7 +94,8 @@
 
 .ProfileUser_ProfileUser .Email {
 	position: absolute;
-	left: 725px;
+	left: 50%;
+	transform:translate(17%);
 	top: 360px;
 	width: 513px;
 	height: 68px;
@@ -105,7 +108,8 @@
 }
 .ProfileUser_ProfileUser .Line8 {
 	position: relative;
-	left: 236px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 575px;
 	width: 970px;
 	height: 5px;
@@ -113,7 +117,8 @@
 
 .ProfileUser_ProfileUser .carbonphonevoice {
 	position: absolute;
-	left: 372px;
+	left: 50%;
+	transform:translate(-196%);
 	top: 625px;
 	width: 129px;
 	height: 137px;
@@ -134,7 +139,8 @@
 }
 .ProfileUser_ProfileUser .Kontak {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-30%);
 	top: 650px;
 	width: 252px;
 	height: 68px;
@@ -146,7 +152,8 @@
 }
 .ProfileUser_ProfileUser .kontak_user {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-20%);
 	top: 690px;
 	width: 376px;
 	height: 68px;
@@ -159,7 +166,8 @@
 
 .ProfileUser_ProfileUser .makicollege {
 	position: absolute;
-	left: 372px;
+	left: 50%;
+	transform:translate(-160%);
 	top: 800px;
 	width: 156px;
 	height: 137px;
@@ -173,7 +181,8 @@
 }
 .ProfileUser_ProfileUser .Fakultas {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-55%);
 	top: 825px;
 	width: 132px;
 	height: 68px;
@@ -185,7 +194,8 @@
 }
 .ProfileUser_ProfileUser .Fakultas_User {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-45%);
 	top: 865px;
 	width: 170px;
 	height: 68px;
@@ -198,21 +208,24 @@
 
 .ProfileUser_ProfileUser .faregularaddressbook {
 	position: absolute;
-	left: 384px;
+	left: 50%;
+	transform:translate(-190%);
 	top: 1000px;
 	width: 129px;
 	height: 137px;
 }
 .ProfileUser_ProfileUser .faregularaddressbook .Vector_8 {
 	position: absolute;
-	left: 0px;
+	left: 50%;
+	transform:translate(-40%);
 	top: 0px;
 	width: 100%;
 	height: 100%;
 }
 .ProfileUser_ProfileUser .NPM {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-100%);
 	top: 1025px;
 	width: 75px;
 	height: 68px;
@@ -224,7 +237,8 @@
 }
 .ProfileUser_ProfileUser .NPM_User {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-20%);
 	top: 1065px;
 	width: 365px;
 	height: 114px;
@@ -237,14 +251,16 @@
 
 .ProfileUser_ProfileUser .Vector_13 {
 	position: absolute;
-	left: 384px;
+	left: 50%;
+	transform:translate(-200%);
 	top: 1200px;
-	width: 8.958333333333334%;
-	height: 8.92274751944884%;
+	width: 115px;
+	height: 145px;
 }
 .ProfileUser_ProfileUser .Angkatan {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 1225px;
 	width: 155px;
 	height: 68px;
@@ -256,7 +272,8 @@
 }
 .ProfileUser_ProfileUser ._2019 {
 	position: absolute;
-	left: 560px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 1265px;
 	width: 126px;
 	height: 114px;
@@ -270,7 +287,8 @@
 
 .ProfileUser_ProfileUser .Group239 {
 	position: absolute;
-	left: 856px;
+	left: 50%;
+	transform:translate(30%);
 	top: 1400px;
 	width: 377.3792724609375px;
 	height: 50px;
