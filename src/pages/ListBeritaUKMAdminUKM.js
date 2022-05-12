@@ -8,6 +8,7 @@ import NavbarAdmin from '../components/NavbarAdmin'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import ReactTimeAgo from 'react-time-ago'
+import ReactPaginate from "react-paginate";
 import axios from 'axios';
 
 export default function ListBeritaUKMAdminUKM (props) {
@@ -15,10 +16,20 @@ export default function ListBeritaUKMAdminUKM (props) {
 	console.log(ukm_id);
 
 	const [berita, setBerita] = useState([]);
+	const [pageNumber, setPageNumber] = useState(0);
+
+  	const usersPerPage = 4;
+  	const pagesVisited = pageNumber * usersPerPage;
+
+  	const pageCount = Math.ceil(berita.length / usersPerPage);
+	  
+	const changePage = ({ selected }) => {
+		setPageNumber(selected);
+	};
 
 	useEffect(() => {
 		axios
-		.get(`https://api-ukmscare.herokuapp.com/articles/ukm/${ukm_id}`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}articles/ukm/${ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);
@@ -67,8 +78,8 @@ export default function ListBeritaUKMAdminUKM (props) {
 							const dt = new Date(date);
 							const contents = post.content;
 							return (
-								<div className='PostCard'>
-									<Link to={`/beritasingle/${post.id}`} key={post.idUKM}>
+								<div className='PostCard' key={post.id}>
+									<Link to={`/beritasingle/${post.id}`} >
 			
 											<div className='Frame338_3'>
 												<div className='Alltickets_4'>
@@ -77,14 +88,14 @@ export default function ListBeritaUKMAdminUKM (props) {
 														<div className='Group362_4'>
 															<div className='Group337_4'>
 																<div className='Group361_4'>
-																	<div className='Rectangle26_4'/>
+																	{/* <div className='Rectangle26_4'/> */}
 																	<img className='Images' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
 																</div>
 															</div>
 															<span className='Title2'>{post.subject}</span>
 															<span className='UKM_Name2'>{post.ukm.name}</span>
 															<span className='Date2'><ReactTimeAgo date={dt} locale="en-US"/></span>
-															<span className='Content2'> {contents.slice(0,500)} ... Berita Selengkapnya</span>
+															<span className='Content2'> {contents.slice(0,200)} ... Berita Selengkapnya</span>
 														</div>
 													</div>
 												</div>
@@ -237,6 +248,19 @@ export default function ListBeritaUKMAdminUKM (props) {
 				</div>
 			</div>
 		</div> */}
+		<div className='Pagination2'>
+					<ReactPaginate
+					previousLabel={"Prev"}
+					nextLabel={"Next"}
+					pageCount={pageCount}
+					onPageChange={changePage}
+					containerClassName={"paginationBttns"}
+					previousLinkClassName={"previousBttn"}
+					nextLinkClassName={"nextBttn"}
+					disabledClassName={"paginationDisabled"}
+					activeClassName={"paginationActive"}
+					/>
+				</div>
 
 		<Footer/>
 	</div>

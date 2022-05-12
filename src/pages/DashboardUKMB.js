@@ -17,7 +17,7 @@ function DashboardUKMB (props){
 
 	useEffect(() => {
 		axios
-		.get(`https://api-ukmscare.herokuapp.com/ukms/5`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/5`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);

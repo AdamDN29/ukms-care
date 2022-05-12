@@ -5,10 +5,10 @@
 	top: 0px;
 	margin: auto;
 	width: 1230px;
-	height: 1996px;
+	height: 1700px;
 	background : rgba(255,255,255,1);
-	border: 1px solid rgba(0,0,0,1);
-	box-sizing: border-box;
+	/* border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box; */
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Listberitaukm {
 	position: absolute;
@@ -28,7 +28,7 @@
 	left: 0px;
 	top: 80px;
 	width: 100px;
-	height: 1776px;
+	height: 1480px;
 	mix-blend-mode: normal;
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors .Vector_1 {
@@ -36,21 +36,21 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1776px;
+	height: 1480px;
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors .Vector_2 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1776px;
+	height: 1480px;
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 {
 	position: absolute;
 	left: 1130px;
 	top: 80px;
 	width: 100px;
-	height: 1776px;
+	height: 1480px;
 	mix-blend-mode: normal;
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 .Vector_3 {
@@ -58,14 +58,14 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1776px;
+	height: 1480px;
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 .Vector_4 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1776px;
+	height: 1480px;
 }
 
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 {
@@ -873,17 +873,18 @@
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 {
 	position: absolute;
-	left: 45.99951171875px;
-	top: 42.97705078125px;
+	left: 38px;
+	top: 25px;
 	width: 700px;
 	height: 200px;
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Group337_4 {
 	position: absolute;
-	left: 300px;
-	top: 0.244140625px;
-	width: 348.9990234375px;
-	height: 262.5px;
+	left: 450px;
+	top: 0px;
+	width: 275px;
+	height: 200px;
+	background-color: white;
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Group337_4 .Group361_4 {
 	position: absolute;
@@ -894,31 +895,33 @@
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Group337_4 .Group361_4 .Rectangle26_4 {
 	position: absolute;
-	left: 165px;
-	top: -8.845703125px;
-	width: 250px;
-	height: 180px;
+	left: 150px;
+	top: 50%;
+	transform: translateY(-50%);
+	/* top: -19.845703125px; */
+	width: 275px;
+	height: 200px;
 	background : rgba(255,255,255,1);
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Group337_4 .Group361_4 .Images {
-	position: absolute;
-	left: 24.1451416015625px;
-	top: 25.02880859375px;
-	width: 300px;
-	height: 210px;
-	object-fit: cover;
-	overflow: hidden;
-	border-radius: 5px;
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 250px;
+    height: 175px;
+    object-fit: cover;
+    overflow: hidden;
+    /* border-radius: 5px; */
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Title2 {
 	position: absolute;
 	left: 0.18115234375px;
 	top: 33.3759765625px;
-	width: 626.0003662109375px;
+	width: 420px;
 	height: 80.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 700;
 	line-height: 26px;
 }
@@ -937,24 +940,24 @@
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Date2 {
 	position: absolute;
 	left: 0.154541015625px;
-	top: 248.3759765625px;
+	top: 180px;
 	width: 456px;
 	height: 14.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 16px;
 }
 .Frame338_3 .Alltickets_4 .cardsdefault_4 .Group362_4 .Content2 {
 	position: absolute;
 	left: 0.153564453125px;
-	top: 113.24169921875px;
-	width: 626.00048828125px;
+	top: 105px;
+	width: 420px;
 	height: 121.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 16px;
 }
@@ -1057,3 +1060,79 @@
 	width: 33.33463541666667%;
 	height: 33.331705729166664%;
 }
+
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Pagination2 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 165px;
+	/* bottom: 200px;
+	right: 650px; */
+	align-items: center;
+	align-content: center;
+	align-self: center;
+  
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+  }
+
+
+.paginationBttns {
+	width: 100%;
+	/* bottom: 200px;
+	right: 650px; */
+	align-items: center;
+	align-content: center;
+	align-self: center;
+  
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .paginationBttns a {
+	padding: 15px;
+	height: 40px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	display: flex;
+	text-decoration: none;
+	font-family: Oxygen;
+	color: black;
+	margin: 8px;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  a:not([href]):not([class]) {
+	color: black;
+	text-decoration: none;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+  }
+  a:not([href]):not([class]):hover {
+	color: white;
+	text-decoration: none;
+	border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+  }
+  
+  .paginationBttns a:hover {
+	color: white;
+	background-color: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+  }
+  
+  .paginationActive a:not([href]):not([class]) {
+	background-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	text-decoration: none;
+	color: white;
+	/* border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
+  }
+  
+  .paginationDisabled a {
+	text-decoration: none;
+	color: black;
+	/* background-color: rgba(0,180.00000447034836,215.0000023841858,1); */
+	/* border: 1px solid rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
+  }

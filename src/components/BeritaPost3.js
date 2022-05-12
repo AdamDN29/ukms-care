@@ -54,7 +54,7 @@ export default function BeritaPost3(props) {
 
     useEffect(() => {
 		axios
-		  .get(`https://api-ukmscare.herokuapp.com/articles/ukm/${ukm_id}`)
+		  .get(`${process.env.REACT_APP_BACKEND_URL}articles/ukm/${ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);
