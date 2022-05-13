@@ -54,7 +54,7 @@ function BeritaSingle (props) {
 				<span className='Time'>{moment(date).format('LLLL')} </span>
 			</div>
 			<div className='Frame371'>
-				<img className='Image' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${single.image}`} />
 			</div>
 			<div className='Frame372'>
 				<span className='content'>

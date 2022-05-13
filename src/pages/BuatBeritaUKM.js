@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/BuatBeritaUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
@@ -8,15 +8,14 @@ import {Link} from 'react-router-dom'
 import NavbarAdmin from '../components/NavbarAdmin'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
-import GetToken from '../API/GetToken'
-import axios from 'axios'
+import axios, { Axios } from 'axios'
 import swal from "sweetalert"
 import { Button } from 'react-bootstrap'
 
 const initialState = {
     subject: "",
     content: "",
-    gambar: null,
+    image: null,
 }
 
 const reducer = (currentState, action) => {
@@ -25,8 +24,8 @@ const reducer = (currentState, action) => {
             return { ...currentState, subject: action.upload };
         case "content":
             return { ...currentState, content: action.upload };
-        case "gambar":
-            return { ...currentState, gambar: action.upload };
+        case "image":
+            return { ...currentState, image: action.upload };
         default:
             return currentState;
     }
@@ -37,47 +36,34 @@ export default function BuatBeritaUKM (props) {
 	console.log(idUKM);
 
 	let history = useHistory();
-	const CSRFTOKEN = GetToken();
-	console.log(CSRFTOKEN);
-
-	
 
     const [artikel, dispatch] = useReducer(reducer, initialState)
+	
     const [disable, setDisable] = useState(false);
-
+	
     const onSubmitHandler = (e) => {
         e.preventDefault();
         setDisable(true);
-        const data = new FormData();
-		data.append("ukm_id", idUKM);
-        data.append("subject", artikel.subject);
-        data.append("content", artikel.content);
-        data.append("image", artikel.image);
+        const dataForm = new FormData();
+		dataForm.append("ukm_id", idUKM);
+        dataForm.append("subject", artikel.subject);
+        dataForm.append("content", artikel.content);
+        dataForm.append("image", artikel.image);
 
-		console.log(data);
+		console.log(dataForm.get('ukm_id'));
+		console.log(dataForm.get('subject'));
+		console.log(dataForm.get('content'));
+		console.log(dataForm.get('image'));
 
-		// let res = axios.get(`${process.env.REACT_APP_BACKEND_URL}csrf-token`);
-		// console.log(res);
-
-		// const instance = axios.create({
-		// 	baseURL: `${process.env.REACT_APP_BACKEND_URL}`,
-		// 	timeout: 1000,
-		// 	headers: {'X-Custom-Header': 'foobar'}
-		//   });
-
-
-
-
-		axios.defaults.headers['x-csrf-token'] = CSRFTOKEN;
         axios
-            .post(`${process.env.REACT_APP_BACKEND_URL}articles`, {headers: {'X-CSRF-Token': CSRFTOKEN}}, data
+            .post(`${process.env.REACT_APP_BACKEND_URL}articles`, dataForm
 			)
             .then((response) => {
                 setDisable(false);
                 swal("Berita berhasil dibuat")
                 console.log(response)
                 console.log("berhasil")
-                history.push("/listberitaukm")
+                history.push({pathname:'/listberitaukm', state:{idUKM}})
             })
             .catch((err) => {
                 swal({
@@ -91,6 +77,10 @@ export default function BuatBeritaUKM (props) {
 
 
 	return (
+		
+
+
+		
 	<div className='BuatBeritaUKM_BuatBeritaUKM'>
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.BuatBeritaUKM_Vector} />
@@ -101,6 +91,7 @@ export default function BuatBeritaUKM (props) {
 			<img className='Vector_3' src = {ImgAsset.BuatBeritaUKM_Vector_3} />
 		</div>
 		<NavbarAdmin/>
+		
 
 		<span className='Buatberitaukm'>Buat Berita UKM</span>
 	

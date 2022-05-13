@@ -22,7 +22,7 @@ export default function BeritaPost (props) {
 	
 	useEffect(() => {
 		axios
-		.get(`${process.env.REACT_APP_BACKEND_URL}${props.ukm_id}`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/${props.ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);

@@ -1044,6 +1044,8 @@
 	top: 150px;
 	width: 75px;
 	height: 75px;
+	background-color: white;
+	border: 0px;
 }
 .BeritaButton .Group561 .Rectangle56 {
 	position: absolute;
@@ -1061,7 +1063,7 @@
 	height: 33.331705729166664%;
 }
 
-.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Pagination2 {
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Pagination3 {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);

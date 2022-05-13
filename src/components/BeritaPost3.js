@@ -12,8 +12,13 @@ export default function BeritaPost3(props) {
     const [berita, setBerita] = useState([]);
     const [infinite, setInfinite] = useState(true);
 
-    const ukm_id = props.ukm_id;
-    console.log(ukm_id);
+    // const [ID, setID] = useState();
+    const ID = props.idUKM;
+    console.log(ID);
+
+    const query = "articles/ukm/";
+    console.log(query);
+   
 
     const settingsSlick = {
         infinite: infinite,
@@ -52,9 +57,15 @@ export default function BeritaPost3(props) {
         ],
     };
 
+    // useEffect(() => {
+    //     setID(props.ukm_id);  
+    //     console.log(ID);
+	// });
+
+    
     useEffect(() => {
 		axios
-		  .get(`${process.env.REACT_APP_BACKEND_URL}articles/ukm/${ukm_id}`)
+		  .get(`${process.env.REACT_APP_BACKEND_URL}${query}${ID}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);

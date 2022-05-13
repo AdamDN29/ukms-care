@@ -84,11 +84,22 @@
 .EditProfileUKM_EditProfileUKM .Group382 .Group301 {
 	position: absolute;
 	left: 0px;
-	top: 460px;
-	width: 450px;
+	top: 480px;
+	width: 380px;
 	height: 55px;
+	background-color: white;
+	border-radius: 5px;
 }
+.EditProfileUKM_EditProfileUKM .Group382 .Group301 .uploadFile {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+}
+
+
 .EditProfileUKM_EditProfileUKM .Group382 .Group301 .Rectangle19 {
+	
 	position: absolute;
 	left: 17px;
 	top: 0px;
@@ -97,6 +108,8 @@
 	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 	border-radius: 10px;
 }
+
+
 .EditProfileUKM_EditProfileUKM .Group382 .Group301 .Group313 {
 	position: absolute;
 	left: 100px;
@@ -160,6 +173,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group382 .Group381 .Group314 .Rectangle1 {
 	position: absolute;
+	padding: 20px;
 	left: 0px;
 	top: 37px;
 	width: 400px;
@@ -200,6 +214,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group382 .Group381 .Group314_1 .Rectangle1_1 {
 	position: absolute;
+	padding: 20px;
 	left: 0px;
 	top: 37px;
 	width: 400px;
@@ -240,6 +255,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group382 .Group381 .Group314_2 .Rectangle1_2 {
 	position: absolute;
+	padding: 20px;
 	left: 0px;
 	top: 37px;
 	width: 400px;
@@ -280,6 +296,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group382 .Group381 .Group314_3 .Rectangle1_3 {
 	position: absolute;
+	padding: 20px;
 	left: 0px;
 	top: 37px;
 	width: 400px;
@@ -327,6 +344,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group382 .Group381 .Group309 .Group314_4 .Rectangle1_4 {
 	position: absolute;
+	padding: 20px;
 	left: 0px;
 	top: 42px;
 	width: 400px;
@@ -400,6 +418,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group316 .Group314_5 .Rectangle1_5 {
 	position: absolute;
+	padding: 20px;
 	left: 0px;
 	top: 0px;
 	width: 810px;
@@ -479,6 +498,8 @@
 	top: 1606px;
 	width: 200px;
 	height: 50px;
+	background-color:rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+	border:0px;
 }
 .EditProfileUKM_EditProfileUKM .Group319 .Rectangle19_1 {
 	position: absolute;
@@ -531,7 +552,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group323 {
 	position: absolute;
-	left: 852px;
+	left: 600px;
 	top: 1606px;
 	width: 200px;
 	height: 50px;
@@ -545,7 +566,7 @@
 }
 .EditProfileUKM_EditProfileUKM .Group323 .Group384 .Group385 {
 	position: absolute;
-	left: -230px;
+	left: 0px;
 	top: 0px;
 	width: 200px;
 	height: 50px;

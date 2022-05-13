@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseURL = `${process.env.REACT_APP_BACKEND_URL}`;
-export const getProduct = axios.create({
+export const postData = axios.create({
   baseURL: baseURL,
   headers: {},
 });

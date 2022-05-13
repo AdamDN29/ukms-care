@@ -10,31 +10,68 @@ import { Col } from 'react-bootstrap';
 import axios from 'axios';
 
 
-class BeritaPost2 extends Component {
-	state = {
-		post: []
-		
-	}
+export default function BeritaPost2 () {
+	
+	const [post, setPost] = useState([]);
 
-	componentDidMount(){
+
+	// useEffect(() => {
+	// 	axios.all([
+	// 		axios.get(`${process.env.REACT_APP_BACKEND_URL}articles`), 
+	// 		axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms`),
+	// 	  ])
+	// 	  .then(axios.spread((data1, data2) => {
+	// 		// output of req.
+	// 		console.log('response1', data1.data.data, 'response2', data2.data.data);
+	// 		setPost(data1.data.data);
+	// 		setUKM(data2.data.data);
+	// 	  }));
+	
+	// },[]); 
+
+	// console.log(post);
+	// console.log(ukm);
+
+	
+
+	useEffect(() => {
 		axios.get(`${process.env.REACT_APP_BACKEND_URL}articles`)
 		.then((response)=>{
 			console.log(response.data.data);
-			this.setState({
-				post: response.data.data
-			})
-		})
+			setPost(response.data.data);
+		});
+	
+	},[]); 
 
-	}
+	// useEffect(() => {
+	// 	axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms`)
+	// 	.then((response)=>{
+	// 		console.log(response.data.data);
+	// 		setUKM(response.data.data);
+	// 	});
+	
+	// },[]); 
 
-    render() {
 		return (
 			<Row xs={1} md={3} className='Row'>
 			{	
-				this.state.post.map(post => {
+				post.slice(0,3).map(post => {
 					
 					const date = post.created_at
 					const dt = new Date(date)
+					let name = '';
+
+					// if (post.ukm_id === ukm.id){
+					// 	name = ukm.name;
+					// }
+					// console.log(post.ukm_id);
+					// console.log(ukm.id);
+
+					// axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms/${post.ukm_id}`)
+					// .then((response)=>{
+					// 	console.log(response.data.data);
+					// 	ukm_name = response.data.data;
+					// })
 					return(
 					
 						<Col key={post.id}>
@@ -59,10 +96,8 @@ class BeritaPost2 extends Component {
 			</Row>
 
 		)
-	}
+	
 }
-
-export default BeritaPost2;
 
 			// <Link to={`/beritasingle/${post.id}`}>
 					

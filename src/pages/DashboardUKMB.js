@@ -14,10 +14,12 @@ function DashboardUKMB (props){
 
 	const [ukm, setUKM] = useState([]);
 
+	const query = 'ukms/5';
+
 
 	useEffect(() => {
 		axios
-		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/5`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}${query}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
@@ -28,7 +30,8 @@ function DashboardUKMB (props){
 
 	},[]); 
 
-	const idUKM = ukm.id;
+	const ukm_id = ukm.id;
+	console.log(ukm_id);
 
 
 
@@ -49,7 +52,7 @@ function DashboardUKMB (props){
 		</div>
 
 		{/*Logo*/}
-		<img className='Rectangle12' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+		<img className='Rectangle12' src = {`${process.env.REACT_APP_BACKEND_URL}${ukm.avatar}`} />
 
 		{/*Keterangan UKM*/}
 		<div className='Group307'>
@@ -98,7 +101,7 @@ function DashboardUKMB (props){
 		</div>
 
 		{/*Edit Profile*/}
-		<Link to='/editprofileukm'>
+		<Link to={{pathname:`/editprofileukm/${ukm_id}`}}>
 			<div className='Group239'>
 				<div className='Group294'>
 					<div className='Group293'>
@@ -143,7 +146,7 @@ function DashboardUKMB (props){
 			</div>
 		</div> */}
 
-		<BeritaPost3 ukm_id={idUKM} />
+		<BeritaPost3 idUKM={ukm_id} />
 
 		{/*Tanda Atas Bawah*/}
 		<div className='akariconscircletriangleupfill'>
@@ -154,7 +157,7 @@ function DashboardUKMB (props){
 		</div>
 		
 		{/*List Berita*/}
-		<Link to={{pathname:'/listberitaukm', state:{idUKM}}}>
+		<Link to={{pathname:'/listberitaukm', state:{ukm_id}}}>
 			<div className='Group354'>
 				<div className='Group309'>
 					<div className='Group293_1'>
