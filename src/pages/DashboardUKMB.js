@@ -48,6 +48,8 @@ function DashboardUKMB (props){
 			<img className='Vector_3' src = {ImgAsset.DashboardUKMB_Vector_3} />
 		</div>
 
+		<div className='grup1'>
+
 		{/*Logo*/}
 		<img className='Rectangle12' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
 
@@ -116,9 +118,9 @@ function DashboardUKMB (props){
 				</div>
 			</div>
 		</Link>
-
+		</div>
 		
-
+		<div className='grup2'>
 		{/*Berita UKM*/}
 		<span className='BeritaUKM_Dash'>Berita UKM</span>
 
@@ -255,6 +257,9 @@ function DashboardUKMB (props){
 				</div>
 			</div>
 		</Link>
+		</div>
+
+
 		<Footer/>
 	</div>
 	)

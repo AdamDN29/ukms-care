@@ -39,11 +39,11 @@
 	left: 50%;
 	transform: translate(-50%);
 	top: 65px;
-	width: 159.0717010498047px;
+	width: 180px;
 	height: 13.5302734375px;
 	color : rgba(255,255,255,1);
-	font-family: Oxygen;
-	font-size: 14px;
+	font-family: Montserrat;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 16.40625px;
 }
@@ -62,7 +62,7 @@
 	width: 108.16876220703125px;
 	height: 17.28857421875px;
 	color : rgba(255,255,255,1);
-	font-family: Oxygen;
+	font-family: Montserrat;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 21.09375px;

@@ -21,6 +21,7 @@ class EditProfileUKM extends Component{
 			<img className='Vector_3' src = {ImgAsset.EditProfileUKM_Vector_3} />
 		</div>
 
+		<div className='grup1'>
 		<div className='Rectangle21'/>
 		<span className='EditProfileUKM_1'>Edit Profile UKM</span>
 		<div className='Group382'>
@@ -140,6 +141,7 @@ class EditProfileUKM extends Component{
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 
 		<Footer/>

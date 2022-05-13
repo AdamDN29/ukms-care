@@ -3,14 +3,15 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1270px;
+	width: 100%;
 	/* height: 2021px; */
-	background : rgba(255,255,255,1);
+	background : rgb(152, 21, 21);
+	z-index: 100;
 	/* border: 1px solid rgba(0,0,0,1); */
 	/* box-sizing: border-box; */
 }
 
-.NavbarAdmin .Frame382 {
+.NavbarAdmin .frame1 {
 	position: absolute;
 	left: -21px;
 	top: -22px;
@@ -24,7 +25,7 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarAdmin .Frame382 .Frame368 {
+.NavbarAdmin .frame1 .frame2 {
     scroll-behavior: smooth;
     z-index: 1;
     position: fixed;
@@ -39,28 +40,28 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 {
 	position: relative;
 	margin-bottom: 10px;
 	width: 1270px;
 	height: 80px;
 	background : rgba(255,255,255,1);
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Group222 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .grup1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 1270px;
 	height: 80px;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Group222 .PageHeaderSecondary_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .grup1 .pageheader1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 1270px;
 	height: 80px;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .grup1 .pageheader1 .pageheader2 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -68,7 +69,7 @@
 	height: 80px;
 	background : rgba(54.00000058114529,55.00000052154064,64.00000378489494,1);
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ColorsSecondary_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .grup1 .pageheader1 .pageheader2 .color {
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -76,7 +77,7 @@
 	height: 82px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 .ProjectBrandGuidelines_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .grup1 .pageheader1 .pageheader2 .guideline {
 	visibility: hidden;
 	position: absolute;
 	left: 24px;
@@ -89,7 +90,7 @@
 	font-weight: 700;
 	line-height: 16px;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Group222 .PageHeaderSecondary_1 .PageHeader_1 ._2020_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .grup1 .pageheader1 .pageheader2 ._2020 {
 	position: absolute;
 	left: 1416px;
 	top: 32px;
@@ -101,7 +102,7 @@
 	font-weight: 300;
 	line-height: 16px;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame375 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame3 {
 	position: absolute;
 	left: 20px;
 	top: 3px;
@@ -115,7 +116,7 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame375 .logo {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame3 .logo1 {
 	position: relative;
 	top: -3px;
     left: -15px;
@@ -124,7 +125,7 @@
 	object-fit: cover;
 	overflow: hidden;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame238 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame4 {
 	position: absolute;
 	left: 140px;
 	top: 29px;
@@ -134,7 +135,7 @@
 	box-sizing: border-box;
 }
 
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame238 .Dashboard {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame4 .Dashboard {
 	position: relative;
 	margin-right: 5px;
 	width: 154.095947265625px;
@@ -146,7 +147,7 @@
 	line-height: 25.739999771118164px;
 }
 
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame238 .UKMUnpad_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame4 .UKMUnpad {
 	position: relative;
     left: 40px;
 	margin-right: 5px;
@@ -158,7 +159,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame238 .BeritaUKM_1 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame4 .BeritaUKM {
 	position: relative;
 	left: 60px;
 	margin-right: 5px;
@@ -170,7 +171,7 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame376 {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame5 {
 	position: absolute;
 	left: 1304.974609375px;
 	top: 5px;
@@ -183,11 +184,81 @@
 	padding-left: 10px;
 	box-sizing: border-box;
 }
-.NavbarAdmin .Frame382 .Frame368 .NavbarAdmin1 .Frame376 .Avatar {
+.NavbarAdmin .frame1 .frame2 .NavbarAdmin1 .frame5 .Avatar {
 	position: relative;
 	right: 190px;
 	width: 100%;
 	height: 100%;
+}
+
+.Navbar .Frame382 .Frame368 .navbar1 .frame3 {
+	position: absolute;
+	left: 20px;
+	top: 3px;
+	width: 100px;
+	height: 75px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.Navbar .Frame382 .Frame368 .navbar1 .frame3 .logo {
+	position: relative;
+	top: -3px;
+    left: -15px;
+	width: 80px;
+	height: 60px;
+	object-fit: cover;
+	overflow: hidden;
+}
+.Navbar .Frame382 .Frame368 .navbar1 .frame4 {
+	position: absolute;
+	left: 140px;
+	top: 29px;
+	width: 304.6900634765625px;
+	height: 22.294921875px;
+	display: flex;
+	box-sizing: border-box;
+}
+.Navbar .Frame382 .Frame368 .navbar1 .frame4 .UKMUnpad_1 {
+	position: relative;
+	margin-right: 5px;
+	width: 154.095947265625px;
+	height: 22.294921875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.Navbar .Frame382 .Frame368 .navbar1 .frame4 .BeritaUKM_1 {
+	position: relative;
+	left: 40px;
+	margin-right: 5px;
+	width: 145.59410095214844px;
+	height: 22.294921875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+.Navbar .Frame382 .Frame368 .navbar1 .Dropdown {
+	position: absolute;
+	
+	right: -45px;
+	top: 8px;
+	width: 150px;
+	height: 150px;
+	/* display: flex;  */
+	/* padding-top: 10px;
+	padding-right: 100px;
+	padding-bottom: 10px;
+	padding-left: 10px;  */
+	/* box-sizing: border-box; */
 }
 
 

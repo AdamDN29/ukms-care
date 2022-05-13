@@ -8,54 +8,49 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import swal from "sweetalert";
 import Cookies from "js-cookie";
 import ImgAsset from '../resources'
-import {
-	Dropdown,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem,
-  } from "reactstrap";
 
 export default function NavbarAdmin (props) {
 
     return (
-		<div className='Navbar'>	
-			<div className='Frame382'>
-				<div className='Frame368'>
-					<div className='Navbar1'>
+		<div className='NavbarAdmin'>
+			{/* 
+			<div className='frame1'>
+				<div className='frame2'>
+					<div className='navbar1'>
 
-						<div className='Group222'>
-							<div className='PageHeaderSecondary_1'>
-								<div className='PageHeader_1'>
-									<div className='ColorsSecondary_1'>
+						<div className='grup1'>
+							<div className='pageheader1'>
+								<div className='pageheader2'>
+									<div className='color'>
 									</div>
-									<span className='ProjectBrandGuidelines_1'>Project DESIGN Guidelines</span>
-									<span className='_2020_1'></span>
+									<span className='guideline'>Project DESIGN Guidelines</span>
+									<span className='_2020'></span>
 								</div>
 							</div>
 						</div>
 						
-						<div className='Frame375'>
-							{/* <img className='logo' src = {ImgAsset.ukms_care_logo} /> */}
-							<Link to='/HomepageA_1'><img className='logo' src = {ImgAsset.ukms_care_logo} /></Link>
+						<div className='frame3'>
+							<Link to='/HomepageA_1'><img className='logo1' src = {ImgAsset.ukms_care_logo} /></Link>
 						</div>
 
 
-						<div className='Frame238'>
+						<div className='frame4'>
                             <Link to='/dashboardukmb' className="link"><span className='Dashboard'>Dashboard</span></Link>
-                            <Link to='/ukmunpada' className="link"><span className='UKMUnpad_1'>UKM Unpad</span></Link>
-							<Link to='/beritaukmb' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
+                            <Link to='/ukmunpada' className="link"><span className='UKMUnpad'>UKM Unpad</span></Link>
+							<Link to='/beritaukmb' className="link"><span className='BeritaUKM'>Berita UKM</span></Link>
 						</div>
 
 						<div>
 
 						</div>
-						<div className='Frame376'>
+						<div className='frame5'>
 							<img className='Avatar' src = {ImgAsset.Avatar} />
 						</div>
 						
 					</div>
 				</div>
 			</div>
+			*/}	
 		</div>
 	)
 }
