@@ -4,7 +4,7 @@ import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import { Component } from 'react/cjs/react.production.min'
 import { useState, useEffect } from "react";
-import NavbarUser from '../components/NavbarUser'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BeritaPost from '../components/BeritaPost'
 import SearchBerita from '../components/SearchBerita'
@@ -56,7 +56,7 @@ export default function BeritaUKMB (props) {
 	
 		return (
 			<div className='BeritaUKMB_BeritaUKMB'>
-				<NavbarUser />
+				<Navbar/>
 				<img className='Rectangle40' src = {ImgAsset.BeritaUKMB_Rectangle40} />
 				<div className='Vectors'>
 					<img className='Vector' src = {ImgAsset.BeritaUKMB_Vector} />

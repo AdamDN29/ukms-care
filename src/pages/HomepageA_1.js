@@ -3,7 +3,7 @@ import '../css/HomepageA_1.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarUser from '../components/NavbarUser'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import UKMPost2 from '../components/UKMPost2'
@@ -16,7 +16,7 @@ export default function HomepageA_1 (props) {
 
     return (
 	<div className='HomepageA_1_HomepageA'>
-		<NavbarUser />
+		<Navbar/>
 		{/*Sisi Kiri*/}
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.HomepageA_1_Vector} />

@@ -4,7 +4,7 @@ import '../css/DetailUKMA.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarUser from '../components/NavbarUser'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import ReactTimeAgo from 'react-time-ago'
@@ -58,7 +58,7 @@ function DetailUKMA (props){
 			<img className='Vector_3' src = {ImgAsset.DetailUKMA_Vector_3} />
 		</div>
 
-		<NavbarUser/>
+		<Navbar/>
 		{/* Detail UKM */}
 		<div className='Group387'>
 			<img className='Rectangle43' src = {ImgAsset.DetailUKMA_Rectangle43} />

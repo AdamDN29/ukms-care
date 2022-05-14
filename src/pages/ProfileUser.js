@@ -4,7 +4,7 @@ import '../css/ProfileUser.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarUser from '../components/NavbarUser'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
 import axios from 'axios';
@@ -37,7 +37,7 @@ export default function ProfileUser () {
 			<img className='Vector_4' src = {ImgAsset.ProfileUser_Vector_4} />
 		</div>
 
-		<NavbarUser/>
+		<Navbar/>
 
 
 		<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${userProfile.avatar}`} style={{width: 400, height: 400, borderRadius: 400/ 2}} />

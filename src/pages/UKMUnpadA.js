@@ -3,7 +3,7 @@ import '../css/UKMUnpadA.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarUser from '../components/NavbarUser.js'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import UKMPost from '../components/UKMPost'
@@ -71,7 +71,7 @@ export default function UKMUnpadA (props) {
 
     return (
 	<div className='UKMUnpadA_UKMUnpadA'>
-		<NavbarUser />
+		<Navbar/>
 		{/*Sisi Kiri*/}
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.UKMUnpadA_Vector} />

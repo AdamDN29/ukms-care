@@ -5,7 +5,7 @@ import ImgAsset from '../resources'
 import { useReducer, useState } from "react"
 import { useHistory } from "react-router-dom"
 import {Link} from 'react-router-dom'
-import NavbarAdmin from '../components/NavbarAdmin'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import axios, { Axios } from 'axios'
@@ -107,7 +107,7 @@ export default function EditBeritaUKM (props) {
 			<img className='Vector_2' src = {ImgAsset.BuatBeritaUKM_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.BuatBeritaUKM_Vector_3} />
 		</div>
-		<NavbarAdmin/>
+		<Navbar/>
 		
 		<span className='Buatberitaukm'>Buat Berita UKM</span>
 	

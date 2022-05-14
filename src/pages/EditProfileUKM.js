@@ -3,7 +3,7 @@ import '../css/EditProfileUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarAdmin from '../components/NavbarAdmin'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import { useReducer, useState } from "react"
@@ -119,7 +119,7 @@ export default function EditProfileUKM (props){
 
     return (
 	<div className='EditProfileUKM_EditProfileUKM'>
-		<NavbarAdmin/>
+		<Navbar/>
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.EditProfileUKM_Vector} />
 			<img className='Vector_1' src = {ImgAsset.EditProfileUKM_Vector_1} />

@@ -3,7 +3,7 @@ import '../css/ListPendaftarUKMAdminUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarAdmin from '../components/NavbarAdmin'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 
@@ -11,7 +11,7 @@ class ListPendaftarUKMAdminUKM extends Component{
 	render() {
     return (
 	<div className='ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM'>
-		<NavbarAdmin/>
+		<Navbar/>
 		<span className='ListPendaftarukm'>List Pendaftar UKM</span>
 	
 		<div className='Group301'>
