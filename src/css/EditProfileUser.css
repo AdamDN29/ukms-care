@@ -77,15 +77,31 @@
 	width: 200px;
 	height: 50px;
 }
-.EditProfileUser_EditProfileUser .Group319 .Group580 .Rectangle19 {
+.EditProfileUser_EditProfileUser .Group319 .Group580 .ButtonSubmit {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 200px;
 	height: 50px;
-	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+	/* background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1); */
 	border-radius: 10px;
 }
+
+.ButtonSubmit:hover {
+	background-color: black;
+}
+.btn-primary {
+    color: #fff;
+    background-color: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+    border-color: rgb(22, 136, 79); /*set the color you want here*/
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+    border-color: #285e8e; /*set the color you want here*/
+}
+
 .EditProfileUser_EditProfileUser .Group319 .Group580 .Group578 {
 	position: absolute;
 	left: 48px;

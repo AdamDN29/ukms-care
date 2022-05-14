@@ -25,7 +25,7 @@ function DetailUKMA (props){
 
 	useEffect(() => {
 		axios
-		  .get(`https://api-ukmscare.herokuapp.com/ukms/${ukm_id}`)
+		  .get(`${process.env.REACT_APP_BACKEND_URL}ukms/${ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
@@ -35,7 +35,7 @@ function DetailUKMA (props){
 		  });
 		
 		axios
-		  .get(`https://api-ukmscare.herokuapp.com/articles/ukm/${ukm_id}`)
+		  .get(`${process.env.REACT_APP_BACKEND_URL}articles/ukm/${ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);
@@ -66,7 +66,7 @@ function DetailUKMA (props){
 		</div>
 
 		<div className='grup1'>
-		<img className='ukmAvatar' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
+		<img className='ukmAvatar' src = {`${process.env.REACT_APP_BACKEND_URL}${ukm.avatar}`} />
 
 		<div className='Group339'>
 			<div className='bxscontact'>
@@ -141,7 +141,7 @@ function DetailUKMA (props){
 									<div className='sheet'/>
 									<div className='Group337'>
 										<div className='Rectangle26'/>
-										<img className='imgBerita' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
+										<img className='imgBerita' src = {`${process.env.REACT_APP_BACKEND_URL}${post.image}`} />
 									</div>
 								</div>
 								<span className='beritaSubject'>{post.subject}</span>

@@ -10,9 +10,10 @@ import UKMPost2 from '../components/UKMPost2'
 import BeritaPost2 from '../components/BeritaPost2'
 
 
-class HomepageA_1 extends Component{
+export default function HomepageA_1 (props) {
+	const idUser = props.idUser;
+	console.log(idUser);
 
-render() {
     return (
 	<div className='HomepageA_1_HomepageA'>
 		<NavbarUser />
@@ -156,7 +157,5 @@ render() {
 	<Footer/>		
 	</div>
 	)
-}
-}
 
-export default HomepageA_1;
+}

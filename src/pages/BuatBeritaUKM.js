@@ -32,8 +32,8 @@ const reducer = (currentState, action) => {
 }
 
 export default function BuatBeritaUKM (props) {
-	const idUKM = props.location.state.ukm_id;
-	console.log(idUKM);
+	const ukm_id = props.location.state.ukm_id;
+	console.log(ukm_id);
 
 	let history = useHistory();
 
@@ -45,7 +45,7 @@ export default function BuatBeritaUKM (props) {
         e.preventDefault();
         setDisable(true);
         const dataForm = new FormData();
-		dataForm.append("ukm_id", idUKM);
+		dataForm.append("ukm_id", ukm_id);
         dataForm.append("subject", artikel.subject);
         dataForm.append("content", artikel.content);
         dataForm.append("image", artikel.image);
@@ -63,7 +63,7 @@ export default function BuatBeritaUKM (props) {
                 swal("Berita berhasil dibuat")
                 console.log(response)
                 console.log("berhasil")
-                history.push({pathname:'/listberitaukm', state:{idUKM}})
+                history.push({pathname:'/listberitaukm', state:{ukm_id}})
             })
             .catch((err) => {
                 swal({

@@ -14,7 +14,7 @@ export default function ProfileUser () {
 	const [userProfile, setUserProfile] = useState([]);
 
 	useEffect(()=>{
-		axios.get('https://reqres.in/api/users/2')
+		axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/2`)
 		.then((response)=> {
 			setUserProfile(response.data.data);
 			console.log(response.data.data);
@@ -40,8 +40,8 @@ export default function ProfileUser () {
 		<NavbarUser/>
 
 
-		<img className='Image' src = {ImgAsset.ProfileUser_unsplashjmURdhtm7Ng} />
-		<span className='Name'>{userProfile.first_name}</span>
+		<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${userProfile.avatar}`} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
+		<span className='Name'>{userProfile.name}</span>
 		<span className='Email'>{userProfile.email}</span>
 		<img className='Line8' src = {ImgAsset.ProfileUser_Line8} />
 		<div className='carbonphonevoice'>
@@ -49,25 +49,23 @@ export default function ProfileUser () {
 			<img className='Vector_7' src = {ImgAsset.ProfileUser_Vector_7} />
 		</div>
 		<span className='Kontak'>Kontak</span>
-		<span className='kontak_user'>{userProfile.id}</span>
+		<span className='kontak_user'>{userProfile.phone_number}</span>
 		
 		<div className='makicollege'>
 			<img className='Vector_9' src = {ImgAsset.ProfileUser_Vector_9} />
 		</div>
 		<span className='Fakultas'>Fakultas</span>
-		<span className='Fakultas_User'>{userProfile.last_name}</span>
+		<span className='Fakultas_User'>{userProfile.faculty}</span>
 		
 		<div className='faregularaddressbook'>
 			<img className='Vector_8' src = {ImgAsset.ProfileUser_Vector_8} />
 		</div>
 		<span className='NPM'>NPM</span>
-		<span className='NPM_User'>{userProfile.id}</span>
+		<span className='NPM_User'>{userProfile.npm}</span>
 
 		<img className='Vector_13' src = {ImgAsset.ProfileUser_Vector_13} />
 		<span className='Angkatan'>Angkatan</span>
-		<span className='_2019'>{userProfile.id}</span>
-		
-		
+		<span className='_2019'>{userProfile.year}</span>
 
 		<Link to={`/editprofileuser/${userProfile.id}`}>
 			<div className='Group239'>

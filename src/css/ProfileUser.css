@@ -6,7 +6,7 @@
 	margin: auto;
 	width: 100%;
 	height: 1650px;
-	background : rgba(255,255,255,1);
+	background : rgb(255, 255, 255);
 	box-sizing: border-box;
 }
 .ProfileUser_ProfileUser .charmphonecall {
@@ -71,11 +71,13 @@
 
 .ProfileUser_ProfileUser .Image {
 	position: absolute;
-	left: 50%;
+	left: 45%;
 	transform:translate(-100%);
 	top: 150px;
-	width: 389px;
-	height: 395px;
+	width: 400 px;
+	height: 400 px;
+	border: 5px;
+	border-color: black;
 }
 
 .ProfileUser_ProfileUser .Name {

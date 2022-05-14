@@ -5,9 +5,50 @@ import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import { Button } from 'react-bootstrap'
+import { loginAPI } from "../API/authAPI";
+import { useState, useEffect } from "react";
+import UseLogin from "../hook/UseLogin";
 
+export default function SigninUser (props) {
 
-export default function SigninUser () {
+	const [username, password, usernameHandler, passwordHandler] = UseLogin();
+	const [userId, setUserId] = useState(() => {
+		const localData = localStorage.getItem("id");
+		return localData ? JSON.parse(localData) : null;
+	});
+
+	// post login
+	const login = () => {
+		const payload = {
+		email: username,
+		password: password,
+		};
+		loginAPI
+		.post("login", payload)
+		.then((response) => {
+			const passErr = response.data.passwordErrors;
+			if (response.data.user) {
+			if (passErr) {
+				console.log(passErr);
+				alert(passErr);
+			} else {
+				alert("Selamat anda berhasil login!!!");
+				console.log(response);
+				setUserId(response.data.user);
+			}
+			} else {
+			console.log(response.data.emailErrors);
+			alert(response.data.emailErrors);
+			}
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+		};
+		useEffect(() => {
+			props.getId(userId);
+			localStorage.setItem("id", JSON.stringify(userId));
+	}, [userId, props]);
 
 	return (
 	<div className='SigninUser_SigninUser'>
@@ -23,7 +64,7 @@ export default function SigninUser () {
 				<img className='Vector_2' src = {ImgAsset.SigninUser_Vector_2} />
 				<img className='Vector_3' src = {ImgAsset.SigninUser_Vector_3} />
 			</div>
-			<span className='Text1'>Anda harus Log in untuk 
+			<span className='Text1'>Anda harus SigIn untuk 
 			melakukan pendaftaran UKM</span>
 		</div>
 		
@@ -41,12 +82,12 @@ export default function SigninUser () {
 		</div>
 
 		{/*Button Login*/}
-		<Link to='/homepagea_1'>
-			<div className='Loginbtn'> 
+		{/* <Link to='/homepagea_1'> */}
+			<Button className='Loginbtn'> 
 				<div className='Rectangle'/>
 				<span className='login'>login</span>
-			</div>
-		</Link>
+			</Button>
+		{/* </Link> */}
 
 		{/*Email,Password*/}
 		<div className='Username'>

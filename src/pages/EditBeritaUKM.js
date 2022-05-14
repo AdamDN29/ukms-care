@@ -36,8 +36,8 @@ const reducer = (currentState, action) => {
 export default function EditBeritaUKM (props) {
 	const idBerita = props.match.params.articles_id;
 	console.log(idBerita);
-    const idUKM = props.location.state.ukm_id;
-	console.log(idUKM);
+    const ukm_id = props.location.state.ukm_id;
+	console.log(ukm_id);
 
 	let history = useHistory();
 
@@ -83,7 +83,7 @@ export default function EditBeritaUKM (props) {
                 swal("Berita berhasil diedit")
                 console.log(response)
                 console.log("berhasil")
-                history.push({pathname:'/listberitaukm', state:{idUKM}})
+                history.push({pathname:'/listberitaukm', state:{ukm_id}})
             })
             .catch((err) => {
                 swal({

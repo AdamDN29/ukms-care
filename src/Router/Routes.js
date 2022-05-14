@@ -23,16 +23,16 @@ import ListPendaftarUKMAdminUKM from '../pages/ListPendaftarUKMAdminUKM';
 import ListBeritaUKMAdminUKM from '../pages/ListBeritaUKMAdminUKM';
 import EditBeritaUKM from '../pages/EditBeritaUKM';
 
-const RouterDOM = () => {
-	// const [idUser, setIdUser] = useState(false);
+function RouterDOM () {
+	const [idUser, setIdUser] = useState(false);
 
-	// const localDataRole = localStorage.getItem("role");
-	// console.log(localDataRole);
+	const localDataRole = localStorage.getItem("role");
+	console.log(localDataRole);
 
-	// const getId = (id) => {
-	// 	setIdUser(id);
-	// };
-	// console.log(idUser);
+	const getId = (id) => {
+		setIdUser(id);
+	};
+	console.log(idUser);
 
 	return (
 		<Router>
@@ -54,13 +54,16 @@ const RouterDOM = () => {
 					component={() => <EditProfileUser idUser={idUser} />}
 				></Route> */}
 				{/* <Route path="/beritaukmb/articles/category/:query" component={BeritaUKMB}></Route> */}
+				<Route path="/homepagea_1" 
+						exact 
+						component={() => <HomepageA_1 idUser={idUser}/>}></Route>
 				<Route path="/beritaukmb/:pathParam1?/:pathParam2?/:pathParam3?" component={BeritaUKMB}></Route>
 				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
 
 				<Route path="/ukmunpada/:pathParam1?/:pathParam2?/:pathParam3?" component={UKMUnpadA}></Route>
 
 
-				<Route exact path="/homepagea_1"><HomepageA_1 /></Route>
+				
 				{/* <Route exact path="/ukmunpada"><UKMUnpadA /></Route> */}
 				<Route exact path="/signinuser"><SigninUser /></Route>
 				<Route exact path="/signupuser"><SignupUser /></Route>

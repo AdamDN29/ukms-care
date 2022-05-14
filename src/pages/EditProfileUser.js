@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../css/EditProfileUser.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
@@ -7,7 +7,7 @@ import NavbarUser from '../components/NavbarUser'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
 import { Dropdown } from 'bootstrap'
-import { DropdownButton } from 'react-bootstrap'
+import { Button, DropdownButton } from 'react-bootstrap'
 import { useState } from "react";
 import { useReducer } from "react";
 import axios from 'axios'
@@ -15,34 +15,31 @@ import swal from 'sweetalert'
 import ProfileUser from './ProfileUser'
 
 const initialState = {
-	nama: "",
-	NPM: "",
-	profile_pict: null,
-	angkatan: "",
-	fakultas: "",
-	kontak: "",
+	name: "",
+	npm: "",
+	avatar: null,
+	year: "",
+	faculty: "",
+	phone_number: "",
 	email: "",
-	password: "",
 };
 
 const reducer = (currentState, action) => {
 	switch (action.type) {
-		case "nama":
-			return { ...currentState, nama: action.payload };
-		case "NPM":
-			return { ...currentState, NPM: action.payload };
-		case "profile_pict":
-			return { ...currentState, profile_pict: action.payload };
-		case "angkatan":
-			return { ...currentState, angkatan: action.payload };
-		case "fakultas":
-			return { ...currentState, fakultas: action.payload };
-		case "kontak":
-			return { ...currentState, kontak: action.payload };
+		case "name":
+			return { ...currentState, name: action.payload };
+		case "npm":
+			return { ...currentState, npm: action.payload };
+		case "avatar":
+			return { ...currentState, avatar: action.payload };
+		case "year":
+			return { ...currentState, year: action.payload };
+		case "faculty":
+			return { ...currentState, faculty: action.payload };
+		case "phone_number":
+			return { ...currentState, phone_number: action.payload };
 		case "email":
 			return { ...currentState, email: action.payload };
-		case "password":
-			return { ...currentState, password: action.payload };
 		default:
 			return currentState;
 	}
@@ -52,8 +49,23 @@ export default function EditProfileUser (props) {
 	const { id } = props.match.params;
 	console.log(id);
 
+	const [userProfile, setUserProfile] = useState([]);
+
+	useEffect(()=>{
+	    axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/${id}`)
+	    .then((response)=> {
+	   	    setUserProfile(response.data.data);
+			console.log(response.data.data);
+		})
+		.catch((err) => {
+			console.log(err);
+		});
+	},[])
+
 	const [biodata, dispatch] = useReducer(reducer, initialState);
   	const [disable, setDisable] = useState(false);
+
+	console.log(biodata);
 
 	const submitProfile = (e) => {
 		e.preventDefault();
@@ -62,22 +74,40 @@ export default function EditProfileUser (props) {
 		console.log(idUser);
 		const data = new FormData();
 		data.append("id", idUser);
-		data.append("first_name", biodata.nama);
-		data.append("last_name", biodata.fakultas);
-		// data.append("profile_pict", biodata.profile_pict);
+		data.append("name", biodata.name);
+		data.append("npm", biodata.npm);
+		
 		data.append("email", biodata.email);
+		data.append("year", biodata.year);
+		data.append("faculty", biodata.faculty);
+		data.append("phone_number", biodata.phone_number);
+
+		console.log(data.get('id'));
+		console.log(data.get('name'));
+		console.log(data.get('npm'));
+		console.log(data.get('email'));
+		console.log(data.get('year'));
+		console.log(data.get('faculty'));
+		console.log(data.get('phone_number'));
+
 		axios
-		  .put(`https://reqres.in/api/users/${idUser}`, data)
+		  .post(`${process.env.REACT_APP_BACKEND_URL}profiles/${idUser}`, data)
 		  .then((response) => {
-			// window.location.href = "/profileuser";
 			setDisable(false);
-			swal("Upload berhasil");
+			swal("Edit Profile Berhasil berhasil");
+			console.log(response)
+			console.log("berhasil")
+			window.location.href = "/profileuser";
 		  })
 		  .catch((err) => {
-			swal("Upload gagal");
-			window.location.href = "/editprofileuser";
+			swal({
+				title: "Edit Profile Gagal",
+				icon: "warning",
+				dangerMode: true,
+			})
+			// window.location.href = `/editprofileuser/${idUser}`;
 		  });
-		console.log(biodata);
+		
 	};
 
     return (
@@ -121,12 +151,12 @@ export default function EditProfileUser (props) {
 		<div className='Group317'>
 			<input className='InputForm1'
 				disabled={disable}
-				onChange={(e) =>
-				  dispatch({ type: "nama", payload: e.target.value })
+				name='name'
+				type="text" 
+				defaultValue ={userProfile.name}
+				onBlur={(e) =>
+				  dispatch({ type: "name", payload: e.target.value })
 				}
-				type="text"
-				id="exampleInputNama"
-                aria-describedby="Name"
                 placeholder="Enter Name"
 			/>
 			<span className='NamaLengkap'>Nama Lengkap</span>
@@ -134,12 +164,12 @@ export default function EditProfileUser (props) {
 		<div className='Group580_1'>
 			<input className='InputForm1'
 				disabled={disable}
-				onChange={(e) =>
-				  dispatch({ type: "kontak", payload: e.target.value })
-				}
+				name='phone_number'
 				type="text"
-				id="exampleInputKontak"
-                aria-describedby="Kontak"
+				defaultValue ={userProfile.phone_number}
+				onBlur={(e) =>
+				  dispatch({ type: "phone_number", payload: e.target.value })
+				}
                 placeholder="Enter Contact"
 			/>
 			<span className='NomorTelepon'>Kontak</span>
@@ -147,12 +177,12 @@ export default function EditProfileUser (props) {
 		<div className='Group582'>
 			<input className='InputForm1'
 				disabled={disable}
+				name='faculty'
+				type="text" 
+				defaultValue ={userProfile.faculty}
 				onChange={(e) =>
-				  dispatch({ type: "fakultas", payload: e.target.value })
+				  dispatch({ type: "faculty", payload: e.target.value })
 				}
-				type="text"
-				id="exampleInputFakultas"
-                aria-describedby="Fakultas"
                 placeholder="Enter your Faculty"
 			/>
 			<span className='Fakultas'>Fakultas</span>
@@ -160,12 +190,12 @@ export default function EditProfileUser (props) {
 		<div className='Group583'>
 			<input className='InputForm1'
 				disabled={disable}
+				name='npm'
+				type="text" 
+				defaultValue ={userProfile.npm}
 				onChange={(e) =>
-				  dispatch({ type: "NPM", payload: e.target.value })
+				  dispatch({ type: "npm", payload: e.target.value })
 				}
-				type="text"
-				id="exampleInputNPM"
-                aria-describedby="NPM"
                 placeholder="Enter NPM"
 			/>
 			<span className='NPM'>NPM</span>
@@ -174,12 +204,12 @@ export default function EditProfileUser (props) {
 			{/* <DropdownButton className='Rectangle1_4'/> */}
 			<input className='InputForm1'
 				disabled={disable}
+				name='year'
+				type="text" 
+				defaultValue ={userProfile.year}
 				onChange={(e) =>
-				  dispatch({ type: "angkatan", payload: e.target.value })
+				  dispatch({ type: "year", payload: e.target.value })
 				}
-				type="text"
-				id="exampleInputAngkatan"
-                aria-describedby="Angkatan"
                 placeholder="Enter Year"
 			/>
 			{/* <span className='_2019'>2019</span> */}
@@ -187,7 +217,7 @@ export default function EditProfileUser (props) {
 			{/* <img className='Polygon2' src = {ImgAsset.EditProfileUser_Polygon2} /> */}
 		</div>
 		<div className='Group581'>
-			<input type='password' className='InputForm2'
+			{/* <input type='password' className='InputForm2'
 				disabled={disable}
 				onChange={(e) =>
 				  dispatch({ type: "password", payload: e.target.value })
@@ -196,50 +226,50 @@ export default function EditProfileUser (props) {
                 aria-describedby="Password"
                 placeholder="Enter Password"
 			/>
-			<span className='Password'>Password</span>
+			<span className='Password'>Password</span> */}
 		<div/>
 		<div className='Group580_2'>
 			<input className='InputForm1'
 				disabled={disable}
-				onChange={(e) =>
+				name='email'
+				type="text" 
+				defaultValue ={userProfile.email}
+				onBlur={(e) =>
 				  dispatch({ type: "email", payload: e.target.value })
 				}
-				type="text"
-				id="exampleInputEmail"
-                aria-describedby="Email"
                 placeholder="Enter Email"
 			/>
 			<span className='Email'>Email</span>
 		</div>
 			
 		</div>
-		{/* <Link to='/profileuser'> */}
+		{/* Submit Button */}
 			<div className='Group319'>
 				<div className='Group580'>
-					<button 
-						className='Rectangle19'
+					<Button 
+						variant='primary'
+						className='ButtonSubmit'
 						disabled={disable}
 						onClick={submitProfile}
-					/> 
-	
-					<div className='Group578'>
-						<div className='Group579'>
-							<div className='Group320'>
-								<div className='Group300'>
-									<span className='Simpan'>Simpan</span>
+					>
+						<div className='Group578'>
+							<div className='Group579'>
+								<div className='Group320'>
+									<div className='Group300'>
+										<span className='Simpan'>Simpan</span>
+									</div>
+								</div>
+								<div className='akariconsedit'>
+									<div className='Group'>
+										<img className='Vector_5' src = {ImgAsset.EditProfileUser_Vector_5} />
+										<img className='Vector_6' src = {ImgAsset.EditProfileUser_Vector_6} />
+									</div>
 								</div>
 							</div>
-							<div className='akariconsedit'>
-								<div className='Group'>
-									<img className='Vector_5' src = {ImgAsset.EditProfileUser_Vector_5} />
-									<img className='Vector_6' src = {ImgAsset.EditProfileUser_Vector_6} />
-								</div>
-							</div>
-						</div>
-					</div>
+						</div>	
+					</Button> 
 				</div>
 			</div>
-		{/* </Link> */}
 		<Footer/>
 	</div>
 	)
