@@ -13,8 +13,13 @@ import swal from 'sweetalert'
 export default function ProfileUser () {
 	const [userProfile, setUserProfile] = useState([]);
 
+	const [userId, setUserId] = useState(() => {
+		const localData = localStorage.getItem("id");
+		return localData ? localData : null;
+	});
+
 	useEffect(()=>{
-		axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/2`)
+		axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/${userId}`)
 		.then((response)=> {
 			setUserProfile(response.data.data);
 			console.log(response.data.data);

@@ -24,7 +24,7 @@ export default function SearchBerita () {
 
 	useEffect(() => {
 		axios
-		  .get(`https://api-ukmscare.herokuapp.com/ukms`)
+		  .get(`${process.env.REACT_APP_BACKEND_URL}ukms`)
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
@@ -60,7 +60,7 @@ export default function SearchBerita () {
 					<Dropdown.Menu>
 						<Dropdown.Item href="/beritaukmb/articles">All</Dropdown.Item>
 						<Dropdown.Item href="/beritaukmb/articles/category/Olahraga">Olahraga</Dropdown.Item>
-						<Dropdown.Item href="/beritaukmb/articles/category/Beladiri">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="/beritaukmb/articles/category/Bela diri">Beladiri</Dropdown.Item>
 						<Dropdown.Item href="/beritaukmb/articles/category/Kesenian">Kesenian</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>

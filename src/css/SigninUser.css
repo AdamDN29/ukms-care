@@ -117,11 +117,12 @@
 }
 .SigninUser_SigninUser .Loginbtn {
 	position: absolute;
-	left: 620px;
+	left: 750px;
 	top: 460px;
-	width: 351.873291015625px;
+	width: 400px;
 	height: 54.13525390625px;
 	box-shadow: 100px;
+	border: 0px;
 }
 .SigninUser_SigninUser .Loginbtn .Rectangle {
 	position: absolute;
@@ -136,8 +137,10 @@
 
 .SigninUser_SigninUser .Loginbtn .login {
 	position: absolute;
-	left: 287px;
-	top: 15.63916015625px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	/* top: 15.63916015625px; */
 	width: 51.608154296875px;
 	height: 24.06005859375px;
 	color : rgba(255,255,255,1);
@@ -145,7 +148,8 @@
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 20px;
-	font-weight: bold;
+	font-weight: bolder;
+	text-align: center;
 }
 .SigninUser_SigninUser .Password {
 	position: absolute;

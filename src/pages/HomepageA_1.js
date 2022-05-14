@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from "react";
 import '../css/HomepageA_1.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
@@ -11,12 +12,19 @@ import BeritaPost2 from '../components/BeritaPost2'
 
 
 export default function HomepageA_1 (props) {
-	const idUser = props.idUser;
+	const idUser = props.data.id;
 	console.log(idUser);
+
+	// const [idUser, setIdUser] = useState(false);
+
+	// const getId = (id) => {
+	// 	setIdUser(id);
+	// };
+
 
     return (
 	<div className='HomepageA_1_HomepageA'>
-		<Navbar/>
+		<Navbar />
 		{/*Sisi Kiri*/}
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.HomepageA_1_Vector} />

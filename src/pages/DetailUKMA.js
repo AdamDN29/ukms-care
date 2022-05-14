@@ -6,9 +6,13 @@ import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import CheckUser from '../hook/CheckUser';
 import { Component } from 'react/cjs/react.production.min'
 import ReactTimeAgo from 'react-time-ago'
 import axios from "axios";
+import { Button } from 'react-bootstrap';
+import swal from "sweetalert";
+import GetToken from '../API/GetToken';
 
 function DetailUKMA (props){
 	const { ukm_id } = props.match.params;
@@ -22,6 +26,12 @@ function DetailUKMA (props){
 	const contents = berita.content
 	console.log(date);
 	console.log(contents);
+
+	const [userRole, setUserRole] = useState(() => {
+		const localData = localStorage.getItem("role");
+		return localData ? localData : null;
+	});
+	console.log(userRole);
 
 	useEffect(() => {
 		axios
@@ -45,6 +55,41 @@ function DetailUKMA (props){
 		  });
 	  }, []); 
 	  console.log(berita.created_at);
+	
+	const StatusProfile = CheckUser();
+	 console.log(StatusProfile);
+
+	const pendaftaranHandler = () => {
+		
+
+		if(userRole === null){
+			swal({
+				title: "Silahkan Sign In Untuk Melakukan Pendaftaran",
+				icon: "warning",
+				dangerMode: true,
+			});
+		}
+		else if(userRole === '1'){
+			swal({
+				title: "Admin Tidak Dapat Melakukan Pendaftaran",
+				icon: "warning",
+				dangerMode: true,
+			});
+		}
+		else {
+			if(StatusProfile === true){
+				window.location.href = `/daftarukm/${ukm_id}`;
+			}
+			else{
+				swal({
+					title: "Silahkan Lengkapi Profile Terlebih Dahulu",
+					icon: "warning",
+					dangerMode: true,
+				});
+			}
+			
+		}
+	}
 	
 
     return (
@@ -90,9 +135,11 @@ function DetailUKMA (props){
 			<span className='ukmContact'>{ukm.contact}</span>
 		</div>
 
-		<Link to='/daftarukm'>
-			<div className='Loginbtn'>
-				<div className='Rectangle'/>
+		{/* <Link to='/daftarukm'> */}
+			<Button className='Loginbtn'
+				onClick={pendaftaranHandler}
+			>
+				{/* <div className='Rectangle'/> */}
 				<div className='akariconsedit'>
 					<div className='Group'>
 						<img className='Vector_4' src = {ImgAsset.DetailUKMA_Vector_4} />
@@ -100,8 +147,8 @@ function DetailUKMA (props){
 					</div>
 				</div>
 				<span className='DAFTAR'>DAFTAR</span>
-			</div>
-		</Link>
+			</Button>
+		{/* </Link> */}
 		
 		<div className='Group386'>
 			<div className='Group355'>

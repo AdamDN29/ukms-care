@@ -14,7 +14,12 @@ function DashboardUKMB (props){
 
 	const [ukm, setUKM] = useState([]);
 
-	const query = 'ukms/5';
+	const [userId, setUserId] = useState(() => {
+		const localData = localStorage.getItem("id");
+		return localData ? localData : null;
+	});
+
+	const query = 'ukms/' + userId;
 
 
 	useEffect(() => {

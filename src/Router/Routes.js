@@ -27,12 +27,22 @@ function RouterDOM () {
 	const [idUser, setIdUser] = useState(false);
 
 	const localDataRole = localStorage.getItem("role");
+	const localDataID = localStorage.getItem("id");
+	const localDataEmail = localStorage.getItem("email");
 	console.log(localDataRole);
+	console.log(localDataID);
+	console.log(localDataEmail);
 
-	const getId = (id) => {
-		setIdUser(id);
-	};
-	console.log(idUser);
+	const data = {
+		"role" : localDataRole,
+		"id" : localDataID,
+		"email" : localDataEmail
+	}
+
+	// const getId = (id) => {
+	// 	setIdUser(id);
+	// };
+	// console.log(idUser);
 
 	return (
 		<Router>
@@ -56,7 +66,7 @@ function RouterDOM () {
 				{/* <Route path="/beritaukmb/articles/category/:query" component={BeritaUKMB}></Route> */}
 				<Route path="/homepagea_1" 
 						exact 
-						component={() => <HomepageA_1 idUser={idUser}/>}></Route>
+						component={() => <HomepageA_1 data={data}/>}></Route>
 				<Route path="/beritaukmb/:pathParam1?/:pathParam2?/:pathParam3?" component={BeritaUKMB}></Route>
 				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
 
@@ -71,7 +81,7 @@ function RouterDOM () {
 				<Route exact path="/editprofileuser/:id" component={EditProfileUser}></Route>
 				{/* <Route exact path="/detailukma"><DetailUKMA /></Route> */}
 				<Route path="/detailukma/:ukm_id" component={DetailUKMA}></Route>
-				<Route exact path="/daftarukm"><DaftarUKM /></Route>
+				<Route path="/daftarukm/:ukm_id" component={DaftarUKM}></Route>
 
 				<Route exact path="/signinadmin"><SigninAdmin /></Route>
 				<Route exact path="/dashboardukmb"><DashboardUKMB /></Route>

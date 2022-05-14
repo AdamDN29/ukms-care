@@ -5,10 +5,103 @@ import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import { Button } from 'react-bootstrap'
-
-
+import UseRegister from '../hook/UseRegister'
+import { registerAPI } from '../API/authAPI'
+import { confirmAlert } from 'react-confirm-alert'; 
+import swal from "sweetalert";
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 export default function SignupUser () {
+	const [
+		usernameReg,
+		passwordReg,
+		confirmPass,
+		usernameHandler,
+		passwordHandler,
+		confirmPassHandler,
+	] = UseRegister();
+	
+	// Post Register
+
+	const register = () => {
+		if (confirmPass !== passwordReg) {
+			swal({
+				title: "Password Tidak Sesuai",
+				icon: "warning",
+				dangerMode: true,
+			  });
+		} else {
+		  const payload = {
+			email: usernameReg,
+			password: passwordReg,
+			password_confirmation: confirmPass
+		  };
+		  registerAPI
+			.post("register", payload)
+			.then((response) => {
+			  console.log(response);
+			  console.log(usernameReg);
+			  if (response.status === 200) {
+					confirmAlert({
+						title: 'Silahkan Cek Email Anda Untuk Konfirmasi Email',
+						message: 'Click Resend Jika Anda Belum Mendapat Email',
+						buttons: [
+						{
+							label: 'Resend',
+							onClick: () => {
+								alert('Kami Telah Mengirim Ulang Email')
+				
+							}
+						},
+						{
+							label: 'Oke',
+							onClick: () => alert('Click Ok')
+						}
+						]
+					});
+			// 	swal({
+			// 	  title: "Email Yang Kamu Masukan Sudah Terdaftar:)",
+			// 	  icon: "warning",
+			// 	  dangerMode: true,
+			// 	});
+			//   } else {
+			// 	swal({
+			// 	  title:
+			// 		"Akun Kamu Sudah Terdaftar, Silahkan Login Terlebih Dahulu",
+			// 	  icon: "success",
+			// 	  button: "Aww yiss!",
+			// 	});
+			  }
+			})
+			.catch((err) => {
+			  console.log(err);
+			  confirmAlert({
+				title: 'Silahkan Cek Email Anda Untuk Konfirmasi Email',
+				message: 'Click Resend Jika Anda Belum Mendapat Email',
+				buttons: [
+				{
+					label: 'Resend',
+					onClick: () => {
+						alert('Kami Telah Mengirim Ulang Email')
+		
+					}
+				},
+				{
+					label: 'Oke',
+					onClick: () => alert('Click Ok')
+				}
+				]
+			});
+			});
+		}
+	  };
+	
+	  const enterSumbit = (e) => {
+		  console.log("enter");
+		  register();
+	  };
+
+
     return (
 	<div className='SignupUser_SignupUser'>
 		<div className='Group220'>
@@ -23,28 +116,48 @@ export default function SignupUser () {
 			<img className='Vector_2' src = {ImgAsset.SignupUser_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.SignupUser_Vector_3} />
 		</div>
-		<Link to='/homepagea_1'>
-			<div className='Loginbtn'>
-				<Button className='Button1'/> 	
-				<span className='Register1'>Register</span>	
-			</div>
-		</Link>
+		
 			
 		<div className='Username'>
-			<input className='Input_Form' type='text' placeholder='Enter Email Unpad'> 	
+			<input className='Input_Form' placeholder='Enter Email Unpad'
+				value={usernameReg}
+				onChange={usernameHandler}
+				type="email"
+			> 	
 			</input>
 		</div>
 		<div className='Password'>
-			<input className='Input_Form' type='password' placeholder='Enter Password'> 	
+			<input className='Input_Form' placeholder='Enter Password'
+				value={passwordReg}
+                onChange={passwordHandler}
+                type="password"
+			> 	
 			</input>
 		</div>
 
 		<div className='Password_2'>
-			<input className='Input_Form' type='password' placeholder='Re-Enter Password'> 	
+			<input className='Input_Form' placeholder='Re-Enter Password'
+				value={confirmPass}
+                onChange={confirmPassHandler}
+                type="password"
+			> 	
 			</input>
 		</div>
+
+		{/* <Link to='/homepagea_1'> */}
+			<div className='Loginbtn'>
+				<Button className='Button1'
+					    type="submit"
+						onClick={() => {
+						  register();
+						}}
+				> <span className='Register1'>Register</span>	
+				</Button>
+				
+			</div>
+		{/* </Link> */}
 		
-		<span className='Signup'>Sign up</span>
+		<span className='Signup'>Sign Up</span>
 		<span className='Sudahpunyaakun'>Sudah punya akun?</span>
 		<Link to='/signinuser'>
 			<span className='Signin'>Sign In!</span>
