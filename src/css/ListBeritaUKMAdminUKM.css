@@ -4,7 +4,7 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1230px;
+	width: 100%;
 	height: 1700px;
 	background : rgba(255,255,255,1);
 	/* border: 1px solid rgba(0,0,0,1);
@@ -47,7 +47,7 @@
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Vectors_1 {
 	position: absolute;
-	left: 1130px;
+	right: 0px;
 	top: 80px;
 	width: 100px;
 	height: 1480px;

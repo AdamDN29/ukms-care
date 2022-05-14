@@ -3,7 +3,7 @@ import '../css/AturPendaftaranUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarAdmin from '../components/NavbarAdmin'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 
@@ -19,7 +19,7 @@ class AturPendaftaranUKM extends Component{
 			<img className='Vector_2' src = {ImgAsset.AturPendaftaranUKM_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.AturPendaftaranUKM_Vector_3} />
 		</div>
-		<NavbarAdmin/>
+		<Navbar/>
 		
 		<span className='AturPendaftaranUKM_1'>Atur Pendaftaran UKM</span>
 		<span className='Teks'>Teks</span>

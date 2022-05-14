@@ -3,7 +3,7 @@ import '../css/EditProfileUser.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarUser from '../components/NavbarUser'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
 import { Dropdown } from 'bootstrap'
@@ -91,7 +91,7 @@ export default function EditProfileUser (props) {
 			<img className='Vector_3' src = {ImgAsset.EditProfileUser_Vector_3} />
 		</div>
 
-		<NavbarUser/>
+		<Navbar/>
 		<Link to='/profileuser'>
 			<BackButton/>
 		</Link>

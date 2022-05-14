@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
-import NavbarUser from '../components/NavbarUser';
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import ListPages from '../pages/index';
 import HomepageA_1 from '../pages/HomepageA_1';

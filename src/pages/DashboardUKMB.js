@@ -4,7 +4,7 @@ import '../css/DashboardUKMB.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarAdmin from '../components/NavbarAdmin'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import axios from 'axios';
@@ -38,7 +38,7 @@ function DashboardUKMB (props){
 	
     return (
 	<div className='DashboardUKMB_DashboardUKMB'>
-	<NavbarAdmin />
+	<Navbar />
 
 		{/*Kanan*/}
 		<div className='Vectors'>

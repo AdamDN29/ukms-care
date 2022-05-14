@@ -71,15 +71,27 @@
 	position: absolute;
 	left: 140px;
 	top: 29px;
-	width: 304.6900634765625px;
+	width: 350px;
 	height: 22.294921875px;
 	display: flex;
 	box-sizing: border-box;
 }
+
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .Dashboard {
+	position: relative;
+	width: 180px;
+	height: 22.294921875px;
+	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
+	font-family: Montserrat;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25.739999771118164px;
+}
+
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .UKMUnpad_1 {
 	position: relative;
-	margin-right: 5px;
-	width: 154.095947265625px;
+	left: 25px;
+	width: 180px;
 	height: 22.294921875px;
 	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
 	font-family: Montserrat;
@@ -89,9 +101,9 @@
 }
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .BeritaUKM_1 {
 	position: relative;
-	left: 40px;
+	left: 50px;
 	margin-right: 5px;
-	width: 145.59410095214844px;
+	width: 180px;
 	height: 22.294921875px;
 	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
 	font-family: Montserrat;

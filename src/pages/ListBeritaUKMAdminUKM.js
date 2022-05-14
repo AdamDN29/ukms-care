@@ -4,7 +4,7 @@ import '../css/ListBeritaUKMAdminUKM.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
-import NavbarAdmin from '../components/NavbarAdmin'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import ReactTimeAgo from 'react-time-ago'
@@ -96,7 +96,7 @@ export default function ListBeritaUKMAdminUKM (props) {
 			<img className='Vector_4' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_4} />
 		</div>
 
-		<NavbarAdmin/>
+		<Navbar/>
 
 
 		{/* Buat Berita */}
