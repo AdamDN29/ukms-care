@@ -9,7 +9,8 @@
 }
 .SearchBerita .Group365 {
 	position: absolute;
-	left: 100px;
+	left: 50%;
+	transform: translateX(-46%);
 	top: 265px;
 	width: 1119px;
 	height: 40.28564453125px;
@@ -244,7 +245,7 @@
 
 .SearchBerita .Group365 .Frame2 {
 	position: absolute;
-	left: 680px;
+	left: 600px;
 	top: 0px;
 	width: 27.07774798927614%;
 	height: 40px;
@@ -284,7 +285,7 @@
 }
 .SearchBerita .Group365 .Frame360 {
 	position: absolute;
-	left: 983px;
+	left: 902px;
 	top: 0px;
 	width: 92px;
 	height: 40px;

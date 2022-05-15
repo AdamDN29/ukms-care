@@ -24,6 +24,7 @@ export default function ListPages () {
 		<Link to='/BuatBeritaUKM'><div>BuatBeritaUKM</div></Link>
 		<Link to='/ListPendaftarUKMAdminUKM'><div>ListPendaftarUKMAdminUKM</div></Link>
 		<Link to='/ListBeritaUKMAdminUKM'><div>ListBeritaUKMAdminUKM</div></Link>
+		<Link to='/AboutUs'><div>AboutUs</div></Link>
 	</div>
 	)
 }

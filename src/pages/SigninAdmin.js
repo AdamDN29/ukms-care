@@ -107,7 +107,7 @@ export default function SigninAdmin (props) {
               }}
 		>
 			{/* <div className='Rectangle'/> */}
-			<span className='login'>login</span>
+			<span className='login'>Login</span>
 		</Button>
 		
 	</div>

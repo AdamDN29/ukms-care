@@ -71,7 +71,7 @@
 
 .ProfileUser_ProfileUser .Image {
 	position: absolute;
-	left: 45%;
+	left: 50%;
 	transform:translate(-100%);
 	top: 150px;
 	width: 400 px;
@@ -83,7 +83,7 @@
 .ProfileUser_ProfileUser .Name {
 	position: absolute;
 	left: 50%;
-	transform:translate(30%);
+	transform:translate(20%);
 	top: 300px;
 	width: 513px;
 	height: 68px;

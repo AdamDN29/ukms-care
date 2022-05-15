@@ -55,14 +55,10 @@
 	height: 2100px;
 }
 
-
-
-
-
-
 .DetailUKMA_DetailUKMA .Group338 {
 	position: absolute;
-	left: 115px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 1655px;
 	width: 1000px;
 	height: 450.58203125px;
@@ -390,7 +386,7 @@
 }
 .DetailUKMA_DetailUKMA .grup1 .Loginbtn .DAFTAR {
 	position: absolute;
-	left: 120px;
+	left: 80px;
 	top: 16px;
 	width: 158px;
 	height: 24px;

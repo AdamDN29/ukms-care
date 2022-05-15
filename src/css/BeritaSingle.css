@@ -134,7 +134,8 @@
 }
 .BeritaSingle_BeritaSingle .Frame371 {
 	position: absolute;
-	left: 334px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 498px;
 	width: 758.776611328125px;
 	height: 590px;
@@ -157,20 +158,23 @@
 }
 .BeritaSingle_BeritaSingle .Frame372 {
 	position: absolute;
-	left: 212px;
+	left: 50%;
+	transform:translate(-50%);
 	top: 1103px;
-	width: 1020px;
+	width: 850px;
 	height: 730px;
 	display: flex;
 	padding-top: 10px;
 	padding-right: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
+	text-align: center;
 	box-sizing: border-box;
 }
 .BeritaSingle_BeritaSingle .Frame372 .content {
 	position: relative;
-	margin-right: 10px;
+	left: 50%;
+	transform:translate(-50%);
 	width: 1000px;
 	height: 710px;
 	color : rgba(0,0,0,1);

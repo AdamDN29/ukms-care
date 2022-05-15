@@ -118,7 +118,7 @@
 .SigninUser_SigninUser .Loginbtn {
 	position: absolute;
 	left: 750px;
-	top: 460px;
+	top: 430px;
 	width: 400px;
 	height: 54.13525390625px;
 	box-shadow: 100px;
@@ -184,7 +184,7 @@
 .SigninUser_SigninUser .Belumpunyaakun {
 	position: absolute;
 	left: 830px;
-	top: 530px;
+	top: 500px;
 	width: 150px;
 	height: 20px;
 	color : rgba(0,0,0,1);
@@ -196,7 +196,7 @@
 .SigninUser_SigninUser .Signup {
 	position: absolute;
 	left: 980px;
-	top: 530px;
+	top: 500px;
 	width: 91px;
 	height: 20px;
 	color : rgba(0,180.00000447034836,215.0000023841858,1);

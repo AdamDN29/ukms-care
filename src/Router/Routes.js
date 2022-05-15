@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer';
 import ListPages from '../pages/index';
+import AboutUs from '../pages/AboutUs';
 import HomepageA_1 from '../pages/HomepageA_1';
 import UKMUnpadA from '../pages/UKMUnpadA';
 import BeritaUKMB from '../pages/BeritaUKMB';
@@ -22,6 +23,7 @@ import BuatBeritaUKM from '../pages/BuatBeritaUKM';
 import ListPendaftarUKMAdminUKM from '../pages/ListPendaftarUKMAdminUKM';
 import ListBeritaUKMAdminUKM from '../pages/ListBeritaUKMAdminUKM';
 import EditBeritaUKM from '../pages/EditBeritaUKM';
+
 
 function RouterDOM () {
 	const [idUser, setIdUser] = useState(false);
@@ -95,8 +97,10 @@ function RouterDOM () {
 				<Route exact path="/listpendaftarukm"><ListPendaftarUKMAdminUKM /></Route>
 				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>
 				
+				
 			</Switch>
-			{/* <Footer /> */}
+			<Route exact path="/AboutUs"><AboutUs /></Route>
+			
 		</Router>
 	);
 }

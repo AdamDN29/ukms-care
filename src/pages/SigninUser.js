@@ -208,7 +208,7 @@ export default function SigninUser (props) {
               }}
 		> 
 			{/* <div className='Rectangle'/> */}
-			<span className='login'>LOGIN</span>
+			<span className='login'>Login</span>
 		</Button>
 		{/* </Link> */}
 		

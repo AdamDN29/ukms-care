@@ -17,23 +17,23 @@
 .Frame338_2 .Alltickets_3 {
 	position: relative;
 	margin-bottom: 10px;
-	width: 1120px;
+	width: 1000px;
 	height: 350px;
 	/* border-radius: 10px;
 	border: 1px solid rgba(255,255,255,1); */
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 {
 	position: absolute;
-	left: 0px;
+	left: 50px;
 	top: -2.353515625px;
-	width: 1120.709716796875px;
+	width: 1000px;
 	height: 350.35400390625px;
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .sheet_3 {
 	position: absolute;
 	left: 0px;
 	top: 2.353515625px;
-	width: 1120.23291015625px;
+	width: 1000px;
 	height: 350.353515625px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border-radius: 10px;
@@ -44,7 +44,7 @@
 	position: absolute;
 	left: 45.99951171875px;
 	top: 42.97705078125px;
-	width: 1028.1875px;
+	width: 1000px;
 	height: 262.7451171875px;
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 {
@@ -63,17 +63,17 @@
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 .Rectangle26_3 {
 	position: absolute;
-	left: 0.119140625px;
+	left: -80px;
 	top: 0.154296875px;
 	width: 348.7606201171875px;
 	height: 262.19091796875px;
 	background : rgba(255,255,255,1);
-}s
+}
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 .ImageArticle {
 	position: absolute;
-	left: 24.1451416015625px;
+	left: -55px;
 	top: 25.02880859375px;
-	width: 200px;
+	width: 300px;
 	height: 210px;
 	object-fit: cover;
 	overflow: hidden;
@@ -119,7 +119,7 @@
 	position: absolute;
 	left: 0.153564453125px;
 	top: 113.24169921875px;
-	width: 626.00048828125px;
+	width: 570px;
 	height: 121.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;

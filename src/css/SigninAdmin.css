@@ -76,9 +76,9 @@
 
 .SigninAdmin_SigninAdmin .Loginbtn {
 	position: absolute;
-	left: 620px;
+	left: 750px;
 	top: 460px;
-	width: 351.873291015625px;
+	width: 400px;
 	height: 54.13525390625px;
 	box-shadow: 100px;
 }
@@ -94,8 +94,9 @@
 }
 .SigninAdmin_SigninAdmin .Loginbtn .login {
 	position: absolute;
-	left: 287px;
-	top: 15.63916015625px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 	width: 51.608154296875px;
 	height: 24.06005859375px;
 	color : rgba(255,255,255,1);

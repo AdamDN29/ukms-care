@@ -27,9 +27,9 @@ export default function Footer () {
 									<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
 								</div>
 								<div className='Group364'>
-									<Link to='/ukmunpada/ukms' className="link"><span className='UKMUnpad'>UKM Unpad</span></Link>
-									<Link to='/beritaukmb/articles' className="link"><span className='BeritaUKM'>Berita UKM</span></Link>
-									<span className='AboutUs'>About Us</span>
+								<Link to='/ukmunpad/ukms' className="link"><span className='UKMUnpad'>UKM Unpad</span></Link>
+								<Link to='/beritaukm/articles' className="link"><span className='BeritaUKM'>Berita UKM</span></Link>					
+							<Link to='/AboutUs' className="link"><span className='AboutUs'>About Us</span></Link>
 									<span className='Help'>Help</span>	
 								</div>
 							</div>
