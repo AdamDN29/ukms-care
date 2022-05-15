@@ -29,8 +29,8 @@ export default function Footer () {
 								<div className='Group364'>
 								<Link to='/ukmunpad/ukms' className="link"><span className='UKMUnpad'>UKM Unpad</span></Link>
 								<Link to='/beritaukm/articles' className="link"><span className='BeritaUKM'>Berita UKM</span></Link>					
-							<Link to='/AboutUs' className="link"><span className='AboutUs'>About Us</span></Link>
-									<span className='Help'>Help</span>	
+								<Link to='/AboutUs' className="link"><span className='AboutUs'>About Us</span></Link>
+								<Link to='/Help' className="link"><span className='Help'>Help</span></Link>
 								</div>
 							</div>
 						</div>
