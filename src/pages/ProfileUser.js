@@ -91,7 +91,7 @@ export default function ProfileUser () {
 			</div>
 		</Link>
 
-		<Link to='/homepagea_1'>
+		<Link to='/homepage'>
 			<BackButton/>
 		</Link>
 		

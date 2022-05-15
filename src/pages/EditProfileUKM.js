@@ -9,8 +9,10 @@ import { Component } from 'react/cjs/react.production.min'
 import { useReducer, useState } from "react"
 import { useHistory } from "react-router-dom"
 import axios, { Axios } from 'axios'
-import swal from "sweetalert"
+import swal from "sweetalert2"
 import { Button } from 'react-bootstrap'
+
+const Swal = require('sweetalert2');
 
 const initialState = {
     name: "",
@@ -76,6 +78,9 @@ export default function EditProfileUKM (props){
         e.preventDefault();
         setDisable(true);
         const dataForm = new FormData();
+
+		
+
 		dataForm.append("id", idUKM);
         dataForm.append("name", ukm.name);
         dataForm.append("desc", ukm.desc);
@@ -83,7 +88,10 @@ export default function EditProfileUKM (props){
 		dataForm.append("member", ukm.member);
 		dataForm.append("location", ukm.location);
 		dataForm.append("contact", ukm.contact);
-		dataForm.append("avatar", ukm.avatar);
+		if (ukm.avatar !== null){
+			dataForm.append("avatar", ukm.avatar);
+		}
+		
 
 		console.log(dataForm.get('id'));
 		console.log(dataForm.get('name'));
@@ -102,7 +110,7 @@ export default function EditProfileUKM (props){
                 swal("Profile UKM berhasil diedit")
                 console.log(response)
                 console.log("berhasil")
-                history.push({pathname:'/dashboardukmb', state:{idUKM}})
+                history.push({pathname:'/dashboardukm', state:{idUKM}})
             })
             .catch((err) => {
                 swal({
@@ -132,6 +140,8 @@ export default function EditProfileUKM (props){
 		<div className='grup1'>
 		<div className='Rectangle21'/>
 		<span className='EditProfileUKM_1'>Edit Profile UKM</span>
+
+		{/* Input File */}
 		<div className='Group382'>
 			<div className='Group301'>
 				<input className='uploadFile' 
@@ -247,35 +257,7 @@ export default function EditProfileUKM (props){
 						dispatch({ type: "desc", upload: e.target.value })
 					}
 				/>
-				{/* <span className='deskripsi'>Unit Taekwondo Unpad (UTKD) didirikan pada tanggal 16 September 1982. UTKD mengadakan latihan rutin setiap hari Senin & Kamis di Pelataran Taman Fakultas Hukum Unpad (Dipati Ukur Bandung) dan Selasa & Jumat di Bale Santika atau di Stadion Jati Padjadjaran (Jatinangor) mulai pukul 16.00 WIB.
-				
-				Sejumlah prestasi yang pernah diraih antara lain: 
-				
-				Ganesha Cup 2013 (1 Perunggu ) 
-				Walikota Cup 2013 (1 Emas , 5 perak 2 perunggu) 
-				Kejuaraan Nasional IT Telkom Cup 2013 (1 Perak, 3 Perunggu) 
-				Kejuaraan Nasional FEUI Cup 2013 (2 Perak , 2 Perunggu) 
-				Metro Open 2013 (5 Perak , 5 Perunggu ) 
-				KTB Cup Bogor Se Jawa Barat (1 Perak, 7 Perunggu) 
-				Walikota Cup Bandung 2012 (3 Perak , 4 Perunggu ) 
-				Polban Kyorugi Championship 2012 (2 emas, 8 Perak, 6 perunggu) 
-				Walikota Bandung Cup 2011 (2 emas, 2 Perak, 4 perunggu) 
-				UPI Challenge 2011 (1 perak, 6 perunggu) Walikota 
-				Bandung Cup 2010 (2 emas, 1 perak, 4 Perunggu) 
-				Kejurnas ITTelkom 2010 (1 Perunggu)
-				
-				
-				Media Sosial 
-				
-				Line         : @cgk2038x
-				
-				Instagram : taekwondo_unpad
-				
-				Twitter     : @TaekwondoUnpad</span> */}
-				{/* <div className='Group317'>
-					<img className='Line2' src = {ImgAsset.EditProfileUKM_Line2} />
-					<img className='Line3' src = {ImgAsset.EditProfileUKM_Line3} />
-				</div> */}
+			
 			</div>
 		</div>
 		<div className='Group383'>

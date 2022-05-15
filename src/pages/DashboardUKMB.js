@@ -246,7 +246,7 @@ function DashboardUKMB (props){
 			</div>
 		</div>
 
-		<Link to='/listpendaftarukmadminukm'>
+		<Link to='/listpendaftarukm'>
 			<div className='Group352'>
 				<div className='Group309_1'>
 					<div className='Group293_2'>

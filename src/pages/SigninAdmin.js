@@ -37,7 +37,7 @@ export default function SigninAdmin (props) {
 				localStorage.setItem("user", JSON.stringify(getUser));
       			localStorage.setItem("role", JSON.stringify(1));
 
-				window.location.href = '/homepagea_1';
+				window.location.href = '/homepage';
 			} 
 		  })
 		  .catch((err) => {
@@ -71,10 +71,12 @@ export default function SigninAdmin (props) {
 			<img className='Vector_2' src = {ImgAsset.SigninAdmin_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.SigninAdmin_Vector_3} />
 		</div>
-		<div className='Group230'>
-			<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-			<img className='logo' src = {ImgAsset.ukms_care_logo} />
-		</div>
+		<Link to="/homepage" > 
+			<div className='Group230'>
+				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
+				<img className='logo' src = {ImgAsset.ukms_care_logo} />
+			</div>
+		</Link>
 
 		<span className='SigninAkunAdmin'>Sign in 
 		Akun Admin</span>

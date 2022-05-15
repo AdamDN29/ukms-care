@@ -63,9 +63,9 @@ export default function UKMUnpadA (props) {
 	const onSearchHandler = (e) => {	
 		e.preventDefault();
 		if(query1 === null){
-			window.location.href = "/ukmunpada/ukms/";
+			window.location.href = "/ukmunpad/ukms/";
 		}
-		else{window.location.href = "/ukmunpada/ukms/search/" + query1;}
+		else{window.location.href = "/ukmunpad/ukms/search/" + query1;}
 	};
 
 
@@ -107,10 +107,10 @@ export default function UKMUnpadA (props) {
 					</Dropdown.Toggle>
 
 					<Dropdown.Menu>
-					<Dropdown.Item href="/ukmunpada/ukms">All</Dropdown.Item>
-						<Dropdown.Item href="/ukmunpada/ukms/category/Olahraga">Olahraga</Dropdown.Item>
-						<Dropdown.Item href="/ukmunpada/ukms/category/Bela diri">Beladiri</Dropdown.Item>
-						<Dropdown.Item href="/ukmunpada/ukms/category/Kesenian">Kesenian</Dropdown.Item>
+					<Dropdown.Item href="/ukmunpad/ukms">All</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpad/ukms/category/Olahraga">Olahraga</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpad/ukms/category/Bela diri">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="/ukmunpad/ukms/category/Kesenian">Kesenian</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>
 			

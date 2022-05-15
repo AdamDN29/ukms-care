@@ -37,7 +37,7 @@ class UKMPost2 extends Component {
 					return(
 					
 						<Col key={post.id}>
-						<Link to={`/detailukma/${post.id}`} >
+						<Link to={`/detailukm/${post.id}`} >
                             <Card className='Card2'>
                                 <Card.Img variant="top" className='Image2' src={`${process.env.REACT_APP_BACKEND_URL}${post.avatar}`} />
                                 <Card.Body className='Body2'>

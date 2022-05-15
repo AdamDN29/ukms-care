@@ -16,7 +16,7 @@ const UKMPost = (props) => {
     return (
 
         <Col >
-            <Link to={`/detailukma/${props.ukm_id}`}>
+            <Link to={`/detailukm/${props.ukm_id}`}>
             <Card className='UKMCard'>
                 <Card.Img variant="top" className='UKMImg' src={`${process.env.REACT_APP_BACKEND_URL}${props.avatar}`} />
                 <Card.Body >

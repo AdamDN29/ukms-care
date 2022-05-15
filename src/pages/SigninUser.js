@@ -74,7 +74,7 @@ export default function SigninUser (props) {
 				localStorage.setItem("user", JSON.stringify(getUser));
       			localStorage.setItem("role", JSON.stringify(2));
 
-				window.location.href = '/homepagea_1';
+				window.location.href = '/homepage';
 				
 			//   if (response.data.errors.message == "Email belum terdaftar") {
 			// 	swal({
@@ -150,6 +150,8 @@ export default function SigninUser (props) {
 			<img className='Vector_1' src = {ImgAsset.SigninUser_Vector_1} />
 		</div>
 
+		
+
 		<div className='Group220'>
 			{/*Atas*/}
 			<div className='Rectangle6'/>
@@ -160,6 +162,12 @@ export default function SigninUser (props) {
 			<span className='Text1'>Silahkan Sign In untuk 
 			melakukan pendaftaran UKM</span>
 		</div>
+		<Link to="/homepage" > 
+			<div className='Group229'>
+				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
+				<img className='logo' src = {ImgAsset.ukms_care_logo} />		
+			</div>
+		</Link>
 		
 		{/*Bawah*/}
 		<div className='Vectors_1'>
@@ -168,11 +176,11 @@ export default function SigninUser (props) {
 		</div>
 		
 		{/*Lupa password*/}
-		<div className='SectionForgot'>
+		{/* <div className='SectionForgot'>
 			<span className='Forgotpassword'>Forgot password?</span>
 			<span className='Rememberme'>Remember me</span>
 			<div className='Rectangle1'/>
-		</div>
+		</div> */}
 
 		{/*Email,Password*/}
 		<div className='Username'>
@@ -210,10 +218,7 @@ export default function SigninUser (props) {
 			<span className='Signup'>Sign up!</span>
 		</Link>
 		
-		<div className='Group229'>
-			<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-			<img className='logo' src = {ImgAsset.ukms_care_logo} />		
-		</div>
+		
 	</div>
 	)
 }

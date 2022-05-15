@@ -8,8 +8,10 @@ import { Button } from 'react-bootstrap'
 import UseRegister from '../hook/UseRegister'
 import { registerAPI } from '../API/authAPI'
 import { confirmAlert } from 'react-confirm-alert'; 
-import swal from "sweetalert";
+// import swal from "sweetalert2";
 import 'react-confirm-alert/src/react-confirm-alert.css';
+
+const Swal = require('sweetalert2');
 
 export default function SignupUser () {
 	const [
@@ -24,13 +26,56 @@ export default function SignupUser () {
 	// Post Register
 
 	const register = () => {
+
+		
+		// Email Unpad Checker
+		var A = [usernameReg]
+		var B = ['@mail.unpad.ac.id']
+
+		const checkUsername = A.filter( 
+			el => B.some(obj => el.toLowerCase().includes(obj.toLowerCase()))
+		)
+
+		if (usernameReg === "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Silahkan Masukkan Email',
+				confirmButtonColor: '#c41607',	  
+			}) 
+			return;	}
+		if (checkUsername.length === 0){
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Silahkan Masukkan Email Unpad',
+				confirmButtonColor: '#c41607',	  
+			}) 
+			return;	}
+		if (passwordReg === "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Silahkan Masukkan Password',
+				confirmButtonColor: '#c41607',	  
+			}) 
+			return;	}
+		if (confirmPass === "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Silahkan Masukkan Confirm Password',
+				confirmButtonColor: '#c41607',	  
+			}) 
+			return;	}
 		if (confirmPass !== passwordReg) {
-			swal({
-				title: "Password Tidak Sesuai",
-				icon: "warning",
-				dangerMode: true,
-			  });
-		} else {
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Confirm Password dan Password Tidak Sesuai!',
+				confirmButtonColor: '#c41607',
+		}) } 
+		else {
 		  const payload = {
 			email: usernameReg,
 			password: passwordReg,
@@ -42,56 +87,53 @@ export default function SignupUser () {
 			  console.log(response);
 			  console.log(usernameReg);
 			  if (response.status === 200) {
-					confirmAlert({
-						title: 'Silahkan Cek Email Anda Untuk Konfirmasi Email',
-						message: 'Click Resend Jika Anda Belum Mendapat Email',
-						buttons: [
-						{
-							label: 'Resend',
-							onClick: () => {
-								alert('Kami Telah Mengirim Ulang Email')
-				
-							}
-						},
-						{
-							label: 'Oke',
-							onClick: () => alert('Click Ok')
-						}
-						]
-					});
-			// 	swal({
-			// 	  title: "Email Yang Kamu Masukan Sudah Terdaftar:)",
-			// 	  icon: "warning",
-			// 	  dangerMode: true,
-			// 	});
-			//   } else {
-			// 	swal({
-			// 	  title:
-			// 		"Akun Kamu Sudah Terdaftar, Silahkan Login Terlebih Dahulu",
-			// 	  icon: "success",
-			// 	  button: "Aww yiss!",
-			// 	});
+				Swal.fire({
+					title: 'Registrasi Akun Telah Berhasil',
+					text: "Silahkan Login Untuk Melanjutkan",
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonText: 'Sign In',
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						window.location.href = "/signinuser";
+
+					  }
+					
+				  });
 			  }
 			})
 			.catch((err) => {
-			  console.log(err);
-			  confirmAlert({
-				title: 'Silahkan Cek Email Anda Untuk Konfirmasi Email',
-				message: 'Click Resend Jika Anda Belum Mendapat Email',
-				buttons: [
-				{
-					label: 'Resend',
-					onClick: () => {
-						alert('Kami Telah Mengirim Ulang Email')
-		
-					}
-				},
-				{
-					label: 'Oke',
-					onClick: () => alert('Click Ok')
-				}
-				]
-			});
+			  console.log(err.response.data.message);
+			  let message = err.response.data.message;
+			  Swal.fire({
+				icon: 'error',
+				title: 'Oops!',
+				text: message,
+				showDenyButton: true,
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				showConfirmButton: false,			
+				denyButtonText: 'Ok',
+				denyButtonColor: '#07redb5c4',
+			  });
+
+			//   Swal.fire({
+			// 	title: 'Are you sure?',
+			// 	text: "You won't be able to revert this!",
+			// 	icon: 'warning',
+			// 	showCancelButton: true,
+			// 	confirmButtonColor: '#3085d6',
+			// 	cancelButtonColor: '#d33',
+			// 	confirmButtonText: 'Yes, delete it!'
+			//   }).then((result) => {
+			// 	if (result.isConfirmed) {
+			// 	  Swal.fire(
+			// 		'Deleted!',
+			// 		'Your file has been deleted.',
+			// 		'success'
+			// 	  )
+			// 	}
+			//   })
 			});
 		}
 	  };
@@ -112,11 +154,16 @@ export default function SignupUser () {
 			</div>
 			<span className='Text1'>Lakukan Sign In untuk melakukan pendaftaran UKM</span>
 		</div>
+		<Link to="/homepage" > 
+			<div className='Group228'>
+				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
+				<img className='logo' src = {ImgAsset.ukms_care_logo} />
+			</div>
+		</Link>
 		<div className='Vectors_1'>
 			<img className='Vector_2' src = {ImgAsset.SignupUser_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.SignupUser_Vector_3} />
 		</div>
-		
 			
 		<div className='Username'>
 			<input className='Input_Form' placeholder='Enter Email Unpad'
@@ -162,10 +209,7 @@ export default function SignupUser () {
 		<Link to='/signinuser'>
 			<span className='Signin'>Sign In!</span>
 		</Link>
-		<div className='Group228'>
-			<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-			<img className='logo' src = {ImgAsset.ukms_care_logo} />
-		</div>
+		
 	</div>
 	)
 }

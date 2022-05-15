@@ -17,9 +17,9 @@ export default function SearchBerita () {
 	const onSearchHandler = (e) => {
 		e.preventDefault();
 		if(query === null){
-			window.location.href = "/beritaukmb/articles";
+			window.location.href = "/beritaukm/articles";
 		}
-		else {window.location.href = "/beritaukmb/articles/search/" + query;}
+		else {window.location.href = "/beritaukm/articles/search/" + query;}
 	};
 
 	useEffect(() => {
@@ -58,10 +58,10 @@ export default function SearchBerita () {
 					</Dropdown.Toggle>
 
 					<Dropdown.Menu>
-						<Dropdown.Item href="/beritaukmb/articles">All</Dropdown.Item>
-						<Dropdown.Item href="/beritaukmb/articles/category/Olahraga">Olahraga</Dropdown.Item>
-						<Dropdown.Item href="/beritaukmb/articles/category/Bela diri">Beladiri</Dropdown.Item>
-						<Dropdown.Item href="/beritaukmb/articles/category/Kesenian">Kesenian</Dropdown.Item>
+						<Dropdown.Item href="/beritaukm/articles">All</Dropdown.Item>
+						<Dropdown.Item href="/beritaukm/articles/category/Olahraga">Olahraga</Dropdown.Item>
+						<Dropdown.Item href="/beritaukm/articles/category/Bela diri">Beladiri</Dropdown.Item>
+						<Dropdown.Item href="/beritaukm/articles/category/Kesenian">Kesenian</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>
 
@@ -88,7 +88,7 @@ export default function SearchBerita () {
 						<Dropdown.Item href="#/action-3">del</Dropdown.Item> */}
 						{
 							ukm.map(post => {
-								return <Dropdown.Item href={"/beritaukmb/articles/ukm/" + post.id} key={post.id}>{post.short_name}</Dropdown.Item>
+								return <Dropdown.Item href={"/beritaukm/articles/ukm/" + post.id} key={post.id}>{post.short_name}</Dropdown.Item>
 			
 							})
 						}

@@ -28,7 +28,7 @@ function RouterDOM () {
 
 	const localDataRole = localStorage.getItem("role");
 	const localDataID = localStorage.getItem("id");
-	const localDataEmail = localStorage.getItem("email");
+	const localDataEmail = localStorage.getItem("user");
 	console.log(localDataRole);
 	console.log(localDataID);
 	console.log(localDataEmail);
@@ -48,7 +48,7 @@ function RouterDOM () {
 		<Router>
 			{/* <NavbarUser idUser={(id) => getId(id)} /> */}
 			<Switch>
-				<Route exact path="/"><ListPages /></Route>
+				{/* <Route exact path="/"><ListPages /></Route> */}
 				{/* <Route exact path="/"><HomepageA_1 /></Route> */}
 				{/* <Route
 					path="/"
@@ -64,13 +64,16 @@ function RouterDOM () {
 					component={() => <EditProfileUser idUser={idUser} />}
 				></Route> */}
 				{/* <Route path="/beritaukmb/articles/category/:query" component={BeritaUKMB}></Route> */}
-				<Route path="/homepagea_1" 
+				<Route path="/" 
 						exact 
 						component={() => <HomepageA_1 data={data}/>}></Route>
-				<Route path="/beritaukmb/:pathParam1?/:pathParam2?/:pathParam3?" component={BeritaUKMB}></Route>
+				<Route path="/homepage" 
+						exact 
+						component={() => <HomepageA_1 data={data}/>}></Route>
+				<Route path="/beritaukm/:pathParam1?/:pathParam2?/:pathParam3?" component={BeritaUKMB}></Route>
 				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
 
-				<Route path="/ukmunpada/:pathParam1?/:pathParam2?/:pathParam3?" component={UKMUnpadA}></Route>
+				<Route path="/ukmunpad/:pathParam1?/:pathParam2?/:pathParam3?" component={UKMUnpadA}></Route>
 
 
 				
@@ -80,16 +83,16 @@ function RouterDOM () {
 				<Route exact path="/profileuser"><ProfileUser /></Route>
 				<Route exact path="/editprofileuser/:id" component={EditProfileUser}></Route>
 				{/* <Route exact path="/detailukma"><DetailUKMA /></Route> */}
-				<Route path="/detailukma/:ukm_id" component={DetailUKMA}></Route>
+				<Route path="/detailukm/:ukm_id" component={DetailUKMA}></Route>
 				<Route path="/daftarukm/:ukm_id" component={DaftarUKM}></Route>
 
 				<Route exact path="/signinadmin"><SigninAdmin /></Route>
-				<Route exact path="/dashboardukmb"><DashboardUKMB /></Route>
+				<Route exact path="/dashboardukm"><DashboardUKMB /></Route>
 				<Route path="/editprofileukm/:ukm_id" component={EditProfileUKM}></Route>
 				<Route path="/listberitaukm" component={ListBeritaUKMAdminUKM}></Route>
 				<Route path="/buatberitaukm" component={BuatBeritaUKM}></Route>
 				<Route path="/editberitaukm/:articles_id" component={EditBeritaUKM}></Route>
-				<Route exact path="/listpendaftarukmadminukm"><ListPendaftarUKMAdminUKM /></Route>
+				<Route exact path="/listpendaftarukm"><ListPendaftarUKMAdminUKM /></Route>
 				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>
 				
 			</Switch>
