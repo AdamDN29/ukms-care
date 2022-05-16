@@ -12,6 +12,7 @@ import ReactPaginate from "react-paginate";
 import axios from 'axios';
 import { confirmAlert } from 'react-confirm-alert'; 
 import { Button } from 'react-bootstrap';
+import BackButton from '../components/BackButton'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 
 export default function ListBeritaUKMAdminUKM (props) {
@@ -85,6 +86,9 @@ export default function ListBeritaUKMAdminUKM (props) {
 
     return (
 	<div className='ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM'>
+				<Link to='/dashboardukm'>
+			<BackButton/>
+		</Link> 
 		<span className='Listberitaukm'>List Berita UKM</span>
 
 		<div className='Vectors'>

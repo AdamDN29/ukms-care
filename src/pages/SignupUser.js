@@ -154,12 +154,12 @@ export default function SignupUser () {
 			</div>
 			<span className='Text1'>Lakukan Sign In untuk melakukan pendaftaran UKM</span>
 		</div>
-		<Link to="/homepage" > 
+	
 			<div className='Group228'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
 				<img className='logo' src = {ImgAsset.ukms_care_logo} />
 			</div>
-		</Link>
+		
 		<div className='Vectors_1'>
 			<img className='Vector_2' src = {ImgAsset.SignupUser_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.SignupUser_Vector_3} />

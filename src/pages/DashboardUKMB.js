@@ -128,7 +128,7 @@ function DashboardUKMB (props){
 		<div className='Group307'>
 			
 			<div className='Rectangle8'><span className='Deskripsi'>{ukm.desc}{ukm.desc}</span> </div>
-			<div className='Recname'><span className='UKMName'>{ukm.name}</span></div>
+			<div className='Rectangle01'><span className='UKMName'>{ukm.name}</span></div>
 			{/* <div className='Group397'>
 				<span className='UNITTaekwondounpad'>{ukm.name}</span>
 				
@@ -192,6 +192,7 @@ function DashboardUKMB (props){
 		</div>
 		
 		{/*Berita UKM 1*/}
+		<div className='grup3'>
 		{ 
 
 		status === true ? (
@@ -221,6 +222,8 @@ function DashboardUKMB (props){
 			)
 
 		}
+
+		</div>
 		
 
 		<div className='grup2'>

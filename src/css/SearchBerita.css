@@ -3,14 +3,15 @@
 	left: 0px;
 	top: 0px;
 	margin: auto;
-	width: 1440px;
+	width: 100%;
+	z-index: 50;
 	background : rgba(255,255,255,1);
 	box-sizing: border-box;
 }
 .SearchBerita .Group365 {
 	position: absolute;
 	left: 50%;
-	transform: translateX(-46%);
+	transform: translateX(-45%);
 	top: 265px;
 	width: 1119px;
 	height: 40.28564453125px;

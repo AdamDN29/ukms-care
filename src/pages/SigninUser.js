@@ -162,12 +162,12 @@ export default function SigninUser (props) {
 			<span className='Text1'>Silahkan Sign In untuk 
 			melakukan pendaftaran UKM</span>
 		</div>
-		<Link to="/homepage" > 
+		
 			<div className='Group229'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
 				<img className='logo' src = {ImgAsset.ukms_care_logo} />		
 			</div>
-		</Link>
+		
 		
 		{/*Bawah*/}
 		<div className='Vectors_1'>

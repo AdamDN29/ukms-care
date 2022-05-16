@@ -83,23 +83,24 @@
 .ProfileUser_ProfileUser .Name {
 	position: absolute;
 	left: 50%;
-	transform:translate(20%);
+	transform:translate(8%);
 	top: 300px;
-	width: 513px;
+	width: 500px;
 	height: 68px;
 	color : rgba(0,0,0,1);
 	font-family: Oxygen;
 	font-size: 38px;
 	font-weight: 700;
 	line-height: 40px;
+	text-align: left;
 }
 
 .ProfileUser_ProfileUser .Email {
 	position: absolute;
 	left: 50%;
-	transform:translate(17%);
-	top: 360px;
-	width: 513px;
+	transform:translate(9%);
+	top: 400px;
+	width: 500px;
 	height: 68px;
 	color : rgba(0,0,0,1);
 	font-family: Oxygen;

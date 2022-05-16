@@ -12,8 +12,9 @@
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Listberitaukm {
 	position: absolute;
-	left: 400px;
-	top: 145px;
+	left: 50%;
+	transform:translate(-33%);
+	top: 190px;
 	width: 657px;
 	height: 60px;
 	color : rgba(0,0,0,1);
@@ -70,7 +71,8 @@
 
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 {
 	position: absolute;
-	left: 193px;
+	left: 50%;
+	transform:translate(-230%);
 	top: 305px;
 	width: 182px;
 	height: 36px;
