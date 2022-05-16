@@ -9,7 +9,7 @@ import { Component } from 'react/cjs/react.production.min'
 import { useReducer, useState } from "react"
 import { useHistory } from "react-router-dom"
 import axios, { Axios } from 'axios'
-import swal from "sweetalert2"
+import swal from "sweetalert"
 import { Button } from 'react-bootstrap'
 
 const Swal = require('sweetalert2');
@@ -37,7 +37,7 @@ const reducer = (currentState, action) => {
 		case "location":
             return { ...currentState, location: action.upload };
 		case "contact":
-            return { ...currentState, desc: action.upload };
+            return { ...currentState, contact: action.upload };
         case "avatar":
             return { ...currentState, avatar: action.upload };
         default:

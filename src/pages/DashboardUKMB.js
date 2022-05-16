@@ -9,10 +9,17 @@ import Footer from '../components/Footer'
 import { Component } from 'react/cjs/react.production.min'
 import axios from 'axios';
 import BeritaPost3 from '../components/BeritaPost3';
+import { Table } from 'react-bootstrap';
+import TableScrollbar from 'react-table-scrollbar';
+import moment from 'moment'
+import 'moment/locale/id'
+import ReactTimeAgo from 'react-time-ago'
 
 function DashboardUKMB (props){
 
 	const [ukm, setUKM] = useState([]);
+	const [pendaftar, setPendaftar]= useState([]);
+	const [berita, setBerita] = useState([]);
 
 	const [userId, setUserId] = useState(() => {
 		const localData = localStorage.getItem("id");
@@ -20,6 +27,11 @@ function DashboardUKMB (props){
 	});
 
 	const query = 'ukms/' + userId;
+
+	const [date1, setDate1] = useState();
+    const [date2, setDate2] = useState();
+    const [dt1, setDt1] = useState();
+    const [dt2, setDt2] = useState();
 
 
 	useEffect(() => {
@@ -33,10 +45,61 @@ function DashboardUKMB (props){
 			console.log(err);
 		});
 
+		axios
+		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/ukm/${userId}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setPendaftar(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
+
+		axios
+        .get(`${process.env.REACT_APP_BACKEND_URL}articles/ukm/${userId}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setBerita(response.data.data);
+			// setDate1(berita[0].created_at);
+           	// setDate2(berita[1].created_at);
+
+			// if (date1 === null){
+			// 	console.log("Date Null");
+			// }
+
+			// var temp1 = new Date(date1)
+			// var temp2 = new Date(date2)
+
+			// // var temp1 = new Date("2022-05-13T11:40:32.000000Z")
+			// // var temp2 = new Date("2022-05-13T11:40:32.000000Z")
+
+			// // setDt1(temp1);
+			// // setDt2(temp2);
+
+			// setDt1(new Date(temp1));
+			// setDt2(new Date(temp2));
+			
+			// console.log(dt1)
+			// console.log(dt2)
+		  })
+		  .catch((err) => {
+			console.log(err);
+		  });
+
+
 	},[]); 
+
 
 	const ukm_id = ukm.id;
 	console.log(ukm_id);
+	var status = true;
+
+	if(berita.length !== 0){
+		status = true;
+	}
+	else{
+		status = false;
+	}
 
 
 
@@ -128,40 +191,59 @@ function DashboardUKMB (props){
 		</Link>
 		</div>
 		
+		{/*Berita UKM 1*/}
+		{ 
+
+		status === true ? (
+			<div className='BeritaContainer'>
+				<div className='Group302'>
+					<div className='Rectangle20'/>
+					<div className='Group390'>
+						<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013'>{berita[0].subject}</span>
+						<img className='JuaraTaekwondo1' src = {`${process.env.REACT_APP_BACKEND_URL}${berita[0].image}`} />
+						<span className='UnitTaekwondoUnpad'>{berita[0].ukm.name}</span>
+						<span className='Jumat25Maret2022'>3 days ago</span>
+					</div>
+				</div>
+			
+				<div className='Group390_1'>
+					<div className='Rectangle20_1'/>
+					<div className='Group390_2'>
+						<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013_1'>{berita[1].subject}</span>
+						<img className='JuaraTaekwondo1_1' src = {`${process.env.REACT_APP_BACKEND_URL}${berita[1].image}`} />
+						<span className='UnitTaekwondoUnpad_1'>{berita[1].ukm.name}</span>
+						<span className='Jumat25Maret2022_1'>3 days ago</span>
+					</div>
+				</div>
+			</div>
+			) : (
+				<div><span className='BeritaTidakAda'>Belum Ada Berita</span></div>
+			)
+
+		}
+		
+
 		<div className='grup2'>
 		{/*Berita UKM*/}
 		<span className='BeritaUKM_Dash'>Berita UKM</span>
 
-		{/*Berita UKM 1*/}
-		{/* <div className='Group302'>
-			<div className='Rectangle20'/>
-			<div className='Group390'>
-				<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2013</span>
-				<img className='JuaraTaekwondo1' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-				<span className='UnitTaekwondoUnpad'>Unit Taekwondo Unpad</span>
-				<span className='Jumat25Maret2022'>Jumat, 25 Maret 2022</span>
-			</div>
-		</div>
-			
-		<div className='Group390_1'>
-			<div className='Rectangle20_1'/>
-			<div className='Group390_2'>
-				<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013_1'>Unit Taekwondo Unpad berhasil meraih perunggu di Ganesha Cup 2013</span>
-				<img className='JuaraTaekwondo1_1' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-				<span className='UnitTaekwondoUnpad_1'>Unit Taekwondo Unpad</span>
-				<span className='Jumat25Maret2022_1'>Jumat, 25 Maret 2022</span>
-			</div>
+
+
+		
+
+		{/* <div className='BeritaPost3'>
+			<BeritaPost3 idUKM={ukm_id} />
+
+
 		</div> */}
-
-		<BeritaPost3 idUKM={ukm_id} />
-
+		
 		{/*Tanda Atas Bawah*/}
-		<div className='akariconscircletriangleupfill'>
+		{/* <div className='akariconscircletriangleupfill'>
 			<img className='Vector_13' src = {ImgAsset.DashboardUKMB_Vector_13} />
 		</div>
 		<div className='akariconscircletriangledownfill'>
 			<img className='Vector_14' src = {ImgAsset.DashboardUKMB_Vector_14} />
-		</div>
+		</div> */}
 		
 		{/*List Berita*/}
 		<Link to={{pathname:'/listberitaukm', state:{ukm_id}}}>
@@ -184,66 +266,40 @@ function DashboardUKMB (props){
 
 		{/*List Pendaftar*/}
 		<span className='PendaftarUKM'>Pendaftar UKM</span>
-		<div className='Rectangle15'/>
-		
-		{/*Nomor*/}
-		<span className='No'>No</span>
-		<div className='Group240'>
-			<div className='Rectangle16'/>
-		</div>
-		<div className='Group278'>
-			<div className='Rectangle16_1'/>
-		</div>
-		<div className='Group279'>
-			<div className='Rectangle16_2'/>
-		</div>
-		<div className='Group282'>
-			<div className='Rectangle16_3'/>
-		</div>
-		<div className='Group280'>
-			<div className='Rectangle16_4'/>
-		</div>
 
-		{/*Tanggal*/}			
-		<div className='Rectangle18'/>
-		<span className='Tanggal'>Tanggal</span>
-		<div className='Group285'>
-			<div className='Rectangle18_1'/>
-		</div>
-		<div className='Group299'>
-			<div className='Rectangle18_3'/>
-		</div>
-		<div className='Group298'>
-			<div className='Rectangle18_4'/>
-		</div>
-		<div className='Group297'>
-			<div className='Rectangle18_5'/>
-		</div>
-		<div className='Group296'>
-			<div className='Rectangle18_6'/>
-		</div>
+		<div className='TableContainer'>
+		<TableScrollbar height="400px"> 
+			<Table striped bordered hover variant="light" style={{width:463}}>
+				<thead>
+					<tr style={{borderColor:'black'}}>
+					<th style={{width:10, textAlign:'center', backgroundColor:'#224957', color:'white'}}>No</th>
+					<th style={{width:280, textAlign:'center', backgroundColor:'#224957', color:'white'}}>Nama</th>
+					<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>Tanggal</th>
+					{/* <th>Username</th> */}
+					</tr>
+				</thead>
+				<tbody style={{borderColor:'#224957', backgroundColor:'white'}}>
+					{
+						pendaftar.map((post, i) =>{
+							const date = new Date(post.created_at)
+							i *= 1;
+					
+							return (
+								<tr >
+									<td style={{textAlign:'center'}}>{i + 1}</td>
+									<td style={{textAlign:'center'}}>{post.user.name}</td>
+									<td style={{textAlign:'center'}}>{moment(date).format("DD-MM-YYYY")}</td>
+								</tr>
+							)
+			
+						})
+				
+					}
 
-		{/*Nama*/}			
-		<div className='Group391'>
-			<div className='Rectangle17'/>
-			<span className='Nama'>Nama</span>
-		</div>
-		<div className='Group357'>
-			<div className='Group283'>
-				<div className='Rectangle18_7'/>
-			</div>
-			<div className='Group284'>
-				<div className='Rectangle18_8'/>
-				<div className='Group283_1'>
-					<div className='Rectangle18_9'/>
-					<div className='Group283_2'>
-						<div className='Rectangle18_10'/>
-						<div className='Group283_3'>
-							<div className='Rectangle18_11'/>
-						</div>
-					</div>
-				</div>
-			</div>
+				</tbody>
+				</Table>
+			</TableScrollbar>
+
 		</div>
 
 		<Link to='/listpendaftarukm'>

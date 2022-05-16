@@ -5535,3 +5535,45 @@
 	width: 87.49892528587397%;
 	height: 62.499762199181966%;
 }
+
+.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .TableContainer1 {
+	position: absolute;
+	left: 160px;
+	top: 340px;
+	width: 990px;
+	height: 470px;
+	/* background-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+	border-radius:3px;
+	border-color: black;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box; */
+} 
+
+.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .TableContainer2 {
+	position: absolute;
+	left: 160px;
+	top: 880px;
+	width: 990px;
+	height: 470px;
+	/* background-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
+	/* border-radius:3px;
+	border-color: black;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box; */
+} 
+
+.ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM .TableContainer3 {
+	position: absolute;
+	left: 160px;
+	top: 1420px;
+	width: 990px;
+	height: 470px;
+	/* background-color: rgba(34.00000177323818,73.00000324845314,87.00000241398811,1); */
+	/* border-radius:3px;
+	border-color: black;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,1);
+	box-sizing: border-box; */
+} 

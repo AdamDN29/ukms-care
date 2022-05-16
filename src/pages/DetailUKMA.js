@@ -20,6 +20,7 @@ function DetailUKMA (props){
 
 	const [ukm, setUKM] = useState([]);
 	const [berita, setBerita] = useState([]);
+	const [status, setStatus] = useState();
 
 	const date = berita.created_at
 	const dt = new Date(date)
@@ -53,15 +54,24 @@ function DetailUKMA (props){
 		  .catch((err) => {
 			console.log(err);
 		  });
+
+		axios
+		  .get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/status/${ukm_id}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setStatus(response.data.data);
+		  })
+		  .catch((err) => {
+			console.log(err);
+		  });
 	  }, []); 
 	  console.log(berita.created_at);
 	
 	const StatusProfile = CheckUser();
-	 console.log(StatusProfile);
+	console.log(StatusProfile);
 
 	const pendaftaranHandler = () => {
 		
-
 		if(userRole === null){
 			swal({
 				title: "Silahkan Sign In Untuk Melakukan Pendaftaran",
@@ -77,6 +87,15 @@ function DetailUKMA (props){
 			});
 		}
 		else {
+			if(status === false){
+				swal({
+					title: "UKM Sedang Tidak Melakukan Pendaftaran",
+					icon: "warning",
+					dangerMode: true,
+				});
+				return;
+			}
+
 			if(StatusProfile === true){
 				window.location.href = `/daftarukm/${ukm_id}`;
 			}

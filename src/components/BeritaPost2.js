@@ -61,17 +61,6 @@ export default function BeritaPost2 () {
 					const dt = new Date(date)
 					let name = '';
 
-					// if (post.ukm_id === ukm.id){
-					// 	name = ukm.name;
-					// }
-					// console.log(post.ukm_id);
-					// console.log(ukm.id);
-
-					// axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms/${post.ukm_id}`)
-					// .then((response)=>{
-					// 	console.log(response.data.data);
-					// 	ukm_name = response.data.data;
-					// })
 					return(
 					
 						<Col key={post.id}>

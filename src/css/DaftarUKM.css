@@ -5,7 +5,7 @@
 	top: 0px;
 	margin: auto;
 	width: 100%;
-	height: 1684px;
+	height: 1830px;
 	background : rgba(255,255,255,1);
 	border: 1px solid rgba(0,0,0,1);
 	box-sizing: border-box;
@@ -16,14 +16,14 @@
 	transform:translate(-50%);
 	top: 265px;
 	width: 950px;
-	height: 1145px;
+	height: 1330px;
 }
 .DaftarUKM_DaftarUKM .Vectors {
 	position: absolute;
 	right: 0px;
 	top: 80px;
 	width: 100px;
-	height: 1464px;
+	height: 1610px;
 	mix-blend-mode: normal;
 }
 .DaftarUKM_DaftarUKM .Vectors .Vector {
@@ -31,21 +31,21 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1464px;
+	height: 1610px;
 }
 .DaftarUKM_DaftarUKM .Vectors .Vector_1 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1464px;
+	height: 1610px;
 }
 .DaftarUKM_DaftarUKM .Vectors_1 {
 	position: absolute;
 	left: 0px;
 	top: 80px;
 	width: 100px;
-	height: 1464px;
+	height: 1610px;
 	mix-blend-mode: normal;
 }
 .DaftarUKM_DaftarUKM .Vectors_1 .Vector_2 {
@@ -53,14 +53,14 @@
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1464px;
+	height: 1610px;
 }
 .DaftarUKM_DaftarUKM .Vectors_1 .Vector_3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100px;
-	height: 1464px;
+	height: 1610px;
 }
 .DaftarUKM_DaftarUKM .daftarukm {
 	position: absolute;
@@ -218,39 +218,12 @@
 	font-weight: 700;
 	line-height: 28.125px;
 }
-.DaftarUKM_DaftarUKM .Group573 {
-	position: absolute;
-	left: -400px;
-	top: 894px;
-	width: 268px;
-	height: 83px;
-}
-.DaftarUKM_DaftarUKM .Group573 .Rectangle1_4 {
+
+.DaftarUKM_DaftarUKM .formTitle {
 	position: absolute;
 	left: 0px;
-	top: 33px;
-	width: 268px;
-	height: 50px;
-	background : rgba(255,255,255,1);
-	border-radius: 5px;
-}
-.DaftarUKM_DaftarUKM .Group573 .MembacadanTidur {
-	position: absolute;
-	left: 0px;
-	top: 46px;
-	width: 222px;
-	height: 25px;
-	color : rgba(0,0,0,1);
-	font-family: Oxygen;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 23.4375px;
-}
-.DaftarUKM_DaftarUKM .Group573 .Hobi {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 86px;
+	top: 10px;
+	width: 400px;
 	height: 30px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -258,6 +231,102 @@
 	font-weight: 700;
 	line-height: 28.125px;
 }
+.DaftarUKM_DaftarUKM .formText1 {
+	position: absolute;
+	left: -400px;
+	top: 890px;
+	width: 268px;
+	height: 83px;
+}
+.DaftarUKM_DaftarUKM .formText2 {
+	position: absolute;
+	left: -400px;
+	top: 985px;
+	width: 268px;
+	height: 83px;
+}
+.DaftarUKM_DaftarUKM .formText3 {
+	position: absolute;
+	left: -400px;
+	top: 1080px;
+	width: 268px;
+	height: 83px;
+}
+
+.DaftarUKM_DaftarUKM .formText4 {
+	position: absolute;
+	left: -400px;
+	top: 1175px;
+	width: 268px;
+	height: 83px;
+}
+
+.DaftarUKM_DaftarUKM .formText5 {
+	position: absolute;
+	left: -400px;
+	top: 1270px;
+	width: 268px;
+	height: 83px;
+}
+
+.DaftarUKM_DaftarUKM .fileContainer {
+	position: absolute;
+	top: 50px;
+	/* left: -400px;
+	top: 1365px; */
+	background-color: white;
+	width: 290px;
+	height: 50px;
+	border-radius: 5px;
+	
+}
+
+.DaftarUKM_DaftarUKM .fileContainer .InputFile {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	/* left: -400px;
+	top: 1365px; */
+	left : 20px;
+	
+}
+
+.DaftarUKM_DaftarUKM .formFile1 {
+	position: absolute;
+	left: -400px;
+	top: 1365px;
+	width: 268px;
+	height: 83px;
+}
+
+.DaftarUKM_DaftarUKM .formFile2 {
+	position: absolute;
+	left: -400px;
+	top: 1470px;
+	width: 268px;
+	height: 83px;
+}
+
+.DaftarUKM_DaftarUKM .formFile3 {
+	position: absolute;
+	left: -90px;
+	top: 1365px;
+	width: 268px;
+	height: 83px;
+}
+
+.DaftarUKM_DaftarUKM .formFile4 {
+	position: absolute;
+	left: -90px;
+	top: 1470px;
+	width: 268px;
+	height: 83px;
+}
+
+
+
+
+
 .DaftarUKM_DaftarUKM .Group574 {
 	position: absolute;
 	left: -400px;
@@ -535,7 +604,7 @@
 	position: absolute;
 	left: 50%;
 	transform:translate(130%);
-	top: 1431px;
+	top: 1610px;
 	width: 200px;
 	height: 50px;
 }
@@ -627,7 +696,7 @@
 	position: absolute;
 	left: 50%;
 	transform:translate(20%);
-	top: 1431px;
+	top: 1610px;
 	width: 200px;
 	height: 50px;
 }
@@ -737,4 +806,74 @@
 	border-radius: 5px;
 	padding: 12px 20px;
 	font-family: Oxygen;
+}
+
+.DaftarUKM_DaftarUKM .textFieldContainer {
+	position: absolute;
+	left: -200px;
+	top: 900px;
+	/* width: 800px;
+	height: 100px; */
+	/* background : rgba(255,255,255,1); */
+	/* border-radius: 5px;
+	padding: 12px 20px;
+	font-family: Oxygen; */
+}
+
+.Frame338_2 {
+	position: relative;
+	/* left: 160px; */
+	/* left: 50%;
+	transform: translate(-50%); */
+	/* top: 350px; */
+	width: 1120px;
+	/* height: 350px; */
+    
+	display: flex;
+    flex: 1;
+    border-radius: 5px;
+    margin-bottom : 5px;
+	/* flex-direction: column; */
+	box-sizing: border-box;
+}
+.Frame338_2 .Alltickets_3 {
+	position: relative;
+	margin-bottom: 10px;
+	width: 1120px;
+	height: 350px;
+	/* border-radius: 10px;
+	border: 1px solid rgba(255,255,255,1); */
+}
+.Frame338_2 .Alltickets_3 .cardsdefault_3 {
+	position: absolute;
+	left: 0px;
+	top: -2.353515625px;
+	width: 1120.709716796875px;
+	height: 350.35400390625px;
+}
+
+.cardsdefault_3 .TextForm {
+	position: absolute;
+	left: -200px;
+	top: 44px;
+	width: 600px;
+	height: 50px;
+	background : rgba(255,255,255,1);
+	border-radius: 5px;
+	padding: 12px 20px;
+	font-family: Oxygen;
+	font-size: 21px;
+}
+
+.cardsdefault_3 .formName {
+	position: absolute;
+	left: -200px;
+	top: 5px;
+	width: 107px;
+	height: 30px;
+	color : rgba(255,255,255,1);
+	font-family: Oxygen;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 28.125px;
 }
