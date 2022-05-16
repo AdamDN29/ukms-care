@@ -10,8 +10,17 @@
 }
 
 .BeritaUKMB_BeritaUKMB .beritaukm{
-	text-align: center;
-	color: black;
+	position: absolute;
+	left: 50%;
+	transform:translate(-42%);
+	top: 145px;
+	width: 487px;
+	height: 60px;
+	color : rgba(0,0,0,1);
+	font-family: Oxygen;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 60px;
 }
 
 .BeritaUKMB_BeritaUKMB .Rectangle40 {

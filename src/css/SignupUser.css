@@ -93,8 +93,9 @@
 
 .SignupUser_SignupUser .Loginbtn .Register1 {
 	position: absolute;
-	left: 287px;
-	top: 15.63916015625px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
 	width: 51.608154296875px;
 	height: 24.06005859375px;
 	color : rgba(255,255,255,1);
@@ -149,7 +150,7 @@
 	position: absolute;
 	left: 810px;
 	top: 30px;
-	width: 271px;
+	width: 300px;
 	height: 111px;
 	color : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	font-family: Lexend Deca;

@@ -22,6 +22,9 @@ import BuatBeritaUKM from '../pages/BuatBeritaUKM';
 import ListPendaftarUKMAdminUKM from '../pages/ListPendaftarUKMAdminUKM';
 import ListBeritaUKMAdminUKM from '../pages/ListBeritaUKMAdminUKM';
 import EditBeritaUKM from '../pages/EditBeritaUKM';
+import AboutUs from '../pages/AboutUs';
+import Help from '../pages/Help';
+
 
 function RouterDOM () {
 	const [idUser, setIdUser] = useState(false);
@@ -95,8 +98,11 @@ function RouterDOM () {
 				<Route exact path="/listpendaftarukm"><ListPendaftarUKMAdminUKM /></Route>
 				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>
 				
+				
 			</Switch>
-			{/* <Footer /> */}
+			<Route exact path="/AboutUs"><AboutUs /></Route>
+			<Route exact path="/Help"><Help /></Route>
+			
 		</Router>
 	);
 }
