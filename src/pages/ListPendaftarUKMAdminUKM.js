@@ -119,8 +119,6 @@ export default function ListPendaftarUKMAdminUKM (){
 		console.log(nameFile4)
 	}
 
-
-	// const [ekspor, setEkspor] = useState();
 	var nameFile = "Data Pendaftaran" + userName + ".xlsx";
 
 	const eksporHandle = () => {

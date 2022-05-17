@@ -234,33 +234,32 @@ export default function DaftarUKM (props) {
 		console.log(dataForm.get('file3'));
 		console.log(dataForm.get('file4'));
 
-		// axios
-        //     .post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations`, dataForm
-		// 	)
-        //     .then((response) => {
-        //         setDisable(false);
-        //         console.log(response)
-        //         console.log("Daftar Berhasil")
-		// 		Swal.fire({
-		// 			icon: 'success',
-		// 			title: 'Pendaftaran Berhasil',
-		// 			allowOutsideClick: false,
-		// 			allowEscapeKey: false,
-		// 			text: 'Silahkan Masukkan Password',
-		// 			confirmButtonColor: '#21c177',
-		// 			preConfirm: () => {
-		// 				window.location.href = "/detailukm/" + ukm_id;
-		// 			}	  
-		// 		}) 		
-        //     })
-        //     .catch((err) => {
-        //         swal({
-        //             title: "Pendaftaran Gagal",
-        //             icon: "warning",
-        //             dangerMode: true,
-        //         })
-        //         console.log(err)
-        //     })
+		axios
+            .post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations`, dataForm
+			)
+            .then((response) => {
+                setDisable(false);
+                console.log(response)
+                console.log("Daftar Berhasil")
+				Swal.fire({
+					icon: 'success',
+					title: 'Pendaftaran Berhasil',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						window.location.href = "/detailukm/" + ukm_id;
+					}	  
+				}) 		
+            })
+            .catch((err) => {
+                swal({
+                    title: "Pendaftaran Gagal",
+                    icon: "warning",
+                    dangerMode: true,
+                })
+                console.log(err)
+            })
 	}
 
     return (

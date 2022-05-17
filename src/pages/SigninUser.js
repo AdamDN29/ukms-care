@@ -75,7 +75,6 @@ export default function SigninUser (props) {
 					title: 'Berhasil Login',
 					allowOutsideClick: false,
 					allowEscapeKey: false,
-					text: 'Silahkan Masukkan Password',
 					confirmButtonColor: '#21c177',
 					preConfirm: () => {
 						window.location.href = "/homepage";
@@ -84,12 +83,15 @@ export default function SigninUser (props) {
 			} 
 		  })
 		  .catch((err) => {
-			console.log(err);
-			swal({
-				title: "Login Gagal ",
-				icon: "warning",
-				dangerMode: true,
-			  });
+			console.log(err.response);
+			Swal.fire({
+				icon: 'error',
+				title: 'Login Gagal',
+				text: 'Silahkan Cek Email Anda untuk Verifikasi',
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				confirmButtonColor: '#21c177',
+			}) 			
 		  });
 	  };
 

@@ -40,7 +40,7 @@ export default function SigninAdmin (props) {
 		  .then((response) => {
 			console.log(response);
 			if (response.status === 200) {
-				swal({title: "Selamat Anda Berhasil Login", type: "succes"});
+						
 				let getID = '';
 				let getUser = '';
 				const temp = response.data.data;
@@ -53,7 +53,16 @@ export default function SigninAdmin (props) {
 				localStorage.setItem("user", JSON.stringify(getUser));
       			localStorage.setItem("role", JSON.stringify(1));
 
-				window.location.href = '/homepage';
+				Swal.fire({
+					icon: 'success',
+					title: 'Berhasil Login',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						window.location.href = "/homepage";
+					}	  
+				}) 	
 			} 
 		  })
 		  .catch((err) => {

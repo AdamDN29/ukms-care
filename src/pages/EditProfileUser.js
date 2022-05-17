@@ -73,6 +73,7 @@ export default function EditProfileUser (props) {
 	const submitProfile = (e) => {
 		e.preventDefault();
 		setDisable(true);
+		console.log(user);
 	
 		const dataForm = new FormData();
 		dataForm.append("id", idUser);
@@ -113,42 +114,42 @@ export default function EditProfileUser (props) {
 			return;
 		}
 		
-
 		if (user.email !== "" && user.password !== ""){
 			dataForm.append("password", user.password);
 			dataForm.append("email", user.email);
 		}
-
 		
-		if (user.email === "" && user.password !== ""){
+		if (user.password !== ""){
 			dataForm.append("password", user.password);
+			console.log(dataForm.get("password"));
 		}
+		console.log(dataForm.get("password"));
 
-		axios
-		  .post(`${process.env.REACT_APP_BACKEND_URL}profiles/edit/${idUser}`, dataForm)
-		  .then((response) => {
-			console.log(response)
-			setDisable(false);
-			Swal.fire({
-				icon: 'success',
-				title: 'Edit Profile Berhasil',
-				allowOutsideClick: false,
-				allowEscapeKey: false,
-				text: 'Silahkan Masukkan Password',
-				confirmButtonColor: '#21c177',
-				preConfirm: () => {
-					window.location.href = "/profileuser";
-				}	  
-			}) 		
-		  })
-		  .catch((err) => {
-			swal({
-				title: "Edit Profile Gagal",
-				icon: "warning",
-				dangerMode: true,
-			})
-			return;
-		  });
+
+		// axios
+		//   .post(`${process.env.REACT_APP_BACKEND_URL}profiles/edit/${idUser}`, dataForm)
+		//   .then((response) => {
+		// 	console.log(response)
+		// 	setDisable(false);
+		// 	Swal.fire({
+		// 		icon: 'success',
+		// 		title: 'Edit Profile Berhasil',
+		// 		allowOutsideClick: false,
+		// 		allowEscapeKey: false,
+		// 		confirmButtonColor: '#21c177',
+		// 		preConfirm: () => {
+		// 			window.location.href = "/profileuser";
+		// 		}	  
+		// 	}) 		
+		//   })
+		//   .catch((err) => {
+		// 	swal({
+		// 		title: "Edit Profile Gagal",
+		// 		icon: "warning",
+		// 		dangerMode: true,
+		// 	})
+		// 	return;
+		//   });
 		
 	};
 

@@ -85,7 +85,7 @@ export default function SignupUser () {
 			  if (response.status === 200) {
 				Swal.fire({
 					title: 'Registrasi Akun Telah Berhasil',
-					text: "Silahkan Login Untuk Melanjutkan",
+					text: "Silahkan Cek Email Anda untuk Verifikasi Akun",
 					allowOutsideClick: false,
 					allowEscapeKey: false,
 					confirmButtonText: 'Sign In',
