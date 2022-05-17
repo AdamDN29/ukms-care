@@ -9,6 +9,7 @@ import { Component } from 'react/cjs/react.production.min'
 import { useState, useEffect, useReducer } from "react";
 import Switch from "react-switch";
 import axios from 'axios';
+import BackButton from '../components/BackButton'
 import { Button } from 'react-bootstrap'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 
@@ -217,6 +218,9 @@ export default function AturPendaftaranUKM (){
 		</div>
 		<Navbar/>
 		
+		<Link to='/listpendaftarukm'>
+			<BackButton/>
+		</Link> 
 		<span className='AturPendaftaranUKM_1'>Atur Pendaftaran UKM</span>
 		
 		
@@ -228,7 +232,11 @@ export default function AturPendaftaranUKM (){
 
 
 		<span className='Teks'>Teks</span>
+		
 		{/* Default */}
+		
+		<div className='grup1'>
+		
 		<img className='Rectangle54' src = {ImgAsset.AturPendaftaranUKM_Rectangle54} />
 		<img className='Rectangle55' src = {ImgAsset.AturPendaftaranUKM_Rectangle55} />
 		<span className='Nama'>Nama</span>
@@ -329,9 +337,14 @@ export default function AturPendaftaranUKM (){
 			</div>
 		</Button>
 
+		</div>
+
 		
 		{/* File */}
 		<span className='File'>File</span>
+		
+	
+
 		<img className='Rectangle55_8' src = {ImgAsset.AturPendaftaranUKM_Rectangle55_8} />
 		<div className='Group570'>
 			{/* File 1 */}

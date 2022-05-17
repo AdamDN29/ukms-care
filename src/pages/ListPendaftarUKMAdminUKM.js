@@ -12,6 +12,7 @@ import TableScrollbar from 'react-table-scrollbar';
 import moment from 'moment'
 import 'moment/locale/id'
 import axios from 'axios';
+import BackButton from '../components/BackButton'
 import { Button } from 'react-bootstrap';
 import BinConverter from 'bin-converter';
 import fileDownload from 'js-file-download'
@@ -155,6 +156,9 @@ export default function ListPendaftarUKMAdminUKM (){
 			<img className='Vector_4' src = {ImgAsset.ListPendaftarUKMAdminUKM_Vector_4} />
 			<img className='Vector_5' src = {ImgAsset.ListPendaftarUKMAdminUKM_Vector_5} />
 		</div>
+		<Link to='/dashboardukm'>
+			<BackButton/>
+		</Link> 
 		<span className='ListPendaftarukm'>List Pendaftar UKM</span>
 	
 		

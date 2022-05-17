@@ -396,4 +396,8 @@ export default {
 	ListPendaftarUKMAdminUKM_Vector_4: require('./ListPendaftarUKMAdminUKM_Vector_4.png').default,
 	ListPendaftarUKMAdminUKM_Vector_5: require('./ListPendaftarUKMAdminUKM_Vector_5.png').default,
 	ListPendaftarUKMAdminUKM_Vector_6: require('./ListPendaftarUKMAdminUKM_Vector_6.png').default,
+	gambar_01: require('./gambar_01.png').default,
+	gambar_02: require('./gambar_02.png').default,
+	gambar_03: require('./gambar_03.png').default,
+	gambar_04: require('./gambar_04.png').default,
 }

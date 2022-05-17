@@ -62,7 +62,7 @@ function BeritaSingle (props) {
 				</span>
 			</div>
 		
-			<Link to='/beritaukmb/articles'>
+			<Link to='/beritaukm/articles'>
 				<BackButton/>
 			</Link>
 

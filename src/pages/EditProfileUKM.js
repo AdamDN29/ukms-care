@@ -10,6 +10,7 @@ import { useReducer, useState } from "react"
 import { useHistory } from "react-router-dom"
 import axios, { Axios } from 'axios'
 import swal from "sweetalert"
+import BackButton from '../components/BackButton'
 import { Button } from 'react-bootstrap'
 
 const Swal = require('sweetalert2');
@@ -280,25 +281,11 @@ export default function EditProfileUKM (props){
 				</div>
 			</div>
 		</Button>
-		<div className='Group323'>
-			<div className='Group384'>
-				<div className='Group385'>
-					<div className='Group239'>
-						<div className='Group294'>
-							<div className='Group293'>
-								<div className='Rectangle13'/>
-							</div>
-						</div>
-					</div>
-					<div className='Group322'>
-						<div className='Group321'>
-							<span className='Kembali'>Kembali</span>
-						</div>
-						<img className='Vector_7' src = {ImgAsset.EditProfileUKM_Vector_7} />
-					</div>
-				</div>
-			</div>
-		</div>
+
+		<Link to='/dashboardukm'>
+			<BackButton/>
+		</Link> 
+
 		</div>
 
 		<Footer/>

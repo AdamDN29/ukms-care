@@ -146,7 +146,7 @@ export default function HomepageA_1 (props) {
 
 		
 
-		<Link to='/ukmunpada/ukms'>
+		<Link to='/ukmunpad/ukms'>
 			<span className='UKMSelengkapnya'>UKM Selengkapnya  ➝</span>
 		</Link>
 
@@ -157,7 +157,7 @@ export default function HomepageA_1 (props) {
 			<BeritaPost2 />
 		</div>
 
-			<Link to='/beritaukmb/articles'>
+			<Link to='/beritaukm/articles'>
 				<span className='BeritaSelengkapnya'>Berita Selengkapnya  ➝</span>
 			</Link>
 		</div>
