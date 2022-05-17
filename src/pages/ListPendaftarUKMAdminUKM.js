@@ -120,31 +120,33 @@ export default function ListPendaftarUKMAdminUKM (){
 	}
 
 
-	const [ekspor, setEkspor] = useState();
-	var nameFile = "Data Pendaftar " + userName
+	// const [ekspor, setEkspor] = useState();
+	var nameFile = "Data Pendaftaran" + userName + ".xlsx";
 
 	const eksporHandle = () => {
 	
 		axios
-		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/export/${userId}`)
+		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/export/${userId}`,
+		{
+			responseType: 'arraybuffer',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/pdf'
+            }
+		})
 		  .then((response) => {
-			console.log(response);
-	
-			setEkspor(response.data);
-			console.log(ekspor)
-			var nameFile = "Data Pendaftar " + userName
-
-			fileDownload(ekspor, nameFile)			
+			const url = window.URL.createObjectURL(new Blob([response.data]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', nameFile); //or any other extension
+            document.body.appendChild(link);
+            link.click();		
 		  })
 		.catch((err) => {
 			console.log(err);
 		});
 	}
 
-	console.log(ekspor);
-
-
-	
     return (
 	<div className='ListPendaftarUKMAdminUKM_ListPendaftarUKMAdminUKM'>
 		<Navbar/>
