@@ -15,6 +15,7 @@ import axios from 'axios';
 import { Button } from 'react-bootstrap';
 import BinConverter from 'bin-converter';
 import fileDownload from 'js-file-download'
+import { saveAs } from 'file-saver'
 
 const BIN = require("bin-converter");
 
@@ -119,16 +120,20 @@ export default function ListPendaftarUKMAdminUKM (){
 
 
 	const [ekspor, setEkspor] = useState();
+	var nameFile = "Data Pendaftar " + userName
 
 	const eksporHandle = () => {
+	
 		axios
 		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/export/${userId}`)
 		  .then((response) => {
-			console.log(response.data);
+			console.log(response);
+	
 			setEkspor(response.data);
+			console.log(ekspor)
 			var nameFile = "Data Pendaftar " + userName
 
-			fileDownload(response.data, nameFile)			
+			fileDownload(ekspor, nameFile)			
 		  })
 		.catch((err) => {
 			console.log(err);

@@ -9,7 +9,6 @@ import Footer from '../components/Footer'
 import BeritaPost from '../components/BeritaPost'
 import SearchBerita from '../components/SearchBerita'
 import ReactPaginate from "react-paginate";
-import GetToken from '../API/GetToken'
 import axios from 'axios';
 
 export default function BeritaUKMB (props) {

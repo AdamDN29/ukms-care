@@ -2,7 +2,6 @@ import React from 'react'
 import '../css/Navbar.css'
 import * as SVGAsset from '../SVG/index'
 import {Link} from 'react-router-dom'
-import UseNavbar from "../hook/UseNavbar";
 import UseLogin from "../hook/UseLogin";
 import SigninUser from '../pages/SigninUser'
 import SignupUser from '../pages/SignupUser'
@@ -13,13 +12,6 @@ import swal from "sweetalert";
 import Cookies from "js-cookie";
 import ImgAsset from '../resources'
 import { Dropdown } from 'react-bootstrap'
-
-// import {
-// 	Dropdown,
-// 	DropdownToggle,
-// 	DropdownMenu,
-// 	DropdownItem,
-//   } from "reactstrap";
 
 export default function Navbar () {
 

@@ -12,7 +12,6 @@ import ReactTimeAgo from 'react-time-ago'
 import axios from "axios";
 import { Button } from 'react-bootstrap';
 import swal from "sweetalert";
-import GetToken from '../API/GetToken';
 
 function DetailUKMA (props){
 	const { ukm_id } = props.match.params;
