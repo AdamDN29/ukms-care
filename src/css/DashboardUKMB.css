@@ -74,7 +74,7 @@
 
 .DashboardUKMB_DashboardUKMB .grup1 .Rectangle12 {
 	position: absolute;
-	left: -420px;
+	left: -390px;
 	top: 150px;
 	width: 280px;
 	height: 250px;
@@ -243,7 +243,7 @@
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group239 {
 	position: absolute;
-	left: -390px;
+	left: -350px;
 	top: 670px;
 	width: 200px;
 	height: 55px;
@@ -340,12 +340,12 @@
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle01 {
 	position: absolute;
-	left: 0px;
+	left: 20px;
 	top: 0px;
-	width: 570px;
+	width: 530px;
 	height: 110px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-	border-radius: 20px;
+	border-radius: 30px;
 }
 
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle01 .UKMName {
