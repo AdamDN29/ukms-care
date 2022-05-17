@@ -198,9 +198,9 @@
 .ProfileUser_ProfileUser .Fakultas_User {
 	position: absolute;
 	left: 50%;
-	transform:translate(-45%);
+	transform:translate(-15%);
 	top: 865px;
-	width: 170px;
+	width: 500px;
 	height: 68px;
 	color : rgba(0,0,0,1);
 	font-family: Oxygen;
