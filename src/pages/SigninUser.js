@@ -1,47 +1,54 @@
 import React from 'react'
 import '../css/SigninUser.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import { loginAPI } from "../API/authAPI";
-import { useState, useEffect } from "react";
 import UseLogin from "../hook/UseLogin";
 import swal from "sweetalert";
 import Cookies from "js-cookie";
 
+const Swal = require('sweetalert2');
+
 export default function SigninUser (props) {
 
 	const [username, password, usernameHandler, passwordHandler] = UseLogin();
-	// const [userRole, setUserRole] = useState(() => {
-	// 	const localData = localStorage.getItem("role");
-	// 	console.log(localData);
-	// 	// if (localData !== null){
-	// 	// 	return localData ? JSON.parse(localData) : null; 
-	// 	// }
-		
-	// });
-	// const [userId, setUserId] = useState(() => {
-	// 	const localData = localStorage.getItem("id");
-	// 	// if (localData !== null){
-	// 	// 	return localData ? JSON.parse(localData) : null;
-	// 	// }
-	// });
-	// const [email, setEmail] = useState();
-	// // const [email, setEmail] = useState(() => {
-	// // 	// const localData = localStorage.getItem("email");
-	// // 	// if (localData !== null){
-	// // 	// 	return localData ? JSON.parse(localData) : null;
-	// // 	// }
-	// // });
-	// const [jwt, setJwt] = useState(() => {
-	// 	const cookie = Cookies.get("jwt");
-	// 	return cookie ? cookie : false;
-	// });
 
 	// post login
 	const login = () => {
+		var A = [username]
+		var B = ['@mail.unpad.ac.id']
+
+		const checkUsername = A.filter( 
+			el => B.some(obj => el.toLowerCase().includes(obj.toLowerCase()))
+		)
+
+		if (username === "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Silahkan Masukkan Email',
+				confirmButtonColor: '#c41607',	  
+			}) 
+			return;	}
+			if (checkUsername.length === 0){
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: 'Silahkan Masukkan Email Unpad',
+					confirmButtonColor: '#c41607',	  
+				}) 
+				return;	}
+			if (password === "") {
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: 'Silahkan Masukkan Password',
+					confirmButtonColor: '#c41607',	  
+				}) 
+				return;	}
+				
 		const payload = {
 		  email: username,
 		  password: password,
@@ -51,9 +58,7 @@ export default function SigninUser (props) {
 		  .post("login", payload)
 		  .then((response) => {
 			console.log(response);
-			console.log(response.status)
 			if (response.status === 200) {
-				swal({title: "Selamat Anda Berhasil Login", type: "succes"});
 				let getID = '';
 				let getUser = '';
 				const temp = response.data.data;
@@ -61,55 +66,22 @@ export default function SigninUser (props) {
 					getID = data.id
 					getUser = data.email
 				});
-				// setEmail(response.data.data.email);
-				// setJwt(response.data.jwt);
-				// setUserRole(2);
-				// setUserId(3);
-				// console.log(email);
-				// console.log(jwt);
-				// console.log(userRole);
-				// console.log(userId);
-
 				localStorage.setItem("id", JSON.stringify(getID));
 				localStorage.setItem("user", JSON.stringify(getUser));
       			localStorage.setItem("role", JSON.stringify(2));
 
-				window.location.href = '/homepage';
-				
-			//   if (response.data.errors.message == "Email belum terdaftar") {
-			// 	swal({
-			// 	  title: "Email belum terdaftar",
-			// 	  icon: "warning",
-			// 	  dangerMode: true,
-			// 	});
-			//   } else if (
-			// 	response.data.errors.message == "Email dan password tidak cocok"
-			//   ) {
-			// 	swal({
-			// 	  title: "Email dan password tidak cocok",
-			// 	  icon: "warning",
-			// 	  dangerMode: true,
-			// 	});
-			//   } else {
-			// 	swal({
-			// 	  title: "Harap Isi Data Terlebih Dahulu",
-			// 	  icon: "warning",
-			// 	  dangerMode: true,
-			// 	});
-			//   }
+				Swal.fire({
+					icon: 'success',
+					title: 'Berhasil Login',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					text: 'Silahkan Masukkan Password',
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						window.location.href = "/homepage";
+					}	  
+				}) 			
 			} 
-			// else {
-			//   swal("Selamat Anda Berhasil Login");
-			//   console.log(response);
-			//   setEmail(response.data.email);
-			//   setJwt(response.data.jwt);
-			//   setUserRole(response.data.role);
-			//   setUserId(response.data.user);
-			//   console.log(email);
-			//   console.log(jwt);
-			//   console.log(userRole);
-			//   console.log(userId);
-			// }
 		  })
 		  .catch((err) => {
 			console.log(err);
@@ -122,26 +94,9 @@ export default function SigninUser (props) {
 	  };
 
 	const enterSumbit = (e) => {
-		
-	    // if (e.keyCode === 13) {
 			console.log("enter login");
 			login();
-		
-		//   }
 	};
-
-	// useEffect(() => {
-	// 	// props.idUser(userId);
-	// 	if (jwt === false && userId == null && email == null) {
-	// 	  Cookies.remove("jwt", { path: "" });
-	// 	  localStorage.clear();
-	// 	} else {
-	// 	  Cookies.set("jwt", jwt, { path: "" });
-	// 	  localStorage.setItem("id", JSON.stringify(userId));
-	// 	  localStorage.setItem("email", JSON.stringify(email));
-	// 	  localStorage.setItem("role", JSON.stringify(userRole));
-	// 	}
-	//   }, [userId, props, jwt, email, userRole]);
 
 	return (
 	<div className='SigninUser_SigninUser'>
@@ -152,6 +107,7 @@ export default function SigninUser (props) {
 
 		
 
+		<span className='Signin'>Sign In</span>
 		<div className='Group220'>
 			{/*Atas*/}
 			<div className='Rectangle6'/>
@@ -201,7 +157,6 @@ export default function SigninUser (props) {
 		</div>
 
 		{/*Button Login*/}
-		{/* <Link to='/homepagea_1'> */}
 		<Button className='Loginbtn'
 			onClick={() => {
 				login();
@@ -210,9 +165,7 @@ export default function SigninUser (props) {
 			{/* <div className='Rectangle'/> */}
 			<span className='login'>Login</span>
 		</Button>
-		{/* </Link> */}
 		
-		<span className='Signin'>Sign in</span>
 		<span className='Belumpunyaakun'>Belum punya akun? </span>
 		<Link to='/signupuser'>
 			<span className='Signup'>Sign up!</span>

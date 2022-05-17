@@ -72,7 +72,7 @@
 .ProfileUser_ProfileUser .Image {
 	position: absolute;
 	left: 50%;
-	transform:translate(-100%);
+	transform:translate(-110%);
 	top: 150px;
 	width: 400 px;
 	height: 400 px;
@@ -273,10 +273,10 @@
 	font-weight: 300;
 	line-height: 24px;
 }
-.ProfileUser_ProfileUser ._2019 {
+.ProfileUser_ProfileUser .Angkatan_User {
 	position: absolute;
 	left: 50%;
-	transform:translate(-50%);
+	transform:translate(-60%);
 	top: 1265px;
 	width: 126px;
 	height: 114px;

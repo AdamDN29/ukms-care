@@ -1,21 +1,22 @@
 import React from 'react'
 import '../css/Navbar.css'
-import * as SVGAsset from '../SVG/index'
 import {Link} from 'react-router-dom'
-import UseLogin from "../hook/UseLogin";
-import SigninUser from '../pages/SigninUser'
-import SignupUser from '../pages/SignupUser'
-import { loginAPI } from "../API/authAPI";
 import { useState, useEffect } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import swal from "sweetalert";
 import Cookies from "js-cookie";
 import ImgAsset from '../resources'
 import { Dropdown } from 'react-bootstrap'
+import axios from 'axios';
+
+const Swal = require('sweetalert2');
+
 
 export default function Navbar () {
 
 	// Navbar State Handler
+
+	const [user, setUser] = useState([]);
 
 	const [userRole, setUserRole] = useState(() => {
 		const localData = localStorage.getItem("role");
@@ -36,15 +37,33 @@ export default function Navbar () {
 		var isLoggedIn = true;
 	}
 
+	var status = true;
+	
+	useEffect(() => {	
+		if (userId !== null){	
+			axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/${userId}`)
+			.then((response)=> {
+					console.log(response);
+					setUser(response.data.data);
+			})
+		}		
+	}, [])
+
 	// logout handler
 	const logoutHandler = () => {
-		swal({
-			title: "Anda Telah Logout",
-			type: "succes",
-		})
 		localStorage.clear();
-		window.location.href = "/homepage/";
-		// Cookies.remove("jwt", { path: "" });
+		Swal.fire({
+			icon: 'success',
+			title: 'Anda Berhasil Log Out',
+			allowOutsideClick: false,
+			allowEscapeKey: false,
+			confirmButtonText: 'OK',
+			confirmButtonColor: '#21c177',
+			preConfirm: () => {
+				window.location.href = "/homepage";
+			}
+				
+		});	
 	  };
 	
     return (
@@ -81,8 +100,12 @@ export default function Navbar () {
 										<div className='Rectangle1'/>
 										<span className='Login'>Login</span>
 									</Dropdown.Toggle>
-									<div className='Rectangle2'/>
-									<Link to='/SignupUser' className="link"><span className='Register'>Register</span></Link>	
+									
+									<Link to='/SignupUser' className="link">
+										<Button className='Rectangle2' > 
+											<span className='Register'>Register</span>
+										</Button> 	
+									</Link>	
 
 									
 									<Dropdown.Menu align='start' className='Menu2'>
@@ -117,19 +140,19 @@ export default function Navbar () {
 									<div className='Frame238'>
 										<Link to='/dashboardukm' className="link"><span className='Dashboard'>Dashboard</span></Link>
 										<Link to='/ukmunpad/ukms' className="link"><span className='UKMUnpad_1'>UKM Unpad</span></Link>
-										<Link to='/beritaukm/articles' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
-										
+										<Link to='/beritaukm/articles' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>		
 									</div>
-									<div>
-
-									</div>
-									
 
 									<div className='Dropdown'>
 										<Dropdown >
 											<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>
-												
-												<img className='Avatar' src = {ImgAsset.Avatar} />	
+												{
+													user.avatar !== null ? (
+														<img className='Avatar' src = {`${process.env.REACT_APP_BACKEND_URL}${user.avatar}`} style={{width: 50, height: 50, borderRadius: 50/ 2}} />	
+													):(
+														<img className='Avatar' src = {ImgAsset.Avatar} />	
+													)
+												}	
 											</Dropdown.Toggle>
 
 											
@@ -168,19 +191,20 @@ export default function Navbar () {
 										<Link to='/beritaukm/articles' className="link"><span className='BeritaUKM_1'>Berita UKM</span></Link>
 										
 									</div>
-									<div>
 
-									</div>
-									
-
+								
 									<div className='Dropdown'>
 										<Dropdown >
-											<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>
-												
-												<img className='Avatar' src = {ImgAsset.Avatar} />	
+											<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>			
+											{
+												user.avatar !== null ? (
+													<img className='Avatar' src = {`${process.env.REACT_APP_BACKEND_URL}${user.avatar}`} style={{width: 50, height: 50, borderRadius: 50/ 2}}/>	
+												):(
+													<img className='Avatar' src = {ImgAsset.Avatar} />	
+												)
+											}	
 											</Dropdown.Toggle>
 
-											
 											<Dropdown.Menu align='start' className='Menu'>
 												<Dropdown.Item href="/profileuser">Profile</Dropdown.Item>
 												<Dropdown.Item onClick={logoutHandler}>Logout</Dropdown.Item>

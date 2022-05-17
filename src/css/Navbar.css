@@ -210,7 +210,7 @@
 	top: 15px;
 	width: 150px;
 	height: 40px;
-	background-color : rgba(227, 24, 24, 0.01);
+	background-color : rgba(233, 16, 16, 0.01) !important;
 	border-radius: 15px;
 	border: 1px solid rgba(255,255,255,1);
 	box-sizing: border-box;
@@ -218,8 +218,8 @@
 
 .Navbar .Register{
 	position: relative;
-	right: -150px;
-	top: -18px;
+	/* right: -150px;
+	top: -18px; */
 	width: 180px;
 	height: 10px;
 	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
@@ -227,4 +227,5 @@
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 25.739999771118164px;
+	text-align: center;
 }

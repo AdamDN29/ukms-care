@@ -18,12 +18,8 @@ export default function UKMUnpadA (props) {
 	let query = 'ukms';
 
 	const param1 = props.match.params.pathParam1;
-	console.log(param1);
 	const param2 = props.match.params.pathParam2;
-	console.log(param2);
 	const param3 = props.match.params.pathParam3;
-	console.log(param3);
-
 
 	if (param2 == null){
 		query = param1;
@@ -31,8 +27,6 @@ export default function UKMUnpadA (props) {
 	if (param2 != null){
 		query = param1 + '/' + param2 + '/' + param3;
 	}
-
-	console.log(query);
 
 	const [ukm, setUKM] = useState([]);
 	const [query1, setQuery1] = useState(null);
@@ -51,7 +45,7 @@ export default function UKMUnpadA (props) {
 		axios
 		.get(`${process.env.REACT_APP_BACKEND_URL}${query}`)
 		  .then((response) => {
-			console.log(response.data.data);
+			console.log(response);
 			setUKM(response.data.data);
 		  })
 		.catch((err) => {
@@ -127,14 +121,14 @@ export default function UKMUnpadA (props) {
 		</div>
 		
 		<Row xs={1} md={3} className="UKMRow">
-		{ukm.length !== 0
-			? (ukm
-				.slice(pagesVisited, pagesVisited + usersPerPage)
-				.map(post => {
-				return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} avatar={post.avatar}/>
-			}))
-			: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
-		}
+			{ukm.length !== 0
+				? (ukm
+					.slice(pagesVisited, pagesVisited + usersPerPage)
+					.map(post => {
+					return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} avatar={post.avatar}/>
+				}))
+				: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
+			}
 		</Row>
 
 

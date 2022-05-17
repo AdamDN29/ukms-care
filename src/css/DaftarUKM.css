@@ -288,6 +288,7 @@
 	/* left: -400px;
 	top: 1365px; */
 	left : 20px;
+	width: 250px;
 	
 }
 
@@ -621,7 +622,7 @@
 	top: 0px;
 	width: 200px;
 	height: 50px;
-	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+	/* background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1); */
 	border-radius: 10px;
 }
 .DaftarUKM_DaftarUKM .Group319 .Group580 .Group578 {

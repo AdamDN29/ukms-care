@@ -25,7 +25,6 @@ import Help from '../pages/Help';
 
 
 function RouterDOM () {
-	const [idUser, setIdUser] = useState(false);
 
 	const localDataRole = localStorage.getItem("role");
 	const localDataID = localStorage.getItem("id");
@@ -50,18 +49,14 @@ function RouterDOM () {
 				<Route path="/homepage" 
 						exact 
 						component={() => <HomepageA_1 data={data}/>}></Route>
-				<Route path="/beritaukm/:pathParam1?/:pathParam2?/:pathParam3?" component={BeritaUKMB}></Route>
-				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
 
-				<Route path="/ukmunpad/:pathParam1?/:pathParam2?/:pathParam3?" component={UKMUnpadA}></Route>
-
-
-			
 				<Route exact path="/SigninUser"><SigninUser /></Route>
 				<Route exact path="/SignupUser"><SignupUser /></Route>
+				<Route path="/beritaukm/:pathParam1?/:pathParam2?/:pathParam3?" component={BeritaUKMB}></Route>
+				<Route path="/beritasingle/:articles_id" component={BeritaSingle}></Route>
+				<Route path="/ukmunpad/:pathParam1?/:pathParam2?/:pathParam3?" component={UKMUnpadA}></Route>
 				<Route exact path="/profileuser"><ProfileUser /></Route>
 				<Route exact path="/editprofileuser/:id" component={EditProfileUser}></Route>
-				{/* <Route exact path="/detailukma"><DetailUKMA /></Route> */}
 				<Route path="/detailukm/:ukm_id" component={DetailUKMA}></Route>
 				<Route path="/daftarukm/:ukm_id" component={DaftarUKM}></Route>
 
@@ -72,13 +67,13 @@ function RouterDOM () {
 				<Route path="/buatberitaukm" component={BuatBeritaUKM}></Route>
 				<Route path="/editberitaukm/:articles_id" component={EditBeritaUKM}></Route>
 				<Route exact path="/listpendaftarukm"><ListPendaftarUKMAdminUKM /></Route>
-				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>
-				
+				<Route exact path="/aturpendaftaranukm"><AturPendaftaranUKM /></Route>		
+
+				<Route exact path="/AboutUs"><AboutUs /></Route>
+				<Route exact path="/Help"><Help /></Route>
 				
 			</Switch>
-			<Route exact path="/AboutUs"><AboutUs /></Route>
-			<Route exact path="/Help"><Help /></Route>
-			
+					
 		</Router>
 	);
 }

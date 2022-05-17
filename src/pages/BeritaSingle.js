@@ -29,7 +29,7 @@ function BeritaSingle (props) {
 		  .catch((err) => {
 			console.log(err);
 		  });
-	}); 
+	},[]); 
 	const date = new Date(single.created_at)
 	console.log(date);
 

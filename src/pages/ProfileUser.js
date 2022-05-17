@@ -1,14 +1,12 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import '../css/ProfileUser.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
 import axios from 'axios';
-import swal from 'sweetalert'
 
 export default function ProfileUser () {
 	const [userProfile, setUserProfile] = useState([]);
@@ -24,9 +22,7 @@ export default function ProfileUser () {
 			setUserProfile(response.data.data);
 			console.log(response.data.data);
 		})
-	})
-
-
+	}, [])
 
     return (
 	<div className='ProfileUser_ProfileUser'>
@@ -44,8 +40,13 @@ export default function ProfileUser () {
 
 		<Navbar/>
 
-
-		<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${userProfile.avatar}`} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
+		{
+			userProfile.avatar !== null ? (
+				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${userProfile.avatar}`} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
+			):(
+				<img className='Image' src = {ImgAsset.HomepageA_1_Rectangle9_1} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
+			)
+		}
 		<span className='Name'>{userProfile.name}</span>
 		<span className='Email'>{userProfile.email}</span>
 		<img className='Line8' src = {ImgAsset.ProfileUser_Line8} />
@@ -70,7 +71,7 @@ export default function ProfileUser () {
 
 		<img className='Vector_13' src = {ImgAsset.ProfileUser_Vector_13} />
 		<span className='Angkatan'>Angkatan</span>
-		<span className='_2019'>{userProfile.year}</span>
+		<span className='Angkatan_User'>{userProfile.year}</span>
 
 		<Link to={`/editprofileuser/${userProfile.id}`}>
 			<div className='Group239'>
@@ -95,7 +96,6 @@ export default function ProfileUser () {
 			<BackButton/>
 		</Link>
 		
-
 		<Footer />
 	</div>
 	)

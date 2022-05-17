@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/SigninAdmin.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import { Button } from 'react-bootstrap'
@@ -8,11 +7,29 @@ import { loginAPI } from "../API/authAPI";
 import UseLogin from "../hook/UseLogin";
 import swal from "sweetalert";
 
+const Swal = require('sweetalert2');
+
 export default function SigninAdmin (props) {
 
 	const [username, password, usernameHandler, passwordHandler] = UseLogin();
 
 	const login = () => {
+		if (username === "") {
+			Swal.fire({
+				icon: 'error',
+				title: 'Oops...',
+				text: 'Silahkan Masukkan Username',
+				confirmButtonColor: '#c41607',	  
+			}) 
+			return;	}
+			if (password === "") {
+				Swal.fire({
+					icon: 'error',
+					title: 'Oops...',
+					text: 'Silahkan Masukkan Password',
+					confirmButtonColor: '#c41607',	  
+				}) 
+				return;	}
 		const payload = {
 		  username: username,
 		  password: password,
@@ -22,7 +39,6 @@ export default function SigninAdmin (props) {
 		  .post("login-admin", payload)
 		  .then((response) => {
 			console.log(response);
-			console.log(response.status)
 			if (response.status === 200) {
 				swal({title: "Selamat Anda Berhasil Login", type: "succes"});
 				let getID = '';
@@ -78,10 +94,9 @@ export default function SigninAdmin (props) {
 			</div>
 		
 
-		<span className='SigninAkunAdmin'>Sign in 
+		<span className='SigninAkunAdmin'>Sign In 
 		Akun Admin</span>
 		
-
 		{/*Email,Password*/}
 		<div className='Username'>
 			<input className='Input_Form' placeholder='Enter Username'
@@ -99,14 +114,11 @@ export default function SigninAdmin (props) {
 			</input>
 		</div>
 
-	
-
 		<Button className='Loginbtn'
 			onClick={() => {
 				login();
               }}
 		>
-			{/* <div className='Rectangle'/> */}
 			<span className='login'>Login</span>
 		</Button>
 		

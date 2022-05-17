@@ -13,9 +13,10 @@ import axios from "axios";
 import { Button } from 'react-bootstrap';
 import swal from "sweetalert";
 
+const Swal = require('sweetalert2');
+
 function DetailUKMA (props){
 	const { ukm_id } = props.match.params;
-	console.log(ukm_id);
 
 	const [ukm, setUKM] = useState([]);
 	const [berita, setBerita] = useState([]);
@@ -24,14 +25,11 @@ function DetailUKMA (props){
 	const date = berita.created_at
 	const dt = new Date(date)
 	const contents = berita.content
-	console.log(date);
-	console.log(contents);
 
 	const [userRole, setUserRole] = useState(() => {
 		const localData = localStorage.getItem("role");
 		return localData ? localData : null;
 	});
-	console.log(userRole);
 
 	useEffect(() => {
 		axios
@@ -67,10 +65,8 @@ function DetailUKMA (props){
 	  console.log(berita.created_at);
 	
 	const StatusProfile = CheckUser();
-	console.log(StatusProfile);
 
-	const pendaftaranHandler = () => {
-		
+	const pendaftaranHandler = () => {	
 		if(userRole === null){
 			swal({
 				title: "Silahkan Sign In Untuk Melakukan Pendaftaran",
@@ -99,11 +95,15 @@ function DetailUKMA (props){
 				window.location.href = `/daftarukm/${ukm_id}`;
 			}
 			else{
-				swal({
-					title: "Silahkan Lengkapi Profile Terlebih Dahulu",
-					icon: "warning",
-					dangerMode: true,
-				});
+				Swal.fire({
+					title: 'Silahkan Lengkapi Profile Terlebih Dahulu',
+					confirmButtonText: 'Profile',
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						window.location.href = "/profileuser";
+
+					}	
+				  });
 			}
 			
 		}

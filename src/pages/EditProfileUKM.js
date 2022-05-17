@@ -108,7 +108,14 @@ export default function EditProfileUKM (props){
 			)
             .then((response) => {
                 setDisable(false);
-                swal("Profile UKM berhasil diedit")
+                Swal.fire({
+					icon: 'success',
+					title: 'Edit Profile UKM Berhasil',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonText: 'OK',
+					confirmButtonColor: '#21c177',
+				});
                 console.log(response)
                 console.log("berhasil")
                 history.push({pathname:'/dashboardukm', state:{idUKM}})
@@ -122,8 +129,6 @@ export default function EditProfileUKM (props){
                 console.log(err)
             })
     }
-
-
 
 
     return (
@@ -157,15 +162,7 @@ export default function EditProfileUKM (props){
 					}
 					type="file"
 				/>
-				{/* <div className='Group313'>
-					<div className='Group300'>
-						<span className='UploadGambar'>Upload Gambar</span>
-					</div>
-					<div className='bxupload'>
-						<img className='Vector_4' src = {ImgAsset.EditProfileUKM_Vector_4} />
-						<img className='Vector_5' src = {ImgAsset.EditProfileUKM_Vector_5} />
-					</div>
-				</div> */}
+				
 			</div>
 			<div className='Group381'>
 				{/* Input Name */}

@@ -1,12 +1,9 @@
 import React from 'react'
-import { useState } from "react";
 import '../css/HomepageA_1.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import UKMPost2 from '../components/UKMPost2'
 import BeritaPost2 from '../components/BeritaPost2'
 
@@ -14,13 +11,6 @@ import BeritaPost2 from '../components/BeritaPost2'
 export default function HomepageA_1 (props) {
 	const idUser = props.data.id;
 	console.log(idUser);
-
-	// const [idUser, setIdUser] = useState(false);
-
-	// const getId = (id) => {
-	// 	setIdUser(id);
-	// };
-
 
     return (
 	<div className='HomepageA_1_HomepageA'>
@@ -64,8 +54,6 @@ export default function HomepageA_1 (props) {
 			meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman 
 			baru dari berbagai jurusan yang ada di kampus deh!</span>
 		</div>
-
-		
 
 		{/*Fitur UKM's Care (daftar,info,berita*/}
 		<span className='UKMSCARE'>UKM'S CARE?</span>
@@ -125,26 +113,7 @@ export default function HomepageA_1 (props) {
 		<div className='grup2'>
 		<div className='UKMPost2'>
 			<UKMPost2 />
-		</div>
-
-		{/* <div className='Group317'>
-			<img className='Rectangle8_1' src = {ImgAsset.HomepageA_1_Rectangle8_1} />
-			<img className='Rectangle9' src = {ImgAsset.HomepageA_1_Rectangle9} />
-			</div>
-			<img className='taekwondoremovebgpreview11' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-			<img className='Rectangle15' src = {ImgAsset.HomepageA_1_Rectangle15} />
-			<img className='bridgeremovebgpreview7' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
-			<img className='palawa5' src = {ImgAsset.UKMUnpadB_palawa2} />
-			<div className='Group388'>
-				<img className='Rectangle8_2' src = {ImgAsset.HomepageA_1_Rectangle8_2} />
-				<img className='Rectangle9_1' src = {ImgAsset.HomepageA_1_Rectangle9_1} />
-			</div>
-			<img className='taekwondoremovebgpreview13' src = {ImgAsset.UKMUnpadB_taekwondoremovebgpreview3} />
-			<img className='bridgeremovebgpreview9' src = {ImgAsset.UKMUnpadB_bridgeremovebgpreview5} />
-			<div className='akariconscircletriangleupfill'>
-		</div> */}
-
-		
+		</div>	
 
 		<Link to='/ukmunpad/ukms'>
 			<span className='UKMSelengkapnya'>UKM Selengkapnya  ➝</span>

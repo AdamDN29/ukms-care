@@ -1,11 +1,9 @@
 import React from 'react'
 import '../css/AturPendaftaranUKM.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import { useState, useEffect, useReducer } from "react";
 import Switch from "react-switch";
 import axios from 'axios';
@@ -87,6 +85,53 @@ export default function AturPendaftaranUKM (){
 	const [data, dispatch] = useReducer(reducer, initialState)
 	console.log(data);
 
+	function deletePost (namaField){
+		Swal.fire({
+			icon: "question",
+			title: 'Apakah Anda Ingin Menghapus Field Ini ?',
+			allowOutsideClick: false,
+			allowEscapeKey: false,
+			confirmButtonText: 'Ya',
+			confirmButtonColor: '#dc3741',
+			showDenyButton:true,
+			denyButtonText:'Tidak',
+			denyButtonColor: '#21c177',
+			preConfirm: () => {
+				const dataForm = new FormData();
+				dataForm.append("ukm_id", userId);
+				dataForm.append("name", namaField);
+				axios
+				.post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/field/delete`, dataForm)
+				.then((response) => {
+					console.log(response);
+					console.log("Data Dihapus")
+					Swal.fire({
+							icon: 'success',
+							title: 'Field ' + namaField + ' Berhasil Dihapus',
+							allowOutsideClick: false,
+							allowEscapeKey: false,
+							confirmButtonText: 'OK',
+							confirmButtonColor: '#21c177',
+						});
+				})
+				.catch((err) => {
+					console.log(err);
+					Swal.fire({
+						title: "Gagal Menghapus Field",
+						icon: "warning",
+						dangerMode: true,
+				})				
+				})	
+			},
+			preDeny: () => {
+				console.log("Data Tidak Dihapus")
+				return;
+			}
+		});
+
+		
+	}
+
 	function onSubmitHandler (temp){
         // e.preventDefault();
 		console.log(temp);
@@ -97,80 +142,84 @@ export default function AturPendaftaranUKM (){
 		dataForm.append("name", temp);
 		console.log("Upload " + temp);
 
-		var empty = "";
-
 		if(temp === "field1"){
-			dataForm.append("value", data.field1);
-		} else{
-			dataForm.append("value", empty);
-
-		}
-
+			if(data.field1 !== ""){
+				dataForm.append("value", data.field1);
+			}else{deletePost("field1"); return;}		
+		} 
 
 		if(temp === "field2"){
-			dataForm.append("value", data.field2);
+			if(data.field2 !== ""){
+				dataForm.append("value", data.field2);
+			}else{deletePost("field2"); return;}
 		}
+
 		if(temp === "field3"){
-			dataForm.append("value", data.field3);
+			if(data.field3 !== ""){
+				dataForm.append("value", data.field3);
+			}else{deletePost("field3"); return;}
 		}
 		if(temp === "field4"){
-			dataForm.append("value", data.field4);
+			if(data.field4 !== ""){
+				dataForm.append("value", data.field4);
+			}else{deletePost("field4"); return;}
 		}
 		if(temp === "field5"){
-			dataForm.append("value", data.field5);
+			if(data.field5 !== ""){
+				dataForm.append("value", data.field5);
+			}else{deletePost("field5"); return;}
 		}
 		if(temp === "file1"){
-			dataForm.append("value", data.file1);
+			if(data.file1 !== ""){
+				dataForm.append("value", data.file1);
+			}else{deletePost("file1"); return;}
 		}
 		if(temp === "file2"){
-			dataForm.append("value", data.file2);
+			if(data.file2 !== ""){
+				dataForm.append("value", data.file2);
+			}else{deletePost("file2"); return;}
 		}
 		if(temp === "file3"){
-			dataForm.append("value", data.file3);
+			if(data.file3 !== ""){
+				dataForm.append("value", data.file3);
+			}else{deletePost("file3"); return;}
 		}
 		if(temp === "file4"){
-			dataForm.append("value", data.file4);
+			if(data.file4 !== ""){
+				dataForm.append("value", data.file4);
+			}else{deletePost("file4"); return;}
 		}
-   
-		console.log(dataForm.get('ukm_id'));
-		console.log(dataForm.get('name'));
-		console.log(dataForm.get('value'));
 
         axios
             .post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/field/add`, dataForm
 			)
             .then((response) => {
-                Swal.fire("Atur Pendaftaran Berhasil")
-                console.log(response)
+				console.log(response)
+                Swal.fire({
+					icon: 'success',
+					title: 'Atur Pendaftaran Berhasil',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonText: 'OK',
+					confirmButtonColor: '#21c177',
+				});
+                
                 console.log("berhasil")
-                // history.push({pathname:'/dashboardukm', state:{idUKM}})
             })
             .catch((err) => {
-				if (err.response.status === 400){
-					Swal.fire({
-						title: "Masukkan Nama Field",
-						icon: "warning",
-						dangerMode: true,
-					})
-				}
-				else{
-					Swal.fire({
+				console.log(err);
+				Swal.fire({
 						title: "Gagal Mengatur Pendaftaran",
 						icon: "warning",
 						dangerMode: true,
-					})
-				}
-                
-                console.log(err.response.status)
+				})
+				
             })
     }
-
-	
 
 	const statusHandle = () => {
 		Swal.fire({
 			title: 'Ubah Status Pendaftaran ?',
-			// text: "Silahkan Login Untuk Melanjutkan",
 			icon:'question',
 			allowOutsideClick: false,
 			allowEscapeKey: false,
@@ -183,20 +232,15 @@ export default function AturPendaftaranUKM (){
 				axios
 				.post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/status/${userId}`)
 				.then((response) => {
-					console.log(response.data.data);
+					console.log(response);
 				})
 				.catch((err) => {
 					console.log(err);
 				});
 				setChecked(!checked);
-				// setStatus()
 				console.log(checked);
-				console.log("Berhasil Diubah")
-				
-				
-
-			  }
-			
+				console.log("Berhasil Diubah")		
+			  }		
 		  });
 
 
@@ -228,7 +272,7 @@ export default function AturPendaftaranUKM (){
 		<div className='Rectangle57'>
 			<Switch onChange={statusHandle} checked={checked} checkedIcon={false} height={40} width={80} className="SwitchStatus"/>
 		</div>
-		<span className='status'>Pendaftaran UKM</span>
+		<span className='status'>{checked === true ?("Aktif"):("Tidak Aktif")}</span>
 
 
 		<span className='Teks'>Teks</span>
@@ -344,7 +388,6 @@ export default function AturPendaftaranUKM (){
 		<span className='File'>File</span>
 		
 	
-
 		<img className='Rectangle55_8' src = {ImgAsset.AturPendaftaranUKM_Rectangle55_8} />
 		<div className='Group570'>
 			{/* File 1 */}

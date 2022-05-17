@@ -400,4 +400,6 @@ export default {
 	gambar_02: require('./gambar_02.png').default,
 	gambar_03: require('./gambar_03.png').default,
 	gambar_04: require('./gambar_04.png').default,
+	BlankWhite: require('./BlankWhite.JPG').default,
+
 }

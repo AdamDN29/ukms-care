@@ -14,26 +14,6 @@ export default function BeritaPost2 () {
 	
 	const [post, setPost] = useState([]);
 
-
-	// useEffect(() => {
-	// 	axios.all([
-	// 		axios.get(`${process.env.REACT_APP_BACKEND_URL}articles`), 
-	// 		axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms`),
-	// 	  ])
-	// 	  .then(axios.spread((data1, data2) => {
-	// 		// output of req.
-	// 		console.log('response1', data1.data.data, 'response2', data2.data.data);
-	// 		setPost(data1.data.data);
-	// 		setUKM(data2.data.data);
-	// 	  }));
-	
-	// },[]); 
-
-	// console.log(post);
-	// console.log(ukm);
-
-	
-
 	useEffect(() => {
 		axios.get(`${process.env.REACT_APP_BACKEND_URL}articles`)
 		.then((response)=>{
@@ -42,15 +22,6 @@ export default function BeritaPost2 () {
 		});
 	
 	},[]); 
-
-	// useEffect(() => {
-	// 	axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms`)
-	// 	.then((response)=>{
-	// 		console.log(response.data.data);
-	// 		setUKM(response.data.data);
-	// 	});
-	
-	// },[]); 
 
 		return (
 			<Row xs={1} md={3} className='Row'>

@@ -18,7 +18,12 @@ const UKMPost = (props) => {
         <Col >
             <Link to={`/detailukm/${props.ukm_id}`}>
             <Card className='UKMCard'>
-                <Card.Img variant="top" className='UKMImg' src={`${process.env.REACT_APP_BACKEND_URL}${props.avatar}`} />
+                { props.avatar !== null ? (
+                         <Card.Img variant="top" className='UKMImg' src={`${process.env.REACT_APP_BACKEND_URL}${props.avatar}`} />
+                    ) : (
+                        <Card.Img variant="top" className='UKMImg' src={ImgAsset.ukms_care_logo} />
+                    )
+                }
                 <Card.Body >
                 <Card.Title variant="center" className='UKMName'>{props.ukm_name}</Card.Title>
                 </Card.Body>

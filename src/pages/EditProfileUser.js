@@ -12,7 +12,8 @@ import { useState } from "react";
 import { useReducer } from "react";
 import axios from 'axios'
 import swal from 'sweetalert'
-import ProfileUser from './ProfileUser'
+
+const Swal = require('sweetalert2');
 
 const initialState = {
 	name: "",
@@ -50,7 +51,6 @@ const reducer = (currentState, action) => {
 
 export default function EditProfileUser (props) {
 	const idUser = props.match.params.id;
-	console.log(idUser);
 
 	const [preload, setPreLoad] = useState([]);
 
@@ -66,14 +66,14 @@ export default function EditProfileUser (props) {
 	},[])
 
 	const [user, dispatch] = useReducer(reducer, initialState);
-	console.log(user);
+
 
   	const [disable, setDisable] = useState(false);	
 
 	const submitProfile = (e) => {
 		e.preventDefault();
 		setDisable(true);
-		console.log(user);
+	
 		const dataForm = new FormData();
 		dataForm.append("id", idUser);
 		if (user.name !== ""){
@@ -105,7 +105,6 @@ export default function EditProfileUser (props) {
 		}
 
 		if (user.email !== "" && user.password === ""){
-			console.log("Edit Email & No Edit Pass");
 			swal({
 				title: "Silahkan Masukkan Password Untuk Mengedit Email",
 				icon: "warning",
@@ -115,7 +114,6 @@ export default function EditProfileUser (props) {
 		}
 		
 
-
 		if (user.email !== "" && user.password !== ""){
 			dataForm.append("password", user.password);
 			dataForm.append("email", user.email);
@@ -123,33 +121,25 @@ export default function EditProfileUser (props) {
 
 		
 		if (user.email === "" && user.password !== ""){
-			// dataForm.append("password", user.password);
-			console.log("No Edit Email & Edit Pass");
+			dataForm.append("password", user.password);
 		}
-
-		
-		
-		console.log(dataForm.get('id'));
-		console.log(dataForm.get('name'));
-		console.log(dataForm.get('npm'));
-		console.log(dataForm.get('email'));
-		console.log(dataForm.get('year'));
-		console.log(dataForm.get('faculty'));
-		console.log(dataForm.get('phone_number'));
-		console.log(dataForm.get('avatar'));
 
 		axios
 		  .post(`${process.env.REACT_APP_BACKEND_URL}profiles/edit/${idUser}`, dataForm)
 		  .then((response) => {
-			setDisable(false);
-			swal({
-				title: "Edit Profile Berhasil",
-				type: "succes",
-			})
 			console.log(response)
-			console.log(response.data.data.id)
-			console.log("berhasil")
-			window.location.href = "/profileuser";
+			setDisable(false);
+			Swal.fire({
+				icon: 'success',
+				title: 'Edit Profile Berhasil',
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				text: 'Silahkan Masukkan Password',
+				confirmButtonColor: '#21c177',
+				preConfirm: () => {
+					window.location.href = "/profileuser";
+				}	  
+			}) 		
 		  })
 		  .catch((err) => {
 			swal({
@@ -183,35 +173,30 @@ export default function EditProfileUser (props) {
 		<center><span className='EditProfile'>Edit Profile</span></center>
 		<div className='grup1'>
 			<img className='Line7' src = {ImgAsset.EditProfileUser_Line7} />
-			<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${preload.avatar}`} style={{width: 280, height: 280, borderRadius: 280/ 2}} />
+			
+			{
+			preload.avatar !== null ? (
+				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${preload.avatar}`} style={{width: 280, height: 280, borderRadius: 280/ 2}} />
+			):(
+				<img className='Image' src = {ImgAsset.BlankWhite} style={{width: 280, height: 280, borderRadius: 280/ 2}} />
+			)
+		}
 
 		</div>
 		<div className='Group577'>
-			<div className='Group575'>
-				<input className='Rectangle19_1'
-					// value={user.avatar}
-					type="file"
-					name="avatar"
-					accept="image/*"
-					onChange={(e) =>
-						dispatch({
-							type: "avatar",
-							upload: e.target.files[0],
-						})
-					}
-
-				/>
-				{/* <div className='Group313'>
-					<div className='Group300_1'>
-						<span className='ChangeImage'>Change Image</span>
-					</div>
-					<div className='bxupload'>
-						<img className='Vector_7' src = {ImgAsset.EditProfileUser_Vector_7} />
-						<img className='Vector_8' src = {ImgAsset.EditProfileUser_Vector_8} />
-					</div>
-				</div> */}
-			</div>
+			<input className='Rectangle19_1'
+				type="file"
+				name="avatar"
+				accept="image/*"
+				onChange={(e) =>
+					dispatch({
+						type: "avatar",
+						upload: e.target.files[0],
+					})
+				}
+			/>				
 		</div>
+		
 		<div className='Group317'>
 			<input className='InputForm1'
 				// disabled={disable}

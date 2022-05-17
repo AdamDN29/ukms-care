@@ -1,14 +1,11 @@
 import React from 'react'
 import '../css/SignupUser.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import { Button } from 'react-bootstrap'
 import UseRegister from '../hook/UseRegister'
 import { registerAPI } from '../API/authAPI'
-import { confirmAlert } from 'react-confirm-alert'; 
-// import swal from "sweetalert2";
 import 'react-confirm-alert/src/react-confirm-alert.css';
 
 const Swal = require('sweetalert2');
@@ -24,7 +21,6 @@ export default function SignupUser () {
 	] = UseRegister();
 	
 	// Post Register
-
 	const register = () => {
 
 		
@@ -96,10 +92,8 @@ export default function SignupUser () {
 					confirmButtonColor: '#21c177',
 					preConfirm: () => {
 						window.location.href = "/signinuser";
-
 					  }
-					
-				  });
+				});
 			  }
 			})
 			.catch((err) => {
@@ -116,24 +110,6 @@ export default function SignupUser () {
 				denyButtonText: 'Ok',
 				denyButtonColor: '#07redb5c4',
 			  });
-
-			//   Swal.fire({
-			// 	title: 'Are you sure?',
-			// 	text: "You won't be able to revert this!",
-			// 	icon: 'warning',
-			// 	showCancelButton: true,
-			// 	confirmButtonColor: '#3085d6',
-			// 	cancelButtonColor: '#d33',
-			// 	confirmButtonText: 'Yes, delete it!'
-			//   }).then((result) => {
-			// 	if (result.isConfirmed) {
-			// 	  Swal.fire(
-			// 		'Deleted!',
-			// 		'Your file has been deleted.',
-			// 		'success'
-			// 	  )
-			// 	}
-			//   })
 			});
 		}
 	  };

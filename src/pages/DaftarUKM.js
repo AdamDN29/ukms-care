@@ -1,15 +1,15 @@
 import React from 'react'
 import { useState, useEffect, useReducer } from "react";
 import '../css/DaftarUKM.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import axios from "axios";
 import swal from "sweetalert"
 import { Button } from 'react-bootstrap'
+
+const Swal = require('sweetalert2');
 
 const initialState = {
     field1: "",
@@ -21,6 +21,18 @@ const initialState = {
     file2: null,
 	file3: null,
     file4: null,
+}
+
+function notFill(namaField){
+	Swal.fire({
+		icon: 'error',
+		title: 'Silahkan Lengkapi Form Pendaftaran',
+		allowOutsideClick: false,
+		allowEscapeKey: false,
+		text: 'Silahkan Isi Form ' + namaField,
+		confirmButtonColor: '#21c177',  
+	}) 		
+
 }
 
 const reducer = (currentState, action) => {
@@ -63,23 +75,6 @@ export default function DaftarUKM (props) {
 		return localData ? localData : null;
 	});
 
-	const textField = [];
-	const fileField = [];
-	var statusText = false;
-	var statusFile = false;
-
-	// Checking Status
-	let statusField1 = false;
-	let statusField2 = false;
-	let statusField3 = false;
-	let statusField4 = false;
-	let statusField5 = false;
-
-	let statusFile1 = false;
-	let statusFile2 = false;
-	let statusFile3 = false;
-	let statusFile4 = false;
-
 	useEffect(() => {
 		axios
 		  .get(`${process.env.REACT_APP_BACKEND_URL}ukms/${ukm_id}`)
@@ -119,7 +114,17 @@ export default function DaftarUKM (props) {
 		return str.charAt(0).toUpperCase() + str.slice(1);
 	}
 
-	
+	// Checking Status
+	let statusField1 = false;
+	let statusField2 = false;
+	let statusField3 = false;
+	let statusField4 = false;
+	let statusField5 = false;
+
+	let statusFile1 = false;
+	let statusFile2 = false;
+	let statusFile3 = false;
+	let statusFile4 = false;
 
 	if(field.field1 !== null){
 		statusField1 = true;
@@ -137,7 +142,6 @@ export default function DaftarUKM (props) {
 		statusField5 = true;
 	}
 	
-
 	if(field.file1 !== null){
 		statusFile1 = true;
 	}
@@ -151,20 +155,12 @@ export default function DaftarUKM (props) {
 		statusFile4 = true;
 	}
 
-	useEffect(() => {
-
-			console.log(field.field1)
-		
-		
-
-		
-	  }); 
-	  console.log(statusField1);
-
 	const [daftar, dispatch] = useReducer(reducer, initialState)
 	const [disable, setDisable] = useState(true);
 	
 	const onSubmitHandler = (e)=> {
+
+
 		e.preventDefault();
         setDisable(true);
 		const dataForm = new FormData();
@@ -172,32 +168,58 @@ export default function DaftarUKM (props) {
 		dataForm.append("ukm_id", ukm.id);
 		dataForm.append("user_id", user.id);
 
-		if(daftar.field1 !== ""){
-			dataForm.append("field1", daftar.field1);
+		if(statusField1 === true){
+			if(daftar.field1 !== ""){
+				dataForm.append("field1", daftar.field1);
+			}else{notFill(field.field1); return;};
 		}
-		if(daftar.field2 !== ""){
-			dataForm.append("field2", daftar.field2);
+
+		if(statusField2 === true){
+			if(daftar.field2 !== ""){
+				dataForm.append("field2", daftar.field2);
+			}else{notFill(field.field2); return;};
 		}
-		if(daftar.field3 !== ""){
-			dataForm.append("field3", daftar.field3);
+
+		if(statusField3 === true){
+			if(daftar.field3 !== ""){
+				dataForm.append("field3", daftar.field3);
+			}else{notFill(field.field3); return;};
 		}
-		if(daftar.field4 !== ""){
-			dataForm.append("field4", daftar.field4);
+
+		if(statusField4 === true){
+			if(daftar.field4 !== ""){
+				dataForm.append("field4", daftar.field4);
+			}else{notFill(field.field4); return;};
 		}
-		if(daftar.field5 !== ""){
-			dataForm.append("field5", daftar.field5);
+
+		if(statusField5 === true){
+			if(daftar.field5 !== ""){
+				dataForm.append("field5", daftar.field5);
+			}else{notFill(field.field5); return;};
 		}
-		if(daftar.file1 !== null){
-			dataForm.append("file1", daftar.file1);
+
+		if(statusFile1 === true){
+			if(daftar.file1 !== null){
+				dataForm.append("file1", daftar.file1);
+			}else{notFill(field.file1); return;};
 		}
-		if(daftar.file2 !== null){
-			dataForm.append("file2", daftar.file2);
+
+		if(statusFile2 === true){
+			if(daftar.file2 !== null){
+				dataForm.append("file2", daftar.file2);
+			}else{notFill(field.file2); return;};
 		}
-		if(daftar.file3 !== null){
-			dataForm.append("file3", daftar.file3);
+
+		if(statusFile3 === true){
+			if(daftar.file3 !== null){
+				dataForm.append("file3", daftar.file3);
+			}else{notFill(field.file3); return;};
 		}
-		if(daftar.file4 !== null){
-			dataForm.append("file4", daftar.file4);
+
+		if(statusFile4 === true){
+			if(daftar.file4 !== null){
+				dataForm.append("file4", daftar.file4);
+			}else{notFill(field.file4); return;};
 		}
 
 		console.log(dataForm.get('ukm_id'));
@@ -212,27 +234,33 @@ export default function DaftarUKM (props) {
 		console.log(dataForm.get('file3'));
 		console.log(dataForm.get('file4'));
 
-		axios
-            .post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations`, dataForm
-			)
-            .then((response) => {
-                setDisable(false);
-                swal("Pendaftaran Berhasil")
-                console.log(response)
-                console.log("Daftar Berhasil")
-                window.location.href = "/detailukm/" + ukm_id;
-            })
-            .catch((err) => {
-                swal({
-                    title: "Pendaftaran Gagal",
-                    icon: "warning",
-                    dangerMode: true,
-                })
-                console.log(err)
-            })
-
-
-
+		// axios
+        //     .post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations`, dataForm
+		// 	)
+        //     .then((response) => {
+        //         setDisable(false);
+        //         console.log(response)
+        //         console.log("Daftar Berhasil")
+		// 		Swal.fire({
+		// 			icon: 'success',
+		// 			title: 'Pendaftaran Berhasil',
+		// 			allowOutsideClick: false,
+		// 			allowEscapeKey: false,
+		// 			text: 'Silahkan Masukkan Password',
+		// 			confirmButtonColor: '#21c177',
+		// 			preConfirm: () => {
+		// 				window.location.href = "/detailukm/" + ukm_id;
+		// 			}	  
+		// 		}) 		
+        //     })
+        //     .catch((err) => {
+        //         swal({
+        //             title: "Pendaftaran Gagal",
+        //             icon: "warning",
+        //             dangerMode: true,
+        //         })
+        //         console.log(err)
+        //     })
 	}
 
     return (
@@ -393,7 +421,7 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile1}
 						name="file1"
 						type="file" 
-						accept="image/*"
+						accept=".pdf, image/*"
 						onChange={(e) =>
 							dispatch({
 								type: "file1",
@@ -412,7 +440,7 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile2}
 						name="file2"
 						type="file" 
-						accept="image/*"
+						accept=".pdf, image/*"
 						onChange={(e) =>
 							dispatch({ type: "file2", upload: e.target.files[0], })
 						}
@@ -428,7 +456,7 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile3}
 						name="file3"
 						type="file" 
-						accept="image/*"
+						accept=".pdf, image/*"
 						onChange={(e) =>
 							dispatch({ type: "file3", upload: e.target.files[0], })
 						}
@@ -441,10 +469,10 @@ export default function DaftarUKM (props) {
 			<div className='formFile4'>
 				<div className='fileContainer'>
 					<input className='InputFile'
-						disabled={!statusFile3}
+						disabled={!statusFile4}
 						name="file4"
 						type="file" 
-						accept="image/*"
+						accept=".pdf, image/*"
 						onChange={(e) =>
 							dispatch({ type: "file4", upload: e.target.files[0], })
 						}
@@ -453,83 +481,8 @@ export default function DaftarUKM (props) {
 				<span className='formTitle'>{field.file4 !== null ?(field.file4):("File 4")}</span>
 			</div>
 
-			{/*Input Tambahan */}
-			{/* <div className='textFieldContainer'>
-			{statusText === true
-				? (	textField.map(post => {
-					console.log("test")
-					return (
-						<div className='Frame338_2'>
-							<div className='Alltickets_3'>
-								<div className='cardsdefault_3'>
-									
-										<span className='formName'>Angkatan</span>
-										<input className='TextForm'
-										
-										name='year'
-										type="text" 
-										defaultValue ={user.year}
-										/>
-										
-									
-									<div className='Group362_3'>
-									
-									</div>
-								</div>
-							</div>
-						</div>
-					)
-
-				})		
-			
-			):(<></>)
-			
-			}
-			</div> */}
-{/* 
-			<div className='Group574'>
-				<input className='InputForm2'/>
-				<span className='AlasanMasuk'>Alasan Masuk</span>
-			</div> */}
-
-			{/* Input File */}
-
-			{/* <div className='Group576'>
-				<div className='Group301'>
-					<div className='Rectangle19'/>
-					<div className='Group313'>
-					<div className='Group300'>
-						<span className='PilihFile'>Pilih File</span>
-					</div>
-					<div className='bxupload'>
-						<img className='Vector_5' src = {ImgAsset.DaftarUKM_Vector_5} />
-						<img className='Vector_6' src = {ImgAsset.DaftarUKM_Vector_6} />
-					</div>
-					</div>
-				</div>
-				<span className='ScanKTM'>Scan KTM</span>
-			</div>
-
-			<div className='Group577'>
-				<div className='Group575'>
-					<div className='Rectangle19_1'/>
-					<div className='Group313_1'>
-						<div className='Group300_1'>
-							<span className='PilihFile_1'>Pilih File</span>
-						</div>
-						<div className='bxupload_1'>
-							<img className='Vector_7' src = {ImgAsset.DaftarUKM_Vector_7} />
-							<img className='Vector_8' src = {ImgAsset.DaftarUKM_Vector_8} />
-						</div>
-					</div>
-				</div>
-				<span className='BuktiPembayaran'>Bukti Pembayaran</span>
-		</div> */}
-
-
+		{/* Daftar Button */}
 		</div>
-
-		<Link to={`/detailukm/${ukm_id}`}>
 			<div className='Group319'>
 				<div className='Group580'>
 					<Button className='Rectangle19_2'
@@ -550,11 +503,9 @@ export default function DaftarUKM (props) {
 								</div>
 							</div>
 						</div>	
-					</Button>
-					
+					</Button>	
 				</div>
 			</div>
-		</Link>
 
 		<Link to={`/detailukm/${ukm_id}`}>
 			<div className='Group323'>
