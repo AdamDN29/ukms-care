@@ -9,7 +9,7 @@ export default function CheckUser (){
     var StatusProfile = false;
 
     const [userId, setUserId] = useState(() => {
-		const localData = localStorage.getItem("id");
+		const localData = sessionStorage.getItem("id");
 		return localData ? localData : null;
 	});
 

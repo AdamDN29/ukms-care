@@ -12,6 +12,8 @@ import axios, { Axios } from 'axios'
 import swal from "sweetalert"
 import { Button } from 'react-bootstrap'
 
+const Swal = require('sweetalert2');
+
 const initialState = {
     subject: "",
     content: "",
@@ -43,12 +45,22 @@ export default function BuatBeritaUKM (props) {
 	
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        setDisable(true);
         const dataForm = new FormData();
 		dataForm.append("ukm_id", ukm_id);
         dataForm.append("subject", artikel.subject);
         dataForm.append("content", artikel.content);
-        dataForm.append("image", artikel.image);
+
+		if(artikel.image !== null){
+			dataForm.append("image", artikel.image);
+		}else{
+			swal({
+				title: "Silahkan Pilih Gambar Berita",
+				icon: "warning",
+				dangerMode: true,
+			})
+			return;
+		}
+        
 
 		console.log(dataForm.get('ukm_id'));
 		console.log(dataForm.get('subject'));
@@ -60,10 +72,20 @@ export default function BuatBeritaUKM (props) {
 			)
             .then((response) => {
                 setDisable(false);
-                swal("Berita berhasil dibuat")
-                console.log(response)
+				console.log(response)
                 console.log("berhasil")
-                history.push({pathname:'/listberitaukm', state:{ukm_id}})
+				setDisable(true);
+				Swal.fire({
+					icon: 'success',
+					title: 'Berita Berhasil Dibuat',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						history.push({pathname:'/listberitaukm', state:{ukm_id}})
+					}	  
+				}) 		        
+                
             })
             .catch((err) => {
                 swal({

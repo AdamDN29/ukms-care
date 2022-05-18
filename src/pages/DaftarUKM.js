@@ -71,7 +71,7 @@ export default function DaftarUKM (props) {
 	const [field, setField] = useState([]);
 	
 	const [userId, setUserId] = useState(() => {
-		const localData = localStorage.getItem("id");
+		const localData = sessionStorage.getItem("id");
 		return localData ? localData : null;
 	});
 
@@ -101,7 +101,6 @@ export default function DaftarUKM (props) {
 		  .then((response) => {
 			console.log(response.data.data);
 			setField(response.data.data);
-
 
 		  })
 		  .catch((err) => {
@@ -221,18 +220,6 @@ export default function DaftarUKM (props) {
 				dataForm.append("file4", daftar.file4);
 			}else{notFill(field.file4); return;};
 		}
-
-		console.log(dataForm.get('ukm_id'));
-		console.log(dataForm.get('user_id'));
-		console.log(dataForm.get('field1'));
-		console.log(dataForm.get('field2'));
-		console.log(dataForm.get('field3'));
-		console.log(dataForm.get('field4'));
-		console.log(dataForm.get('field5'));
-		console.log(dataForm.get('file1'));
-		console.log(dataForm.get('file2'));
-		console.log(dataForm.get('file3'));
-		console.log(dataForm.get('file4'));
 
 		axios
             .post(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations`, dataForm

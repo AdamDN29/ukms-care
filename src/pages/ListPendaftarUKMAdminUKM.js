@@ -23,12 +23,12 @@ const BIN = require("bin-converter");
 export default function ListPendaftarUKMAdminUKM (){
 
 	const [userId, setUserId] = useState(() => {
-		const localData = localStorage.getItem("id");
+		const localData = sessionStorage.getItem("id");
 		return localData ? localData : null;
 	});
 
 	const [userName, setUserName] = useState(() => {
-		const localData = localStorage.getItem("user");
+		const localData = sessionStorage.getItem("user");
 		return localData ? localData : null;
 	});
 

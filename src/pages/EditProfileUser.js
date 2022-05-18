@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react'
 import '../css/EditProfileUser.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
-import { Dropdown } from 'bootstrap'
 import { Button, DropdownButton } from 'react-bootstrap'
 import { useState } from "react";
 import { useReducer } from "react";
@@ -22,7 +20,6 @@ const initialState = {
 	year: "",
 	faculty: "",
 	phone_number: "",
-	email: "",
 	password: ""
 };
 
@@ -32,16 +29,14 @@ const reducer = (currentState, action) => {
 			return { ...currentState, name: action.payload };
 		case "npm":
 			return { ...currentState, npm: action.payload };
-			case "avatar":
-				return { ...currentState, avatar: action.upload };
+		case "avatar":
+			return { ...currentState, avatar: action.upload };
 		case "year":
 			return { ...currentState, year: action.payload };
 		case "faculty":
 			return { ...currentState, faculty: action.payload };
 		case "phone_number":
 			return { ...currentState, phone_number: action.payload };
-		case "email":
-			return { ...currentState, email: action.payload };
 		case "password":
 			return { ...currentState, password: action.payload };
 		default:
@@ -96,60 +91,36 @@ export default function EditProfileUser (props) {
 		if (user.phone_number !== ""){
 			dataForm.append("phone_number", user.phone_number);
 		}
-		if (user.email === preload.email){
-			swal({
-				title: "Gunakan Email Lain Untuk Mengedit Email",
-				icon: "warning",
-				dangerMode: true,
-			})
-			return;
-		}
-
-		if (user.email !== "" && user.password === ""){
-			swal({
-				title: "Silahkan Masukkan Password Untuk Mengedit Email",
-				icon: "warning",
-				dangerMode: true,
-			})
-			return;
-		}
-		
-		if (user.email !== "" && user.password !== ""){
-			dataForm.append("password", user.password);
-			dataForm.append("email", user.email);
-		}
 		
 		if (user.password !== ""){
 			dataForm.append("password", user.password);
-			console.log(dataForm.get("password"));
 		}
-		console.log(dataForm.get("password"));
 
 
-		// axios
-		//   .post(`${process.env.REACT_APP_BACKEND_URL}profiles/edit/${idUser}`, dataForm)
-		//   .then((response) => {
-		// 	console.log(response)
-		// 	setDisable(false);
-		// 	Swal.fire({
-		// 		icon: 'success',
-		// 		title: 'Edit Profile Berhasil',
-		// 		allowOutsideClick: false,
-		// 		allowEscapeKey: false,
-		// 		confirmButtonColor: '#21c177',
-		// 		preConfirm: () => {
-		// 			window.location.href = "/profileuser";
-		// 		}	  
-		// 	}) 		
-		//   })
-		//   .catch((err) => {
-		// 	swal({
-		// 		title: "Edit Profile Gagal",
-		// 		icon: "warning",
-		// 		dangerMode: true,
-		// 	})
-		// 	return;
-		//   });
+		axios
+		  .post(`${process.env.REACT_APP_BACKEND_URL}profiles/edit/${idUser}`, dataForm)
+		  .then((response) => {
+			console.log(response)
+			setDisable(false);
+			Swal.fire({
+				icon: 'success',
+				title: 'Edit Profile Berhasil',
+				allowOutsideClick: false,
+				allowEscapeKey: false,
+				confirmButtonColor: '#21c177',
+				preConfirm: () => {
+					window.location.href = "/profileuser";
+				}	  
+			}) 		
+		  })
+		  .catch((err) => {
+			swal({
+				title: "Edit Profile Gagal",
+				icon: "warning",
+				dangerMode: true,
+			})
+			return;
+		  });
 		
 	};
 
@@ -281,7 +252,7 @@ export default function EditProfileUser (props) {
 			/>
 			<span className='Password'>Password</span>
 		<div/>
-		<div className='Group580_2'>
+		{/* <div className='Group580_2'>
 			<input className='InputForm1'
 				// disabled={disable}
 				name='email'
@@ -293,7 +264,7 @@ export default function EditProfileUser (props) {
                 placeholder="Enter Email"
 			/>
 			<span className='Email'>Email</span>
-		</div>
+		</div> */}
 			
 		</div>
 		{/* Submit Button */}

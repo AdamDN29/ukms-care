@@ -1,16 +1,15 @@
 import React, { useEffect } from 'react'
 import '../css/BuatBeritaUKM.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import { useReducer, useState } from "react"
 import { useHistory } from "react-router-dom"
-import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import axios, { Axios } from 'axios'
 import swal from "sweetalert"
 import { Button } from 'react-bootstrap'
+
+const Swal = require('sweetalert2');
 
 const initialState = {
     subject: "",
@@ -68,7 +67,11 @@ export default function EditBeritaUKM (props) {
 		dataForm.append("id", idBerita);
         dataForm.append("subject", artikel.subject);
         dataForm.append("content", artikel.content);
-        dataForm.append("image", artikel.image);
+
+		if (artikel.image !== null){
+			dataForm.append("image", artikel.image);
+		}
+        
 
 		console.log(dataForm.get('id'));
 		console.log(dataForm.get('subject'));
@@ -80,10 +83,19 @@ export default function EditBeritaUKM (props) {
 			)
             .then((response) => {
                 setDisable(false);
-                swal("Berita berhasil diedit")
-                console.log(response)
+				console.log(response)
                 console.log("berhasil")
-                history.push({pathname:'/listberitaukm', state:{ukm_id}})
+                Swal.fire({
+					icon: 'success',
+					title: 'Berita Berhasil Diedit',
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonColor: '#21c177',
+					preConfirm: () => {
+						history.push({pathname:'/listberitaukm', state:{ukm_id}})
+					}	  
+				}) 		
+                
             })
             .catch((err) => {
                 swal({

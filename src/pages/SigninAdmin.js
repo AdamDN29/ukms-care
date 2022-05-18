@@ -49,9 +49,9 @@ export default function SigninAdmin (props) {
 					getUser = data.name
 				});
 
-				localStorage.setItem("id", JSON.stringify(getID));
-				localStorage.setItem("user", JSON.stringify(getUser));
-      			localStorage.setItem("role", JSON.stringify(1));
+				sessionStorage.setItem("id", JSON.stringify(getID));
+				sessionStorage.setItem("user", JSON.stringify(getUser));
+      			sessionStorage.setItem("role", JSON.stringify(1));
 
 				Swal.fire({
 					icon: 'success',

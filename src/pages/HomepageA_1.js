@@ -10,7 +10,6 @@ import BeritaPost2 from '../components/BeritaPost2'
 
 export default function HomepageA_1 (props) {
 	const idUser = props.data.id;
-	console.log(idUser);
 
     return (
 	<div className='HomepageA_1_HomepageA'>
@@ -44,7 +43,7 @@ export default function HomepageA_1 (props) {
 				<img className='Rectangle14' src = {ImgAsset.HomepageA_1_Rectangle14} />
 				<div className='Rectangle28'/>
 			</div>
-			<span className='text2'>Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu 
+			<p className='text2'>Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu 
 			penting banget, Quipperian! Selain kamu mendapat pengetahuan soal kegiatan yang 
 			sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa meningkatkan 
 			kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman baru dari 
@@ -52,7 +51,7 @@ export default function HomepageA_1 (props) {
 			kemahasiswaan itu penting banget, Quipperian! Selain kamu mendapat pengetahuan soal 
 			kegiatan yang sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa 
 			meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman 
-			baru dari berbagai jurusan yang ada di kampus deh!</span>
+			baru dari berbagai jurusan yang ada di kampus deh!</p>
 		</div>
 
 		{/*Fitur UKM's Care (daftar,info,berita*/}

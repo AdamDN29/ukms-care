@@ -1,12 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import '../css/ListBeritaUKMAdminUKM.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import ReactTimeAgo from 'react-time-ago'
 import ReactPaginate from "react-paginate";
 import axios from 'axios';
@@ -14,6 +12,8 @@ import { confirmAlert } from 'react-confirm-alert';
 import { Button } from 'react-bootstrap';
 import BackButton from '../components/BackButton'
 import 'react-confirm-alert/src/react-confirm-alert.css';
+
+const Swal = require('sweetalert2');
 
 export default function ListBeritaUKMAdminUKM (props) {
 	const ukm_id = props.location.state.ukm_id;
@@ -45,14 +45,18 @@ export default function ListBeritaUKMAdminUKM (props) {
 
 	const handleRemove = (data) => {
 		console.log(data);
-		confirmAlert({
-			title: 'Konfirmasi',
-			message: 'Apakah anda yakin ingin menghapus ?',
-			buttons: [
-			  {
-				label: 'Ya',
-				onClick: () => {
-					axios
+
+		Swal.fire({
+			title: 'Apakah Anda Yakin Ingin Menghapus ?',
+			icon:'question',
+			allowOutsideClick: false,
+			allowEscapeKey: false,
+			confirmButtonText: 'Ya',
+			confirmButtonColor: '#21c177',
+			showDenyButton: true,
+			denyButtonText: 'Tidak',
+			preConfirm: () => {
+				axios
 					.delete(`${process.env.REACT_APP_BACKEND_URL}articles/${data}`)
 					.then((response) => {
 						console.log(response);
@@ -61,14 +65,8 @@ export default function ListBeritaUKMAdminUKM (props) {
 					.catch((err) => {
 						console.log(err);
 					});
-				}
-			  },
-			  {
-				label: 'Tidak',
-				onClick: () => alert('Click Ok')
-			  }
-			]
-		  });
+			}	  
+		}) 	
 	};
 
 	useEffect(() => {

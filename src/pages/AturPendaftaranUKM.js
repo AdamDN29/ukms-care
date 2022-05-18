@@ -53,7 +53,7 @@ const reducer = (currentState, action) => {
 export default function AturPendaftaranUKM (){
 
 	const [userId, setUserId] = useState(() => {
-		const localData = localStorage.getItem("id");
+		const localData = sessionStorage.getItem("id");
 		return localData ? localData : null;
 	});
 	const [checked, setChecked] = useState(true);

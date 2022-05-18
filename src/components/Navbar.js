@@ -19,11 +19,11 @@ export default function Navbar () {
 	const [user, setUser] = useState([]);
 
 	const [userRole, setUserRole] = useState(() => {
-		const localData = localStorage.getItem("role");
+		const localData = sessionStorage.getItem("role");
 		return localData ? localData : null;
 	});
 	const [userId, setUserId] = useState(() => {
-		const localData = localStorage.getItem("id");
+		const localData = sessionStorage.getItem("id");
 		return localData ? localData : null;
 	});
 
@@ -51,7 +51,7 @@ export default function Navbar () {
 
 	// logout handler
 	const logoutHandler = () => {
-		localStorage.clear();
+		sessionStorage.clear();
 		Swal.fire({
 			icon: 'success',
 			title: 'Anda Berhasil Log Out',

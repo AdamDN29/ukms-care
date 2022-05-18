@@ -66,9 +66,9 @@ export default function SigninUser (props) {
 					getID = data.id
 					getUser = data.email
 				});
-				localStorage.setItem("id", JSON.stringify(getID));
-				localStorage.setItem("user", JSON.stringify(getUser));
-      			localStorage.setItem("role", JSON.stringify(2));
+				sessionStorage.setItem("id", JSON.stringify(getID));
+				sessionStorage.setItem("user", JSON.stringify(getUser));
+				sessionStorage.setItem("role", JSON.stringify(2));
 
 				Swal.fire({
 					icon: 'success',
@@ -83,15 +83,29 @@ export default function SigninUser (props) {
 			} 
 		  })
 		  .catch((err) => {
-			console.log(err.response);
-			Swal.fire({
-				icon: 'error',
-				title: 'Login Gagal',
-				text: 'Silahkan Cek Email Anda untuk Verifikasi',
-				allowOutsideClick: false,
-				allowEscapeKey: false,
-				confirmButtonColor: '#21c177',
-			}) 			
+			console.log(err.response.data.error);
+			
+			if (err.response.status === 404){
+				console.log("error 404");
+				Swal.fire({
+					icon: 'error',
+					title: 'Login Gagal',
+					text: err.response.data.error,
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonColor: '#21c177',
+				}) 		
+			}else{
+				Swal.fire({
+					icon: 'error',
+					title: 'Login Gagal',
+					text: "Akun Tidak Ditemukan",
+					allowOutsideClick: false,
+					allowEscapeKey: false,
+					confirmButtonColor: '#21c177',
+				}) 		
+			}
+				
 		  });
 	  };
 

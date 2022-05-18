@@ -27,7 +27,7 @@ function DetailUKMA (props){
 	const contents = berita.content
 
 	const [userRole, setUserRole] = useState(() => {
-		const localData = localStorage.getItem("role");
+		const localData = sessionStorage.getItem("role");
 		return localData ? localData : null;
 	});
 
@@ -62,7 +62,6 @@ function DetailUKMA (props){
 			console.log(err);
 		  });
 	  }, []); 
-	  console.log(berita.created_at);
 	
 	const StatusProfile = CheckUser();
 
@@ -90,7 +89,6 @@ function DetailUKMA (props){
 				});
 				return;
 			}
-
 			if(StatusProfile === true){
 				window.location.href = `/daftarukm/${ukm_id}`;
 			}
@@ -153,34 +151,41 @@ function DetailUKMA (props){
 			<span className='ukmContact'>{ukm.contact}</span>
 		</div>
 
-		{/* <Link to='/daftarukm'> */}
-			<Button className='Loginbtn'
-				onClick={pendaftaranHandler}
-			>
-				{/* <div className='Rectangle'/> */}
-				<div className='akariconsedit'>
-					<div className='Group'>
-						<img className='Vector_4' src = {ImgAsset.DetailUKMA_Vector_4} />
-						<img className='Vector_5' src = {ImgAsset.DetailUKMA_Vector_5} />
-					</div>
-				</div>
-				<span className='DAFTAR'>DAFTAR</span>
-			</Button>
-		{/* </Link> */}
-		
 		<div className='Group386'>
 			<div className='Group355'>
 				<img className='Rectangle14' src = {ImgAsset.DetailUKMA_Rectangle14} />
 				<div className='Rectangle28'/>
 			</div>
-			<span className='ukmDesc'>
-				{ukm.desc}
+			{/* <DialogContent>
+				<pre className='ukmDesc'>{ukm.desc}</pre>
+			</DialogContent> */}
+			{/* <div className='ukmDesc'> {ukm.desc.replace(/ /g, "\u00a0")}
+		
+			</div> */}
+			<span className='ukmDesc'> {ukm.desc}
+		
 			</span>
 		</div>
 
-		</div>
 
 		{/* Daftar */}
+		<Button className='Loginbtn'
+			onClick={pendaftaranHandler}
+		>
+			<span className='DAFTAR'>DAFTAR</span>
+			<div className='akariconsedit'>
+				<div className='Group'>
+					<img className='Vector_4' src = {ImgAsset.DetailUKMA_Vector_4} />
+					<img className='Vector_5' src = {ImgAsset.DetailUKMA_Vector_5} />
+				</div>
+			</div>		
+		</Button>
+		
+		
+
+		</div>
+
+		
 
 		{/* Berita */}
 		<div className='Group306'>

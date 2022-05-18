@@ -26,9 +26,9 @@ import Help from '../pages/Help';
 
 function RouterDOM () {
 
-	const localDataRole = localStorage.getItem("role");
-	const localDataID = localStorage.getItem("id");
-	const localDataEmail = localStorage.getItem("user");
+	const localDataRole = sessionStorage.getItem("role");
+	const localDataID = sessionStorage.getItem("id");
+	const localDataEmail = sessionStorage.getItem("user");
 	console.log(localDataRole);
 	console.log(localDataID);
 	console.log(localDataEmail);
