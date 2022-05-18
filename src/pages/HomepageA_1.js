@@ -26,7 +26,7 @@ export default function HomepageA_1 (props) {
 		</div>
 
 		{/*Penjelasan UKM*/}
-		<img className='Image' src = {ImgAsset.HomepageB_humasunpad2020123Baseball1} />
+		<img className='Image' src = {ImgAsset.UKM1} />
 		<div className='Group306'>
 			<div className='Rectangle8'/>
 			<span className='UKMsCare'>UKM's Care</span>
@@ -44,14 +44,17 @@ export default function HomepageA_1 (props) {
 				<div className='Rectangle28'/>
 			</div>
 			<p className='text2'>Sebagai mahasiswa, aktif dalam kegiatan kemahasiswaan itu 
-			penting banget, Quipperian! Selain kamu mendapat pengetahuan soal kegiatan yang 
+			penting banget, selain kamu mendapat pengetahuan soal kegiatan yang 
 			sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa meningkatkan 
 			kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman baru dari 
-			berbagai jurusan yang ada di kampus deh! Sebagai mahasiswa, aktif dalam kegiatan 
-			kemahasiswaan itu penting banget, Quipperian! Selain kamu mendapat pengetahuan soal 
-			kegiatan yang sedang digeluti, mahasiswa yang ikut kegiatan kemahasiswaan juga bisa 
-			meningkatkan kemampuan sosial dan organisasinya. Jadi, kamu makin punya banyak teman 
-			baru dari berbagai jurusan yang ada di kampus deh!</p>
+			berbagai jurusan yang ada di kampus deh! UKM's Care hadir sebagai media perantara
+			antara mahasiswa dengan pengurus UKM di Universitas Padjajaran. Dengan adanya Website ini 
+			diharapkan mahasiswa menjadi lebih mudah dalam mendapatkan informasi terkait UKM pilihan 
+			mereka dan juga mempermudah untuk mendaftarkan diri, serta memotivasi mahasiswa untuk mengikuti
+			kegiatan-kegiatan UKM yang ada di Unpad</p>
+			
+
+			
 		</div>
 
 		{/*Fitur UKM's Care (daftar,info,berita*/}

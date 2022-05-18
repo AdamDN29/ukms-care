@@ -582,15 +582,16 @@
 .DaftarUKM_DaftarUKM .PendaftaranUnitTaekwondoUnpad {
 	position: absolute;
 	left: 50%;
-	transform:translate(-36%);
+	transform:translate(-50%);
 	top: 303px;
-	width: 750px;
+	width: 900px;
 	height: 32px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 32px;
+	text-align: center;
 }
 .DaftarUKM_DaftarUKM .Line7 {
 	position: absolute;
