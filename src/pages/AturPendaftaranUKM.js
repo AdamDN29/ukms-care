@@ -407,10 +407,10 @@ export default function AturPendaftaranUKM (){
 		<input className='field5'
 			type="text"
 			placeholder="Text 5"
-			name="file5"
-			defaultValue ={preload.file5}
+			name="field5"
+			defaultValue ={preload.field5}
 			onBlur={(e) =>
-				dispatch({ type: "file5", upload: e.target.value })
+				dispatch({ type: "field5", upload: e.target.value })
 			}
 		></input>
 		<Button className='button5'
