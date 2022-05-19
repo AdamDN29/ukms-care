@@ -93,9 +93,13 @@ function DashboardUKMB (props){
 	const ukm_id = ukm.id;
 	console.log(ukm_id);
 	var status = true;
+	var status2 = true;
 
 	if(berita.length !== 0){
 		status = true;
+		if(berita.length){
+			status2 = false;
+		}
 	}
 	else{
 		status = false;
@@ -207,15 +211,22 @@ function DashboardUKMB (props){
 					</div>
 				</div>
 			
-				<div className='Group390_1'>
-					<div className='Rectangle20_1'/>
-					<div className='Group390_2'>
-						<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013_1'>{berita[1].subject}</span>
-						<img className='JuaraTaekwondo1_1' src = {`${process.env.REACT_APP_BACKEND_URL}${berita[1].image}`} />
-						<span className='UnitTaekwondoUnpad_1'>{berita[1].ukm.name}</span>
-						<span className='Jumat25Maret2022_1'>3 days ago</span>
+				<>
+				{
+					status2 === true ?(
+					<div className='Group390_1'>
+						<div className='Rectangle20_1'/>
+						<div className='Group390_2'>
+							<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013_1'>{berita[1].subject}</span>
+							<img className='JuaraTaekwondo1_1' src = {`${process.env.REACT_APP_BACKEND_URL}${berita[1].image}`} />
+							<span className='UnitTaekwondoUnpad_1'>{berita[1].ukm.name}</span>
+							<span className='Jumat25Maret2022_1'>3 days ago</span>
+						</div>
 					</div>
-				</div>
+					):(<></>)
+				}		
+				</>
+				
 			</div>
 			) : (
 				<div><span className='BeritaTidakAda'>Belum Ada Berita</span></div>

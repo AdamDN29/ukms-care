@@ -321,20 +321,37 @@
 	background-color: none;
 	border-radius: 10px;
 }
-.AturPendaftaranUKM_AturPendaftaranUKM .grup1 .Group561 .Rectangle56 {
+
+.AturPendaftaranUKM_AturPendaftaranUKM .btnDel1 {
+	position: absolute;
+	left: 380px;
+	top: 625px;
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	background: #da1e1e;
+	border: 0px;
+}
+
+.btnDel1:hover { 
+	background: rgba(0,180.00000447034836,215.0000023841858,1);
+}
+
+.AturPendaftaranUKM_AturPendaftaranUKM .Group561 .Rectangle56 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 59.9970703125px;
-	height: 60.0029296875px;
+	width: 60px;
+	height: 60px;
 	border-radius: 10px;
 }
-.AturPendaftaranUKM_AturPendaftaranUKM .Group561 .Vector_5 {
-	position: absolute;
-	left: 20.416015625px;
-	top: 20px;
-	width: 33.33496101697674%;
-	height: 33.33170580863565%;
+.AturPendaftaranUKM_AturPendaftaranUKM .Vector_5 {
+	position: relative;
+	left: 1px;
+	bottom: 1px;
+	
+	width: 50%;
+	height: 40%;
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .button3 {
 	position: absolute;

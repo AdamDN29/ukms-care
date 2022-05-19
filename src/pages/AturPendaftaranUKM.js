@@ -58,6 +58,7 @@ export default function AturPendaftaranUKM (){
 	});
 	const [checked, setChecked] = useState(true);
 	const [preload, setPreLoad] = useState([]);
+	const [disabled, setDisabled] = useState(true);
 
 	useEffect( () => {
 		axios
@@ -82,8 +83,35 @@ export default function AturPendaftaranUKM (){
 
 	},[]); 
 
+	var statusfield1 = false;
+	var statusfield2 = false;
+
+	if (preload.field1 !== null){
+		statusfield1 = true;
+		console.log ("Field 1 Ada");
+	}
+	if (preload.field2 !== null){
+		statusfield2 = true;
+		console.log(statusfield2)
+		console.log ("Field 2 Ada");
+	}
+
 	const [data, dispatch] = useReducer(reducer, initialState)
 	console.log(data);
+
+	var clearing = "";
+
+	const getPostAPI = () => {
+		axios
+		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/field/${userId}`)
+		  .then((response) => {
+			console.log(response.data.data);
+			setPreLoad(response.data.data);
+		  })
+		.catch((err) => {
+			console.log(err);
+		});
+	}
 
 	function deletePost (namaField){
 		Swal.fire({
@@ -113,6 +141,10 @@ export default function AturPendaftaranUKM (){
 							confirmButtonText: 'OK',
 							confirmButtonColor: '#21c177',
 						});
+					getPostAPI();
+					// Array.from(document.querySelectorAll("input")).forEach(
+					// 	input => (input.value = "")
+					//   );
 				})
 				.catch((err) => {
 					console.log(err);
@@ -203,6 +235,7 @@ export default function AturPendaftaranUKM (){
 					confirmButtonText: 'OK',
 					confirmButtonColor: '#21c177',
 				});
+				getPostAPI();
                 
                 console.log("berhasil")
             })
@@ -297,21 +330,28 @@ export default function AturPendaftaranUKM (){
 		{/* Change */}
 		{/* Field 1 */}
 		<input className='field1' 
+			// disabled={statusfield1}
 			type="text"
 			placeholder="Text 1"
 			name="field1"
-			defaultValue ={preload.field1}
+			Value ={preload.field1}
 			onBlur={(e) =>
 				dispatch({ type: "field1", upload: e.target.value })
 			}
 		></input>
+
 		<Button className='button1'
 			onClick={() => onSubmitHandler('field1')}
 		>
-			<div className='dashiconsyesalt'>
-				<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-			</div>
+				<div className='dashiconsyesalt'>
+					<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+				</div>
 		</Button>
+
+
+		
+
+		{/* Field 2 */}
 
 		<input className='field2'
 			type="text"
