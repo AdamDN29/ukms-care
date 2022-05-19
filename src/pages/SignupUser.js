@@ -122,25 +122,25 @@ export default function SignupUser () {
 
     return (
 	<div className='SignupUser_SignupUser'>
-		<div className='Group220'>
-			<div className='Rectangle6'/>
-			<div className='Vectors'>
-				<img className='Vector' src = {ImgAsset.SignupUser_Vector} />
-				<img className='Vector_1' src = {ImgAsset.SignupUser_Vector_1} />
-			</div>
-			<span className='Text1'>Lakukan Sign In untuk melakukan pendaftaran UKM</span>
-		</div>
 	
+			<div className='Rectangle6'>
 			<div className='Group228'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
 				<img className='logo' src = {ImgAsset.ukms_care_logo} />
 			</div>
-		
+			</div>
+			<div className='Vectors'>
+				<img className='Vector' src = {ImgAsset.SignupUser_Vector} />
+				<img className='Vector_1' src = {ImgAsset.SignupUser_Vector_1} />
+			</div>
 		<div className='Vectors_1'>
 			<img className='Vector_2' src = {ImgAsset.SignupUser_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.SignupUser_Vector_3} />
 		</div>
-			
+
+
+		<div className='Rectangle1'>
+		<span className='Text1'>Lakukan Sign In untuk melakukan pendaftaran UKM</span>
 		<div className='Username'>
 			<input className='Input_Form' placeholder='Enter Email Unpad'
 				value={usernameReg}
@@ -185,6 +185,8 @@ export default function SignupUser () {
 		<Link to='/signinuser'>
 			<span className='Signin'>Sign In!</span>
 		</Link>
+
+		</div>
 		
 	</div>
 	)

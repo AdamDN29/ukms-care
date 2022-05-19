@@ -122,24 +122,20 @@ export default function SigninUser (props) {
 		</div>
 
 		
-
-		<span className='Signin'>Sign In</span>
 		<div className='Group220'>
 			{/*Atas*/}
-			<div className='Rectangle6'/>
-			<div className='Vectors'>
-				<img className='Vector_2' src = {ImgAsset.SigninUser_Vector_2} />
-				<img className='Vector_3' src = {ImgAsset.SigninUser_Vector_3} />
-			</div>
-			<span className='Text1'>Silahkan Sign In untuk 
-			melakukan pendaftaran UKM</span>
-		</div>
-		
+			<div className='Rectangle6'>
 			<div className='Group229'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
 				<img className='logo' src = {ImgAsset.ukms_care_logo} />		
 			</div>
-		
+		</div>
+
+			<div className='Vectors'>
+				<img className='Vector_2' src = {ImgAsset.SigninUser_Vector_2} />
+				<img className='Vector_3' src = {ImgAsset.SigninUser_Vector_3} />
+			</div>
+		</div>
 		
 		{/*Bawah*/}
 		<div className='Vectors_1'>
@@ -147,14 +143,15 @@ export default function SigninUser (props) {
 			<img className='Vector_5' src = {ImgAsset.SigninUser_Vector_5} />
 		</div>
 		
-		{/*Lupa password*/}
-		{/* <div className='SectionForgot'>
-			<span className='Forgotpassword'>Forgot password?</span>
-			<span className='Rememberme'>Remember me</span>
-			<div className='Rectangle1'/>
-		</div> */}
 
+
+		<div className='Rectangle1'>
+		<span className='Signin'>Sign In</span>
+
+		<span className='Text1'>Silahkan Sign In untuk 
+			melakukan pendaftaran UKM</span>
 		{/*Email,Password*/}
+		
 		<div className='Username'>
 			<input className='Input_Form' placeholder='Enter Email Unpad'
 				value={username}
@@ -187,7 +184,7 @@ export default function SigninUser (props) {
 			<span className='Signup'>Sign up!</span>
 		</Link>
 		
-		
+		</div>
 	</div>
 	)
 }

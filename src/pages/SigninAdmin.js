@@ -84,27 +84,30 @@ export default function SigninAdmin (props) {
 
 	<div className='SigninAdmin_SigninAdmin'>
 		
-		<div className='Group220'>
-			<div className='Rectangle6'/>
+		
+		<div className='Rectangle6'>
+			<div className='Group230'>
+				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
+				<img className='logo' src = {ImgAsset.ukms_care_logo} />
+			</div>
+		</div>
+		
 			<div className='Vectors'>
 				<img className='Vector' src = {ImgAsset.SigninAdmin_Vector} />
 				<img className='Vector_1' src = {ImgAsset.SigninAdmin_Vector_1} />
 			</div>
-			<span className='AndaharusLoginuntukmelakukanpendaftaranUKM'>Anda harus Log in untuk melakukan pengeditan informasi UKM</span>
-		</div>
+
 		<div className='Vectors_1'>
 			<img className='Vector_2' src = {ImgAsset.SigninAdmin_Vector_2} />
 			<img className='Vector_3' src = {ImgAsset.SigninAdmin_Vector_3} />
 		</div>
 		 
-			<div className='Group230'>
-				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-				<img className='logo' src = {ImgAsset.ukms_care_logo} />
-			</div>
-		
 
+		<div className='Rectangle1'>
 		<span className='SigninAkunAdmin'>Sign In 
 		Akun Admin</span>
+		<span className='AndaharusLoginuntukmelakukanpendaftaranUKM'>Anda harus Log in untuk melakukan pengeditan informasi UKM</span>
+		
 		
 		{/*Email,Password*/}
 		<div className='Username'>
@@ -130,6 +133,7 @@ export default function SigninAdmin (props) {
 		>
 			<span className='login'>Login</span>
 		</Button>
+		</div>
 		
 	</div>
 	)
