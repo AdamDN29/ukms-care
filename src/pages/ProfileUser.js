@@ -2,11 +2,12 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import '../css/ProfileUser.css'
 import ImgAsset from '../resources'
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 export default function ProfileUser () {
 	const [userProfile, setUserProfile] = useState([]);
@@ -15,6 +16,8 @@ export default function ProfileUser () {
 		const localData = sessionStorage.getItem("id");
 		return localData ? localData : null;
 	});
+
+	let history = useHistory();
 
 	useEffect(()=>{
 		axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/${userId}`)
@@ -92,9 +95,8 @@ export default function ProfileUser () {
 			</div>
 		</Link>
 
-		<Link to='/homepage'>
-			<BackButton/>
-		</Link>
+		
+		<BackButton />
 		
 		<Footer />
 	</div>

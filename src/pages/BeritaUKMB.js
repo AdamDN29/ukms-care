@@ -28,6 +28,8 @@ export default function BeritaUKMB (props) {
 		query = param1 + '/' + param2 + '/' + param3;
 	}
 
+	const [loading, setLoading] = useState(true);
+
 	const [berita, setBerita] = useState([]);
 	const [pageNumber, setPageNumber] = useState(0);
 
@@ -46,9 +48,11 @@ export default function BeritaUKMB (props) {
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);
+			setLoading(false);
 		  })
 		.catch((err) => {
 			console.log(err);
+			setLoading(false);
 		});
 
 	},[]); 
@@ -69,19 +73,27 @@ export default function BeritaUKMB (props) {
 				
 				<SearchBerita/>
 
-				{/* <BeritaPost query={query}  /> */}
+
 				<div className='BeritaPost2'>
-					{ berita.length !== 0 
-						? (
-							berita
-							.slice(pagesVisited, pagesVisited + usersPerPage)
-							.map(post => {
-								return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} image={post.image}/>
-							})
-						)	
-						: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
-		
-					}
+				{
+					loading === true ?(	<div> <span className='notFound'>Loading...</span></div>
+					):(
+						<>
+						{ berita.length !== 0 
+							? (
+								berita
+								.slice(pagesVisited, pagesVisited + usersPerPage)
+								.map(post => {
+									return <BeritaPost key={post.id} articles_id={post.id} ukm_id={post.ukm_id} subject={post.subject} content={post.content} created_at={post.created_at} image={post.image}/>
+								})
+							)	
+							: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
+			
+						}
+						</>
+					)
+				}
+					
 				</div>
 				
 				

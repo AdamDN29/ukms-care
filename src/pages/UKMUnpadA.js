@@ -31,6 +31,7 @@ export default function UKMUnpadA (props) {
 	const [ukm, setUKM] = useState([]);
 	const [query1, setQuery1] = useState(null);
 	const [pageNumber, setPageNumber] = useState(0);
+	const [loading, setLoading] = useState(true);
 
   	const usersPerPage = 9;
   	const pagesVisited = pageNumber * usersPerPage;
@@ -47,9 +48,11 @@ export default function UKMUnpadA (props) {
 		  .then((response) => {
 			console.log(response);
 			setUKM(response.data.data);
+			setLoading(false);
 		  })
 		.catch((err) => {
 			console.log(err);
+			setLoading(false);
 		});
 
 	},[]); 
@@ -120,17 +123,31 @@ export default function UKMUnpadA (props) {
 			
 		</div>
 		
+
 		<Row xs={1} md={3} className="UKMRow">
-			{ukm.length !== 0
-				? (ukm
-					.slice(pagesVisited, pagesVisited + usersPerPage)
-					.map(post => {
-					return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} avatar={post.avatar}/>
-				}))
-				: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
+			{
+				loading === true ?(<div><span className='notFound'>Loading...</span></div>
+				):(
+					<>
+						{ukm.length !== 0
+							? (ukm
+								.slice(pagesVisited, pagesVisited + usersPerPage)
+								.map(post => {
+								return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} avatar={post.avatar}/>
+							}))
+							: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
+						}	
+					</>
+				)
 			}
+		
 		</Row>
 
+
+
+		
+			
+	
 
 
 		</div>

@@ -450,3 +450,10 @@
 	width: 20.246612596493723%;
 	height: 90.50650154798761%;
 }
+
+.ProfileUser_ProfileUser .BackButton {
+	position: absolute;
+	left: 100px;
+	top: 100px;
+
+}

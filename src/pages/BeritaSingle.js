@@ -2,17 +2,24 @@ import { useState, useEffect } from "react";
 import '../css/BeritaSingle.css'
 import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from "../components/BackButton";
 import moment from 'moment'
 import 'moment/locale/id'
 import axios from "axios";
+import { Button } from "reactstrap";
+import { useHistory } from 'react-router-dom'
 
 function BeritaSingle (props) {
 	const { articles_id } = props.match.params;
 	console.log(articles_id);
+
+	let url = window.location.href;
+	console.log(url);
+
+	let history = useHistory();
 
 	const [single, setSingle] = useState([]);
 	const [ukm, setUKM] = useState([])
@@ -60,11 +67,9 @@ function BeritaSingle (props) {
 				<span className='content'>
 					{single.content}
 				</span>
-			</div>
-		
-			<Link to='/beritaukm/articles'>
-				<BackButton/>
-			</Link>
+			</div>	
+			
+			<BackButton/>
 
 			< Footer />
 		</div>

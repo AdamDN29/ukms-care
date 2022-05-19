@@ -97,16 +97,13 @@ function DashboardUKMB (props){
 
 	if(berita.length !== 0){
 		status = true;
-		if(berita.length){
+		if(berita.length === 1){
 			status2 = false;
 		}
 	}
 	else{
 		status = false;
 	}
-
-
-
 	
     return (
 	<div className='DashboardUKMB_DashboardUKMB'>

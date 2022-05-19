@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
 import '../css/EditProfileUKM.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import { useReducer, useState } from "react"
 import { useHistory } from "react-router-dom"
 import axios, { Axios } from 'axios'
@@ -45,8 +43,6 @@ const reducer = (currentState, action) => {
             return currentState;
     }
 }
-
-
 
 export default function EditProfileUKM (props){
 
