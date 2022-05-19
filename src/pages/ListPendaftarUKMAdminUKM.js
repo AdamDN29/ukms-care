@@ -177,7 +177,7 @@ export default function ListPendaftarUKMAdminUKM (){
 		{/* Wajib */}
 		<span className='IdentitasWajib'>Identitas Wajib</span>
 		<div className='TableContainer1'>
-			<TableScrollbar height="470px"> 
+			<TableScrollbar height="450px"> 
 				<Table striped bordered hover variant="light" style={{border:5, borderColor:'black'}}>
 					<thead>
 						<tr style={{borderColor:'black'}}>
@@ -220,17 +220,18 @@ export default function ListPendaftarUKMAdminUKM (){
 		{/* Tambahan */}
 		<span className='Tambahan'>Tambahan</span>
 		<div className='TableContainer2'>
-			<TableScrollbar height="470px"> 
+			<TableScrollbar height="450px"> 
 				<Table striped bordered hover variant="light" style={{border:5, borderColor:'black'}}>
 					<thead>
 						<tr style={{borderColor:'black'}}>
 							<th style={{width:10, textAlign:'center', backgroundColor:'#224957', color:'white'}}>No</th>
 							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>Nama</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField1}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField2}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField3}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField4}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField5}</th>
+							{field.field1 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField1}</th>):(<></>)}
+							{field.field2 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField2}</th>):(<></>)}
+							{field.field3 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField3}</th>):(<></>)}
+							{field.field4 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField4}</th>):(<></>)}
+							{field.field5 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameField5}</th>):(<></>)}
+							
 						</tr>
 					</thead>
 					<tbody style={{borderColor:'#224957', backgroundColor:'white'}}>
@@ -243,11 +244,11 @@ export default function ListPendaftarUKMAdminUKM (){
 									<tr key={post.id}>
 										<td style={{textAlign:'center'}}>{i + 1}</td>
 										<td style={{textAlign:'center'}}>{post.user.name}</td>
-										<td style={{textAlign:'center'}}>{post.field1}</td>
-										<td style={{textAlign:'center'}}>{post.field2}</td>
-										<td style={{textAlign:'center'}}>{post.field3}</td>
-										<td style={{textAlign:'center'}}>{post.field4}</td>
-										<td style={{textAlign:'center'}}>{post.field5}</td>
+										{field.field1 !== null ?(<td style={{textAlign:'center'}}>{post.field1}</td>):(<></>)}
+										{field.field2 !== null ?(<td style={{textAlign:'center'}}>{post.field2}</td>):(<></>)}
+										{field.field3 !== null ?(<td style={{textAlign:'center'}}>{post.field3}</td>):(<></>)}
+										{field.field4 !== null ?(<td style={{textAlign:'center'}}>{post.field4}</td>):(<></>)}	
+										{field.field5 !== null ?(<td style={{textAlign:'center'}}>{post.field5}</td>):(<></>)}			
 									</tr>
 								)
 				
@@ -263,16 +264,16 @@ export default function ListPendaftarUKMAdminUKM (){
 		{/* File */}
 		<span className='File'>File </span>
 		<div className='TableContainer3'>
-			<TableScrollbar height="470px"> 
+			<TableScrollbar height="450px"> 
 				<Table striped bordered hover variant="light" style={{border:5, borderColor:'black'}}>
 					<thead>
 						<tr style={{borderColor:'black'}}>
 							<th style={{width:10, textAlign:'center', backgroundColor:'#224957', color:'white'}}>No</th>
 							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>Nama</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile1}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile2}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile3}</th>
-							<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile4}</th>
+							{field.file1 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile1}</th>):(<></>)}
+							{field.file2 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile2}</th>):(<></>)}
+							{field.file3 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile3}</th>):(<></>)}
+							{field.file4 !== null ?(<th style={{textAlign:'center', backgroundColor:'#224957', color:'white'}}>{nameFile4}</th>):(<></>)}
 						</tr>
 					</thead>
 					<tbody style={{borderColor:'#224957', backgroundColor:'white'}}>
@@ -285,15 +286,14 @@ export default function ListPendaftarUKMAdminUKM (){
 									<tr key={post.id}>
 										<td style={{textAlign:'center'}}>{i + 1}</td>
 										<td style={{textAlign:'center'}}>{post.user.name}</td>
-										<td style={{textAlign:'center'}}>{post.file1 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file1}`} target="_blank">{nameFile1}</a>):("")}</td>
-										<td style={{textAlign:'center'}}>{post.file2 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file2}`} target="_blank">{nameFile2}</a>):("")}</td>
-										<td style={{textAlign:'center'}}>{post.file3 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file3}`} target="_blank">{nameFile3}</a>):("")}</td>
-										<td style={{textAlign:'center'}}>{post.file4 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file4}`} target="_blank">{nameFile4}</a>):("")}</td>
+										{field.file1 !== null ?(<td style={{textAlign:'center'}}>{post.file1 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file1}`} target="_blank">{nameFile1}</a>):("")}</td>):(<></>)}
+										{field.file2 !== null ?(<td style={{textAlign:'center'}}>{post.file2 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file2}`} target="_blank">{nameFile2}</a>):("")}</td>):(<></>)}
+										{field.file3 !== null ?(<td style={{textAlign:'center'}}>{post.file3 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file3}`} target="_blank">{nameFile3}</a>):("")}</td>):(<></>)}
+										{field.file4 !== null ?(<td style={{textAlign:'center'}}>{post.file4 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file4}`} target="_blank">{nameFile4}</a>):("")}</td>):(<></>)}
 									</tr>
 								)
 				
-							})
-					
+							})		
 						}
 					</tbody>
 				</Table>
