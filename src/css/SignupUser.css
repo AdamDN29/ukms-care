@@ -7,33 +7,26 @@
 	height: 100%;
 	background : rgba(255,255,255,1);
 }
-.SignupUser_SignupUser .Group220 .Rectangle6 {
+
+.SignupUser_SignupUser  .Vectors {
 	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 650px;
-	height: 600px;
-	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
-}
-.SignupUser_SignupUser .Group220 .Vectors {
-	position: absolute;
-	left: 0px;
-	top: 520px;
+	bottom: 0px;
+	margin-bottom: 0px;
 	width: 50%;
 	height: 80px;
 }
-.SignupUser_SignupUser .Group220 .Vectors .Vector {
+.SignupUser_SignupUser  .Vectors .Vector {
 	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 650px;
+	bottom: 0px;
+	margin-bottom: 0px;
+	width: 100%;
 	height: 80px;
 }
-.SignupUser_SignupUser .Group220 .Vectors .Vector_1 {
+.SignupUser_SignupUser  .Vectors .Vector_1 {
 	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 650px;
+	bottom: 0px;
+	margin-bottom: 0px;
+	width: 100%;
 	height: 80px;
 }
 
@@ -48,20 +41,31 @@
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 650px;
+	width: 100%;
 	height: 80px;
 }
 .SignupUser_SignupUser .Vectors_1 .Vector_3 {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 650px;
+	width: 100%;
 	height: 80px;
 }
-.SignupUser_SignupUser .Group220 .Text1 {
+
+.SignupUser_SignupUser .Rectangle1{
 	position: absolute;
-	left: 700px;
-	top: 170px;
+	right: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	background : rgb(255, 255, 255);
+}
+
+.SignupUser_SignupUser  .Rectangle1 .Text1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -170%);
 	width: 498.548828125px;
 	height: 60px;
 	color : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -72,15 +76,16 @@
 	text-align: center;
 }
 
-.SignupUser_SignupUser .Loginbtn {
+.SignupUser_SignupUser .Rectangle1 .Loginbtn {
 	position: absolute;
-	left: 620px;
-	top: 490px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-93%, 350%);
 	width: 351.873291015625px;
 	height: 54.13525390625px;
 	box-shadow: 100px;
 }
-.SignupUser_SignupUser .Loginbtn .Button1 {
+.SignupUser_SignupUser .Rectangle1 .Loginbtn .Button1 {
 	position: absolute;
 	left: 125px;
 	top: 0px;
@@ -91,7 +96,7 @@
 	border-color: azure;
 } .Button1:hover { background: #3CB5B5; } 
 
-.SignupUser_SignupUser .Loginbtn .Register1 {
+.SignupUser_SignupUser .Rectangle1 .Loginbtn .Register1 {
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -106,7 +111,7 @@
 	font-weight: bold;
 }
 
-.SignupUser_SignupUser .Input_Form {
+.SignupUser_SignupUser .Rectangle1 .Input_Form {
 	position: absolute;
 	padding: 12px 20px;
 	left: 0px;
@@ -124,32 +129,36 @@
 	color: rgb(196, 207, 207);
 }
 
-.SignupUser_SignupUser .Username {
+.SignupUser_SignupUser .Rectangle1 .Username {
 	position: absolute;
-	left: 750px;
-	top: 270px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-57%, -20%);
 	width: 351.873291015625px;
 	height: 54.13525390625px;
 }
-.SignupUser_SignupUser .Password {
+.SignupUser_SignupUser .Rectangle1  .Password {
 	position: absolute;
-	left: 750px;
-	top: 340px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-57%, 100%);
 	width: 351.873291015625px;
 	height: 54.13525390625px;
 }
-.SignupUser_SignupUser .Password_2 {
+.SignupUser_SignupUser .Rectangle1 .Password_2 {
 	position: absolute;
-	left: 750px;
-	top: 410px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-57%, 220%);
 	width: 351.873291015625px;
 	height: 54.13525390625px;
 }
 
-.SignupUser_SignupUser .Signup {
+.SignupUser_SignupUser .Rectangle1 .Signup {
 	position: absolute;
-	left: 810px;
-	top: 30px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -220%);
 	width: 300px;
 	height: 111px;
 	color : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -160,10 +169,11 @@
 	text-align: center;
 	font-weight: bold;
 }
-.SignupUser_SignupUser .Sudahpunyaakun {
+.SignupUser_SignupUser .Rectangle1 .Sudahpunyaakun {
 	position: absolute;
-	left: 830px;
-	top: 560px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-80%, 1300%);
 	width: 150px;
 	height: 20px;
 	color : rgba(0,0,0,1);
@@ -172,10 +182,11 @@
 	font-weight: 500;
 	line-height: 16.40625px;
 }
-.SignupUser_SignupUser .Signin {
+.SignupUser_SignupUser .Rectangle1 .Signin {
 	position: absolute;
-	left: 980px;
-	top: 560px;
+	left: 50%;
+	top: 50%;
+	transform: translate(30%, 1300%);
 	width: 91px;
 	height: 20px;
 	color : rgba(0,180.00000447034836,215.0000023841858,1);
@@ -184,14 +195,25 @@
 	font-weight: 500;
 	line-height: 16.40625px;
 }
-.SignupUser_SignupUser .Group228 {
+
+.SignupUser_SignupUser .Rectangle6 {
 	position: absolute;
-	left: 183px;
-	top: 130px;
+	left: 0px;
+	top: 0px;
+	width: 50%;
+	height: 100%;
+	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
+}
+
+.SignupUser_SignupUser .Rectangle6 .Group228 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-30%, -40%);
 	width: 550px;
 	height: 451px;
 }
-.SignupUser_SignupUser .Group228 .PlatformUKMUnpad {
+.SignupUser_SignupUser .Rectangle6 .Group228 .PlatformUKMUnpad {
 	position: absolute;
 	left: -75px;
 	top: 300px;
@@ -203,7 +225,7 @@
 	font-weight: 400;
 	line-height: 56.25px;
 }
-.SignupUser_SignupUser .Group228 .logo {
+.SignupUser_SignupUser .Rectangle6 .Group228 .logo {
 	position: absolute;
 	left: -80px;
 	top: -30px;
