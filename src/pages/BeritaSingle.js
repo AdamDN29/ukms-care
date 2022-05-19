@@ -64,9 +64,10 @@ function BeritaSingle (props) {
 				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${single.image}`} />
 			</div>
 			<div className='Frame372'>
-				<span className='content'>
+				<textarea disabled = {true} defaultValue={single.content} className='content' textarea/>
+				{/* <span className='content'>
 					{single.content}
-				</span>
+				</span> */}
 			</div>	
 			
 			<BackButton/>

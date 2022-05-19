@@ -434,15 +434,16 @@
 }
 .DetailUKMA_DetailUKMA .Group386 .ukmDesc {
 	position: absolute;
-	left: 80px;
-	top: 109.6337890625px;
+	left: 70px;
+	top: 70px;
 	width: 800px;
 	height: 446.732421875px;
 	color : rgb(255, 255, 255);
 	font-family: Oxygen;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 18px;
+	text-align: justify;
 }
 .DetailUKMA_DetailUKMA .Group387 {
 	position: absolute;
@@ -485,4 +486,11 @@
 	font-size: 40px;
 	font-family: Oxygen;
 	color: black;
+}
+
+textarea {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
 }

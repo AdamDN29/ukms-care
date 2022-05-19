@@ -162,9 +162,10 @@ function DetailUKMA (props){
 			{/* <div className='ukmDesc'> {ukm.desc.replace(/ /g, "\u00a0")}
 		
 			</div> */}
-			<span className='ukmDesc'> {ukm.desc}
+			<textarea type='text' defaultValue={ukm.desc} className='ukmDesc' style={{backgroundColor:'#224958'}} disabled={true} textarea/>
+			{/* <span className='ukmDesc'> {ukm.desc}
 		
-			</span>
+			</span> */}
 		</div>
 
 

@@ -336,7 +336,7 @@
 	height: 480px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border-radius: 30px;
-	overflow-y:auto;
+	/* overflow-y:auto; */
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle01 {
 	position: absolute;
@@ -377,16 +377,19 @@
 
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle8 .Deskripsi {
 	position: absolute;
-	left: 28.0693359375px;
-	top: 30px;
-	width: 510px;
-	height: 544px; 
+	left: 20px;
+	top: 35px;
+	width: 556px;
+	height: 410px; 
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: justify;
+	padding-right: 20px;
+	padding-left: 10px;
+	/* padding: 20px; */
 	
 }
 

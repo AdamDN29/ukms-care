@@ -1,12 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import '../css/DashboardUKMB.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import axios from 'axios';
 import BeritaPost3 from '../components/BeritaPost3';
 import { Table } from 'react-bootstrap';
@@ -128,8 +126,10 @@ function DashboardUKMB (props){
 		{/*Keterangan UKM*/}
 		<div className='Group307'>
 			
-			<div className='Rectangle8'><span className='Deskripsi'>{ukm.desc}{ukm.desc}</span> </div>
+			
 			<div className='Rectangle01'><span className='UKMName'>{ukm.name}</span></div>
+			<div className='Rectangle8'><textarea disabled={true} defaultValue={ukm.desc} className='Deskripsi' textarea/> </div>
+			
 			{/* <div className='Group397'>
 				<span className='UNITTaekwondounpad'>{ukm.name}</span>
 				
@@ -279,7 +279,7 @@ function DashboardUKMB (props){
 		<span className='PendaftarUKM'>Pendaftar UKM</span>
 
 		<div className='TableContainer'>
-		<TableScrollbar height="400px"> 
+		<TableScrollbar height="390px"> 
 			<Table striped bordered hover variant="light" style={{width:463}}>
 				<thead>
 					<tr style={{borderColor:'black'}}>
