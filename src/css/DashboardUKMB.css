@@ -126,7 +126,7 @@
 	font-family: Oxygen;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 14px;
+	line-height: 18px;
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group396 .Group393 {
 	position: absolute;
@@ -159,7 +159,7 @@
 	font-family: Oxygen;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 14px;
+	line-height: 18px;
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group396 .Group394 {
 	position: absolute;
@@ -206,7 +206,7 @@
 	font-family: Oxygen;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 14px; 
+	line-height: 18px; 
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group396 .Group395 {
 	position: absolute;
@@ -239,7 +239,7 @@
 	font-family: Oxygen;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 14px;
+	line-height: 18px;
 }
 .DashboardUKMB_DashboardUKMB .grup1 .Group239 {
 	position: absolute;
@@ -350,7 +350,7 @@
 
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle01 .UKMName {
 	position: absolute;
-	width: 90%;
+	width: 80%;
 	height: 50px;
 	display: flex;
 	align-items: center;
@@ -358,11 +358,12 @@
 	text-align: center;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-47%, -50%);
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 36px;
 	font-weight: 700;
+	text-align: center
 	/* line-height: 36px; */
 }
 
@@ -378,13 +379,14 @@
 	position: absolute;
 	left: 28.0693359375px;
 	top: 30px;
-	width: -93px;
+	width: 510px;
 	height: 544px; 
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 16px;
+	line-height: 24px;
+	text-align: justify;
 	
 }
 

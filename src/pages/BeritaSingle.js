@@ -62,9 +62,11 @@ function BeritaSingle (props) {
 				</span>
 			</div>
 		
+		{/* 
 			<Link to='/beritaukm/articles'>
 				<BackButton/>
 			</Link>
+		*/}
 
 			< Footer />
 		</div>

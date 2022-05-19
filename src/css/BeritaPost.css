@@ -83,7 +83,7 @@
 	position: absolute;
 	left: 0.18115234375px;
 	top: 33.3759765625px;
-	width: 626.0003662109375px;
+	width: 600.0003662109375px;
 	height: 80.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -106,7 +106,7 @@
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Date {
 	position: absolute;
 	left: 0.154541015625px;
-	top: 248.3759765625px;
+	top: 252.3759765625px;
 	width: 456px;
 	height: 14.0009765625px;
 	color : rgba(255,255,255,1);
@@ -125,6 +125,7 @@
 	font-family: Oxygen;
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 16px;
+	line-height: 18px;
+	
 }
 
