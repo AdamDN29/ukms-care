@@ -58,16 +58,16 @@
 .DetailUKMA_DetailUKMA .Group338 {
 	position: absolute;
 	left: 50%;
-	transform:translate(-50%);
+	transform:translate(-58%);
 	top: 1655px;
-	width: 1000px;
+	width: 900px;
 	height: 450.58203125px;
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets {
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	width: 1000px;
+	width: 900px;
 	height: 450.58203125px;
 	border-radius: 10px;
 }
@@ -75,7 +75,7 @@
 	position: absolute;
 	left: -1px;
 	top: -2px;
-	width: 1000px;
+	width: 900px;
 	height: 450.58203125px;
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .sheet {
@@ -98,7 +98,7 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .Rectangle26 {
 	position: absolute;
-	left: -10px;
+	left: -25px;
 	top: 0.2060546875px;
 	width: 380px;
 	height: 350px;
@@ -106,7 +106,7 @@
 }
 .DetailUKMA_DetailUKMA .Group338 .Alltickets .cardsdefault .Group337 .imgBerita {
 	position: absolute;
-	left: 15px;
+	left: 0px;
 	top: 40px;
 	width: 330px;
 	height: 270px;
@@ -118,7 +118,7 @@
 	position: absolute;
 	left: 40px;
 	top: 90px;
-	width: 550px;
+	width: 520px;
 	height: 80px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
@@ -154,13 +154,14 @@
 	position: absolute;
 	left: 40px;
 	top: 190px;
-	width: 550px;
+	width: 520px;
 	height: 121px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 20px;
+	text-align: justify;
 }
 .DetailUKMA_DetailUKMA .Group306 {
 	position: absolute;

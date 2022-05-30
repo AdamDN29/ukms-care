@@ -63,7 +63,7 @@
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 .Rectangle26_3 {
 	position: absolute;
-	left: -80px;
+	left: -95px;
 	top: 0.154296875px;
 	width: 348.7606201171875px;
 	height: 262.19091796875px;
@@ -71,7 +71,7 @@
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Group337_3 .Group361_3 .ImageArticle {
 	position: absolute;
-	left: -55px;
+	left: -70px;
 	top: 25.02880859375px;
 	width: 300px;
 	height: 210px;
@@ -83,12 +83,12 @@
 	position: absolute;
 	left: 0.18115234375px;
 	top: 33.3759765625px;
-	width: 600.0003662109375px;
+	width: 560px;
 	height: 80.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 26px;
-	font-weight: 700;
+	font-weight: 600px;
 	line-height: 26px;
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .UKM_Name {
@@ -100,7 +100,7 @@
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 16px;
-	font-weight: 700;
+	font-weight: 600px;
 	line-height: 16px;
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Date {
@@ -112,20 +112,21 @@
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 16px;
-	font-weight: 400;
+	font-weight: 400px;
 	line-height: 16px;
 }
 .Frame338_2 .Alltickets_3 .cardsdefault_3 .Group362_3 .Content {
 	position: absolute;
 	left: 0.153564453125px;
 	top: 113.24169921875px;
-	width: 570px;
+	width: 550px;
 	height: 121.0009765625px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 18px;
+	font-weight: 400px;
+	line-height: 19px;
+	text-align: justify;
 	
 }
 
