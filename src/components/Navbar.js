@@ -7,6 +7,7 @@ import swal from "sweetalert";
 import Cookies from "js-cookie";
 import ImgAsset from '../resources'
 import { Dropdown } from 'react-bootstrap'
+import URLChecker from '../hook/URLChecker'
 import axios from 'axios';
 
 const Swal = require('sweetalert2');
@@ -37,6 +38,7 @@ export default function Navbar () {
 		var isLoggedIn = true;
 	}
 
+	const [imageHolder, setImageHolder] = useState('');
 	var status = true;
 	
 	useEffect(() => {	
@@ -45,6 +47,8 @@ export default function Navbar () {
 			.then((response)=> {
 					console.log(response);
 					setUser(response.data.data);
+					var statusAvatar = URLChecker(response.data.data.avatar);
+					setImageHolder(statusAvatar);
 			})
 		}		
 	}, [])
@@ -148,14 +152,13 @@ export default function Navbar () {
 											<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>
 												{
 													user.avatar !== null ? (
-														<img className='Avatar' src = {`${process.env.REACT_APP_BACKEND_URL}${user.avatar}`} style={{width: 50, height: 50, borderRadius: 50/ 2}} />	
+														<img className='Avatar' src = {imageHolder} style={{width: 50, height: 50, borderRadius: 50/ 2}} />	
 													):(
 														<img className='Avatar' src = {ImgAsset.Avatar} />	
 													)
 												}	
 											</Dropdown.Toggle>
 
-											
 											<Dropdown.Menu align='start' className='Menu'>
 												<Dropdown.Item href="/profileuser">Profile</Dropdown.Item>
 												<Dropdown.Item onClick={logoutHandler}>Logout</Dropdown.Item>
@@ -198,7 +201,7 @@ export default function Navbar () {
 											<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>			
 											{
 												user.avatar !== null ? (
-													<img className='Avatar' src = {`${process.env.REACT_APP_BACKEND_URL}${user.avatar}`} style={{width: 50, height: 50, borderRadius: 50/ 2}}/>	
+													<img className='Avatar' src = {imageHolder} style={{width: 50, height: 50, borderRadius: 50/ 2}}/>	
 												):(
 													<img className='Avatar' src = {ImgAsset.Avatar} />	
 												)
@@ -218,15 +221,10 @@ export default function Navbar () {
 
 					</div>
 					)
-
 				}
 				</div>	
 			)
-
-
-
-		}
-			
+		}		
 		</div>
 	)
 }

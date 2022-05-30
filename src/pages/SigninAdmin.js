@@ -88,7 +88,9 @@ export default function SigninAdmin (props) {
 		<div className='Rectangle6'>
 			<div className='Group230'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-				<img className='logo' src = {ImgAsset.ukms_care_logo} />
+				<Link to='/homepage'>
+					<img className='logo' src = {ImgAsset.ukms_care_logo} />
+				</Link>
 			</div>
 		</div>
 		

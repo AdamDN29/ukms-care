@@ -9,6 +9,7 @@ import axios from 'axios';
 import BeritaPost3 from '../components/BeritaPost3';
 import { Table } from 'react-bootstrap';
 import TableScrollbar from 'react-table-scrollbar';
+import URLChecker from '../hook/URLChecker'
 import moment from 'moment'
 import 'moment/locale/id'
 import ReactTimeAgo from 'react-time-ago'
@@ -25,12 +26,9 @@ function DashboardUKMB (props){
 	});
 
 	const query = 'ukms/' + userId;
-
-	const [date1, setDate1] = useState();
-    const [date2, setDate2] = useState();
-    const [dt1, setDt1] = useState();
-    const [dt2, setDt2] = useState();
-
+	const [imageHolder1, setImageHolder1] = useState('');
+	const [imageHolder2, setImageHolder2] = useState('');
+	const [imageHolder3, setImageHolder3] = useState('');
 
 	useEffect(() => {
 		axios
@@ -38,6 +36,8 @@ function DashboardUKMB (props){
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
+			var statusAvatar = URLChecker(response.data.data.avatar);
+			setImageHolder1(statusAvatar);
 		  })
 		.catch((err) => {
 			console.log(err);
@@ -47,7 +47,8 @@ function DashboardUKMB (props){
 		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/ukm/${userId}`)
 		  .then((response) => {
 			console.log(response.data.data);
-			setPendaftar(response.data.data);
+			const sortedList = response.data.data.sort((a, b) => (b.created_at = new Date(b.created_at)) - (a.created_at = new Date(a.created_at)));
+			setPendaftar(sortedList);
 		  })
 		.catch((err) => {
 			console.log(err);
@@ -58,27 +59,10 @@ function DashboardUKMB (props){
 		  .then((response) => {
 			console.log(response.data.data);
 			setBerita(response.data.data);
-			// setDate1(berita[0].created_at);
-           	// setDate2(berita[1].created_at);
-
-			// if (date1 === null){
-			// 	console.log("Date Null");
-			// }
-
-			// var temp1 = new Date(date1)
-			// var temp2 = new Date(date2)
-
-			// // var temp1 = new Date("2022-05-13T11:40:32.000000Z")
-			// // var temp2 = new Date("2022-05-13T11:40:32.000000Z")
-
-			// // setDt1(temp1);
-			// // setDt2(temp2);
-
-			// setDt1(new Date(temp1));
-			// setDt2(new Date(temp2));
-			
-			// console.log(dt1)
-			// console.log(dt2)
+			var statusAvatar2 = URLChecker(response.data.data[0].image);
+			setImageHolder2(statusAvatar2);
+			var statusAvatar3 = URLChecker(response.data.data[1].image);
+			setImageHolder3(statusAvatar3);
 		  })
 		  .catch((err) => {
 			console.log(err);
@@ -121,7 +105,7 @@ function DashboardUKMB (props){
 		<div className='grup1'>
 
 		{/*Logo*/}
-		<img className='Rectangle12' src = {`${process.env.REACT_APP_BACKEND_URL}${ukm.avatar}`} />
+		<img className='Rectangle12' src = {imageHolder1} />
 
 		{/*Keterangan UKM*/}
 		<div className='Group307'>
@@ -202,7 +186,7 @@ function DashboardUKMB (props){
 					<div className='Rectangle20'/>
 					<div className='Group390'>
 						<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013'>{berita[0].subject}</span>
-						<img className='JuaraTaekwondo1' src = {`${process.env.REACT_APP_BACKEND_URL}${berita[0].image}`} />
+						<img className='JuaraTaekwondo1' src = {imageHolder2} />
 						<span className='UnitTaekwondoUnpad'>{berita[0].ukm.name}</span>
 						<span className='Jumat25Maret2022'>3 days ago</span>
 					</div>
@@ -215,7 +199,7 @@ function DashboardUKMB (props){
 						<div className='Rectangle20_1'/>
 						<div className='Group390_2'>
 							<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013_1'>{berita[1].subject}</span>
-							<img className='JuaraTaekwondo1_1' src = {`${process.env.REACT_APP_BACKEND_URL}${berita[1].image}`} />
+							<img className='JuaraTaekwondo1_1' src = {imageHolder3} />
 							<span className='UnitTaekwondoUnpad_1'>{berita[1].ukm.name}</span>
 							<span className='Jumat25Maret2022_1'>3 days ago</span>
 						</div>
@@ -290,6 +274,7 @@ function DashboardUKMB (props){
 					</tr>
 				</thead>
 				<tbody style={{borderColor:'#224957', backgroundColor:'white'}}>
+					
 					{
 						pendaftar.map((post, i) =>{
 							const date = new Date(post.created_at)

@@ -47,7 +47,8 @@ export default function BeritaUKMB (props) {
 		.get(`${process.env.REACT_APP_BACKEND_URL}${query}`)
 		  .then((response) => {
 			console.log(response.data.data);
-			setBerita(response.data.data);
+			const sortedList = response.data.data.sort((a, b) => (b.created_at = new Date(b.created_at)) - (a.created_at = new Date(a.created_at)));
+			setBerita(sortedList);
 			setLoading(false);
 		  })
 		.catch((err) => {

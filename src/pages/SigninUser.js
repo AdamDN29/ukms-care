@@ -127,7 +127,10 @@ export default function SigninUser (props) {
 			<div className='Rectangle6'>
 			<div className='Group229'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-				<img className='logo' src = {ImgAsset.ukms_care_logo} />		
+				<Link to='/homepage'>
+					<img className='logo' src = {ImgAsset.ukms_care_logo} />
+				</Link>
+						
 			</div>
 		</div>
 

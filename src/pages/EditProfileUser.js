@@ -8,10 +8,29 @@ import BackButton from '../components/BackButton'
 import { Button, DropdownButton } from 'react-bootstrap'
 import { useState } from "react";
 import { useReducer } from "react";
+import URLChecker from '../hook/URLChecker'
 import axios from 'axios'
 import swal from 'sweetalert'
 
 const Swal = require('sweetalert2');
+
+const allFaculty = [
+	'Fakultas Matematika dan Ilmu Pengetahuan Alam',
+	'Fakultas Hukum', 
+	'Fakultas Ekonomi dan Bisnis', 
+	'Fakultas Kedokteran', 
+	'Fakultas Pertanian', 
+	'Fakultas Kedokteran Gigi', 
+	'Fakultas Ilmu Sosial dan Ilmu Politik', 
+	'Fakultas Ilmu Budaya', 
+	'Fakultas Psikologi',
+	'Fakultas Peternakan',
+	'Fakultas Ilmu Komunikasi',
+	'Fakultas Keperawatan',
+	'Fakultas Perikana dan Ilmu Kelautan',
+	'Fakultas Teknologi Industri Pertanian',
+	'Fakultas Farmasi',
+	'Fakultas Teknik Geologi'];
 
 const initialState = {
 	name: "",
@@ -48,12 +67,16 @@ export default function EditProfileUser (props) {
 	const idUser = props.match.params.id;
 
 	const [preload, setPreLoad] = useState([]);
+	const [imageHolder, setImageHolder] = useState('');
 
 	useEffect(()=>{
 	    axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/${idUser}`)
 	    .then((response)=> {
 			setPreLoad(response.data.data);
 			console.log(response.data.data);
+
+			var statusAvatar = URLChecker(response.data.data.avatar);
+			setImageHolder(statusAvatar);
 		})
 		.catch((err) => {
 			console.log(err);
@@ -148,7 +171,7 @@ export default function EditProfileUser (props) {
 			
 			{
 			preload.avatar !== null ? (
-				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${preload.avatar}`} style={{width: 280, height: 280, borderRadius: 280/ 2}} />
+				<img className='Image' src = {imageHolder} style={{width: 280, height: 280, borderRadius: 280/ 2}} />
 			):(
 				<img className='Image' src = {ImgAsset.BlankWhite} style={{width: 280, height: 280, borderRadius: 280/ 2}} />
 			)
@@ -196,16 +219,23 @@ export default function EditProfileUser (props) {
 			<span className='NomorTelepon'>Kontak</span>
 		</div>
 		<div className='Group582'>
-			<input className='InputForm1'
-				// disabled={disable}
-				name='faculty'
-				type="text" 
-				defaultValue ={preload.faculty}
-				onChange={(e) =>
-				  dispatch({ type: "faculty", payload: e.target.value })
+			<select
+                defaultValue ={preload.faculty}
+				placeholder="Fakultas"
+                className="InputForm1"
+                onChange={(e) =>
+					dispatch({ type: "faculty", payload: e.target.value })
+				  }
+            >
+				<option value="">{preload.faculty}</option>
+				{
+					allFaculty.map(post => {
+						if(post !== preload.faculty){
+							return(<option value={post}>{post}</option>)
+						}
+					})
 				}
-                placeholder="Enter your Faculty"
-			/>
+            </select>
 			<span className='Fakultas'>Fakultas</span>
 		</div>
 		<div className='Group583'>

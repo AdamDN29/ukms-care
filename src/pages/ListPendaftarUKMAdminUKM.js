@@ -1,12 +1,10 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import '../css/ListPendaftarUKMAdminUKM.css'
-import * as SVGAsset from '../SVG/index'
 import ImgAsset from '../resources'
 import {Link} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Component } from 'react/cjs/react.production.min'
 import { Table } from 'react-bootstrap';
 import TableScrollbar from 'react-table-scrollbar';
 import moment from 'moment'
@@ -14,9 +12,7 @@ import 'moment/locale/id'
 import axios from 'axios';
 import BackButton from '../components/BackButton'
 import { Button } from 'react-bootstrap';
-import BinConverter from 'bin-converter';
-import fileDownload from 'js-file-download'
-import { saveAs } from 'file-saver'
+import URLChecker from '../hook/URLChecker'
 
 const BIN = require("bin-converter");
 
@@ -42,7 +38,8 @@ export default function ListPendaftarUKMAdminUKM (){
 		.get(`${process.env.REACT_APP_BACKEND_URL}ukms/registrations/ukm/${userId}`)
 		  .then((response) => {
 			console.log(response.data.data);
-			setPendaftar(response.data.data);
+			const sortedList = response.data.data.sort((a, b) => (b.created_at = new Date(b.created_at)) - (a.created_at = new Date(a.created_at)));
+			setPendaftar(sortedList);
 		  })
 		.catch((err) => {
 			console.log(err);
@@ -73,51 +70,15 @@ export default function ListPendaftarUKMAdminUKM (){
 	const test = "cobainaja";
 
 	console.log(field.field1)
-	if (field.field1 !== null){
-		console.log("Field1 Ada")
-		nameField1 = field.field1;
-		console.log(nameField1)
-	}
-	if (field.field2 !== null){
-		console.log("Field2 Ada")
-		nameField2 = field.field2;
-		console.log(nameField2)
-	}
-	if (field.field3 !== null){
-		console.log("Field3 Ada")
-		nameField3 = field.field3;
-		console.log(nameField3)
-	}
-	if (field.field4 !== null){
-		console.log("Field4 Ada")
-		nameField4 = field.field4;
-		console.log(nameField4)
-	}
-	if (field.field5 !== null){
-		console.log("Field5 Ada")
-		nameField5 = field.field5;
-		console.log(nameField5)
-	}
-	if (field.file1 !== null){
-		console.log("File1 Ada")
-		nameFile1 = field.file1;
-		console.log(nameFile1)
-	}
-	if (field.file2 !== null){
-		console.log("File2 Ada")
-		nameFile2 = field.file2;
-		console.log(nameFile2)
-	}
-	if (field.file3 !== null){
-		console.log("File3 Ada")
-		nameFile3 = field.file3;
-		console.log(nameFile3)
-	}
-	if (field.file4 !== null){
-		console.log("File4 Ada")
-		nameFile4 = field.file4;
-		console.log(nameFile4)
-	}
+	if (field.field1 !== null){nameField1 = field.field1;}
+	if (field.field2 !== null){nameField2 = field.field2;}
+	if (field.field3 !== null){nameField3 = field.field3;}
+	if (field.field4 !== null){nameField4 = field.field4;}
+	if (field.field5 !== null){nameField5 = field.field5;}
+	if (field.file1 !== null){nameFile1 = field.file1;}
+	if (field.file2 !== null){nameFile2 = field.file2;}
+	if (field.file3 !== null){nameFile3 = field.file3;}
+	if (field.file4 !== null){nameFile4 = field.file4;}
 
 	var nameFile = "Data Pendaftaran" + userName + ".xlsx";
 
@@ -281,15 +242,24 @@ export default function ListPendaftarUKMAdminUKM (){
 							pendaftar.map((post, i) =>{
 								const date = new Date(post.created_at)
 								i *= 1;
+								var image1 = null;
+								var image2 = null;
+								var image3 = null;
+								var image4 = null;
+
+								if (post.file1 !== null){var image1 = URLChecker(post.file1);}
+								if (post.file2 !== null){var image2 = URLChecker(post.file2);}
+								if (post.file3 !== null){var image3 = URLChecker(post.file3);}
+								if (post.file4 !== null){var image4 = URLChecker(post.file4);}
 
 								return (
 									<tr key={post.id}>
 										<td style={{textAlign:'center'}}>{i + 1}</td>
 										<td style={{textAlign:'center'}}>{post.user.name}</td>
-										{field.file1 !== null ?(<td style={{textAlign:'center'}}>{post.file1 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file1}`} target="_blank">{nameFile1}</a>):("")}</td>):(<></>)}
-										{field.file2 !== null ?(<td style={{textAlign:'center'}}>{post.file2 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file2}`} target="_blank">{nameFile2}</a>):("")}</td>):(<></>)}
-										{field.file3 !== null ?(<td style={{textAlign:'center'}}>{post.file3 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file3}`} target="_blank">{nameFile3}</a>):("")}</td>):(<></>)}
-										{field.file4 !== null ?(<td style={{textAlign:'center'}}>{post.file4 !== null ?(<a href={`${process.env.REACT_APP_BACKEND_URL}${post.file4}`} target="_blank">{nameFile4}</a>):("")}</td>):(<></>)}
+										{field.file1 !== null ?(<td style={{textAlign:'center'}}>{image1 !== null ?(<a href={image1} target="_blank">{nameFile1}</a>):("")}</td>):(<></>)}
+										{field.file2 !== null ?(<td style={{textAlign:'center'}}>{image2 !== null ?(<a href={image2} target="_blank">{nameFile2}</a>):("")}</td>):(<></>)}
+										{field.file3 !== null ?(<td style={{textAlign:'center'}}>{image3 !== null ?(<a href={image3} target="_blank">{nameFile3}</a>):("")}</td>):(<></>)}
+										{field.file4 !== null ?(<td style={{textAlign:'center'}}>{image4 !== null ?(<a href={image4} target="_blank">{nameFile4}</a>):("")}</td>):(<></>)}
 									</tr>
 								)
 				

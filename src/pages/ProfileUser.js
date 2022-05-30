@@ -6,6 +6,7 @@ import {Link, useHistory} from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BackButton from '../components/BackButton'
+import URLChecker from '../hook/URLChecker'
 import axios from 'axios';
 import { Button } from 'reactstrap';
 
@@ -17,6 +18,8 @@ export default function ProfileUser () {
 		return localData ? localData : null;
 	});
 
+	const [imageHolder, setImageHolder] = useState('');
+
 	let history = useHistory();
 
 	useEffect(()=>{
@@ -24,6 +27,9 @@ export default function ProfileUser () {
 		.then((response)=> {
 			setUserProfile(response.data.data);
 			console.log(response.data.data);
+
+			var statusAvatar = URLChecker(response.data.data.avatar);
+			setImageHolder(statusAvatar);
 		})
 	}, [])
 
@@ -43,9 +49,9 @@ export default function ProfileUser () {
 
 		<Navbar/>
 
-		{
-			userProfile.avatar !== null ? (
-				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${userProfile.avatar}`} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
+		{	
+			userProfile.avatar !== null ? (		
+				<img className='Image' src = {imageHolder} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
 			):(
 				<img className='Image' src = {ImgAsset.HomepageA_1_Rectangle9_1} style={{width: 400, height: 400, borderRadius: 400/ 2}} />
 			)

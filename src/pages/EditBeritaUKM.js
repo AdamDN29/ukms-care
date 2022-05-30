@@ -8,6 +8,8 @@ import Footer from '../components/Footer'
 import axios, { Axios } from 'axios'
 import swal from "sweetalert"
 import { Button } from 'react-bootstrap'
+import {Link} from 'react-router-dom'
+import BackButton from '../components/BackButton'
 
 const Swal = require('sweetalert2');
 
@@ -111,6 +113,9 @@ export default function EditBeritaUKM (props) {
 	return (
 		
 	<div className='BuatBeritaUKM_BuatBeritaUKM'>
+		<Link to='/listberitaukm'>
+			<BackButton/>
+		</Link> 
 		<div className='Vectors'>
 			<img className='Vector' src = {ImgAsset.BuatBeritaUKM_Vector} />
 			<img className='Vector_1' src = {ImgAsset.BuatBeritaUKM_Vector_1} />
@@ -121,7 +126,8 @@ export default function EditBeritaUKM (props) {
 		</div>
 		<Navbar/>
 		
-		<span className='Buatberitaukm'>Buat Berita UKM</span>
+		
+		<span className='Buatberitaukm'>Edit Berita UKM</span>
 	
 		<div className='Rectangle21'/>
 		{/* Judul Berita */}
@@ -160,15 +166,17 @@ export default function EditBeritaUKM (props) {
 		
         {/* Content Berita */}
 		<span className='IsiBerita'>Isi Berita</span>
-		<textarea className='Rectangle59'
-			disabled={disable}
-			name="content" id="content" cols="30" rows="10"
-            defaultValue ={preload.content}
-			onBlur={(e) =>
-				dispatch({ type: "content", upload: e.target.value })
-			}
-			style={{whiteSpace: "pre-line"}}
-		/>
+		<div className='containerIsiBerita'>
+			<textarea className='Rectangle59'
+				disabled={disable}
+				name="content" id="content" cols="30" rows="10"
+				defaultValue ={preload.content}
+				onBlur={(e) =>
+					dispatch({ type: "content", upload: e.target.value })
+				}
+				style={{whiteSpace: "pre-line"}}
+			/>
+		</div>
 		
 		<div className='Group239'>
 			<div className='Group294'>

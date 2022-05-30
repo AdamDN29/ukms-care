@@ -10,6 +10,7 @@ import axios, { Axios } from 'axios'
 import swal from "sweetalert"
 import BackButton from '../components/BackButton'
 import { Button } from 'react-bootstrap'
+import URLChecker from '../hook/URLChecker'
 
 const Swal = require('sweetalert2');
 
@@ -52,6 +53,7 @@ export default function EditProfileUKM (props){
 	let history = useHistory();
 
     const [preload, setPreLoad] = useState([]);
+	const [imageHolder, setImageHolder] = useState('');
 
     useEffect( () => {
 		axios
@@ -59,6 +61,8 @@ export default function EditProfileUKM (props){
 		  .then((response) => {
 			console.log(response.data.data);
 			setPreLoad(response.data.data);
+			var statusAvatar = URLChecker(response.data.data.avatar);
+			setImageHolder(statusAvatar);
 		  })
 		.catch((err) => {
 			console.log(err);
@@ -237,7 +241,7 @@ export default function EditProfileUKM (props){
 
 			<div className='Group349'>
 				<div className='Rectangle22'/>
-				<img className='Rectangle12' src = {`${process.env.REACT_APP_BACKEND_URL}${preload.avatar}`} />
+				<img className='Rectangle12' src = {imageHolder} />
 			</div>
 		</div>
 		{/* Input Desc */}

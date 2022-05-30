@@ -4,6 +4,7 @@ import ImgAsset from '../resources'
 import '../css/BeritaPost.css';
 import {Link} from 'react-router-dom'
 import ReactTimeAgo from 'react-time-ago'
+import URLChecker from '../hook/URLChecker'
 import axios from 'axios';
 
 export default function BeritaPost (props) {
@@ -14,11 +15,8 @@ export default function BeritaPost (props) {
 	const dt = new Date(date);
 	const contents = props.content;
 					
-	// const param = props.query;
-	// const [berita, setBerita] = useState([]);
 	const [ukm, setUKM] = useState([]);
-	// var UKMName = '';
-	// console.log(param);
+	var statusAvatar = URLChecker(props.image);
 	
 	useEffect(() => {
 		axios
@@ -31,11 +29,8 @@ export default function BeritaPost (props) {
 			console.log(err);
 		});
 
-		
-
 	},[]); 
 
-	
     return (
 		<>
 			<Link to={`/beritasingle/${props.articles_id}`} >
@@ -48,7 +43,7 @@ export default function BeritaPost (props) {
 									<div className='Group337_3'>
 										<div className='Group361_3'>
 											<div className='Rectangle26_3'/>
-											<img className='ImageArticle' src = {`${process.env.REACT_APP_BACKEND_URL}${props.image}`} />
+											<img className='ImageArticle' src = {statusAvatar} />
 										</div>
 									</div>
 									<span className='Title'>{props.subject}</span>
@@ -62,37 +57,6 @@ export default function BeritaPost (props) {
 
 			</Link>
 		</>
-			
-		// <>
-		// { berita.length !== 0 
-		// 	? (
-		// 		berita.map(article => {
-		// 			let date = article.created_at;
-		// 			let dt = new Date(date);
-		// 			let contents = article.content;
-					
-
-		// 			axios
-		// 			.get(`https://api-ukmscare.herokuapp.com/ukms/${article.ukm_id}`)
-		// 			.then((response) => {
-		// 				console.log(response.data.data.name);
-		// 				UKMName = response.data.data.name;
-		// 				console.log(UKMName);
-		// 			})
-		// 			.catch((err) => {
-		// 				console.log(err);
-		// 			});	
-
-		// 			return (
-						
-		// 			)
-		// 		})
-		// 	)	
-		// 	: (<div> <span className='notFound'>Berita Tidak Ditemukan</span></div>)
-
-		// }
-		
-		// </>	
     )
 }
 

@@ -1081,6 +1081,19 @@
 	justify-content: flex-end;
   }
 
+  .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .notFound {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	top: 400px;
+	width: 500px;
+	height: 46px;
+	text-align: center;
+	font-size: 40px;
+	font-family: Oxygen;
+	color: black;
+}
+
 
 .paginationBttns {
 	width: 100%;

@@ -126,7 +126,7 @@ export default function UKMUnpadA (props) {
 
 		<Row xs={1} md={3} className="UKMRow">
 			{
-				loading === true ?(<div><span className='notFound'>Loading...</span></div>
+				loading === true ?(<div><span className='notFound4'>Loading...</span></div>
 				):(
 					<>
 						{ukm.length !== 0
@@ -135,7 +135,7 @@ export default function UKMUnpadA (props) {
 								.map(post => {
 								return <UKMPost key={post.id} ukm_id={post.id} ukm_name={post.name} avatar={post.avatar}/>
 							}))
-							: (<div><span className='notFound'>UKM Tidak Ditemukan</span></div>)
+							: (<div><span className='notFound4'>UKM Tidak Ditemukan</span></div>)
 						}	
 					</>
 				)
@@ -143,15 +143,7 @@ export default function UKMUnpadA (props) {
 		
 		</Row>
 
-
-
-		
-			
-	
-
-
 		</div>
-
 		
 		{/* <SearchBerita/> */}
 
@@ -169,9 +161,6 @@ export default function UKMUnpadA (props) {
 				/>
 		</div>
 
-
-
-		
 		{/*Footer*/}
 		<Footer/>
 

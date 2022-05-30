@@ -407,7 +407,7 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile1}
 						name="file1"
 						type="file" 
-						accept=".pdf, image/*"
+						accept="image/*"
 						onChange={(e) =>
 							dispatch({
 								type: "file1",
@@ -416,7 +416,7 @@ export default function DaftarUKM (props) {
 						}
 					/>
 				</div>				
-				<span className='formTitle'>{field.file1 !== null ?(field.file1):("File 1")}</span>
+				<span className='formTitle'>{field.file1 !== null ?(field.file1):("Image 1")}</span>
 			</div>
 
 			{/* File2 */}
@@ -426,13 +426,13 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile2}
 						name="file2"
 						type="file" 
-						accept=".pdf, image/*"
+						accept="image/*"
 						onChange={(e) =>
 							dispatch({ type: "file2", upload: e.target.files[0], })
 						}
 					/>
 				</div>				
-				<span className='formTitle'>{field.file2 !== null ?(field.file2):("File 2")}</span>
+				<span className='formTitle'>{field.file2 !== null ?(field.file2):("Image 2")}</span>
 			</div>
 
 			{/* File3 */}
@@ -442,13 +442,13 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile3}
 						name="file3"
 						type="file" 
-						accept=".pdf, image/*"
+						accept="image/*"
 						onChange={(e) =>
 							dispatch({ type: "file3", upload: e.target.files[0], })
 						}
 					/>
 				</div>				
-				<span className='formTitle'>{field.file3 !== null ?(field.file3):("File 3")}</span>
+				<span className='formTitle'>{field.file3 !== null ?(field.file3):("Image 3")}</span>
 			</div>
 
 			{/* File4 */}
@@ -458,13 +458,13 @@ export default function DaftarUKM (props) {
 						disabled={!statusFile4}
 						name="file4"
 						type="file" 
-						accept=".pdf, image/*"
+						accept="image/*"
 						onChange={(e) =>
 							dispatch({ type: "file4", upload: e.target.files[0], })
 						}
 					/>
 				</div>				
-				<span className='formTitle'>{field.file4 !== null ?(field.file4):("File 4")}</span>
+				<span className='formTitle'>{field.file4 !== null ?(field.file4):("Image 4")}</span>
 			</div>
 
 		{/* Daftar Button */}

@@ -7,50 +7,63 @@ import ReactTimeAgo from 'react-time-ago'
 import Card from 'react-bootstrap/Card'
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
+import URLChecker from '../hook/URLChecker'
 import axios from 'axios';
 
 
 class UKMPost2 extends Component {
 	state = {
-		post: []
-		
+		post: [],
+		loading : true,
 	}
 
 	componentDidMount(){
 		axios.get(`${process.env.REACT_APP_BACKEND_URL}ukms`)
 		.then((response)=>{
 			console.log(response.data.data);
+
 			this.setState({
-				post: response.data.data
+				post: response.data.data,
+				loading: false,
 			})
+			console.log(this.state.loading);
 		})
 
 	}
+	
 
     render() {
 		return (
 			<Row xs={1} md={3} className='Row2'>
 			{	
-				this.state.post.slice(0,3).map(post => {
-					const date = post.created_at;
-					const dt = new Date(date);
-					return(
-					
-						<Col key={post.id}>
-						<Link to={`/detailukm/${post.id}`} >
-                            <Card className='Card2'>
-                                <Card.Img variant="top" className='Image2' src={`${process.env.REACT_APP_BACKEND_URL}${post.avatar}`} />
-                                <Card.Body className='Body2'>
-                                    <Card.Title variant="center" className='Subject2'>{post.name}</Card.Title>
-                                </Card.Body>
-                            </Card>
-						
-						</Link>
-						</Col>
-					)
-						
-					
-				})
+				this.state.loading === true ?(<div> <span className='notFound'>Loading...</span></div>
+				):(
+					<>
+					{
+						this.state.post.slice(0,3).map(post => {
+							const date = post.created_at;
+							const dt = new Date(date);
+							var statusAvatar = URLChecker(post.avatar);
+							return(
+							
+								<Col key={post.id}>
+								<Link to={`/detailukm/${post.id}`} >
+									<Card className='Card2'>
+										<Card.Img variant="top" className='Image2' src={statusAvatar} />
+										<Card.Body className='Body2'>
+											<Card.Title variant="center" className='Subject2'>{post.name}</Card.Title>
+										</Card.Body>
+									</Card>
+								
+								</Link>
+								</Col>
+							)
+								
+							
+						})
+					}
+					</>
+				)
 			}
 			</Row>
 
@@ -59,18 +72,3 @@ class UKMPost2 extends Component {
 }
 
 export default UKMPost2;
-
-			// <Link to={`/beritasingle/${post.id}`}>
-					
-					
-						
-					// 	<div className='Group327'>
-					// 		<div className='Rectangle25'/>
-					// 		<div className='Group325_1'>
-					// 			<img className='JuaraTaekwondo1_2' src = {ImgAsset.HomepageA_JuaraTaekwondo1} />
-					// 			<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2022_2'>{post.subject}</span>
-					// 			<span className='UnitTaekwondoUnpad_2'>{post.ukm.name}</span>
-					// 			<span className='Jumat25Maret2022_2'>{post.created_at}</span>
-					// 		</div>
-					// 	</div>
-					// </Link>	

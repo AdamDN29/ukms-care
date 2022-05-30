@@ -57,9 +57,10 @@
 .BuatBeritaUKM_BuatBeritaUKM .Buatberitaukm {
 	position: absolute;
 	left: 50%;
-	transform:translate(-35%);
+	transform:translate(-50%);
+	text-align: center;
 	top: 145px;
-	width: 691px;
+	width: 550px;
 	height: 60px;
 	color : rgba(0,0,0,1);
 	font-family: Oxygen;
@@ -223,12 +224,23 @@
 	line-height: 37.5px;
 }
 
-.BuatBeritaUKM_BuatBeritaUKM .Rectangle59 {
+.BuatBeritaUKM_BuatBeritaUKM .containerIsiBerita {
+	position: absolute;
+	
+	left: 50%;
+	transform:translate(-50%);
+	top: 700px;
+	width: 850px;
+	height: 649px;
+}
+
+.BuatBeritaUKM_BuatBeritaUKM .containerIsiBerita .Rectangle59 {
 	position: absolute;
 	padding: 20px;
 	left: 50%;
 	transform:translate(-50%);
-	top: 700px;
+	
+	
 	width: 850px;
 	height: 649px;
 	background : rgba(255,255,255,1);
@@ -236,6 +248,11 @@
 	box-sizing: border-box;
 	font-family: Oxygen;
 }
+
+
+
+
+
 .BuatBeritaUKM_BuatBeritaUKM .deskripsi {
 	position: absolute;
 	left: 250px;

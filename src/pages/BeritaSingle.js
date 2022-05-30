@@ -11,30 +11,32 @@ import 'moment/locale/id'
 import axios from "axios";
 import { Button } from "reactstrap";
 import { useHistory } from 'react-router-dom'
+import URLChecker from '../hook/URLChecker'
 
 function BeritaSingle (props) {
 	const { articles_id } = props.match.params;
-	console.log(articles_id);
-
-	let url = window.location.href;
-	console.log(url);
 
 	let history = useHistory();
 
 	const [single, setSingle] = useState([]);
-	const [ukm, setUKM] = useState([])
+	const [ukm, setUKM] = useState([]);
+	const [imageHolder, setImageHolder] = useState('');
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		axios
 		  .get(`https://api-ukmscare.herokuapp.com/articles/${articles_id}`)
 		  .then((response) => {
-			console.log(response.data.data);
 			setSingle(response.data.data);
-			console.log(response.data.data.ukm);
 			setUKM(response.data.data.ukm);
+			console.log(response.data.data)
+			var statusAvatar = URLChecker(response.data.data.image);
+			setImageHolder(statusAvatar);
+			setLoading(false);
 		  })
 		  .catch((err) => {
 			console.log(err);
+			setLoading(false);
 		  });
 	},[]); 
 	const date = new Date(single.created_at)
@@ -51,24 +53,32 @@ function BeritaSingle (props) {
 				<img className='Vector_2' src = {ImgAsset.BeritaSingle_Vector_2} />
 				<img className='Vector_3' src = {ImgAsset.BeritaSingle_Vector_3} />
 			</div>
-			<div className='Frame367'>
-				<span className='Subject'>{single.subject}</span>
-			</div>
-			<div className='Frame369'>
-				<span className='UKM_Name'>{ukm.name}</span>
-			</div>
-			<div className='Frame370'>
-				<span className='Time'>{moment(date).format('LLLL')} </span>
-			</div>
-			<div className='Frame371'>
-				<img className='Image' src = {`${process.env.REACT_APP_BACKEND_URL}${single.image}`} />
-			</div>
-			<div className='Frame372'>
-				<textarea disabled = {true} defaultValue={single.content} className='content' textarea/>
-				{/* <span className='content'>
-					{single.content}
-				</span> */}
-			</div>	
+			{
+				loading === true ?(	<div> <span className='notFound2'>Loading...</span></div>
+				):(
+					<>
+						<div className='Frame367'>
+							<span className='Subject'>{single.subject}</span>
+						</div>
+						<div className='Frame369'>
+							<span className='UKM_Name'>{ukm.name}</span>
+						</div>
+						<div className='Frame370'>
+							<span className='Time'>{moment(date).format('LLLL')} </span>
+						</div>
+						<div className='Frame371'>
+							<img className='Image' src = {imageHolder} />
+						</div>
+						<div className='Frame372'>
+							<textarea disabled = {true} defaultValue={single.content} className='content' textarea/>
+							{/* <span className='content'>
+								{single.content}
+							</span> */}
+						</div>	
+					</>
+				)
+			}
+			
 			
 			<BackButton/>
 

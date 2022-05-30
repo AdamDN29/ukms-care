@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactDOM from "react-dom";
 import { Component } from 'react/cjs/react.production.min'
 import ImgAsset from '../resources'
@@ -7,11 +7,12 @@ import {Link} from 'react-router-dom'
 import ReactTimeAgo from 'react-time-ago'
 import axios from 'axios';
 import Card from 'react-bootstrap/Card'
+import URLChecker from '../hook/URLChecker'
 import { Col } from 'react-bootstrap';
 
 const UKMPost = (props) => {
 
-    console.log(props.ukm_id);
+    var statusAvatar = URLChecker(props.avatar);
 
     return (
 
@@ -19,7 +20,7 @@ const UKMPost = (props) => {
             <Link to={`/detailukm/${props.ukm_id}`}>
             <Card className='UKMCard'>
                 { props.avatar !== null ? (
-                         <Card.Img variant="top" className='UKMImg' src={`${process.env.REACT_APP_BACKEND_URL}${props.avatar}`} />
+                         <Card.Img variant="top" className='UKMImg' src={statusAvatar} />
                     ) : (
                         <Card.Img variant="top" className='UKMImg' src={ImgAsset.ukms_care_logo} />
                     )

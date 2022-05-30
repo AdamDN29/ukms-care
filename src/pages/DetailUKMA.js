@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import CheckUser from '../hook/CheckUser';
 import { Component } from 'react/cjs/react.production.min'
+import URLChecker from '../hook/URLChecker'
 import ReactTimeAgo from 'react-time-ago'
 import axios from "axios";
 import { Button } from 'react-bootstrap';
@@ -21,6 +22,7 @@ function DetailUKMA (props){
 	const [ukm, setUKM] = useState([]);
 	const [berita, setBerita] = useState([]);
 	const [status, setStatus] = useState();
+	const [imageHolder, setImageHolder] = useState('');
 
 	const date = berita.created_at
 	const dt = new Date(date)
@@ -37,6 +39,8 @@ function DetailUKMA (props){
 		  .then((response) => {
 			console.log(response.data.data);
 			setUKM(response.data.data);
+			var statusAvatar = URLChecker(response.data.data.avatar);
+			setImageHolder(statusAvatar);
 		  })
 		  .catch((err) => {
 			console.log(err);
@@ -46,7 +50,8 @@ function DetailUKMA (props){
 		  .get(`${process.env.REACT_APP_BACKEND_URL}articles/ukm/${ukm_id}`)
 		  .then((response) => {
 			console.log(response.data.data);
-			setBerita(response.data.data);
+			const sortedList = response.data.data.sort((a, b) => (b.created_at = new Date(b.created_at)) - (a.created_at = new Date(a.created_at)));
+			setBerita(sortedList);
 		  })
 		  .catch((err) => {
 			console.log(err);
@@ -127,7 +132,7 @@ function DetailUKMA (props){
 		</div>
 
 		<div className='grup1'>
-		<img className='ukmAvatar' src = {`${process.env.REACT_APP_BACKEND_URL}${ukm.avatar}`} />
+		<img className='ukmAvatar' src = {imageHolder} />
 
 		<div className='Group339'>
 			<div className='bxscontact'>
@@ -203,6 +208,8 @@ function DetailUKMA (props){
 					const date = post.created_at
 					const dt = new Date(date)
 					const contents = post.content
+
+					var beritaImage = URLChecker(post.image);
 					
 					return (
 					<Link to={`/beritasingle/${post.id}`}>
@@ -212,7 +219,7 @@ function DetailUKMA (props){
 									<div className='sheet'/>
 									<div className='Group337'>
 										<div className='Rectangle26'/>
-										<img className='imgBerita' src = {`${process.env.REACT_APP_BACKEND_URL}${post.image}`} />
+										<img className='imgBerita' src = {beritaImage} />
 									</div>
 								</div>
 								<span className='beritaSubject'>{post.subject}</span>

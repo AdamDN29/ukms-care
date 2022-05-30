@@ -126,7 +126,9 @@ export default function SignupUser () {
 			<div className='Rectangle6'>
 			<div className='Group228'>
 				<span className='PlatformUKMUnpad'>=Platform UKM Unpad=</span>
-				<img className='logo' src = {ImgAsset.ukms_care_logo} />
+				<Link to='/homepage'>
+					<img className='logo' src = {ImgAsset.ukms_care_logo} />
+				</Link>
 			</div>
 			</div>
 			<div className='Vectors'>
