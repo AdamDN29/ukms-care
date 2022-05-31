@@ -308,7 +308,7 @@ export default function AturPendaftaranUKM (){
 		<span className='status'>{checked === true ?("Aktif"):("Tidak Aktif")}</span>
 
 
-		<span className='Teks'>Teks</span>
+		<span className='Teks'>Text</span>
 		
 		{/* Default */}
 		
@@ -425,13 +425,13 @@ export default function AturPendaftaranUKM (){
 
 		
 		{/* File */}
-		<span className='File'>File</span>
+		<span className='File'>Image</span>
 		
 	
 		<img className='Rectangle55_8' src = {ImgAsset.AturPendaftaranUKM_Rectangle55_8} />
 		<div className='Group570'>
 			{/* File 1 */}
-			<input className='File1' placeholder='File 1'
+			<input className='File1' placeholder='Image 1'
 				name="file1"
 				type="text"
 				defaultValue ={preload.file1}
@@ -449,7 +449,7 @@ export default function AturPendaftaranUKM (){
 
 
 			{/* File 2 */}
-			<input className='File2' placeholder='File 2'
+			<input className='File2' placeholder='Image 2'
 				name="file2"
 				type="text" 
 				defaultValue ={preload.file2}
@@ -467,7 +467,7 @@ export default function AturPendaftaranUKM (){
 
 
 			{/* File 3 */}
-			<input className='File3' placeholder='File 3'
+			<input className='File3' placeholder='Image 3'
 				name="file3"
 				type="text" 
 				defaultValue ={preload.file3}
@@ -484,7 +484,7 @@ export default function AturPendaftaranUKM (){
 			</Button>
 
 			{/* File 4 */}
-			<input className='File4' placeholder='File 4'
+			<input className='File4' placeholder='Image 4'
 				name="file4"
 				type="text" 
 				defaultValue ={preload.file4}
