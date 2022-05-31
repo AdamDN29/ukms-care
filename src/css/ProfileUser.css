@@ -121,7 +121,7 @@
 .ProfileUser_ProfileUser .carbonphonevoice {
 	position: absolute;
 	left: 50%;
-	transform:translate(-196%);
+	transform:translate(-170%);
 	top: 625px;
 	width: 129px;
 	height: 137px;
@@ -143,7 +143,7 @@
 .ProfileUser_ProfileUser .Kontak {
 	position: absolute;
 	left: 50%;
-	transform:translate(-30%);
+	transform:translate(0%);
 	top: 650px;
 	width: 252px;
 	height: 68px;
@@ -156,7 +156,7 @@
 .ProfileUser_ProfileUser .kontak_user {
 	position: absolute;
 	left: 50%;
-	transform:translate(-20%);
+	transform:translate(0%);
 	top: 690px;
 	width: 376px;
 	height: 68px;
@@ -170,7 +170,7 @@
 .ProfileUser_ProfileUser .makicollege {
 	position: absolute;
 	left: 50%;
-	transform:translate(-160%);
+	transform:translate(-143%);
 	top: 800px;
 	width: 156px;
 	height: 137px;
@@ -185,7 +185,7 @@
 .ProfileUser_ProfileUser .Fakultas {
 	position: absolute;
 	left: 50%;
-	transform:translate(-55%);
+	transform:translate(0%);
 	top: 825px;
 	width: 132px;
 	height: 68px;
@@ -198,7 +198,7 @@
 .ProfileUser_ProfileUser .Fakultas_User {
 	position: absolute;
 	left: 50%;
-	transform:translate(-15%);
+	transform:translate(0%);
 	top: 865px;
 	width: 500px;
 	height: 68px;
@@ -212,7 +212,7 @@
 .ProfileUser_ProfileUser .faregularaddressbook {
 	position: absolute;
 	left: 50%;
-	transform:translate(-190%);
+	transform:translate(-170%);
 	top: 1000px;
 	width: 129px;
 	height: 137px;
@@ -228,7 +228,7 @@
 .ProfileUser_ProfileUser .NPM {
 	position: absolute;
 	left: 50%;
-	transform:translate(-100%);
+	transform:translate(0%);
 	top: 1025px;
 	width: 75px;
 	height: 68px;
@@ -241,7 +241,7 @@
 .ProfileUser_ProfileUser .NPM_User {
 	position: absolute;
 	left: 50%;
-	transform:translate(-20%);
+	transform:translate(0%);
 	top: 1065px;
 	width: 365px;
 	height: 114px;
@@ -255,7 +255,7 @@
 .ProfileUser_ProfileUser .Vector_13 {
 	position: absolute;
 	left: 50%;
-	transform:translate(-200%);
+	transform:translate(-176%);
 	top: 1200px;
 	width: 115px;
 	height: 145px;
@@ -263,7 +263,7 @@
 .ProfileUser_ProfileUser .Angkatan {
 	position: absolute;
 	left: 50%;
-	transform:translate(-50%);
+	transform:translate(0%);
 	top: 1225px;
 	width: 155px;
 	height: 68px;
@@ -276,7 +276,7 @@
 .ProfileUser_ProfileUser .Angkatan_User {
 	position: absolute;
 	left: 50%;
-	transform:translate(-60%);
+	transform:translate(0%);
 	top: 1265px;
 	width: 126px;
 	height: 114px;

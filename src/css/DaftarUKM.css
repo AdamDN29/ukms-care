@@ -275,7 +275,7 @@
 	/* left: -400px;
 	top: 1365px; */
 	background-color: white;
-	width: 290px;
+	width: 350px;
 	height: 50px;
 	border-radius: 5px;
 	
@@ -310,7 +310,7 @@
 
 .DaftarUKM_DaftarUKM .formFile3 {
 	position: absolute;
-	left: -90px;
+	left: 37px;
 	top: 1365px;
 	width: 268px;
 	height: 83px;
@@ -318,7 +318,7 @@
 
 .DaftarUKM_DaftarUKM .formFile4 {
 	position: absolute;
-	left: -90px;
+	left: 37px;
 	top: 1470px;
 	width: 268px;
 	height: 83px;
@@ -790,7 +790,7 @@
 	position: absolute;
 	left: 0px;
 	top: 44px;
-	width: 600px;
+	width: 790px;
 	height: 50px;
 	background : rgba(255,255,255,1);
 	border-radius: 5px;
