@@ -149,9 +149,6 @@ export default function AturPendaftaranUKM (){
 							confirmButtonColor: '#21c177',
 						});
 					getPostAPI();
-					// Array.from(document.querySelectorAll("input")).forEach(
-					// 	input => (input.value = "")
-					//   );
 				})
 				.catch((err) => {
 					console.log(err);
@@ -166,9 +163,7 @@ export default function AturPendaftaranUKM (){
 				console.log("Data Tidak Dihapus")
 				return;
 			}
-		});
-
-		
+		});	
 	}
 
 	function onSubmitHandler (temp){

@@ -73,12 +73,6 @@ export default function EditBeritaUKM (props) {
 		if (artikel.image !== null){
 			dataForm.append("image", artikel.image);
 		}
-        
-
-		console.log(dataForm.get('id'));
-		console.log(dataForm.get('subject'));
-		console.log(dataForm.get('content'));
-		console.log(dataForm.get('image'));
 
         axios
             .post(`${process.env.REACT_APP_BACKEND_URL}articles/edit/${idBerita}`, dataForm

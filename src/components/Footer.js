@@ -21,10 +21,13 @@ export default function Footer () {
 								<span className='UKMsCare2022'>© UKM's Care 2022</span>
 								<div className='Group341'>
 									<span className='FollowUs'>Follow Us</span>
-									<img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} />
-									<img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} />
-									<img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} />
-									<img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} />
+									<a href = "mailto: ukmscare@gmail.com"><img className='gmail1' src = {ImgAsset.ListPendaftarUKMAdminUKM_gmail1} /></a>
+									<a href = "https://twitter.com/" target="_blank"><img className='twitter1' src = {ImgAsset.ListPendaftarUKMAdminUKM_twitter1} /></a>
+									<a href = "https://www.instagram.com/" target="_blank"><img className='instagram1' src = {ImgAsset.ListPendaftarUKMAdminUKM_instagram1} /></a>
+									<a href = "https://www.facebook.com/" target="_blank"><img className='facebook1' src = {ImgAsset.ListPendaftarUKMAdminUKM_facebook1} /></a>
+									
+									
+									
 								</div>
 								<div className='Group364'>
 								<Link to='/ukmunpad/ukms' className="link"><span className='UKMUnpad'>UKM Unpad</span></Link>
