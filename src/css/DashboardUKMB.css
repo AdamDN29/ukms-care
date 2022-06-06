@@ -331,7 +331,7 @@
 	padding: 30px;
 	padding-top: -400px;
 	left: 0px;
-	top: 120px;
+	top: 110px;
 	width: 580px;
 	height: 480px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
@@ -343,7 +343,7 @@
 	left: 20px;
 	top: 0px;
 	width: 540px;
-	height: 110px;
+	height: 100px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border-radius: 30px;
 	display: table-cell;
@@ -352,22 +352,23 @@
 }
 
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle01 .UKMName {
-	position: absolute;
+	position: relative;
 	width: 100%;
-	height: 50px;
+	height: 50%;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -40%);
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 30px;
+	font-size: 28px;
 	font-weight: 700;
+	
 	text-align: center;
 	
-	/* align-items:center; */
+	align-items:center; 
 	display: block;
 	margin: 0 auto;
-	/* line-height:50px; */
+	line-height: 30px; 
 	
 
 	
