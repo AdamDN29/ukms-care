@@ -214,9 +214,9 @@ export default function EditProfileUser (props) {
 				onBlur={(e) =>
 				  dispatch({ type: "phone_number", payload: e.target.value })
 				}
-                placeholder="Enter Contact"
+                placeholder="Enter Phone Number"
 			/>
-			<span className='NomorTelepon'>Kontak</span>
+			<span className='NomorTelepon'>Nomer Telepon</span>
 		</div>
 		<div className='Group582'>
 			<select
@@ -278,7 +278,7 @@ export default function EditProfileUser (props) {
 				}
 				id="exampleInputPassword"
                 aria-describedby="Password"
-                placeholder="Enter Password"
+                placeholder="Change Password"
 			/>
 			<span className='Password'>Password</span>
 		<div/>

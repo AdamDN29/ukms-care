@@ -10,6 +10,9 @@
 	border: 1px solid rgba(0,0,0,1);
 	box-sizing: border-box;
 }
+
+
+
 .DaftarUKM_DaftarUKM .Rectangle21 {
 	position: absolute;
 	left: 50%;
@@ -237,7 +240,10 @@
 	top: 890px;
 	width: 268px;
 	height: 83px;
+	padding: 20px;
 }
+
+
 .DaftarUKM_DaftarUKM .formText2 {
 	position: absolute;
 	left: -400px;
@@ -879,3 +885,32 @@
 	font-weight: 700;
 	line-height: 28.125px;
 }
+
+/* Style 1 */
+
+/* Style 2 */
+
+/* Style 3 */
+
+/* Style 4 */
+
+/* Style 5 */
+
+/* Style 6 */
+.state6{
+	height: 1830px;
+}
+
+.vectors6{
+	height: 1610px;
+}
+
+.rect6{
+	height: 1330px;
+}
+
+.btns6{
+	top: 1610px;
+}
+
+/* Style 7 */

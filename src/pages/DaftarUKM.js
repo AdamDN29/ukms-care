@@ -1,13 +1,14 @@
-import React from 'react'
+import React from 'react';
 import { useState, useEffect, useReducer } from "react";
-import '../css/DaftarUKM.css'
-import ImgAsset from '../resources'
-import {Link} from 'react-router-dom'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import '../css/DaftarUKM.css';
+import ImgAsset from '../resources';
+import {Link} from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import axios from "axios";
-import swal from "sweetalert"
-import { Button } from 'react-bootstrap'
+import swal from "sweetalert";
+import { Button } from 'react-bootstrap';
+import classNames from "classnames";
 
 const Swal = require('sweetalert2');
 
@@ -109,10 +110,6 @@ export default function DaftarUKM (props) {
 		
 	  }, []); 
 
-	  function Capitalize(str){
-		return str.charAt(0).toUpperCase() + str.slice(1);
-	}
-
 	// Checking Status
 	let statusField1 = false;
 	let statusField2 = false;
@@ -125,34 +122,65 @@ export default function DaftarUKM (props) {
 	let statusFile3 = false;
 	let statusFile4 = false;
 
+	let count = 0;
+	
+
 	if(field.field1 !== null){
 		statusField1 = true;
+		count += 1;
 	}
 	if(field.field2 !== null){
 		statusField2 = true;
+		count += 1;
 	}
 	if(field.field3 !== null){
 		statusField3 = true;
+		count += 1;
 	}
 	if(field.field4 !== null){
 		statusField4 = true;
+		count += 1;
 	}
 	if(field.field5 !== null){
 		statusField5 = true;
+		count += 1;
 	}
 	
 	if(field.file1 !== null){
 		statusFile1 = true;
+		count += 1;
 	}
 	if(field.file2 !== null){
 		statusFile2 = true;
+		count += 1;
 	}
 	if(field.file3 !== null){
 		statusFile3 = true;
+		if(field.file1 === null){
+			count += 1;
+		}
 	}
 	if(field.file4 !== null){
 		statusFile4 = true;
+		if(field.file2 === null){
+			count += 1;
+		}
 	}
+	let state = "state"+count;
+	let state2 = "vectors"+count;
+	let state3 = "rect"+count;
+	let state4 = "btns"+count;
+
+	const conditionalStyles = classNames("DaftarUKM_DaftarUKM", state);
+	const conditionalStyles2 = classNames("Vector", state2);
+	const conditionalStyles3 = classNames("Vector_1", state2);
+	const conditionalStyles4 = classNames("Vector_2", state2);
+	const conditionalStyles5 = classNames("Vector_3", state2);
+	const conditionalStyles6 = classNames("Rectangle21", state3);
+	const conditionalStyles7 = classNames("Group323", state4);
+	const conditionalStyles8 = classNames("Group319", state4);
+
+	console.log(conditionalStyles);
 
 	const [daftar, dispatch] = useReducer(reducer, initialState)
 	const [disable, setDisable] = useState(true);
@@ -250,17 +278,17 @@ export default function DaftarUKM (props) {
 	}
 
     return (
-		<div className='DaftarUKM_DaftarUKM'>
-		<img className='Rectangle21' src = {ImgAsset.DaftarUKM_Rectangle21} />
+		<div className="DaftarUKM_DaftarUKM">
+		<img className="Rectangle21" src = {ImgAsset.DaftarUKM_Rectangle21} />
 		<span className='PendaftaranUnitTaekwondoUnpad'>Pendaftaran {ukm.name}</span>
 		<div className='Line7'/>
 		<div className='Vectors'>
-			<img className='Vector' src = {ImgAsset.DaftarUKM_Vector} />
-			<img className='Vector_1' src = {ImgAsset.DaftarUKM_Vector_1} />
+			<img className="Vector" src = {ImgAsset.DaftarUKM_Vector} />
+			<img className="Vector_1" src = {ImgAsset.DaftarUKM_Vector_1} />
 		</div>
 		<div className='Vectors_1'>
-			<img className='Vector_2' src = {ImgAsset.DaftarUKM_Vector_2} />
-			<img className='Vector_3' src = {ImgAsset.DaftarUKM_Vector_3} />
+			<img className="Vector_2" src = {ImgAsset.DaftarUKM_Vector_2} />
+			<img className="Vector_3" src = {ImgAsset.DaftarUKM_Vector_3} />
 		</div>
 
 		<Navbar/>
@@ -471,7 +499,7 @@ export default function DaftarUKM (props) {
 		</div>
 
 		
-			<div className='Group319'>
+			<div className="Group319">
 				<div className='Group580'>
 					<Button className='Rectangle19_2'
 						disabled={!disable} onClick={onSubmitHandler}
@@ -496,7 +524,7 @@ export default function DaftarUKM (props) {
 			</div>
 
 		<Link to={`/detailukm/${ukm_id}`}>
-			<div className='Group323'>
+			<div className="Group323">
 				<div className='Group384'>
 					<div className='Group385'>
 						<div className='Group239'>

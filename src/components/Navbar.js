@@ -47,7 +47,10 @@ export default function Navbar () {
 			.then((response)=> {
 					console.log(response);
 					setUser(response.data.data);
-					var statusAvatar = URLChecker(response.data.data.avatar);
+					if(response.data.data.avatar !== null){
+						var statusAvatar = URLChecker(response.data.data.avatar);
+					}
+					
 					setImageHolder(statusAvatar);
 			})
 		}		

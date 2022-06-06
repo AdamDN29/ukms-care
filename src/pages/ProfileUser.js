@@ -20,7 +20,6 @@ export default function ProfileUser () {
 
 	const [imageHolder, setImageHolder] = useState('');
 
-	let history = useHistory();
 
 	useEffect(()=>{
 		axios.get(`${process.env.REACT_APP_BACKEND_URL}profiles/${userId}`)
