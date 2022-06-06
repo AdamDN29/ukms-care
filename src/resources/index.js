@@ -402,5 +402,6 @@ export default {
 	gambar_04: require('./gambar_04.png').default,
 	BlankWhite: require('./BlankWhite.JPG').default,
 	UKM1: require('./UKM1.png').default,
+	phone: require('./phone.png').default,
 
 }

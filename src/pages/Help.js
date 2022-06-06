@@ -29,8 +29,7 @@ class Help extends Component {
 		<div className='Group309'>
 			<div className='Rectangle1'>
                 <div className='carbonphonevoice'>
-			        <img className='Vector_6' src = {ImgAsset.ProfileUser_Vector_6} />
-			        <img className='Vector_7' src = {ImgAsset.ProfileUser_Vector_7} />
+			        <img className='Vector_6' src = {ImgAsset.phone} />
 		        </div>
 			    <span className='name1'>Phone </span>
 
