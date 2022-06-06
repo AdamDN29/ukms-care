@@ -80,8 +80,6 @@ export default function EditProfileUKM (props){
         setDisable(true);
         const dataForm = new FormData();
 
-		
-
 		dataForm.append("id", idUKM);
         dataForm.append("name", ukm.name);
         dataForm.append("desc", ukm.desc);
@@ -92,16 +90,6 @@ export default function EditProfileUKM (props){
 		if (ukm.avatar !== null){
 			dataForm.append("avatar", ukm.avatar);
 		}
-		
-
-		console.log(dataForm.get('id'));
-		console.log(dataForm.get('name'));
-		console.log(dataForm.get('desc'));
-		console.log(dataForm.get('date'));
-		console.log(dataForm.get('member'));
-		console.log(dataForm.get('location'));
-		console.log(dataForm.get('contact'));
-		console.log(dataForm.get('avatar'));
 
         axios
             .post(`${process.env.REACT_APP_BACKEND_URL}ukms/edit/${idUKM}`, dataForm
@@ -176,7 +164,6 @@ export default function EditProfileUKM (props){
 							dispatch({ type: "name", upload: e.target.value })
 						}
 					/>
-					{/* <span className='UnitTaekwondoUnpadUTKD'>Unit Taekwondo Unpad (UTKD)</span> */}
 					<span className='NamaUKM'>Nama UKM</span>
 				</div>
 				{/* Input Date */}
@@ -190,7 +177,6 @@ export default function EditProfileUKM (props){
 							dispatch({ type: "date", upload: e.target.value })
 						}
 					/>
-					{/* <span className='SelasaJumat1600WIB'>Selasa & Jumat, 16.00 WIB</span> */}
 					<span className='JadwalKegiatan'>Jadwal Kegiatan</span>
 				</div>
 				{/* Input Member */}
@@ -204,7 +190,6 @@ export default function EditProfileUKM (props){
 							dispatch({ type: "member", upload: e.target.value })
 						}
 					/>
-					{/* <span className='_70Anggota'>70 Anggota</span> */}
 					<span className='JumlahAnggota'>Jumlah Anggota</span>
 				</div>
 				{/* Input Location */}
@@ -218,7 +203,6 @@ export default function EditProfileUKM (props){
 							dispatch({ type: "location", upload: e.target.value })
 						}
 					/>
-					{/* <span className='KompleksUKMBaratJatinangor'>Kompleks UKM Barat, Jatinangor</span> */}
 					<span className='AlamatUKM'>Alamat UKM</span>
 				</div>
 				{/* Input Contact */}
@@ -233,7 +217,6 @@ export default function EditProfileUKM (props){
 								dispatch({ type: "contact", upload: e.target.value })
 							}
 						/>
-						{/* <span className='TaekwondoUnpadgmailcom'>Taekwondo.Unpad@gmail.com</span> */}
 						<span className='Kontak'>Kontak</span>
 					</div>
 				</div>
