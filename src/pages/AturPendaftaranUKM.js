@@ -166,6 +166,17 @@ export default function AturPendaftaranUKM (){
 		});	
 	}
 
+	function failFill (){
+		Swal.fire({
+			icon: 'warning',
+			title: 'Isi Nama Field !',
+			allowOutsideClick: false,
+			allowEscapeKey: false,
+			confirmButtonText: 'OK',
+			confirmButtonColor: '#21c177',
+		});
+	}
+
 	function onSubmitHandler (temp){
         // e.preventDefault();
 		console.log(temp);
@@ -179,49 +190,49 @@ export default function AturPendaftaranUKM (){
 		if(temp === "field1"){
 			if(data.field1 !== ""){
 				dataForm.append("value", data.field1);
-			}else{deletePost("field1"); return;}		
+			}else{failFill(); return;}		
 		} 
 
 		if(temp === "field2"){
 			if(data.field2 !== ""){
 				dataForm.append("value", data.field2);
-			}else{deletePost("field2"); return;}
+			}else{failFill(); return;}
 		}
 
 		if(temp === "field3"){
 			if(data.field3 !== ""){
 				dataForm.append("value", data.field3);
-			}else{deletePost("field3"); return;}
+			}else{failFill(); return;}
 		}
 		if(temp === "field4"){
 			if(data.field4 !== ""){
 				dataForm.append("value", data.field4);
-			}else{deletePost("field4"); return;}
+			}else{failFill(); return;}
 		}
 		if(temp === "field5"){
 			if(data.field5 !== ""){
 				dataForm.append("value", data.field5);
-			}else{deletePost("field5"); return;}
+			}else{failFill(); return;}
 		}
 		if(temp === "file1"){
 			if(data.file1 !== ""){
 				dataForm.append("value", data.file1);
-			}else{deletePost("file1"); return;}
+			}else{failFill(); return;}
 		}
 		if(temp === "file2"){
 			if(data.file2 !== ""){
 				dataForm.append("value", data.file2);
-			}else{deletePost("file2"); return;}
+			}else{failFill(); return;}
 		}
 		if(temp === "file3"){
 			if(data.file3 !== ""){
 				dataForm.append("value", data.file3);
-			}else{deletePost("file3"); return;}
+			}else{failFill(); return;}
 		}
 		if(temp === "file4"){
 			if(data.file4 !== ""){
 				dataForm.append("value", data.file4);
-			}else{deletePost("file4"); return;}
+			}else{failFill(); return;}
 		}
 
         axios

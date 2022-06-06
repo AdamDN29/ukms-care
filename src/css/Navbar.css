@@ -87,6 +87,9 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .Dashboard:hover{
+	color : rgba(0,180.00000447034836,215.0000023841858,1);
+}
 
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .UKMUnpad_1 {
 	position: relative;
@@ -99,6 +102,10 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .UKMUnpad_1:hover{
+	color : rgba(0,180.00000447034836,215.0000023841858,1);
+}
+
 .Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .BeritaUKM_1 {
 	position: relative;
 	left: 50px;
@@ -111,6 +118,11 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 }
+.Navbar .Frame382 .Frame368 .Navbar1 .Frame238 .BeritaUKM_1:hover{
+	color : rgba(0,180.00000447034836,215.0000023841858,1);
+}
+
+
 .Navbar .Frame382 .Frame368 .Navbar1 .Dropdown {
 	position: absolute;
 	
@@ -173,10 +185,13 @@
 	/* box-sizing: border-box; */
 }
 .Menu2 {
-	position: relative;
+	position: absolute;
 	/* right: 20px; */
-	right: 20px;
-	margin-top: 10px;
+	right: 30px;
+	margin-top: 33px;
+	margin-left: -20px;
+	top: 5px;
+
 }
 
 .Navbar .Rectangle1{
@@ -185,16 +200,21 @@
 	top: 15px;
 	width: 120px;
 	height: 40px;
-	background-color : rgba(133, 14, 14, 0.01);
+	background-color : rgba(212, 33, 33, 0.01);
 	border-radius: 15px;
 	border: 1px solid rgba(255,255,255,1);
 	box-sizing: border-box;
 }
+.Navbar .Rectangle1:hover{
+	background-color : rgba(0,180.00000447034836,215.0000023841858,1);;
+}
+
+
 
 .Navbar .Login{
 	position: relative;
 	right: 0px;
-	top: 15px;
+	top: 7px;
 	width: 180px;
 	height: 10px;
 	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
@@ -210,16 +230,21 @@
 	top: 15px;
 	width: 150px;
 	height: 40px;
-	background-color : rgba(233, 16, 16, 0.01) !important;
+	background-color : rgba(21, 144, 189, 0) !important;
 	border-radius: 15px;
 	border: 1px solid rgba(255,255,255,1);
 	box-sizing: border-box;
 }
 
+.Navbar .Rectangle2:hover{
+	background-color : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1) !important;
+}
+
+
 .Navbar .Register{
 	position: relative;
-	/* right: -150px;
-	top: -18px; */
+	left: 35px;
+	top: 7px;
 	width: 180px;
 	height: 10px;
 	color : rgba(242.00000077486038,242.00000077486038,242.00000077486038,1);
@@ -228,4 +253,8 @@
 	font-weight: 700;
 	line-height: 25.739999771118164px;
 	text-align: center;
+}
+
+.dropdown-item:focus {
+	background-color : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1) !important;
 }

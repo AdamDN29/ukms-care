@@ -107,14 +107,16 @@ export default function Navbar () {
 							<div className='Dropdown2'>
 								<Dropdown >
 									<Dropdown.Toggle variant='none' id="dropdown-autoclose-true" className='Toggle'>
-										<div className='Rectangle1'/>
-										<span className='Login'>Login</span>
+										<div className='Rectangle1'>
+											<span className='Login'>Login</span> 
+										</div>
+										
 									</Dropdown.Toggle>
 									
-									<Link to='/SignupUser' className="link">
-										<Button className='Rectangle2' > 
+									<Link to='/SignupUser' >
+										<div className='Rectangle2' > 
 											<span className='Register'>Register</span>
-										</Button> 	
+										</div> 	
 									</Link>	
 
 									
