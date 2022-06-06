@@ -49,9 +49,12 @@ export default function Navbar () {
 					setUser(response.data.data);
 					if(response.data.data.avatar !== null){
 						var statusAvatar = URLChecker(response.data.data.avatar);
+						setImageHolder(statusAvatar);
+					}else{
+						setImageHolder(response.data.data.avatar);
 					}
 					
-					setImageHolder(statusAvatar);
+					
 			})
 		}		
 	}, [])
