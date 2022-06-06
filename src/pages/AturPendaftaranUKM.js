@@ -85,16 +85,23 @@ export default function AturPendaftaranUKM (){
 
 	var statusfield1 = false;
 	var statusfield2 = false;
+	var statusfield3 = false;
+	var statusfield4 = false;
+	var statusfield5 = false;
+	var statusfile1 = false;
+	var statusfile2 = false;
+	var statusfile3 = false;
+	var statusfile4 = false;
 
-	if (preload.field1 !== null){
-		statusfield1 = true;
-		console.log ("Field 1 Ada");
-	}
-	if (preload.field2 !== null){
-		statusfield2 = true;
-		console.log(statusfield2)
-		console.log ("Field 2 Ada");
-	}
+	if (preload.field1 !== null){statusfield1 = true;}
+	if (preload.field2 !== null){statusfield2 = true;}
+	if (preload.field3 !== null){statusfield3 = true;}
+	if (preload.field4 !== null){statusfield4 = true;}
+	if (preload.field5 !== null){statusfield5 = true;}
+	if (preload.file1 !== null){statusfile1 = true;}
+	if (preload.file2 !== null){statusfile2 = true;}
+	if (preload.file3 !== null){statusfile3 = true;}
+	if (preload.file4 !== null){statusfile4 = true;}
 
 	const [data, dispatch] = useReducer(reducer, initialState)
 	console.log(data);
@@ -330,7 +337,7 @@ export default function AturPendaftaranUKM (){
 		{/* Change */}
 		{/* Field 1 */}
 		<input className='field1' 
-			// disabled={statusfield1}
+			disabled={statusfield1}
 			type="text"
 			placeholder="Text 1"
 			name="field1"
@@ -340,20 +347,29 @@ export default function AturPendaftaranUKM (){
 			}
 		></input>
 
-		<Button className='button1'
-			onClick={() => onSubmitHandler('field1')}
-		>
-				<div className='dashiconsyesalt'>
-					<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-				</div>
-		</Button>
+		{statusfield1 === true ?(
+				<Button className='btnDel button1'
+				onClick={() => deletePost('field1')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button1'
+					onClick={() => onSubmitHandler('field1')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+			)
+		}
 
 
-		
-
+	
 		{/* Field 2 */}
 
 		<input className='field2'
+			disabled={statusfield2}
 			type="text"
 			placeholder="Text 2"
 			name="field2"
@@ -362,15 +378,28 @@ export default function AturPendaftaranUKM (){
 				dispatch({ type: "field2", upload: e.target.value })
 			}
 		></input>
-		<Button className='button2'
-			onClick={() => onSubmitHandler('field2')}
-		>
-			<div className='dashiconsyesalt'>
-				<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-			</div>
-		</Button>
+
+		{statusfield2 === true ?(
+				<Button className='btnDel button2'
+				onClick={() => deletePost('field2')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button2'
+					onClick={() => onSubmitHandler('field2')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+			)
+		}
+
+		{/* Field 3 */}
 
 		<input className='field3'
+			disabled={statusfield3}
 			type="text"
 			placeholder="Text 3"
 			name="field3"
@@ -379,15 +408,34 @@ export default function AturPendaftaranUKM (){
 				dispatch({ type: "field3", upload: e.target.value })
 			}
 		></input>
-		<Button className='button3'
+		{/* <Button className='button3'
 			onClick={() => onSubmitHandler('field3')}
 		>
 			<div className='dashiconsyesalt'>
 				<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
 			</div>
 		</Button>
+		 */}
+		{statusfield3 === true ?(
+				<Button className='btnDel button3'
+				onClick={() => deletePost('field3')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button3'
+					onClick={() => onSubmitHandler('field3')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+			)
+		}
+
 
 		<input className='field4'
+			disabled={statusfield4}
 			type="text"
 			placeholder="Text 4"
 			name="field4"
@@ -396,15 +444,26 @@ export default function AturPendaftaranUKM (){
 				dispatch({ type: "field4", upload: e.target.value })
 			}
 		></input>
-		<Button className='button4'
-			onClick={() => onSubmitHandler('field4')}
-		>
-			<div className='dashiconsyesalt'>
-				<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-			</div>
-		</Button>
+
+		{statusfield4 === true ?(
+				<Button className='btnDel button4'
+				onClick={() => deletePost('field4')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button4'
+					onClick={() => onSubmitHandler('field4')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+			)
+		}
 
 		<input className='field5'
+			disabled={statusfield5}
 			type="text"
 			placeholder="Text 5"
 			name="field5"
@@ -413,13 +472,22 @@ export default function AturPendaftaranUKM (){
 				dispatch({ type: "field5", upload: e.target.value })
 			}
 		></input>
-		<Button className='button5'
-			onClick={() => onSubmitHandler('field5')}
-		>
-			<div className='dashiconsyesalt'>
-				<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-			</div>
-		</Button>
+		{statusfield5 === true ?(
+				<Button className='btnDel button5'
+				onClick={() => deletePost('field5')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button5'
+					onClick={() => onSubmitHandler('field5')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+			)
+		}
 
 		</div>
 
@@ -432,6 +500,7 @@ export default function AturPendaftaranUKM (){
 		<div className='Group570'>
 			{/* File 1 */}
 			<input className='File1' placeholder='Image 1'
+				disabled={statusfile1}
 				name="file1"
 				type="text"
 				defaultValue ={preload.file1}
@@ -439,17 +508,27 @@ export default function AturPendaftaranUKM (){
 					dispatch({ type: "file1", upload: e.target.value })
 				}
 			></input>
-			<Button className='button6'
-				onClick={() => onSubmitHandler('file1')}
-			>
-				<div className='dashiconsyesalt'>
-					<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-				</div>
-			</Button>
+			{statusfile1 === true ?(
+				<Button className='btnDel button6'
+				onClick={() => deletePost('file1')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button6'
+					onClick={() => onSubmitHandler('file1')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+				)
+			}
 
 
 			{/* File 2 */}
 			<input className='File2' placeholder='Image 2'
+				disabled={statusfile2}
 				name="file2"
 				type="text" 
 				defaultValue ={preload.file2}
@@ -457,17 +536,27 @@ export default function AturPendaftaranUKM (){
 					dispatch({ type: "file2", upload: e.target.value })
 				}
 			></input>
-			<Button className='button7'
-				onClick={() => onSubmitHandler('file2')}
-			>
-				<div className='dashiconsyesalt'>
-					<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
-				</div>
-			</Button>
+			{statusfile2 === true ?(
+				<Button className='btnDel button7'
+				onClick={() => deletePost('file2')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button7'
+					onClick={() => onSubmitHandler('file2')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+				)
+			}
 
 
 			{/* File 3 */}
 			<input className='File3' placeholder='Image 3'
+				disabled={statusfile3}	
 				name="file3"
 				type="text" 
 				defaultValue ={preload.file3}
@@ -475,16 +564,26 @@ export default function AturPendaftaranUKM (){
 					dispatch({ type: "file3", upload: e.target.value })
 				}
 			></input>
-			<Button className='button8'
-				onClick={() => onSubmitHandler('file3')}
-			>
-				<div className='dashiconsyesalt_1'>
-					<img className='Vector_9' src = {ImgAsset.AturPendaftaranUKM_Vector_9} />
-				</div>
-			</Button>
+			{statusfile3 === true ?(
+				<Button className='btnDel button8'
+				onClick={() => deletePost('file3')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button8'
+					onClick={() => onSubmitHandler('file3')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+				)
+			}
 
 			{/* File 4 */}
 			<input className='File4' placeholder='Image 4'
+				disabled={statusfile4}
 				name="file4"
 				type="text" 
 				defaultValue ={preload.file4}
@@ -492,13 +591,22 @@ export default function AturPendaftaranUKM (){
 					dispatch({ type: "file4", upload: e.target.value })
 				}
 			></input>
-			<Button className='button9'
-				onClick={() => onSubmitHandler('file4')}
-			>
-				<div className='dashiconsyesalt_1'>
-					<img className='Vector_9' src = {ImgAsset.AturPendaftaranUKM_Vector_9} />
-				</div>
-			</Button>
+			{statusfile4 === true ?(
+				<Button className='btnDel button9'
+				onClick={() => deletePost('file4')}
+				>		
+					<img className='Vector_5' src = {ImgAsset.AturPendaftaranUKM_Vector_5} />			
+				</Button>
+			):(
+				<Button className='button9'
+					onClick={() => onSubmitHandler('file4')}
+				>
+					<div className='dashiconsyesalt'>
+						<img className='Vector_6' src = {ImgAsset.AturPendaftaranUKM_Vector_6} />
+					</div>
+				</Button>
+				)
+			}
 
 		{/* <div className='Group561'>
 			<img className='Rectangle56' src = {ImgAsset.AturPendaftaranUKM_Rectangle56} />

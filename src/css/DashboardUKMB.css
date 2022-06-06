@@ -346,6 +346,9 @@
 	height: 110px;
 	background : rgba(34.00000177323818,73.00000324845314,87.00000241398811,1);
 	border-radius: 30px;
+	display: table-cell;
+	align-items:center;
+	vertical-align: middle;
 }
 
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle01 .UKMName {
@@ -359,7 +362,15 @@
 	font-family: Oxygen;
 	font-size: 30px;
 	font-weight: 700;
-	text-align: center
+	text-align: center;
+	
+	/* align-items:center; */
+	display: block;
+	margin: 0 auto;
+	/* line-height:50px; */
+	
+
+	
 	/* line-height: 36px; */
 }
 
@@ -369,6 +380,7 @@
 	top: 31px;
 	width: 723.02734375px;
 	height: 617.94580078125px;
+	
 }
 
 .DashboardUKMB_DashboardUKMB .grup1 .Group307 .Rectangle8 .Deskripsi {

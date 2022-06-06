@@ -322,6 +322,10 @@
 	border-radius: 10px;
 }
 
+.AturPendaftaranUKM_AturPendaftaranUKM .btnDel{
+	background-color: #da1e1e;
+}
+
 .AturPendaftaranUKM_AturPendaftaranUKM .btnDel1 {
 	position: absolute;
 	left: 380px;
@@ -333,7 +337,21 @@
 	border: 0px;
 }
 
+.AturPendaftaranUKM_AturPendaftaranUKM .btnDel2 {
+	position: absolute;
+	left: 380px;
+	top: 699px;
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	background: #da1e1e;
+	border: 0px;
+}
+
 .btnDel1:hover { 
+	background: rgba(0,180.00000447034836,215.0000023841858,1);
+}
+.btnDel:hover { 
 	background: rgba(0,180.00000447034836,215.0000023841858,1);
 }
 
