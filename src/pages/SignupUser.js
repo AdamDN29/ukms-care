@@ -23,7 +23,6 @@ export default function SignupUser () {
 	// Post Register
 	const register = () => {
 
-		
 		// Email Unpad Checker
 		var A = [usernameReg]
 		var B = ['@mail.unpad.ac.id']

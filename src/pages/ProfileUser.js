@@ -27,8 +27,14 @@ export default function ProfileUser () {
 			setUserProfile(response.data.data);
 			console.log(response.data.data);
 
-			var statusAvatar = URLChecker(response.data.data.avatar);
-			setImageHolder(statusAvatar);
+			// var statusAvatar = URLChecker(response.data.data.avatar);
+			// setImageHolder(statusAvatar);
+			if(response.data.data.avatar !== null){
+				var statusAvatar = URLChecker(response.data.data.avatar);
+				setImageHolder(statusAvatar);
+			}else{
+				setImageHolder(response.data.data.avatar);
+			}
 		})
 	}, [])
 
