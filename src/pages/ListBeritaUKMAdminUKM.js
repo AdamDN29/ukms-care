@@ -70,10 +70,20 @@ export default function ListBeritaUKMAdminUKM (props) {
 					.then((response) => {
 						console.log(response);
 						getPostAPI();
+						Swal.fire({
+							title: 'Berita Berhasil Dihapus',
+							icon:'success',
+							allowOutsideClick: false,
+							allowEscapeKey: false,
+							confirmButtonText: 'OK',
+							confirmButtonColor: '#21c177',
+						
+						})
 					})
 					.catch((err) => {
 						console.log(err);
 					});
+					
 			}	  
 		}) 	
 	};
@@ -116,9 +126,9 @@ export default function ListBeritaUKMAdminUKM (props) {
 		{/* Buat Berita */}
 		<Link to={{pathname:'/buatberitaukm', state:{userId}}}>
 			<div className='Group567'>
-				<div className='Group301'>
+				{/* <div className='Group301'>
 					<div className='Rectangle19'/>
-				</div>
+				</div> */}
 				<div className='Group581'>
 					<div className='Group300'>
 						<span className='BuatBerita'>Buat Berita</span>
@@ -170,19 +180,19 @@ export default function ListBeritaUKMAdminUKM (props) {
 										</Link>
 										<div className='BeritaButton'>
 											<Link to={{pathname:`/editberitaukm/${post.id}`, state:{userId}}}> 
-												<div className='Group565'>
-													<img className='Rectangle56_1' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56_1} />
+												<Button className='Group565'>
+													{/* <img className='Rectangle56_1' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56_1} /> */}
 													<div className='akariconsedit'>
 														<div className='Group'>
 															<img className='Vector_6' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_6} />
 															<img className='Vector_7' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_7} />
 														</div>
 													</div>
-												</div>
+												</Button>
 											</Link>
 											{/* Delete Button */}
 											<Button className='Group561' onClick={() => handleRemove(post.id)}>
-												<img className='Rectangle56' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56} />
+												{/* <img className='Rectangle56' src = {ImgAsset.ListBeritaUKMAdminUKM_Rectangle56} /> */}
 												<img className='Vector_5' src = {ImgAsset.ListBeritaUKMAdminUKM_Vector_5} />
 											</Button>
 										</div>

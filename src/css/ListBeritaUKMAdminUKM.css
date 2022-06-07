@@ -75,8 +75,15 @@
 	transform:translate(-230%);
 	top: 305px;
 	width: 182px;
-	height: 36px;
+	height: 40px;
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
+
 }
+.ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567:hover {
+	background-color: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+}
+
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group301 {
 	position: absolute;
 	left: 0px;
@@ -95,8 +102,8 @@
 }
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group581 {
 	position: absolute;
-	left: 21px;
-	top: 5px;
+	left: 25px;
+	top: 8px;
 	width: 139.2236328125px;
 	height: 26px;
 }
@@ -110,7 +117,7 @@
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Group567 .Group581 .Group300 .BuatBerita {
 	position: absolute;
 	left: 10px;
-	top: 5px;
+	top: 6px;
 	width: 105.2236328125px;
 	height: 26px;
 	color : rgba(255,255,255,1);
@@ -1002,7 +1009,14 @@
 	top: 50px;
 	width: 75px;
 	height: 75px;
+	background-color: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+	border-radius: 5px;
+	border: 0px;
 }
+.BeritaButton .Group565:hover {
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+}
+
 .BeritaButton .Group565 .Rectangle56_1 {
 	position: absolute;
 	left: 0px;
@@ -1014,7 +1028,7 @@
 .BeritaButton .Group565 .akariconsedit {
 	position: absolute;
 	left: 26px;
-	top: 25px;
+	top: 22px;
 	width: 25px;
 	height: 25px;
 }
@@ -1027,7 +1041,7 @@
 }
 .BeritaButton .Group565 .akariconsedit .Group .Vector_6 {
 	position: absolute;
-	left: 7.2919921875px;
+	left: 10px;
 	top: 0px;
 	width: 60%;
 	height: 60%;
@@ -1046,9 +1060,14 @@
 	top: 150px;
 	width: 75px;
 	height: 75px;
-	background-color: white;
+	background-color: #da1e1e;
 	border: 0px;
 }
+
+.BeritaButton .Group561:hover {
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+}
+
 .BeritaButton .Group561 .Rectangle56 {
 	position: absolute;
 	left: 0px;
@@ -1068,7 +1087,7 @@
 .ListBeritaUKMAdminUKM_ListBeritaUKMAdminUKM .Pagination3 {
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-55%);
 	bottom: 165px;
 	/* bottom: 200px;
 	right: 650px; */

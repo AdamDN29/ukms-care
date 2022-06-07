@@ -355,6 +355,14 @@
 	background: rgba(0,180.00000447034836,215.0000023841858,1);
 }
 
+.react-switch-bg:checked{
+	background: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1) !important;
+}
+
+.react-switch-bg:not(:checked){
+	background: rgb(223, 140, 32);
+}
+
 .AturPendaftaranUKM_AturPendaftaranUKM .Group561 .Rectangle56 {
 	position: absolute;
 	left: 0px;
@@ -365,7 +373,7 @@
 }
 .AturPendaftaranUKM_AturPendaftaranUKM .Vector_5 {
 	position: relative;
-	left: 1px;
+	left: 0.75px;
 	bottom: 1px;
 	
 	width: 50%;

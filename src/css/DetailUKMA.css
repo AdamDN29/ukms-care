@@ -343,9 +343,9 @@
 
 .DetailUKMA_DetailUKMA .grup1 .Loginbtn {
 	position: absolute;
-	left: 90px;
-	top: 695px;
-	width: 301px;
+	left: 75px;
+	top: 700px;
+	width: 350px;
 	height: 54.13525390625px;
 	border: 0px;
 	border: 20px;
@@ -361,8 +361,8 @@
 }
 .DetailUKMA_DetailUKMA .grup1 .Loginbtn .akariconsedit {
 	position: absolute;
-	left: 62px;
-	top: 11px;
+	left: 100px;
+	top: 10px;
 	width: 32px;
 	height: 32px;
 }
@@ -389,7 +389,7 @@
 }
 .DetailUKMA_DetailUKMA .grup1 .Loginbtn .DAFTAR {
 	position: absolute;
-	left: 80px;
+	left: 115px;
 	top: 16px;
 	width: 158px;
 	height: 24px;

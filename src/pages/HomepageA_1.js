@@ -84,9 +84,9 @@ export default function HomepageA_1 (props) {
 			</div>
 		</div>
 
-		<span className='BeritaUKM_Home'> Berita UKM</span>
+		<span className='BeritaUKM_Home'>Pendaftaran Online</span>
 		<span className='InformasiUKM'>Informasi  UKM</span>
-		<span className='PendaftaranOnline'>Pendaftaran Online</span>
+		<span className='PendaftaranOnline'>Berita UKM</span>
 
 		<div className='Group'>
 			<img className='Vector_4' src = {ImgAsset.HomepageA_1_Vector_4} />

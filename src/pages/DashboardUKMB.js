@@ -30,6 +30,8 @@ function DashboardUKMB (props){
 	const [imageHolder2, setImageHolder2] = useState('');
 	const [imageHolder3, setImageHolder3] = useState('');
 
+	const [dt1, setDT1] = useState('');
+	const [dt2, setDT2] = useState('');
 	useEffect(() => {
 		axios
 		.get(`${process.env.REACT_APP_BACKEND_URL}${query}`)
@@ -60,7 +62,8 @@ function DashboardUKMB (props){
 			console.log(response.data.data);
 			setBerita(response.data.data);
 			var statusAvatar2 = URLChecker(response.data.data[0].image);
-			setImageHolder2(statusAvatar2);
+				setImageHolder2(statusAvatar2);
+			
 			var statusAvatar3 = URLChecker(response.data.data[1].image);
 			setImageHolder3(statusAvatar3);
 		  })
@@ -70,6 +73,7 @@ function DashboardUKMB (props){
 
 
 	},[]); 
+	console.log(dt1);
 
 
 	const ukm_id = ukm.id;
@@ -159,9 +163,9 @@ function DashboardUKMB (props){
 		<Link to={{pathname:`/editprofileukm/${ukm_id}`}}>
 			<div className='Group239'>
 				<div className='Group294'>
-					<div className='Group293'>
+					{/* <div className='Group293'>
 						<div className='Rectangle13'/>
-					</div>
+					</div> */}
 					<div className='Group291'>
 						<span className='EditProfile'>Edit Profile</span>
 						<div className='akariconsedit'>
@@ -181,16 +185,19 @@ function DashboardUKMB (props){
 		{ 
 
 		status === true ? (
+			
 			<div className='BeritaContainer'>
+				<>
 				<div className='Group302'>
 					<div className='Rectangle20'/>
 					<div className='Group390'>
 						<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013'>{berita[0].subject}</span>
 						<img className='JuaraTaekwondo1' src = {imageHolder2} />
 						<span className='UnitTaekwondoUnpad'>{berita[0].ukm.name}</span>
-						<span className='Jumat25Maret2022'>3 days ago</span>
+						<span className='Jumat25Maret2022'><ReactTimeAgo date={new Date(berita[0].created_at)} locale="en-US"/></span>
 					</div>
 				</div>
+				</>
 			
 				<>
 				{
@@ -201,7 +208,7 @@ function DashboardUKMB (props){
 							<span className='UnitTaekwondoUnpadberhasilmeraihperunggudiGaneshaCup2013_1'>{berita[1].subject}</span>
 							<img className='JuaraTaekwondo1_1' src = {imageHolder3} />
 							<span className='UnitTaekwondoUnpad_1'>{berita[1].ukm.name}</span>
-							<span className='Jumat25Maret2022_1'>3 days ago</span>
+							<span className='Jumat25Maret2022_1'><ReactTimeAgo date={new Date(berita[1].created_at)} locale="en-US"/></span>
 						</div>
 					</div>
 					):(<></>)
@@ -244,9 +251,9 @@ function DashboardUKMB (props){
 		<Link to={{pathname:'/listberitaukm', state:{ukm_id}}}>
 			<div className='Group354'>
 				<div className='Group309'>
-					<div className='Group293_1'>
+					{/* <div className='Group293_1'>
 						<div className='Rectangle13_1'/>
-					</div>
+					</div> */}
 				</div>
 				<div className='Group353'>
 					<div className='Group291_1'>
@@ -301,9 +308,9 @@ function DashboardUKMB (props){
 		<Link to='/listpendaftarukm'>
 			<div className='Group352'>
 				<div className='Group309_1'>
-					<div className='Group293_2'>
+					{/* <div className='Group293_2'>
 						<div className='Rectangle13_2'/>
-					</div>
+					</div> */}
 					<div className='Group291_2'>
 						<div className='akariconsedit_1'>
 						</div>

@@ -505,6 +505,11 @@
 	background-color:rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
 	border:0px;
 }
+.EditProfileUKM_EditProfileUKM .grup1 .Group319:hover {
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+}
+
+
 .EditProfileUKM_EditProfileUKM .grup1 .Group319 .Rectangle19_1 {
 	position: absolute;
 	left: 0px;
@@ -536,13 +541,13 @@
 	height: 17.85693359375px;
 	color : rgba(255,255,255,1);
 	font-family: Oxygen;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 16px;
 }
 .EditProfileUKM_EditProfileUKM .grup1 .Group319 .Group320 .bxssave {
 	position: absolute;
-	left: 0px;
+	left: 10px;
 	top: 0px;
 	width: 32.787109375px;
 	height: 30px;

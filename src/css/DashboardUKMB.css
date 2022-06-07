@@ -244,10 +244,16 @@
 .DashboardUKMB_DashboardUKMB .grup1 .Group239 {
 	position: absolute;
 	left: -380px;
-	top: 670px;
+	top: 675px;
 	width: 200px;
 	height: 55px;
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
 }
+.DashboardUKMB_DashboardUKMB .grup1 .Group239:hover {
+	background-color: rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+}
+
 .DashboardUKMB_DashboardUKMB .grup1 .Group239 .Group294 {
 	position: absolute;
 	left: 0px;
@@ -606,9 +612,15 @@
 	position: absolute;
 	left: 20px;
 	top: 1357px;
-	width: 435px;
+	width: 450px;
 	height: 55px;
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
 }
+.DashboardUKMB_DashboardUKMB .grup2 .Group354:hover {
+	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+}
+
 .DashboardUKMB_DashboardUKMB .grup2 .Group354 .Group309 {
 	position: absolute;
 	left: 0px;
@@ -632,9 +644,14 @@
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;
 }
+.DashboardUKMB_DashboardUKMB .grup2 .Group354 .Group309 .Group293_1 .Rectangle13_1:hover {
+	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+}
+
+
 .DashboardUKMB_DashboardUKMB .grup2 .Group354 .Group353 {
 	position: absolute;
-	left: 180px;
+	left: 170px;
 	top: 15px;
 	width: 142.845703125px;
 	height: 25.666748046875px;
@@ -1239,9 +1256,16 @@
 	position: absolute;
 	left: -510px;
 	top: 1357px;
-	width: 350px;
+	width: 435px;
 	height: 55px;
+	background-color: rgba(0,180.00000447034836,215.0000023841858,1);
+	border-radius: 10px;
 }
+.DashboardUKMB_DashboardUKMB .grup2 .Group352:hover {
+	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+}
+
+
 .DashboardUKMB_DashboardUKMB .grup2 .Group352 .Group309_1 {
 	position: absolute;
 	left: 0px;
@@ -1265,6 +1289,11 @@
 	background : rgba(0,180.00000447034836,215.0000023841858,1);
 	border-radius: 10px;
 }
+.DashboardUKMB_DashboardUKMB .grup2 .Group352 .Group309_1 .Group293_2 .Rectangle13_2:hover {
+	background : rgba(32.00000189244747,223.00000190734863,127.00000002980232,1);
+}
+
+
 .DashboardUKMB_DashboardUKMB .grup2 .Group352 .Group309_1 .Group291_2 {
 	position: absolute;
 	left: 181.751953125px;

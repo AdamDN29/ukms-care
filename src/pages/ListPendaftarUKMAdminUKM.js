@@ -274,10 +274,11 @@ export default function ListPendaftarUKMAdminUKM (){
 		
 		<Link to='/aturpendaftaranukm'>
 			<div className='Group352'>
+				<div className='Rectangle13'>
 				<div className='Group309'>
-					<div className='Group293'>
+					{/* <div className='Group293'>
 						<div className='Rectangle13'/>
-					</div>
+					</div> */}
 					<div className='Group291'>
 						<div className='akariconsedit'>
 						</div>
@@ -288,6 +289,7 @@ export default function ListPendaftarUKMAdminUKM (){
 					<div className='bilistul'>
 						<img className='Vector_6' src = {ImgAsset.ListPendaftarUKMAdminUKM_Vector_6} />
 					</div>
+				</div>
 				</div>
 			</div>
 		</Link>
