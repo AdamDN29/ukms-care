@@ -223,7 +223,7 @@ export default function ListPendaftarUKMAdminUKM (){
 
 		
 		{/* File */}
-		<span className='File'>File </span>
+		<span className='File'>Image </span>
 		<div className='TableContainer3'>
 			<TableScrollbar height="450px"> 
 				<Table striped bordered hover variant="light" style={{border:5, borderColor:'black'}}>
